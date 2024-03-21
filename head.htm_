@@ -3,27 +3,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>William Hazard</title>
-    <meta name="keywords" content="poetry, hazard">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     @font-face {
-      font-family: 'Roboto Mono'; font-style: normal; font-weight: 400;
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 400;
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color:#222; max-width:800px; color:#fff; 
-      font-family: 'Roboto Mono', monospace; font-size: 0.8em;
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Times New Roman', monospace; font-size: 1em;
       margin:40px auto; padding: 0 10px;}
-    pre {font-size: 1.3em; color:#fff;}
+    pre {font-size: 1em; color:#ddd;}
     h1 {font-weight:bold; font-size: 1.6em; margin-top:1.5em;}
-    hr {margin-top: 4em; border: none; background-color: #555; color: #555; height: 1px;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
     a {color:#aaa;}
     a:hover {color:#ccc;}
     img {margin-top: -0.5em; max-width:100%;}
     input {font-family: inherit;}
     code {
-      background: #222;
+      background: #555;
       word-wrap: break-word;
       box-decoration-break: clone;
       padding: .1rem .3rem .2rem;

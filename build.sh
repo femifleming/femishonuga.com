@@ -13,20 +13,20 @@ function htmlify() {
   done
 }
 htmlify "head.htm_" "foot.htm_"
-mogrify -resize 800x450^ -gravity center -extent 16:9 -strip *.jpeg
+mogrify -resize 1024x768^ -gravity center -extent 4:3 -strip *.jpeg
 for subdir in ./*/ ; do
   cd $subdir
   htmlify "../head.htm_" "../foot.htm_"
-  mogrify -resize 800x450^ -gravity center -extent 16:9 -strip *.jpeg
+  mogrify -resize 1024x768^ -gravity center -extent 4:3 -strip *.jpeg
   cd ..
 done
 
 echo ">> convert images"
 cd log/pics
-mogrify -resize 800x450^ -gravity center -extent 16:9 -strip *.jpeg
+mogrify -resize 1024x768^ -gravity center -extent 4:3 -strip *.jpeg
 cd ..
 cd entries/pics
-mogrify -resize 800x450^ -gravity center -extent 16:9 -strip *.jpeg
+mogrify -resize 1024x768^ -gravity center -extent 4:3 -strip *.jpeg
 cd ..
 
 echo ">> build rss"
@@ -70,7 +70,7 @@ for file in $marks ; do
     log=$log"n"
     cat ../../head.htm_ > ../${log}.html
   fi
-  ((n=n+1))
+  ((n=n+1)) 
 
   # append to index
   echo "<p><a href=entries/${target}>${name}</a></p>" >> ../${log}.html
@@ -80,8 +80,8 @@ for file in $marks ; do
   # append to rss
   echo "<item>" >> ../rss.xml
   echo "<title>log / ${name}</title>" >> ../rss.xml
-  echo "<link>https://williamhazard.co/log/${folder}/${name}.html</link>" >> ../rss.xml
-  echo "<guid>https://williamhazard.co/log/${folder}/${name}.html</guid>" >> ../rss.xml
+  echo "<link>https://femishonuga.com/log/${folder}/${name}.html</link>" >> ../rss.xml
+  echo "<guid>https://femishonuga.com/log/${folder}/${name}.html</guid>" >> ../rss.xml
   echo "<description><![CDATA[" >> ../rss.xml
   cmark --unsafe ${file}.md >> ../rss.xml
   echo "]]></description>" >> ../rss.xml
