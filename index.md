@@ -10,7 +10,7 @@ Is currently studying [architecture](arch.html) at RISD (after completing one ye
 Hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence, RI,<br>
 [Records](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows,<br>
 [Posts](https://www.instagram.com/sadnoise_/) to instagram frequently,<br>
-And *logs(wip)* updates and [screenshots](screenshotgarden/html.html) occasionally.<br>
+[Logs] updates and [random](screenshotgarden/html.html) occasionally.<br>
 
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring"/>
