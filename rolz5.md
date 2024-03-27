@@ -29,7 +29,7 @@ Golden Master and [more](rollz5/ciat-lonbarde-diy-stuff.pdf):<br>
 <br>
 ![](rollz5/goldenmaster.jpg)
 
-Gerbers:<br>
+Gerbers from original [Papers](rollz5/papers.zip):<br>
 *(Upload these to [OSHPARK](https://oshpark.com) to make pcbs)*
 
 > [3oror](rollz5/GerberFiles_3oror.zip)<br>
@@ -43,7 +43,7 @@ Gerbers:<br>
 
 Capacitor Switches, for Hairy Caps:
 
-![](rollz5/hairy%20cap%20switch.png)
+![](rollz5/capswitch.gif)
 
 Mixer:
 
