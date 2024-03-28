@@ -25,9 +25,13 @@ Paper Circuits:<br>
 <br>
 > ![](rollz5/Rolz%20Led%20Drive%20Mod.png)<br>
 
+> Gongs Orange (Theta) CV Output Mod:<br>
+<br>
+> ![](rollz5/orange.jpg) 
+
 Golden Master and [more](rollz5/ciat-lonbarde-diy-stuff.pdf):<br>
 <br>
-![](rollz5/goldenmaster.jpg)
+> ![](rollz5/goldenmaster.jpg)
 
 Gerbers from original [Papers](rollz5/papers.zip):<br>
 *(Upload these to [OSHPARK](https://oshpark.com) to make pcbs)*
