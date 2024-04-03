@@ -49,14 +49,30 @@ Capacitor Switches, for Hairy Caps:
 
 ![](rollz5/capswitch.gif)
 
-Mixer:
-
+Mixer:<br>
+<br>
 > ![](rollz5/mixer.jpg)
 
 > ![](rollz5/mixer2.png)
+</br>
 
+![](woodrolz1.jpeg)
 
+![](woodrolz2.jpeg)
 
+![](woodrolz3.jpeg)
+
+![](woodrolz4.jpeg)
+
+![](woodrolz5.jpeg)
+
+![](woodrolz6.jpeg)
+
+![](woodrolz7.jpeg)
+
+![](woodrolz8.jpeg)
+
+![](woodrolz9.jpeg)
 
 
 

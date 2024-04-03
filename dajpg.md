@@ -1,40 +1,54 @@
-030924
+<code>030924</code>
 
 ![](dajpg.jpeg)
 
-042323
+<code>022924</code>
+
+![](euro8.jpeg)
+
+<code>081323</code>
+
+![](euro4.jpeg)
+
+<code>080723</code>
+
+![](cara.JPEG)
+
+<code>042323</code>
 
 ![](daat1.jpeg)
 
 ![](daat2.jpeg)
 
-04192023
+<code>04192023</code>
 
 ![](daskiff.jpeg)
 
-031623
+![](euro3.jpeg)
+
+<code>031623</code>
 
 ![](daplexi1.jpeg)
 
 ![](daplexi2.jpeg)
 
-022323
+<code>022323</code>
 
 ![](dadark.jpeg)
 
-012523
+<code>012523</code>
 
 ![](daglow.jpeg)
 
-111622
+<code>111622</code>
 
 ![](dasun.jpeg)
 
-062722
+<code>062722</code>
 
 ![](june.jpg)
 
-My case consists of the following modules 
+> > My case consists of the following modules 
 
 - Whimsical Raps Cold Mac 
 - After Later Audio Monsoon (Clone of mutable instruments clouds with added cv inputs for specific parameters) 
@@ -58,7 +72,7 @@ My case consists of the following modules
 - Attowatt i2c2midi (not in photo) 
 - Doepfer Usb Power (not in photo) 
 
-052921
+<code>052921</code>
 
 ![](dastart.jpeg)
 

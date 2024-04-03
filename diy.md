@@ -40,6 +40,15 @@ Lil Sidrassi + 6oror + 4oror
 
 <audio src="Sadnoise%20-%20DogeVox%20Demos%20-%2006%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%203-1.mp3" controls title="Dogevox into 孟奇wingie2 Demo 3"></audio>
 
+![](pdvox1.jpeg)
+
+![](pdvox2.jpeg)
+
+![](pdvox3.jpeg)
+
+![](pdvox4.jpeg)
+
+![](pdvox5.jpeg)
 
 
 
