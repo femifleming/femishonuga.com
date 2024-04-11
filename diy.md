@@ -40,19 +40,21 @@ Lil Sidrassi + 6oror + 4oror
 
 <audio src="Sadnoise%20-%20DogeVox%20Demos%20-%2006%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%203-1.mp3" controls title="Dogevox into 孟奇wingie2 Demo 3"></audio>
 
-![](pdvox1.jpeg)
+<figure>
 
-![](pdvox2.jpeg)
+> ![](pdvox1.jpeg)
+> ![](pdvox2.jpeg)
+> ![](pdvox3.jpeg)
+> ![](pdvox4.jpeg)
+> ![](pdvox5.jpeg)
 
-![](pdvox3.jpeg)
-
-![](pdvox4.jpeg)
-
-![](pdvox5.jpeg)
+</figure>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6ud8TtjQKQQ?si=Toyi1L7iRjenRDIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Gerbers (upload these to [Oshpark](https://oshpark.com) to make pcbs):
+[Paper](BMTPD.pdf) Circuit<br>
+
+Gerbers (upload these to [Oshpark](https://oshpark.com) to make pcbs):<br>
 *(Thanks to CrucFX for making these)*
 
 [Mouring Dove](rollz5/All%20Gerbers/pcbgerbers/BMT%20-%20Bird.zip)
@@ -65,7 +67,9 @@ Gerbers (upload these to [Oshpark](https://oshpark.com) to make pcbs):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s1yQeETQndY?si=Hu7IbH6vBmJiJ6YD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Omit Speaker on Trains at Night:
 
+![](speakomit.jpg)
 
 
 

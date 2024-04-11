@@ -18,4 +18,4 @@ and [logs](log.html) updates and [random](screenshotgarden/html.html) screenshot
 
 Recent Changes:<br>
 
-<code>04112024 02:04 Updated DIY</code>
+<code>04112024 15:01 Added Solar Sounders to DIY</code>
