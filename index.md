@@ -15,3 +15,7 @@ and [logs](log.html) updates and [random](screenshotgarden/html.html) screenshot
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring"/>
 </a>
+
+Recent Changes:<br>
+
+<code>04112024 02:04 Updated DIY</code>

@@ -50,6 +50,25 @@ Lil Sidrassi + 6oror + 4oror
 
 ![](pdvox5.jpeg)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ud8TtjQKQQ?si=Toyi1L7iRjenRDIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Gerbers (upload these to [Oshpark](https://oshpark.com) to make pcbs):
+*(Thanks to CrucFX for making these)*
+
+[Mouring Dove](rollz5/All%20Gerbers/pcbgerbers/BMT%20-%20Bird.zip)
+
+[Gyuto Monks](rollz5/All%20Gerbers/pcbgerbers/BMT%20-%20Monk.zip)
+
+[Trains at Night](rollz5/All%20Gerbers/pcbgerbers/BMT%20-%20Train.zip)
+
+![](bmptuto.jpg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s1yQeETQndY?si=Hu7IbH6vBmJiJ6YD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
 
 
 
