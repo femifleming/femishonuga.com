@@ -44,9 +44,6 @@ Lil Sidrassi + 6oror + 4oror
 
 > ![](pdvox1.jpeg)
 > ![](pdvox2.jpeg)
-> ![](pdvox3.jpeg)
-> ![](pdvox4.jpeg)
-> ![](pdvox5.jpeg)
 
 </figure>
 
