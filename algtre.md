@@ -1,11 +1,14 @@
+<body background="w.gif">
+
 ![](algtre1.jpg)
 
-SAT 22 April 2023; Cold Spring, NY; Bull Hill<br>
-A celebration for our Mother Earth, in the form of a low-impact walk, and performance.<br>
-2 miles from the Cold Spring Hudson Line station, near the Cornish Estate Ruins.<br>
-Live coding spells will take place in the woods.<br>
 
-Special thanks to Mark [Denardo](https://www.instagram.com/markdenardo/) for organizing a beautiful event
+<code>SAT 22 April 2023; Cold Spring, NY; Bull Hill</code><br>
+<code>A celebration for our Mother Earth, in the form of a low-impact walk, and performance.</code><br>
+<code>2 miles from the Cold Spring Hudson Line station, near the Cornish Estate Ruins.</code><br>
+<code>Live coding spells will take place in the woods.</code><br>
+
+<code>Special thanks to Mark Denardo for organizing a beautiful event</code><br>
 
 ![](algtre2.jpeg)
 
@@ -24,3 +27,11 @@ Special thanks to Mark [Denardo](https://www.instagram.com/markdenardo/) for org
 ![](algotre8.jpeg)
 
 ![](algotre1.jpeg)
+
+<marquee>
+#what unit of measurement is used to measure water vapor
+</marquee>
+
+<audio controls autoplay>
+  <source src="bgm.mp3" type="audio/mpeg">
+</audio>

@@ -1,3 +1,5 @@
+<body background="tbbg.jpeg">
+
 Solar Sounders
 
 [![](ss.jpeg)](https://www.youtube.com/watch?v=D4dh_1ntGog)
@@ -34,12 +36,6 @@ Lil Sidrassi + 6oror + 4oror
 
 [![](diydvsak2.jpg)](https://www.youtube.com/watch?v=oZ3cxk-7jEE)
 
-<audio src="Sadnoise%20-%20DogeVox%20Demos%20-%2004%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%201-1.mp3" controls title="Dogevox into 孟奇wingie2 Demo 1"></audio>
-
-<audio src="Sadnoise%20-%20DogeVox%20Demos%20-%2005%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%202-1.mp3" controls title="Dogevox into 孟奇wingie2 Demo 2"></audio>
-
-<audio src="Sadnoise%20-%20DogeVox%20Demos%20-%2006%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%203-1.mp3" controls title="Dogevox into 孟奇wingie2 Demo 3"></audio>
-
 <figure>
 
 > ![](pdvox1.jpeg)
@@ -68,11 +64,9 @@ Omit Speaker on Trains at Night:
 
 ![](speakomit.jpg)
 
-
-
-
-
-
+<audio controls autoplay>
+  <source src="Sadnoise%20-%20DogeVox%20Demos%20-%2004%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%201-1-1.mp3" type="audio/mpeg">
+</audio>
 
 
 

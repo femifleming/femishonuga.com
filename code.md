@@ -1,6 +1,8 @@
-[Fish](https://www.youtube.com/watch?v=1boZyGLL5Cc&t=969s)
+<body background="ogif.gif">
 
-[![](dark.jpeg)](https://ciat-lonbarde.net/shbobo/index.html)
+![](sh.jpeg)
+
+[Fish](https://www.youtube.com/watch?v=1boZyGLL5Cc&t=969s)
 
 > {<br>
 > (srate 16)<br>
@@ -197,8 +199,6 @@ IF NZ RRND K PRM: Q.I % T J RND 56
 ![](tmtt.jpg)
 
 [Orca](https://github.com/hundredrabbits/Orca)
-
-[![](ogif.gif)](https://youtube.com/playlist?list=PL9PHlNXlpafKWfetmpY34D9r_fUoQWKnA&si=i48tfY-9aTqbS6Wh)
 
 <pre>
 <codeblock>

@@ -1,3 +1,5 @@
+<body background="serene.jpeg">
+
 <code>030924</code>
 
 ![](dajpg.jpeg)
