@@ -1,10 +1,8 @@
 <body background="2.jpeg">
 
-<blink>
 <marquee>
 Brunette with a pony tail, black, tight knit sweater, sports leggings, white trainers reading from her kindle paperweight. Girl in a generica black tee and striped skirt stands in the shade of a security camera post on grass coast of the World Trade Center looks at me, awkwardly looks away 
 </marquee>
-</blink>
 
 ![](loghead.jpeg)
 
@@ -66,5 +64,3 @@ In order to apply a chosen effect, foafx decodes the B-format file using a simpl
 [![](b100c.jpeg)](https://www.modulargrid.net/u/racks/view/1880891)
 
 [![](b100c2.jpeg)](https://www.modulargrid.net/u/racks/view/1880891)
-
-
