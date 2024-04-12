@@ -1,5 +1,3 @@
-<body background="ogif.gif">
-
 ![](sh.jpeg)
 
 [Fish](https://www.youtube.com/watch?v=1boZyGLL5Cc&t=969s)
