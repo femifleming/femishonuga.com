@@ -1,0 +1,96 @@
+<body background="oi.jpg">
+
+<marquee direction="up">
+New Fish
+
+(left (saltb (hazeb (dustd 6) 2 50 (salsac (dustg 3) (smoked)) 64) 40 (slewc (salsag (dust 8) (smokef)) 120 60))) 
+(right (saltc (hazec (duste 4) 2 40 (salsab (dustf 5) (smokec)) 64) 40 (slewb (salsaf (dusth 6) (smokeg)) 90 20)))
+
+(left 
+ (zitherc (dustc 63) (salsah (dustd 26) (dustf -35)) (wheelf 20 68)) 
+ (saltb (hazeb (dustd 6) 2 50 (salsac (dustg 3) (smoked)) 64) 40 (slewc (salsag (dust 8) (smokef)) 120 60) (wheele 2 65))) 
+ (right 
+ (zitherd (dustb -36) (salsa (duste 125) (dustg -30)) (wheelg 21 90)) 
+ (saltc (hazec (duste 4) 2 40 (salsab (dustf 5) (smokec)) 64) 40 (slewb (salsaf (dusth 6) (smokeg)) 90 20) (wheeld 4 66)))
+
+{(jump (major 1)) 
+ (srate (add 2 (mul (minorb) 8) (mul (minorc) 16) (mul (minord) 4) (mul (minor) 3))) 
+ (right 
+ (salt (zitherd (dustb -36) (salsa (duste 125) (dustg -30)) (wheelg (wheel -19 49) 21 90)) 62 (wheelc (bar) (corpb))) 
+ (wavee (sawd (barc) (barb)) 2 (corpb)) 
+ (saltc (hazec (duste (corp)) 2 40 (salsab (dustf 5) (smokec)) (barc)) 40 (slewb (salsaf (dusth 6) (smokeg)) (bard) (wheelh -113 107)) (wheeld 4 66))) 
+ (left 
+ (saltd (zitherc (lights (dustc (corpb))) (salsah (dustd 26) (dustf -35)) (wheelf 20 68)) 90 (wheelb (barb) (corp))) 
+ (waved (sawc (bard) (bar)) 2 (corp)) 
+ (saltb (hazeb (dustd 6) 2 50 (salsac (dustg 3) (smoked)) 64) 40 (slewc (salsag (dust 8) (smokef)) 120 60) (wheele 2 65))) 
+} 
+ {(jump (major 1)) (srate 8) 
+ (left 
+ (combb (wind) (salsah (minord) (smokec)) 32 126 (corpb)) (saw (salsac (lights (dustb (mul (corpb) 10))) (smokeb)) 64 (bar)) (sawb (salsab (dustb (mul (corp) 10)) (smokec)) 64 (barb))) 
+ (right 
+ (combc (wind) (salsa (minor) (smoked)) 16 126 (corp)) (sawc (salsae (lights (dustb (mul (corp) 10))) (smokee)) 64 (barc)) (sawd (salsad (dustb (mul (corpb) 10)) (smoked)) 64 (bard))) 
+}
+</marquee>
+
+<table align="center" boarder="2" cellpadding="3" cellspacing="4">
+  <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m1.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m2.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m3.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m4.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m5.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m6.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m7.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m8.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m9.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m10.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m11.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m12.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m13.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m14.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m15.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m16.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m17.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m18.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m19.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m20.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m21.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m22.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m23.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m24.jpg"></button></th>
+  </tr>
+    <tr>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m25.jpg"></button></th>
+    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m26.jpg"></button></th>
+  </tr>
+</table>
+
+<script>
+function bigImg(x) {
+  x.style.height = "12vw";
+  x.style.width = "12vw";
+  
+}
+
+function normalImg(x) {
+  x.style.height = "9vw";
+  x.style.width = "9vw";
+}
+</script>
+
+![](35m.gif) ![](openmind.gif)
+

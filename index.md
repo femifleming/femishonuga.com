@@ -9,7 +9,7 @@ Upcoming Show: Waterworks @ Metropolitan Waterworks Museum 0426/272024 ~Chestnut
 is currently studying [architecture](arch.html) at RISD (after a year in 2019 in [textiles](textiles.html)),<br>
 installs [work](sound.html) that dicusses the conversation between our ears and the [ground](https://www.youtube.com/watch?v=Sd9oe2l8KM4&list=PL9PHlNXlpafKfYjTxSiDPazwz1W0A_m4K&index=13) [above](algtre.html) and [beneath](beneath.html) our feet,<br>
 [performs](shows.html) [rituals](ritual.html) as [sadnoise](https://sadnoise.bandcamp.com),<br>
-makes sound using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electronics and [esoteric](https://esolangs.org/wiki/Main_Page) [code](code.html) based languages using [random](random.html),
+makes [sounds](music.html) using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electronics and [esoteric](https://esolangs.org/wiki/Main_Page) [code](code.html) based languages using [random](random.html),
 [chance](atc.html) based systems,<br>
 DJs and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
 hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence, RI,<br>
