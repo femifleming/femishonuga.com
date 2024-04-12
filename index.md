@@ -32,3 +32,7 @@ and [logs](log.html) updates and [random](screenshotgarden/html.html) screenshot
 <marquee>
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
+
+<audio controls autoplay>
+  <source src="Endetymes12.mp3" type="audio/mpeg">
+</audio>
