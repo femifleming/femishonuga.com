@@ -1,5 +1,11 @@
 <body background="2.jpeg">
 
+<blink>
+<marquee>
+Brunette with a pony tail, black, tight knit sweater, sports leggings, white trainers reading from her kindle paperweight. Girl in a generica black tee and striped skirt stands in the shade of a security camera post on grass coast of the World Trade Center looks at me, awkwardly looks away 
+</marquee>
+</blink>
+
 ![](loghead.jpeg)
 
 > <code>*October 10th, 2023 - [buffreak](https://maxforlive.com/library/device/10165/buffreak) max for live device*</code>

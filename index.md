@@ -14,7 +14,7 @@ makes sound using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electr
 DJs and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
 hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence, RI,<br>
 [uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows,<br>
-and [logs](log.html) updates and [random](screenshotgarden/html.html) screenshots.<br>
+update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
 
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring"/>
@@ -22,11 +22,9 @@ and [logs](log.html) updates and [random](screenshotgarden/html.html) screenshot
 <br>
 <br>
 
-<div>
-<span class="blink">
-<em>Recent Changes:</em>
-</span>
-</div>
+
+Recent Changes:
+
 <code>04112024 15:01 Added Solar Sounders to DIY</code><br>
 <br>
 <marquee>
