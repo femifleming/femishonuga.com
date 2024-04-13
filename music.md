@@ -34,7 +34,10 @@ New Fish
 
 <table align="center" boarder="2" cellpadding="3" cellspacing="4">
   <tr>
-    <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m1.jpg"></button></th>
+    <th>
+    <a href="https://sadnoise.bandcamp.com/track/mnemosyne-2"><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m1.jpg"></button>
+    </a>
+    </th>
     <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m2.jpg"></button></th>
     <th><button><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m3.jpg"></button></th>
   </tr>
@@ -92,5 +95,37 @@ function normalImg(x) {
 }
 </script>
 
-![](35m.gif) ![](openmind.gif)
+<marquee direction="down">
+A vessel and archive, a void holding weight within the earth creating space for the profane. An breath for sacred practice, a vibration of both through soil. Sound pushes air to amplify these bodies. 
+Core and the marginal 
+Canonic objects 
+Bell hooks 
+What is means to be on the margins
+Discipline and punishment
+Fucoult soceritopia 
+Edward Soja
+Bell hooks liminality 
+Imaginative things on the margin 
+Spaces Reclaimed to make something visible  
+Fucoult history of sectionality 
+Loft 
+3rd ecology 3rd space gardens 
+Lamdscape architecture 
+Third space urban design 
+Bugs as margilized individuals 
+Mosqe design 
+Tribal culture study 
+Zigman boum sociologist 
+George botai 
+Ellsworth kelly-
+Trans-substantieation 
+Cindy Sherman
+Temporary architecture 
+Science fairs and retrofiturism 
+Set design and fake architecture 
+Ephemeral architecture 
+Think about Presentation and forms of presenting 
+Design in presentation and archiving 
+</marquee>
 
+![](35m.gif)
