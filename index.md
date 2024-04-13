@@ -16,11 +16,6 @@ hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSes
 [uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows,<br>
 update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
 
-Recent Changes:
-
-<code>04132024 19:07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added Coffee</code><br>
-<code>04112024 15:01 Added Solar Sounders to DIY</code><br>
-
 <br>
 <marquee behavior="scroll" direction="left">
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
