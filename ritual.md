@@ -15,10 +15,10 @@ and position. Have your favorite snacks or beverages nearby for occasional consu
 the track stories as the corresponding tracks play.
 
 <div align="center">
-<table border="10" width="500" bordercolordark="#990003" bordercolorlight="#487922">
+<table border="90" width="500" bordercolordark="#990003" bordercolorlight="#487922">
 <tr>
 <td>
-<marquee direction="up" scrollamount="1">
+<marquee direction="up" scrollamount="4" hight="200px"">
 Meditation:<br>
 Internet meditation interlude entrance opening introduction cleansing clear cmd
 delete.<br>

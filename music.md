@@ -63,8 +63,8 @@ LAST UDATED APRIL 14 2024 01:23
 
 <script>
 function bigImg(x) {
-  x.style.height = "20vw";
-  x.style.width = "20vw";
+  x.style.height = "18vw";
+  x.style.width = "18vw";
   
 }
 
@@ -74,7 +74,7 @@ function normalImg(x) {
 }
 </script>
 
-<table align="center" border="50" cellpadding="3" cellspacing="4" width="500px">
+<table align="center" border="200" cellpadding="3" cellspacing="4" width="200px">
 <tr>
 <th>
 <marquee direction="down" scrollamount="2">
