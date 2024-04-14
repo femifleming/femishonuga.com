@@ -14,6 +14,72 @@ preferably with headphones, or speakers spread far apart. Sit or lay down in a c
 and position. Have your favorite snacks or beverages nearby for occasional consumption. Read
 the track stories as the corresponding tracks play.
 
+<div align="center">
+<table border="10" width="500" bordercolordark="#990003" bordercolorlight="#487922">
+<tr>
+<td>
+<marquee direction="up" scrollamount="1">
+Meditation:<br>
+Internet meditation interlude entrance opening introduction cleansing clear cmd
+delete.<br>
+Bath:<br>
+A analog bubblebath with warm water and starburst candy bath bomb, with non
+mainstream super esoteric ambient music playing, and fruit loops scented candles,
+the water reaches your body temperature and you close your eyes and start to float
+away, on cotton candy clouds, bubbles begin to sound larger than life. The internet
+seems far, far away. The concept of dirt is erased from your memory. Too many
+things are erased from your memory, but you’re okay with it, because the only
+direction is forwards.<br>
+digitamblamAh:<br>
+Finally some quiet, a taxi. Steady travel. At night. With a gin and tonic, chauffeured.
+Take me to a black tie event. With normal people. Where I can’t make out faces. A
+place where I can ignore important tasks. And time doesn't move. Dragged by the
+hand into an endless hallway. Escaping with someone, anyone. If I could fill all my
+bags with the items on these walls I would. And fill a room with infinite things. A
+hoarder's dream. But just to look at. I have a separate room for the things I used.
+Stumbling. She's walking maybe a bit too fast.<br>
+i get too cold drawn some that:<br>
+A song in silence: Its so I get it’s so I get its for to go on or not its so I get it's there
+you were cold in it call the word hold to he had night after as. A thought about the
+idea of. What do I you actually want? Inherently peaceful. In its simplicity.<br>
+jazz beat in soil (movement 1 and 2):<br>
+The jazz bar on ⟊⏃⋉⋉ ⏚⏃⍀ and opcod 19287 off of conduit Jester. A quintet for
+romance, in two movements. With a Paloma. Movement two suggests a red, 2021
+preferably. And filet mignon. I can afford I t, for both of us.<br>
+pearls:<br>
+Back to work, wired. I'm dating the boss's daughter, I gotta be there on time. Little
+does he know she's cheating on me. What a scandal. With Cathy in HR. I knew she
+was a lesbian. You can’t sneak out an air lock, and she was bad at excuses. Oh your
+book club, all the way in sector G. I haven't said anything about it yet. This job pays
+well. And Cathy is 7 feet tall. I’m only 2 feet 4 inches and 45 centimeters. I can't
+compete. She'll punt me. As long as I get my numbers in this quarter. I’ll quit. I’ll
+have a cig now. I never thought to go out on the balcony. No one ever does.
+Probably because we work on the 596th floor. The air is dry up here. I think I’ll go
+out for a cig now. The whole office won't get sucked out through this door once I
+open it right haha. [the entire office did indeed implode in on itself through the glass
+pane door the second it was pulled inward.] Well… definitely getting fired now.<br>
+Pleasantly drunk, with wings:<br>
+A return to some home. A dinner at someone else's. With a beer, driven in a car
+with many miles. Those swirly things you see when you get up too fast, haven't
+eaten all day, or stare at a perfect blue sky, have a sound. An awkward couple, yet
+charming. Retired.<br>
+swih aybz intersexon:<br>
+You find yourself millenia deep in incomprehensible alien data simplex
+intersections, figures of light speed past and begin to intimidate you. A
+confrontation. With only words, a new story. With noise and absence of time. A
+feeling of longing. A nostalgia of the unknown. An afrofuturist retrofuture. Dark in
+headlights. Frozen, melting and falling infinitely. Limbo, traveling.
+All of your technology will function properly this mercury retrograde:
+Place 10 fruity pebbles on your phone and laptop every morning and night for good
+luck with technology this mercury retrograde. Something else that might help is
+suspending a bag of your technology above a large body of water for 5 seconds, or
+bringing your technology at least 1000 ft above sea level.<br>
+</marquee>
+</td>
+</tr>
+</table>
+</div>
+
 See [Documentation](Systems.pdf).
 
 [![](hr.jpeg)](Systems.pdf)

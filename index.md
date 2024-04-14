@@ -1,6 +1,8 @@
-<marquee direction="right">
+<font size="2">
+<marquee direction="left" scrollamount="5">
 Upcoming Show: Waterworks @ Metropolitan Waterworks Museum 0426/272024 ~Chestnut Hill, MA
 </marquee>
+</font>
 
 [![](header.jpeg)](index.html)
 
@@ -16,12 +18,13 @@ hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSes
 [uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows,<br>
 update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
 
-<br>
-<marquee behavior="scroll" direction="left">
-How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
-</marquee>
-
 [![](coffee.gif)](https://www.buymeacoffee.com/femishonuga)<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>
 </a>
 
+<br>
+<font size="2">
+<marquee behavior="scroll" direction="left" scrollamount="4">
+How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
+</marquee>
+</font>

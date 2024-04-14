@@ -32,6 +32,13 @@
 #what unit of measurement is used to measure water vapor
 </marquee>
 
+<div align="center">
 <audio controls autoplay>
   <source src="bgm.mp3" type="audio/mpeg">
 </audio>
+</div>
+<br>
+<div align="center">
+<img src="JNatureAddictBlinkie.gif" width="200"><br>
+<img src="blinktastic_waterdrink.gif" width="200"><br>
+</div>

@@ -37,6 +37,8 @@ Risd Textiles, May 2021<br>
 ![](flag2.jpg)
 
 *I want to be able to think architecturally when I compose my sound work, as well as design spaces for and around sound and acoustics. Textiles has helped me think fabric as a surface or tool to create structure in some ways but does not overlap with the ideas I’m passionate about exploring visually and conceptually as much as architecture does.*
-
-
+<br>
+<div align="center">
+<img src="cd.gif" width="200"><br>
+</div>
 
