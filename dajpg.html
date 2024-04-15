@@ -34,7 +34,22 @@
 <body>
     <div style="margin:20px">
 <br/>
-<br/><body background="serene.jpeg">
+<br/><style>
+  body {
+    background-image: url('serene.jpeg');
+    animation: breathe 10s infinite alternate; /* Apply breathing animation */
+    filter: blur(10px); /* Initial blur */
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      filter: blur(2px); /* Start and end with blur */
+    }
+    50% {
+      filter: blur(0px); /* Breathe in (reduce blur) */
+    }
+  }
+</style>
 <p><code>030924</code></p>
 <p><img src="dajpg.jpeg" alt="" /></p>
 <p><code>022924</code></p>
