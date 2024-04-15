@@ -13,8 +13,8 @@ installs [work](sound.html) that dicusses the conversation between our ears and 
 [performs](shows.html) [rituals](ritual.html) as [sadnoise](https://sadnoise.bandcamp.com),<br>
 makes [sounds](music.html) using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electronics and [esoteric](https://esolangs.org/wiki/Main_Page) [code](code.html) based languages using [random](random.html),
 [chance](atc.html) based systems,<br>
-DJs and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
-hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence[,](ass.html) RI,<br>
+[DJs](ass.html) and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
+hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in the RI/MA area,<br>
 [uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows[,](inde2.html)<br>
 update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
 
