@@ -64,7 +64,7 @@ hosts <a href="https://sound.risd.edu">SRST</a> <a href="https://www.youtube.com
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows<a href="inde2.html">,</a><br>
 update<a href="screenshotgarden/html.html">s</a> <a href="log.html">log</a> occasionally.<br></p>
 
-[![](coffee.gif)](https://www.buymeacoffee.com/femishonuga)<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
+<a href="https://www.buymeacoffee.com/femishonuga"><img src="coffee.gif"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>
 </a>
 
