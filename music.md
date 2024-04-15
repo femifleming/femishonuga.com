@@ -1,6 +1,55 @@
-<body background="oi.jpg">
 
 <div align="center">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #comments {
+            margin-top: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        .comment p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body background="oi.jpg" align="center">
+    <h1>Leave a Comment</h1>
+    <form id="commentForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="comments">
+        <h2>Comments</h2>
+        <div id="commentFeed"></div>
+    </div>
+
+  <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            var commentFeed = document.getElementById('commentFeed');
+            var newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            newComment.innerHTML = '<p><strong>' + name + ':</strong> ' + comment + '</p>';
+            commentFeed.insertBefore(newComment, commentFeed.firstChild);
+            document.getElementById('commentForm').reset();
+        });
+  </script>
+</body>
+
 <marquee width="500px" scrollamount="5">
 <code>
 LAST UDATED APRIL 14 2024 01:23
@@ -81,44 +130,6 @@ function normalImg(x) {
 }
 </script>
 
-<table align="center" border="200" cellpadding="3" cellspacing="4" width="200px">
-<tr>
-<th>
-<marquee direction="down" scrollamount="2">
-A vessel and archive, a void holding weight within the earth creating space for the profane. An breath for sacred practice, a vibration of both through soil. Sound pushes air to amplify these bodies. 
-Core and the marginal 
-Canonic objects 
-Bell hooks 
-What is means to be on the margins
-Discipline and punishment
-Fucoult soceritopia 
-Edward Soja
-Bell hooks liminality 
-Imaginative things on the margin 
-Spaces Reclaimed to make something visible  
-Fucoult history of sectionality 
-Loft 
-3rd ecology 3rd space gardens 
-Lamdscape architecture 
-Third space urban design 
-Bugs as margilized individuals 
-Mosqe design 
-Tribal culture study 
-Zigman boum sociologist 
-George botai 
-Ellsworth kelly-
-Trans-substantieation 
-Cindy Sherman
-Temporary architecture 
-Science fairs and retrofiturism 
-Set design and fake architecture 
-Ephemeral architecture 
-Think about Presentation and forms of presenting 
-Design in presentation and archiving 
-</marquee>
-</th>
-</tr>
-</table>
 <br>
 <div align="center">
 <img src="35m.gif" width="90"><br>

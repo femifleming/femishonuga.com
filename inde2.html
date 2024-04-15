@@ -34,14 +34,81 @@
 <body>
     <div style="margin:20px">
 <br/>
-<br/><body background="cry.gif">
-<style>
+<br/><style>
     body {max-width:1200px; color:#ddd; 
-      margin:20px auto; padding: 0 10px;}
+      margin:20px auto; padding: 0 10px;
+      overflow: hidden;
+      display: flex;
+      background-size: contain;
+      background-image: url('sexy.gif');
+      animation: scaleBackground 7s infinite alternate;
+      animation: rotatePage 10s infinite alternate;
+    }
+      .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      /* Generate random pastel color */
+      {{ Math.floor(Math.random() * 256) }}, /* Red */
+      {{ Math.floor(Math.random() * 256) }}, /* Green */
+      {{ Math.floor(Math.random() * 256) }}, /* Blue */
+      0.2 /* Opacity */
+    );
+  }
+    table {
+    width: 80%;
+    height: 80%;
+    background-image: url('walkin_babe.gif');
+    border-collapse: collapse;
+  }
+  @keyframes rotatePage {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
+<div class="overlay"></div>
 <font size="20">
 <marquee direction="left" scrollamount="50" >
-BLA BLA BLA BLA BLA NOT LISTENING WHO CARES IDGAF I DID THIS PAGE FOR FUN WHO ARE YOU SEND ME AN EMAIL TALK TO ME I WANNA HEAR WHAT YOU HAVE TO SAY DO YOU EVEN CARE DO I EVEN CARE WTF WTF WTF LOL LOL XD OMGFG</marquee>
+<!-- The word whose letters' colors will change -->
+  <div id="randomWord">BLA BLA BLA BLA BLA NOT LISTENING WHO CARES IDGAF I DID THIS PAGE FOR FUN WHO ARE YOU SEND ME AN EMAIL TALK TO ME I WANNA HEAR WHAT YOU HAVE TO SAY DO YOU EVEN CARE DO I EVEN CARE WTF WTF WTF LOL LOL XD OMGFG
+</div>
+  <script>
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to change the color of letters in a word
+        function changeLetterColors() {
+            var word = document.getElementById('randomWord');
+            var letters = word.textContent.split('');
+            var coloredWord = '';
+
+            // Change the color of each letter
+            for (var i = 0; i < letters.length; i++) {
+                coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
+            }
+
+            // Update the word with colored letters
+            word.innerHTML = coloredWord;
+        }
+
+        // Change letter colors every 20ms
+        setInterval(changeLetterColors, 20);
+  </script>
+</marquee>
 </font>
 <marquee direction="down" scrollamount="7">
 <table border="2" background="walkin_babe.gif" cellpadding="6px" bordercolor="tomato">
@@ -85,10 +152,9 @@ update<a href="screenshotgarden/html.html">s</a> <a href="log.html">log</a> occa
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
 </font>
-<font size="20">
 <marquee direction="right" scrollamount="50" >
-Yeah i bet you like coffee and porn you skicko freak of nature exil menace to society and i bet you miss your ex gf you should totally text her you weirdo </marquee>
-</font>
+Yeah i bet you like coffee and porn you skicko freak of nature exil menace to society and i bet you miss your ex gf you should totally text her you weirdo
+</marquee>
 <hr/>
 <p><marquee scrollamount="2" direction="right">updated 04/15/24 – femi.fleming@gmail.com<m/marquee></p>
 </div>
