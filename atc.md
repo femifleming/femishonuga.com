@@ -9,3 +9,15 @@ All sound sources used in this work are comprised of simple waveforms and white 
 ![](soundpics/atc2.jpeg)
 
 ![](soundpics/atc3.jpeg)
+
+<marquee direction="up">
+    <div align="center">
+        <table border="20" align="center" width="758px">
+            <tr>
+                <th>
+                    <embed src="atcfp.pdf" width="500px" height="400px" zoom="50">
+                </th>
+            </tr>
+        </table>
+    </div>
+</marquee>

@@ -1,4 +1,5 @@
 <body background="oi.jpg">
+
 <div align="center">
 <marquee width="500px" scrollamount="5">
 <code>
@@ -6,7 +7,10 @@ LAST UDATED APRIL 14 2024 01:23
 </code>
 </marquee>
 </div>
-<table align="center" border="50" cellpadding="3" cellspacing="4" bordercolorlight="#839248" bordercolordark="#938234">
+<table align="center" border="72" cellpadding="3" cellspacing="4" bordercolorlight="#378472" bordercolordark="#938234">
+<tr>
+<th>
+<table align="center" border="20" cellpadding="3" cellspacing="4" bordercolorlight="#839248" bordercolordark="#938234">
   <tr>
     <th>
     <a href="https://www.youtube.com/watch?v=l4FgwmNdrfk"><button><img onload="normalImg(this)" onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="m1.jpg"></button>
@@ -59,6 +63,9 @@ LAST UDATED APRIL 14 2024 01:23
     <th><marquee><img onload="normalImg(this)" onmouseover="bigImg(this)" onmouseout="normalImg(this)"alt src="funerotik039.gif"></marquee></th>
 
   </tr>
+</table>
+</th>
+</tr>
 </table>
 
 <script>

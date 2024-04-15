@@ -14,8 +14,8 @@ installs [work](sound.html) that dicusses the conversation between our ears and 
 makes [sounds](music.html) using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electronics and [esoteric](https://esolangs.org/wiki/Main_Page) [code](code.html) based languages using [random](random.html),
 [chance](atc.html) based systems,<br>
 DJs and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
-hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence, RI,<br>
-[uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows,<br>
+hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in Providence[,](ass.html) RI,<br>
+[uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows[,](inde2.html)<br>
 update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
 
 [![](coffee.gif)](https://www.buymeacoffee.com/femishonuga)<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
