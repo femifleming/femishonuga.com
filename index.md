@@ -51,19 +51,18 @@
 </marquee>
 </font>
 
-[![](header.jpeg)](index.html)
+<a href="breath.html"><img src="header.jpeg"></a>
 
-*Femi is an architect and sound artist from New York*<br>
-
-is currently studying [architecture](arch.html) at RISD (after a year in 2019 in [textiles](textiles.html)),<br>
-installs [work](sound.html) that dicusses the conversation between our ears and the [ground](https://www.youtube.com/watch?v=Sd9oe2l8KM4&list=PL9PHlNXlpafKfYjTxSiDPazwz1W0A_m4K&index=13) [above](algtre.html) and [beneath](beneath.html) our feet,<br>
-[performs](shows.html) [rituals](ritual.html) as [sadnoise](https://sadnoise.bandcamp.com),<br>
-makes sounds using [digital/analog](dajpg.html) synthesis, [DIY](diy.html) electronics and [esoteric](https://esolangs.org/wiki/Main_Page) [code](code.html) based languages using [random](random.html),
-[chance](atc.html) based systems,<br>
-[DJs](ass.html) and produces dub tehcno/micro house under the alias [Sonuga](https://blakkcatrecords.bandcamp.com/album/airing-ep),<br>
-hosts [SRST](https://sound.risd.edu) [Sessions](https://www.youtube.com/@SRSTSessions), a video series highlighting local artists in the RI/MA area,<br>
-[uploads](https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A) tutorials, music videos, patches, live shows[,](inde2.html)<br>
-update[s](screenshotgarden/html.html) [log](log.html) occasionally.<br>
+<p><em>Femi is an architect and sound artist from New York</em><br></p>
+<p>is currently studying <a href="arch.html">architecture</a> at RISD (after a year in 2019 in <a href="textiles.html">textiles</a>),<br>
+installs <a href="sound.html">work</a> that dicusses the conversation between our ears and the <a href="https://www.youtube.com/watch?v=Sd9oe2l8KM4&amp;list=PL9PHlNXlpafKfYjTxSiDPazwz1W0A_m4K&amp;index=13">ground</a> <a href="algtre.html">above</a> and <a href="beneath.html">beneath</a> our feet,<br>
+<a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
+makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="diy.html">DIY</a> electronics and <a href="https://esolangs.org/wiki/Main_Page">esoteric</a> <a href="code.html">code</a> based languages using <a href="random.html">random</a>,
+<a href="atc.html">chance</a> based systems,<br>
+<a href="ass.html">DJs</a> and produces dub tehcno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Sonuga</a>,<br>
+hosts <a href="https://sound.risd.edu">SRST</a> <a href="https://www.youtube.com/@SRSTSessions">Sessions</a>, a video series highlighting local artists in the RI/MA area,<br>
+<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows<a href="inde2.html">,</a><br>
+update<a href="screenshotgarden/html.html">s</a> <a href="log.html">log</a> occasionally.<br></p>
 
 [![](coffee.gif)](https://www.buymeacoffee.com/femishonuga)<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
   <img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>

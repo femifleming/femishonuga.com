@@ -1,4 +1,18 @@
-<body background="tbbg.jpeg">
+<style>
+  body {
+    animation: breathe 10s infinite alternate; /* Apply breathing animation */
+    filter: blur(10px); /* Initial blur */
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      filter: blur(2px); /* Start and end with blur */
+    }
+    50% {
+      filter: blur(0px); /* Breathe in (reduce blur) */
+    }
+  }
+</style>
 
 Solar Sounders
 

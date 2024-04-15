@@ -34,7 +34,21 @@
 <body>
     <div style="margin:20px">
 <br/>
-<br/><body background="tbbg.jpeg">
+<br/><style>
+  body {
+    animation: breathe 10s infinite alternate; /* Apply breathing animation */
+    filter: blur(10px); /* Initial blur */
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      filter: blur(2px); /* Start and end with blur */
+    }
+    50% {
+      filter: blur(0px); /* Breathe in (reduce blur) */
+    }
+  }
+</style>
 <p>Solar Sounders</p>
 <p><a href="https://www.youtube.com/watch?v=D4dh_1ntGog"><img src="ss.jpeg" alt="" /></a></p>
 <p>A collection of instruemnts made from pcb and <a href="https://llllllll.co/t/mobenthey-ciat-lonbarde-synthmall-thread/3322">paper</a> circuit <a href="https://www.are.na/femi-fleming/ciat-lonbarde-diy">designs</a> by <a href="https://ciat-lonbarde.net/ciat-lonbarde/index.html">Peter</a> Blasser, <a href="https://www.instagram.com/_crucfx_/">CrucFX</a> and <a href="https://www.grahamfranz.com">Graham</a> Franz</p>
@@ -74,7 +88,7 @@ Woodwork in collaboration with Madeleine Young, RISD Furniture 2023<br></p>
   <source src="Sadnoise%20-%20DogeVox%20Demos%20-%2004%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%201-1-1.mp3" type="audio/mpeg">
 </audio>
 <hr/>
-<p><marquee scrollamount="2" direction="right">updated 04/12/24 – femi.fleming@gmail.com<m/marquee></p>
+<p><marquee scrollamount="2" direction="right">updated 04/15/24 – femi.fleming@gmail.com<m/marquee></p>
 </div>
 </body>
 </html><!doctype html>
