@@ -1,6 +1,19 @@
 <body background="algotre2.jpeg">
 
-![](dogevoxv2.jpeg)
+[![](dogevoxv2.jpeg)](dogevox.html)
+
+<div align="center">
+  <table border="20">
+    <tr>
+      <th>
+        <iframe src="dogevox.html" width="500px" height="300px">
+        </iframe>
+      </th>
+    </tr>
+  </table>
+</div>
+
+
 
 Dogevox V2:
 *Lil Sidrassi, Dogvoice (in stereo), 6oror, 4oror, 3oror* <br>
