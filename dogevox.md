@@ -1,4 +1,4 @@
-<body onload="pageScroll()" background="funerotik039.gif">
+<body onload="pageScroll()" background="dvbg.jpg">
 
 <style>
   body {
@@ -38,9 +38,20 @@ scrolldelay = setTimeout('pageScroll()',10);
 
 <img src="dogevoxv2.jpeg" onmouseover="change('above.gif')">
 <br><br>
-
+<div align="center">
+<table border="20">
+<tr>
+<th>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/3QCnz4KHyAU?si=uAlQUau-yqgFX6mP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen onmouseover="change('heart.gif')"></iframe>
+</th>
+</tr>
+</table>
+</div>
+<br><br>
 <img src="dogevoxtwo1.JPG" onmouseover="change('3g.gif')">
 <br><br>
 
 <img src="dogevoxteo2.JPG" onmouseover="change('w.gif')">
+<br><br>
 
+<img src="dvbg.jpg" onmouseover="change('funerotik039.gif')">
