@@ -1,0 +1,13 @@
+.container {
+  opacity: 0; /* Start with zero opacity */
+  animation: fadeIn 4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

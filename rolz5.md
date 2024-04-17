@@ -1,3 +1,21 @@
+<style>
+  body {
+    background-image: url('woodrolz2.jpeg');
+    animation: breathe 8s infinite alternate; /* Apply breathing animation */
+    filter: blur(4px); /* Initial blur */
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      filter: blur(4px); /* Start and end with blur */
+    }
+    50% {
+      filter: blur(0px); /* Breathe in (reduce blur) */
+    }
+  }
+</style>
+
+
 ![](diypics/myrolz5manual.jpg)<br>
 
 Paper Circuits:<br>

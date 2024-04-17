@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="styles.css">
+<div class="container">
+
+
 ![](sh.jpeg)
 
 [Fish](https://www.youtube.com/watch?v=1boZyGLL5Cc&t=969s)
@@ -528,3 +532,5 @@ Im still deciding how much hardware I will bring, because my synth is an importa
 4. What is your advice for someone who is looking to get into live coding, or just coding in general, and doesn’t know where to start?
 
 There are amazing resources online, the Lines forum is a place for people who want to explore the world of Teletype, I go there fort all of my questions and they’re all super welcoming to beginners. I personally like to just follow a lot of people and ask them all questions about how they make the music they make and gather information to do research that way. The internet is really my best friend when it comes to that. Most programs will have help forums or a GitHub page explaining everything as well. MaxMSP is really good at making all of their objects user friendly by creating help patches that explain in detail all the functions ins and outs and uses of that specific object within the program. I would say to not be intimidated, even though it may seem like a lot, most of these languages will take a while to dive into, but if you really want to explore them you just have to set aside time and commit, and obsess over it.  
+
+</div>

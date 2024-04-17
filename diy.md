@@ -1,19 +1,14 @@
-<style>
-  body {
-    background-image: url('tbbg.jpeg');
-    animation: breathe 6s infinite alternate; /* Apply breathing animation */
-    filter: blur(10px); /* Initial blur */
-  }
+<body background="algotre2.jpeg">
 
-  @keyframes breathe {
-    0%, 100% {
-      filter: blur(2px); /* Start and end with blur */
-    }
-    50% {
-      filter: blur(0px); /* Breathe in (reduce blur) */
-    }
-  }
-</style>
+![](dogevoxv2.jpeg)
+
+Dogevox V2:
+*Lil Sidrassi, Dogvoice (in stereo), 6oror, 4oror, 3oror* <br>
+<br>
+![](dogevoxtwo1.JPG)
+<br>
+<br>
+![](dogevoxteo2.JPG)
 
 Solar Sounders
 
@@ -58,7 +53,11 @@ Lil Sidrassi + 6oror + 4oror
 
 </figure>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ud8TtjQKQQ?si=Toyi1L7iRjenRDIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div align="center">
+<marquee direction="left">
+<iframe width="400" src="https://www.youtube.com/embed/6ud8TtjQKQQ?si=Toyi1L7iRjenRDIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</marquee>
+</div>
 
 [Paper](BMTPD.pdf) Circuit<br>
 
@@ -73,9 +72,14 @@ Gerbers (upload these to [Oshpark](https://oshpark.com) to make pcbs):<br>
 
 ![](bmptuto.jpg)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s1yQeETQndY?si=Hu7IbH6vBmJiJ6YD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div align="center">
+<marquee direction="right">
+<iframe width="400"  src="https://www.youtube.com/embed/s1yQeETQndY?si=Hu7IbH6vBmJiJ6YD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</marquee>
+</div>
 
-Omit Speaker on Trains at Night:
+Omit Speaker on Trains at Night:<br>
+[TDA2822](https://www.taydaelectronics.com/tda2822-audio-amplifier-1-channel-mono-headphones-2-channel-class-ab-1wx1at32-ohm-1-8v-15v-pdip-8.html) seems to work perfectly fine in place of the NJM2073.
 
 ![](speakomit.jpg)
 
