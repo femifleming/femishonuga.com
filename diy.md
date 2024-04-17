@@ -6,7 +6,7 @@
   <table border="20">
     <tr>
       <th>
-        <iframe src="dogevox.html" width="500px" height="300px">
+        <iframe src="dogevox.html" width="100%" height="300px">
         </iframe>
       </th>
     </tr>
