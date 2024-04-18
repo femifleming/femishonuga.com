@@ -42,7 +42,7 @@ scrolldelay = setTimeout('pageScroll()',10);
 <table border="20">
 <tr>
 <th>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/3QCnz4KHyAU?si=uAlQUau-yqgFX6mP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen onmouseover="change('heart.gif')"></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/3QCnz4KHyAU?si=uAlQUau-yqgFX6mP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen onmouseover="change('flag.gif')"></iframe>
 </th>
 </tr>
 </table>
