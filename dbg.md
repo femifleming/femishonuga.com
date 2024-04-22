@@ -52,4 +52,4 @@ scrolldelay = setTimeout('pageScroll()',10);
 
   <h1 class="flashing-text">dead bitchez global</h1>
 
-<img src="coming_soon.gif" width="100%">
+<img src="coming_soon.gif" width="100%" onmouseover="change('tigercoming.gif')">
