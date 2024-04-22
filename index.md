@@ -76,6 +76,9 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <a href="https://www.buymeacoffee.com/femishonuga">
 <img src="coffee.gif">
 </a>
+<a href="guest.html" target="_blank" rel="noopener">
+<img src="guest3.gif" height="16px" alt="XXIIVV webring"/>
+</a>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>
 </a>
