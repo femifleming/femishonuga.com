@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div align="center">
+<img src="felixguest.gif">
+</div>
+
 <title>Guestbook</title>
 <style>
   body {
@@ -56,6 +60,9 @@
 </div>
 <br>
 <br>
+<div align="center">
+<img src="felixguest.gif">
+</div>
 <script>
   document.getElementById("guestbookForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -117,5 +124,6 @@
   // Load entries when the page is loaded
   window.onload = loadEntries;
 </script>
+
 </body>
 </html>
