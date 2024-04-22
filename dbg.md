@@ -1,4 +1,4 @@
-<body background="dbg.gif">
+<body background="dbg.gif" align="center">
 
 <style>
   /* Define flashing animation */
@@ -49,7 +49,12 @@ window.scrollBy(0,filtar);
 scrolldelay = setTimeout('pageScroll()',10);
 }
 </script>
+<marquee scrollamount="10" behavior="alternate">
+<h1 class="flashing-text">dead bitchez global</h1>
+</marquee>
+<img src="coming_soon.gif" width="100%">
 
-  <h1 class="flashing-text">dead bitchez global</h1>
+<img src="ani-tgirlpower.gif" width="200" onmouseover="change('tigercoming.gif')"><br>
+<img src="thebitcha.gif" width="200"><br>
+<img src="gif-fairyglobe.gif" width="200"><br>
 
-<img src="coming_soon.gif" width="100%" onmouseover="change('tigercoming.gif')">
