@@ -33,7 +33,7 @@
 </marquee>
 
 <div align="center">
-<audio controls autoplay>
+<audio controls autoplay style="visibility: hidden">
   <source src="bgm.mp3" type="audio/mpeg">
 </audio>
 </div>

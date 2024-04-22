@@ -46,6 +46,25 @@
     </tr>
   </table>
 </div>
+<script>
+function change(picture) {
+document.body.background=picture;
+}
+
+function ranchange(picture,num) {
+var randomnumber=Math.floor(Math.random()*num)+1;
+document.body.background=picture+randomnumber+".jpeg";
+}
+
+var filtar= 0;
+function pageScroll() {
+
+filtar = (filtar*481) + (Math.random()*444-222);
+filtar /= 482;
+window.scrollBy(0,filtar);
+scrolldelay = setTimeout('pageScroll()',10);
+}
+</script>
 <p>Dogevox V2:
 <em>Lil Sidrassi, Dogvoice (in stereo), 6oror, 4oror, 3oror</em> <br>
 <br>
@@ -65,18 +84,32 @@ Woodwork in collaboration with Madeleine Young, RISD Furniture 2023<br></p>
 <p><img src="diydm1.jpeg" alt="" /></p>
 <p>Switched Lil SidRolz</p>
 <p>Lil Sidrassi + 6oror + 4oror</p>
-<p><img src="diylilsid2.jpg" alt="" /></p>
-<p><img src="diylilsid4.jpg" alt="" /></p>
-<p><img src="diylstwo1.jpg" alt="" /></p>
+<br>
+<br>
+<img src="diylilsid2.jpg" onmouseover="change('weed.webp')">
+<br>
+<br>
+<img src="diylilsid4.jpg" onmouseover="change('fish.jpeg')">
+<br>
+<br>
+<img src="diylstwo1.jpg" onmouseover="change('maps.png')">
+<br>
+<br>
 <p><a href="https://www.matrixsynth.com/2022/11/ciat-lonbarde-dogevox.html">DogeVox</a> DogVoice + 6oror + 4oror + Lil Sidrassi + Rungling (By CrucFx)</p>
 <p><img src="diydv1.jpg" alt="" /></p>
 <p><a href="https://www.youtube.com/watch?v=oZ3cxk-7jEE"><img src="diydvsak2.jpg" alt="" /></a></p>
-<figure>
-<blockquote>
-<p><img src="pdvox1.jpeg" alt="" />
-<img src="pdvox2.jpeg" alt="" /></p>
-</blockquote>
-</figure>
+<table border="20" width="100%">
+<tr>
+<th>
+<img src="pdvox1.jpeg" onmouseover="change('fireworks.gif')">
+</th>
+<th>
+<img src="pdvox2.jpeg"onmouseover="change('fireworks.gif')">
+</th>
+</tr>
+</table>
+<br>
+<br>
 <div align="center">
 <marquee direction="left">
 <iframe width="400" src="https://www.youtube.com/embed/6ud8TtjQKQQ?si=Toyi1L7iRjenRDIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -97,11 +130,11 @@ Woodwork in collaboration with Madeleine Young, RISD Furniture 2023<br></p>
 <p>Omit Speaker on Trains at Night:<br>
 <a href="https://www.taydaelectronics.com/tda2822-audio-amplifier-1-channel-mono-headphones-2-channel-class-ab-1wx1at32-ohm-1-8v-15v-pdip-8.html">TDA2822</a> seems to work perfectly fine in place of the NJM2073.</p>
 <p><img src="speakomit.jpg" alt="" /></p>
-<audio controls autoplay>
+<audio controls autoplay style="visibility: hidden">
   <source src="Sadnoise%20-%20DogeVox%20Demos%20-%2004%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%201-1-1.mp3" type="audio/mpeg">
 </audio>
 <hr/>
-<p>updated 04/17/24 – femi.fleming@gmail.com</p>
+<p>updated 04/22/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

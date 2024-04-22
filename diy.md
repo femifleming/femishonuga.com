@@ -13,6 +13,25 @@
   </table>
 </div>
 
+<script>
+function change(picture) {
+document.body.background=picture;
+}
+
+function ranchange(picture,num) {
+var randomnumber=Math.floor(Math.random()*num)+1;
+document.body.background=picture+randomnumber+".jpeg";
+}
+
+var filtar= 0;
+function pageScroll() {
+
+filtar = (filtar*481) + (Math.random()*444-222);
+filtar /= 482;
+window.scrollBy(0,filtar);
+scrolldelay = setTimeout('pageScroll()',10);
+}
+</script>
 
 
 Dogevox V2:
@@ -47,11 +66,17 @@ Switched Lil SidRolz
 
 Lil Sidrassi + 6oror + 4oror
 
-![](diylilsid2.jpg)
-
-![](diylilsid4.jpg)
-
-![](diylstwo1.jpg)
+<br>
+<br>
+<img src="diylilsid2.jpg" onmouseover="change('weed.webp')">
+<br>
+<br>
+<img src="diylilsid4.jpg" onmouseover="change('fish.jpeg')">
+<br>
+<br>
+<img src="diylstwo1.jpg" onmouseover="change('maps.png')">
+<br>
+<br>
 
 [DogeVox](https://www.matrixsynth.com/2022/11/ciat-lonbarde-dogevox.html) DogVoice + 6oror + 4oror + Lil Sidrassi + Rungling (By CrucFx)
 
@@ -59,12 +84,20 @@ Lil Sidrassi + 6oror + 4oror
 
 [![](diydvsak2.jpg)](https://www.youtube.com/watch?v=oZ3cxk-7jEE)
 
-<figure>
+<table border="20" width="100%">
+<tr>
+<th>
+<img src="pdvox1.jpeg" onmouseover="change('fireworks.gif')">
+</th>
+<th>
+<img src="pdvox2.jpeg"onmouseover="change('fireworks.gif')">
+</th>
+</tr>
+</table>
+<br>
+<br>
 
-> ![](pdvox1.jpeg)
-> ![](pdvox2.jpeg)
 
-</figure>
 
 <div align="center">
 <marquee direction="left">
@@ -96,7 +129,7 @@ Omit Speaker on Trains at Night:<br>
 
 ![](speakomit.jpg)
 
-<audio controls autoplay>
+<audio controls autoplay style="visibility: hidden">
   <source src="Sadnoise%20-%20DogeVox%20Demos%20-%2004%20dogevox%20into%20%E5%AD%9F%E5%A5%87wingie2%201-1-1.mp3" type="audio/mpeg">
 </audio>
 
