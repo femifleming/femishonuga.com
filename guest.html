@@ -98,66 +98,67 @@
 <div align="center">
 <img src="felixguest.gif">
 </div>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
 <script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD_MGht4maqgQf0HGicB6giSyZXynAOmcs",
+    authDomain: "guest-9c6a7.firebaseapp.com",
+    databaseURL: "https://guest-9c6a7-default-rtdb.firebaseio.com/",
+    projectId: "guest-9c6a7",
+    storageBucket: "guest-9c6a7.appspot.com",
+    messagingSenderId: "723200890475",
+    appId: "1:723200890475:web:b273d3888b751b0488c32e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
   document.getElementById("guestbookForm").addEventListener("submit", function(event) {
     event.preventDefault();
     // Get form values
     const name = document.getElementById("name").value;
     const comment = document.getElementById("comment").value;
     const dateTime = new Date().toLocaleString();
-    // Define an array of colors
-    const colors = ['#78866B', '#A9BA9D', '#D0D9CD', '#B2BEB5', '#828E84', '#687169'];
-    // Generate random index to pick a color from the array
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    const randomColor = colors[randomIndex];
+    // Generate random color
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     // Generate random font
     const fonts = ['Arial', 'Helvetica', 'Times New Roman', 'Georgia', 'Courier New'];
     const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
-    // Generate random border size between 1 and 10 pixels
-    const randomBorderSize = Math.floor(Math.random() * 10) + 1;
-    // Create a new comment element
-    const commentContainer = document.createElement("div");
-    commentContainer.classList.add("comment");
-    commentContainer.style.backgroundColor = randomColor; // Apply random background color
-    commentContainer.style.borderWidth = `${randomBorderSize}px`; // Apply random border size
-    commentContainer.style.fontFamily = randomFont; // Apply random font
-    commentContainer.innerHTML = `
-      <h3>${name} - ${dateTime}</h3>
-      <p>${comment}</p>
-    `;
-    // Insert the comment element at the beginning of the comments container
-    document.getElementById("comments").prepend(commentContainer);
-    // Save the entry to local storage
-    saveEntry(name, comment, dateTime, randomColor, randomFont);
+    // Create a new comment object
+    const newComment = {
+      name: name,
+      comment: comment,
+      dateTime: dateTime,
+      color: randomColor,
+      font: randomFont
+    };
+    // Save the comment to the database
+    database.ref('comments').push(newComment);
     // Clear form fields
     document.getElementById("guestbookForm").reset();
   });
-  // Function to save entry to local storage
-  function saveEntry(name, comment, dateTime, color, font) {
-    let entries = JSON.parse(localStorage.getItem("guestbookEntries")) || [];
-    entries.unshift({ name, comment, dateTime, color, font });
-    localStorage.setItem("guestbookEntries", JSON.stringify(entries));
-  }
-  // Function to load entries from local storage
-  function loadEntries() {
-    const entries = JSON.parse(localStorage.getItem("guestbookEntries")) || [];
-    // Sort entries by dateTime in descending order (most recent first)
-    entries.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
-    entries.forEach(entry => {
-      const commentContainer = document.createElement("div");
-      commentContainer.classList.add("comment");
-      commentContainer.style.backgroundColor = entry.color; // Apply saved background color
-      commentContainer.style.borderWidth = `${entry.borderSize}px`; // Apply saved border size
-      commentContainer.style.fontFamily = entry.font; // Apply saved font
-      commentContainer.innerHTML = `
-        <h3>${entry.name} - ${entry.dateTime}</h3>
-        <p>${entry.comment}</p>
-      `;
-      document.getElementById("comments").appendChild(commentContainer);
+  // Function to load comments from the database
+  function loadComments() {
+    database.ref('comments').on('value', function(snapshot) {
+      const comments = snapshot.val();
+      document.getElementById("comments").innerHTML = ''; // Clear previous comments
+      for (let key in comments) {
+        const comment = comments[key];
+        const commentContainer = document.createElement("div");
+        commentContainer.classList.add("comment");
+        commentContainer.style.backgroundColor = comment.color;
+        commentContainer.style.fontFamily = comment.font;
+        commentContainer.innerHTML = `
+          <h3>${comment.name} - ${comment.dateTime}</h3>
+          <p>${comment.comment}</p>
+        `;
+        document.getElementById("comments").appendChild(commentContainer);
+      }
     });
   }
-  // Load entries when the page is loaded
-  window.onload = loadEntries;
+  // Load comments when the page is loaded
+  window.onload = loadComments;
 </script>
 </body>
 </html>
