@@ -6,8 +6,10 @@
 <div align="center">
 <img src="felixguest.gif">
 </div>
-<marquee>
+<marquee scrollamount="12">
+<p style="font-size: 30px">
 <em>realtime database under construction</em>
+</p>
 </marquee>
 <title>Guestbook</title>
 <style>

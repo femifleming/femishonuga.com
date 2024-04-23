@@ -45,5 +45,7 @@
 <img src="lain.gif">
 
 <a href="https://funbox.sh/~cenzo/">{cenzo}</a>
+<a href="https://grief.im/poop/">{grief}</a>
+
 
 </div>
