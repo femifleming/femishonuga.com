@@ -8,7 +8,7 @@ Brunette with a pony tail, black, tight knit sweater, sports leggings, white tra
 
 > <code>*October 10th, 2023 - [buffreak](https://maxforlive.com/library/device/10165/buffreak) max for live device*</code>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NPGghA45MIE?si=nql5wUMYZtV90VqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/NPGghA45MIE?si=nql5wUMYZtV90VqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > <code>*October 2nd, 2023 - SRST Sessioins 001: Cryptwarblr*</code>
 
@@ -18,7 +18,7 @@ Artist Bio: Cryptwarblr (Alex Bernhardt) is a circuit-bending project investigat
 
 These events are organized and curated by Femi Shonuga-Fleming with special thanks to Shawn Greenlee, Mark Cetilia and all of the wonderful artists in this series including Cryptwarbler for kicking off the series!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/88jHhHF1vAA?si=u3zeu8oryACL5po7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/88jHhHF1vAA?si=u3zeu8oryACL5po7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > <code>*April 22nd, 2023 - Algotrek 3*</code>
 

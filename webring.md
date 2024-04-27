@@ -46,6 +46,14 @@
 
 <a href="https://funbox.sh/~cenzo/">{cenzo}</a>
 <a href="https://grief.im/poop/">{grief}</a>
+<a href="https://cryptwarblr.net/">{cryptwarblr}</a>
+<a href="https://hissquiet.com/">{hissquiet}</a>
+<a href="https://williamhazard.co/">{william hazard}</a>
+
+
+<em>if you would like to be added to the webring: add a link on your site this page either with a simple link or the gif on my home page, go <a href="https://github.com/femifleming/femishonuga.com">here</a> and add your website information to the webring.md file and submit a pull request!<em>
+
+
 
 
 </div>
