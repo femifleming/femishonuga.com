@@ -1,16 +1,20 @@
+<marquee>
+<em> Updated 04282024 </em>
+</marquee>
+
 ![](me1.jpeg)
 
 Upcoming Shows:
+
+SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT<br>
+
+Past Shows:
 
 Untitled @ The Living Gallery 03162024 ~Brooklyn, NY<br>
 Untitled @ AS220 03232024 ~Providence, RI<br>
 After Hours @ Symposuim Books 03222024 ~Providence, RI<br>
 Untitled @ LA Pop 03212024 ~Northamton, MA<br>
 Waterworks @ Metropolitan Waterworks Museum 0426/272024 ~Chestnut Hill, MA<br>
-SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT<br>
-
-Past Shows:
-
 Full Moon Sonic Dream Temple @ The Living Gallery 02242024 ~Brooklyn, NY<br>
 Untitled CFPT @ Trans Pecos 03032024 ~Brooklyn, NY<br>
 Bodyvision West (Stream) with Gavilan Royna Rossom @ The Lot Radio 02222024 ~Brooklyn, NY<br>

@@ -16,7 +16,7 @@
 <font size="2">
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-  <div id="randomWord">Upcoming Show: Waterworks @ Metropolitan Waterworks Museum 0426/272024 ~Chestnut Hill, MA
+  <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT
 </div>
 
   <script>
@@ -51,7 +51,24 @@
 </marquee>
 </font>
 
-<a href="breath.html"><img src="header.jpeg"></a>
+<a href="breath.html"><img id="randomImage" src="" alt="Random Image"></a>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // List of images
+        var images = [
+                "header.jpeg",
+                "P4270158.jpeg",
+        ];
+        // Function to get a random image from the list
+        function getRandomImage() {
+                var index = Math.floor(Math.random() * images.length);
+                return images[index];
+        }
+        // Set the source of the image to a random image from the list
+        document.getElementById("randomImage").src = getRandomImage();
+    });
+</script>
 
 <p><em>Femi is an architect and sound artist from New York</em><br></p>
 <p>is currently stu<a href="dbg.html">d</a>ying <a href="arch.html">architecture</a> at RISD (after a year in 2019 in <a href="textiles.html">textiles</a>),<br>
