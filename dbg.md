@@ -25,7 +25,7 @@
 
   /* Apply flashing animation to text */
   .flashing-text {
-    font-size: 3em; /* Adjust the size as needed */
+    font-size: 1em; /* Adjust the size as needed */
     animation: flash 5s infinite alternate;
   }
 </style>
@@ -49,10 +49,9 @@ window.scrollBy(0,filtar);
 scrolldelay = setTimeout('pageScroll()',10);
 }
 </script>
-<marquee scrollamount="10" behavior="alternate">
+<marquee>
 <h1 class="flashing-text">dead bitchez global</h1>
 </marquee>
-<img src="coming_soon.gif" width="100%">
 
 <img src="ani-tgirlpower.gif" width="200" onmouseover="change('tigercoming.gif')"><br>
 <img src="thebitcha.gif" width="200"><br>
