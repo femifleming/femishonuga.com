@@ -59,6 +59,11 @@
         var images = [
                 "header.jpeg",
                 "P4270158.jpeg",
+                "sadnoise.jpeg",
+                "shows1.jpeg",
+                "algotre1.jpeg",
+
+
         ];
         // Function to get a random image from the list
         function getRandomImage() {
