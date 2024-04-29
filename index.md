@@ -11,6 +11,19 @@
         img:hover {
             filter: blur(100px);
         }
+        .wrapper {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .trigger-word {
+        }
+        .scrolling-text {
+            display: none; /* Initially hidden */
+        }
+        .toggle-section {
+            transform: translateX(0);
+        }
     </style>
 </head>
 <font size="2">
@@ -75,7 +88,27 @@
     });
 </script>
 
-<p><em>Femi is an architect and sound artist from New York</em><br></p>
+
+
+<div class="wrapper" align="right">
+    <span class="trigger-word">Consolidate</span>
+    <div class="scrolling-text" id="scrollText">
+    <a href="arch.html">Architecture</a><br>
+    <a href="textiles.html">Textiles Work</a><br>
+    <a href="sound.html">Sound Work</a><br>
+    <a href="algtre.html">Above</a><a href="beneath.html">Beneath</a><br>
+    <a href="https://sadnoise.bandcamp.com">Bandcamp</a><br>
+    <a href="dajpg.html">Modular Synth Setup Archive</a><br>
+    <a href="diy.html">DIY Electronics</a><br>
+    <a href="code.html">Code</a><br>
+    <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">Youtube</a><br>
+    <a href="log.html">Log</a><br>
+    </div>
+</div>
+<div class="toggle-section" id="toggleSection">
+<font size="2.5">
+<p>Femi is an architect and sound artist from New York who works with various synthesis techniques and live coding languages to discuss the organic within electronics and technology through sound art and composition. His work explores the intersections of sound and space though spatial audio and architectural design as an experimental practice. He’s most interested in generative systems, chance, texture within sonic soundscapes. Femi’s architectural work explores indeginous ritual practice as a vessel for conversation between sound, space and interactions of the body. Femi has been performing as a solo experimental electronic improvisation artist since 2018 as sadnoise. Musical and Festival performances include Ende Tymes (2022, New York), Creative Code Festival (2020, New York), Waterworks Festival (2024), Slabfest (2024), amongst others.<br></p>
+</font>
 <p>is currently stu<a href="dbg.html">d</a>ying <a href="arch.html">architecture</a> at RISD (after a year in 2019 in <a href="textiles.html">textiles</a>),<br>
 installs <a href="sound.html">work</a> that dicusses the conversation between our ears and the <a href="https://www.youtube.com/watch?v=Sd9oe2l8KM4&amp;list=PL9PHlNXlpafKfYjTxSiDPazwz1W0A_m4K&amp;index=13">ground</a> <a href="algtre.html">above</a> and <a href="beneath.html">beneath</a> our feet,<br>
 <a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
@@ -85,8 +118,27 @@ makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="d
 hosts <a href="https://sound.risd.edu">SRST</a> <a href="https://www.youtube.com/@SRSTSessions">Sessions</a>, a video series highlighting local artists in the RI/MA area,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows<a href="inde2.html">,</a><br>
 update<a href="screenshotgarden/html.html">s</a> <a href="log.html">log</a> occasionally.<br></p>
-
-
+</div>
+<script>
+        const trigger = document.querySelector('.trigger-word');
+        const scrollText = document.getElementById('scrollText');
+        const toggleSection = document.getElementById('toggleSection');
+        let isAnimating = false; // Track animation state
+        trigger.addEventListener('mouseenter', function() {
+            if (!isAnimating) {
+                scrollText.style.display = 'block'; // Show scrolling text
+                scrollText.classList.add('animate');
+                toggleSection.style.display = 'none'; // Hide toggle section
+                isAnimating = true; // Set state to animating
+            } else {
+                scrollText.style.display = 'none'; // Hide scrolling text
+                scrollText.style.transform = 'translateX(0)'; // Reset position
+                scrollText.classList.remove('animate');
+                toggleSection.style.display = 'block'; // Show toggle section
+                isAnimating = false; // Reset state to not animating
+            }
+        });
+    </script>
 
 <br>
 <font size="2">
