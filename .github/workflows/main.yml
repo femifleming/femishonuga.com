@@ -1,0 +1,29 @@
+name: Update Comments
+
+# Controls when the action will run. In this case, the workflow runs when changes are pushed to the main branch and on pull request events to the main branch.
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  update-comments:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+
+    - name: Update comments file
+      run: |
+        echo "Here you can run scripts to manipulate your comments.json or any other tasks"
+
+    - name: Commit and push if necessary
+      run: |
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git diff --quiet && git diff --staged --quiet || (git add -A && git commit -m "Update comments.json" && git push)
