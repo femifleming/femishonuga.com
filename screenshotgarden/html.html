@@ -26,6 +26,25 @@
  </style>
 </head>
 <body>
+	<script>
+		function change(picture) {
+		document.body.background=picture;
+		}
+		
+		function ranchange(picture,num) {
+		var randomnumber=Math.floor(Math.random()*num)+1;
+		document.body.background=picture+randomnumber+".jpeg";
+		}
+		
+		var filtar= 0;
+		function pageScroll() {
+		
+		filtar = (filtar*481) + (Math.random()*444-222);
+		filtar /= 482;
+		window.scrollBy(0,filtar);
+		scrolldelay = setTimeout('pageScroll()',10);
+		}
+		</script>
 	<h1>screenshot_garden</h1><p>
 	[Mar&nbsp;30&nbsp;13:11]&nbsp;&nbsp;&nbsp;&nbsp;<a href="./">.</a><br>
 	├── [Mar&nbsp;30&nbsp;13:11]&nbsp;&nbsp;&nbsp;&nbsp;<a href="./html.html">html.html</a><br>
@@ -1063,7 +1082,7 @@
 
 1 directory, 1031 files
 
-<p><img src="../porn.gif" alt="" /></p>
+<p><img src="../porn.gif" onmouseover="change('../loon.gif')"></p>
 
 
 </p>
