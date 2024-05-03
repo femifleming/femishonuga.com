@@ -111,7 +111,6 @@ installs <a href="sound.html">work</a> that dicusses the conversation between ou
 makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="diy.html">DIY</a> electronics and <a href="https://esolangs.org/wiki/Main_Page">esoteric</a> <a href="code.html">code</a> based languages using <a href="random.html">random</a>,
 <a href="atc.html">chance</a> based systems,<br>
 <a href="ass.html">DJs</a> and produces dub tehcno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
-hosts <a href="https://sound.risd.edu">SRST</a> <a href="https://www.youtube.com/@SRSTSessions">Sessions</a>, a video series highlighting local artists in the RI/MA area,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows<a href="inde2.html">,</a><br>
 update<a href="screenshotgarden/html.html">s</a> <a href="log.html">log</a> occasionally.<br></p>
 </div>
