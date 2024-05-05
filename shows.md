@@ -1,5 +1,5 @@
 <marquee>
-<em> Updated 04282024 </em>
+<em> Updated 05052024 </em>
 </marquee>
 
 ![](me1.jpeg)
@@ -10,6 +10,9 @@ SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT<br>
 
 Past Shows:
 
+
+Nether after hours @ 195 Brownn St 05042024 ~Providence, RI<br>
+A Surgeons Table @ Dancing Cats 05032024 ~Providence, RI<br>
 Untitled @ The Living Gallery 03162024 ~Brooklyn, NY<br>
 Untitled @ AS220 03232024 ~Providence, RI<br>
 After Hours @ Symposuim Books 03222024 ~Providence, RI<br>
