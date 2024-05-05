@@ -52,6 +52,8 @@
 <a href="https://heftexperience.net">{heft}</a>
 <a href="https://caloricmusic.com">{caloric}</a>
 <a href="https://sacred-web.vercel.app">{sacred-web}</a>
+<a href="https://eachspringnewbeginning.com">{madeline young}</a>
+<a href="https://www.oliviaspringberg.com">{olivia springberg}<a>
 
 
 
