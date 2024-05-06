@@ -140,7 +140,6 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 </font>
 <br>
 <br>
-<div align="center">
 <a href="https://www.buymeacoffee.com/femishonuga">
 <img src="coffee.gif">
 </a>
@@ -150,17 +149,16 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>
 </a>
+<a href="https://www.mabsland.com/Adoption.html"><img src="Censor_NYRc.gif" height="16px"></a>
+<a href="https://journal.miso.town"><img src="banner-htmlj.png" height="16px"></a>
+<img src="2001.gif" height="16px"><br>
 <a href="webring.html" target="_blank" rel="noopener">
 <img src="webring.gif" height="16px" alt="XXIIVV webring"/>
 </a>
-<br>
-<br>
-<a href="https://www.mabsland.com/Adoption.html"><img src="Censor_NYRc.gif" height="26px"></a>
-<a href="https://journal.miso.town"><img src="banner-htmlj.png" height="26px"></a>
-<img src="2001.gif" height="26px"><br>
 <!-- Start of CuterCounter Code -->
 <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxpnnoo&nd=6&style=12" border="0" alt="website counter"></a>
-<!-- End of CuterCounter Code --></div>
+<!-- End of CuterCounter Code -->
+<br>
 <br>
 <article>
     <h1>updates:</h1>
