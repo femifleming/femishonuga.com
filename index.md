@@ -140,24 +140,20 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 </font>
 <br>
 <br>
+<div align="center">
 <a href="https://www.buymeacoffee.com/femishonuga">
-<img src="coffee.gif">
-</a>
+<img src="coffee.gif" height="19"></a>
 <a href="guest.html" target="_blank" rel="noopener">
-<img src="guest3.gif" height="15px" alt="XXIIVV webring"/>
-</a>
+<img src="guest3.gif" height="17px" alt="XXIIVV webring"/></a>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
-<img src="https://webring.xxiivv.com/icon.white.svg" width="17px" alt="XXIIVV webring"/>
-</a>
-<a href="https://www.mabsland.com/Adoption.html"><img src="Censor_NYRc.gif" height="16px"></a>
-<a href="https://journal.miso.town"><img src="banner-htmlj.png" height="16px"></a>
-<img src="2001.gif" height="16px"><br>
-<a href="webring.html" target="_blank" rel="noopener">
-<img src="webring.gif" height="16px" alt="XXIIVV webring"/>
-</a>
-<!-- Start of CuterCounter Code -->
+<img src="https://webring.xxiivv.com/icon.white.svg" width="18px" alt="XXIIVV webring"/></a>
+<a href="https://www.mabsland.com/Adoption.html"><img src="Censor_NYRc.gif" height="19px"></a>
+<a href="https://journal.miso.town"><img src="banner-htmlj.png" height="19px"></a>
+<img src="2001.gif" height="19px"><br>
+<br>
+<a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="19px"></a>
 <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxpnnoo&nd=6&style=12" border="0" alt="website counter"></a>
-<!-- End of CuterCounter Code -->
+</div>
 <br>
 <br>
 <article>
@@ -240,3 +236,6 @@ Live coding spells will take place in the woods.<br></p>
 <a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="back.gif"></a>  the retronaut webring  <a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next.gif"></a>
 </h1>
 </div>
+
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://melonking.net/scripts/flood.js"></script>
