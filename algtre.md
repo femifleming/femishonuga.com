@@ -42,3 +42,6 @@
 <img src="JNatureAddictBlinkie.gif" width="200"><br>
 <img src="blinktastic_waterdrink.gif" width="200"><br>
 </div>
+
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://melonking.net/scripts/flood.js"></script>
