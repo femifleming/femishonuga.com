@@ -151,8 +151,8 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <a href="https://journal.miso.town"><img src="banner-htmlj.png" height="19px"></a>
 <img src="2001.gif" height="19px"><br>
 <br>
-<a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="19px"></a>
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxpnnoo&nd=6&style=12" border="0" alt="website counter"></a>
+<a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="16px"></a>
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
 </div>
 <br>
 <br>
