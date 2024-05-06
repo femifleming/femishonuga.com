@@ -74,6 +74,9 @@ Mentions/Other Links:
     <script type="text/javascript" src="https://skyhold.org/adhd/onionring-variables.js"></script>
     <script type="text/javascript" src="https://skyhold.org/adhd/onionring-widget.js"></script>
     </div>
+    	<div id="eggs-bacon-webring"></div>
+	<script defer src="https://gardengremlin.neocities.org/webring/onionring-variables.js"></script>
+	<script defer src="https://gardengremlin.neocities.org/webring/onionring-widget.js"></script>
 </th>
 </tr>
 </table>
