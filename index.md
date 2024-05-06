@@ -238,7 +238,7 @@ Live coding spells will take place in the woods.<br></p>
 </article>
 <br><br>
 <div align="center">
-<table border="10px" background="webring2.gif">
+<table border="10px" background="space.gif">
 <tr>
 <th>
 <marquee direction="up" scrollamount="2">
@@ -246,7 +246,7 @@ Live coding spells will take place in the woods.<br></p>
 <h1>Webrings:</h1>
 <h2>
 <a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="prev2.gif" height="16px"></a>
-<marquee direction="down">
+<marquee direction="down" height="19px">
 <div align="center">
 <a href="https://webring.dinhe.net">  the retronaut webring  </a>
 </div>
@@ -254,18 +254,7 @@ Live coding spells will take place in the woods.<br></p>
 <a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next2.gif" height="16px"></a>
 </h2>
 </div>
-<iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe>
-<iframe
-  style="
-    width: 100%;
-    max-width: 30rem;
-    display: block;
-    margin: 0 auto;
-    height: 3rem;
-    border: none;
-  "
-  src="{{ "/embed/femishonuga" | absolute_url }}"
-></iframe>
+<p><iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe></p>
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
 </marquee>
 </th>
