@@ -149,12 +149,13 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <img src="https://webring.xxiivv.com/icon.white.svg" width="18px" alt="XXIIVV webring"/></a>
 <a href="https://www.mabsland.com/Adoption.html"><img src="Censor_NYRc.gif" height="19px"></a>
 <a href="https://journal.miso.town"><img src="banner-htmlj.png" height="19px"></a>
-<img src="2001.gif" height="19px"><br>
+<img src="2001.gif" height="19px">
+<img src="macos_mov.gif" height="19px"><br>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="16px"></a>
 <br>
 </div>
-<marquee>
-you are visitor number<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
+<marquee behaviour="alternate" scrollamount="5">
+you are visitor number: <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
 </marquee>
 <br>
 <br>
