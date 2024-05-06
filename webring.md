@@ -1,6 +1,5 @@
 <style>
   body {
-    font-family: monospace;
     overflow: hidden;
     background-color: black
   }
@@ -86,8 +85,16 @@ Mentions/Other Links:
 <a href="https://github.com/risdsound/foafx">{foafx}</a>
 <a href="https://www.nhregister.com/entertainment/article/live-computer-coding-festival-new-haven-17061218.php">{new haven register}</a>
 <a href="https://shop.blastradio.com/blogs/blast-radio-news-updates/in-conversation-with-sadnoise">{blast radio}</a>
-
-
-
-
+<br>
+<br>
+<div align="center">
+<h1>
+<a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="prev2.gif" height="16px"></a><a href="https://webring.dinhe.net">  the retronaut webring  </a><a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next2.gif" height="16px"></a>
+</h1>
+</div>
+<iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe>
+</div>
+<br>
+<div align="center">
+<a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
 </div>
