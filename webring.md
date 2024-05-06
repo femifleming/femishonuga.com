@@ -88,13 +88,37 @@ Mentions/Other Links:
 <br>
 <br>
 <div align="center">
-<h1>
-<a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="prev2.gif" height="16px"></a><a href="https://webring.dinhe.net">  the retronaut webring  </a><a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next2.gif" height="16px"></a>
-</h1>
+<table border="10px" background="space.gif">
+<tr>
+<th>
+<marquee direction="up" scrollamount="2">
+<div align="center">
+<h1>Webrings:</h1>
+<h2>
+<a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="prev2.gif" height="16px"></a>
+<marquee direction="down">
+<div align="center">
+<a href="https://webring.dinhe.net">  the retronaut webring  </a>
+</div>
+</marquee>
+<a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next2.gif" height="16px"></a>
+</h2>
 </div>
 <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe>
-</div>
-<br>
-<div align="center">
+<iframe
+  style="
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+    margin: 0 auto;
+    height: 3rem;
+    border: none;
+  "
+  src="{{ "/embed/femishonuga" | absolute_url }}"
+></iframe>
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
+</marquee>
+</th>
+</tr>
+</table>
 </div>
