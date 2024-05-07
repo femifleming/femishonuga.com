@@ -83,10 +83,29 @@
     body {
         animation: fadeIn 1s ease-in-out forwards;
     }
+    #page-wrap {position: relative; width: 100%; background-color:rgba(0, 0, 0, 0.76); -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;}
     </style>
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // List of images
+        var images = [
+                "header.jpeg",
+                "P4270158.jpeg",
+                "Sadnoise.jpeg",
+        ];
+        // Function to get a random image from the list
+        function getRandomImage() {
+                var index = Math.floor(Math.random() * images.length);
+                return images[index];
+        }
+        // Set the source of the image to a random image from the list
+        document.getElementById("randomImage").src = getRandomImage();
+    });
+</script>
+<body background="oceanlight.gif">
 <font size="2">
-<marquee direction="left" scrollamount="5">
+<marquee direction="left" scrollamount="5" bgcolor="#000000">
 <!-- The word whose letters' colors will change -->
   <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT
 </div>
@@ -121,24 +140,10 @@
   </script>
 </marquee>
 </font>
-<p><a href="breath.html"><img id="randomImage" src="" alt="Random Image"></a></p>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // List of images
-        var images = [
-                "header.jpeg",
-                "P4270158.jpeg",
-                "Sadnoise.jpeg",
-        ];
-        // Function to get a random image from the list
-        function getRandomImage() {
-                var index = Math.floor(Math.random() * images.length);
-                return images[index];
-        }
-        // Set the source of the image to a random image from the list
-        document.getElementById("randomImage").src = getRandomImage();
-    });
-</script>
+<br>
+<br>
+<div id="page-wrap">
+<a href="breath.html"><img id="randomImage" src="" alt="Random Image"></a>
 <div class="wrapper" align="right">
     <span class="trigger-word">Consolidate</span>
     <div class="scrolling-text" id="scrollText">
@@ -169,6 +174,7 @@ makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="d
 <a href="ass.html">DJs</a> and produces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows<a href="inde2.html">,</a><br>
 and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a> occasionally. 
+</div>
 </div>
 <script>
         const trigger = document.querySelector('.trigger-word');
@@ -210,6 +216,8 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 <marquee behavior="alternate" scrollamount="2" bgcolor="#372D2D">
 you are visitor number: <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
 </marquee>
+<br>
+<br>
 <marquee behavior="scroll" direction="left" scrollamount="4">
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
