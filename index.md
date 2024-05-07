@@ -43,6 +43,9 @@
         animation: fadeIn 1s ease-in-out forwards;
     }
     #page-wrap {position: relative; width: 100%; background-color:rgba(0, 0, 0, 0.76); -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;}
+    section {
+        z-index: -1;
+}
     </style>
 </head>
 <script>
@@ -184,5 +187,24 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <br>
 
 <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
-<script src="https://melonking.net/scripts/flood.js"></script>
+<script src="https://melonking.net/scripts/flood.js">
+    // Water Flood!
+    flood.texture = "watertx2.gif";
+    flood.textureWidth = 498; // Resize to match your image file
+    flood.textureHeight = 280;
+    flood.drainSound = "water1.mp3";
+    flood.drainTooSoonSound = "water2.mp3";
+    // Water Messages
+    flood.msg.info = "🕳";
+    flood.msg.rising = "Fluvial flood warning!";
+    flood.msg.falling = "Flood warning lifted, drain duct open.";
+    flood.msg.toosoon = "Coastal flood warning!";
+    flood.msg.one = "SEA LEVEL AT 0100 OR 1300 HRS";
+    flood.msg.two = "SEA LEVEL AT 0300 OR 1500 HRS";
+    flood.msg.three = "SEA LEVEL AT 0500 OR 1700 HRS";
+    flood.msg.four = "SEA LEVEL AT 0700 OR 1900 HRS";
+    flood.msg.five = "SEA LEVEL AT 0900 OR 2100 HRS";
+    flood.msg.six = "SEA LEVEL AT 1100 OR 2300 HRS";
+</script>
+
 <br>
