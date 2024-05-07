@@ -3,10 +3,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blur Image on Hover</title>
     <style>
-        iframe {max-width:800px}
+        iframe {max-width:800px;
+                z-index: 2;
+            }
         article {
     background-color: #1E1E1E; /* Even darker background for articles */
-    padding: 10px
+    padding: 10px;
+    z-index: 2;
   }
         .wrapper {
             position: relative;
@@ -32,26 +35,18 @@
     body {
         opacity: 0;
         transition: opacity 1s ease-in-out;
+        z-index: 2;
+        animation: fadeIn 1s ease-in-out forwards;
     }
     /* CSS animation for fade-in effect */
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
     }
-    /* Start the animation when the body is loaded */
-    body {
-        animation: fadeIn 1s ease-in-out forwards;
-    }
             #page-wrap {position: relative; width: 100%; background-color:rgba(0, 0, 0, 0.76); -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;}
     section {
-        z-index: -1;
+        z-index: 2;
 }
-            #flood {
-                z-index: 1;
-            }
-                #container {
-                z-index: 2;
-            }
     </style>
 </head>
 <script>
@@ -197,6 +192,7 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <style>
       #flood, .wave {
         cursor: url("bucket.png"), pointer !important;
+        z-index: -1;
       }
       #flood-menu {
         color: #FFF;
