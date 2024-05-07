@@ -150,6 +150,7 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <a href="https://www.mabsland.com/Adoption.html"><img src="pg.gif" height="19px"></a>
 <a href="https://journal.miso.town"><img src="banner-htmlj.png" height="19px"></a>
 <a href="BunieHopps/Sheet1.html"><img src="bh.gif" height="19px"></a>
+<a href="https://www.instagram.com/buniehopps/"><img src="bh2.gif" height="19px"></a>
 <img src="ponyponies2.gif" height="19px">
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-gray.jpg" alt="This website was made with hands." style="height: 19px; border: 1px solid #000;" /></a><br>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="16px"></a>
