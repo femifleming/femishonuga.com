@@ -42,10 +42,16 @@
     body {
         animation: fadeIn 1s ease-in-out forwards;
     }
-    #page-wrap {position: relative; width: 100%; background-color:rgba(0, 0, 0, 0.76); -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;}
+            #page-wrap {position: relative; width: 100%; background-color:rgba(0, 0, 0, 0.76); -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;}
     section {
         z-index: -1;
 }
+            #flood {
+                z-index: 1;
+            }
+                #container {
+                z-index: 2;
+            }
     </style>
 </head>
 <script>
@@ -187,11 +193,31 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <br>
 
 <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
-<script src="https://melonking.net/scripts/flood.js">
+<script src="https://melonking.net/scripts/flood.js"></script>
+<style>
+      #flood, .wave {
+        cursor: url("bucket.png"), pointer !important;
+      }
+      #flood-menu {
+        color: #FFF;
+        font-size: 14px;
+      }
+      #flood-menu button {
+        font-size: 14px;
+        border: none;
+        background: none;
+        padding: 2px;
+      }
+      #flood-menu button:hover {
+        background: none;
+      }
+</style>
+<script>
+    // Goo Flood!
     // Water Flood!
-    flood.texture = "watertx2.gif";
-    flood.textureWidth = 498; // Resize to match your image file
-    flood.textureHeight = 280;
+    flood.texture = "watertx5c.gif";
+    flood.textureWidth = 456; // Resize to match your image file
+    flood.textureHeight = 210;
     flood.drainSound = "water1.mp3";
     flood.drainTooSoonSound = "water2.mp3";
     // Water Messages
@@ -206,5 +232,20 @@ How can we properly acknowledge the displacement and destruction of indigenous l
     flood.msg.five = "SEA LEVEL AT 0900 OR 2100 HRS";
     flood.msg.six = "SEA LEVEL AT 1100 OR 2300 HRS";
 </script>
-
-<br>
+<svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 93%;">
+		<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z"></path>
+			<pattern id="water" patternUnits="userSpaceOnUse" width="456" height="210">
+				<image xlink:href="watertx5c.jpg" x="0" y="0" width="456" height="210"></image>
+			</pattern>
+		</defs>
+		<g class="wave">
+			<use xlink:href="#gentle-wave" x="48" y="0"></use>
+			<use xlink:href="#gentle-wave" x="48" y="3"></use>
+			<use xlink:href="#gentle-wave" x="48" y="5"></use>
+		</g>
+</svg>
+<div id="flood-menu" style="display: block;">
+		<span id="flood-message">Coastal flood warning is in effect at 0100 hours.</span>
+		<a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🪣</button></a>
+</div>
