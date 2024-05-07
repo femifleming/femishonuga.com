@@ -1,443 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+  <!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;meta charset="utf-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;/head&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1">&lt;style type="text/css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space"> </span>/* the following values keeps the image pinned as you scroll- don't edit unless you know some CSS! */</p>
-<p class="p2"><br></p>
-<p class="p1">#image{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>position: -webkit-sticky;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>top: 0px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#hover_img{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>visibility: hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#hover_text{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>right: 0px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#footer{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>position: relative;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 1%;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the following values are stylistic, and may be edited for ~flavor~ */</p>
-<p class="p2"><br></p>
-<p class="p1">/* changes the entire page, unless overwritten by another style */</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>background-color: white;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the image hover box */</p>
-<p class="p1">#hover_img{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>max-width: 65vw;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>max-height: 70vh;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>min-width: 25px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>min-height: 25px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>border-width: 1px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>border-color: dimgray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the filename at the bottom of the page */</p>
-<p class="p1">#hover_text{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: dimgray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the current line your mouse is over */</p>
-<p class="p1">.highlighted {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: darkgray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for a line you have previously moused over */</p>
-<p class="p1">.previously-highlighted {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: dimgray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the title of the page */</p>
-<p class="p1">.title {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color:black;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-style: italic;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the intro text */</p>
-<p class="p1">.intro {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 10%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 2%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 80%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-style: italic;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: dimgray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style directory listing text */</p>
-<p class="p1">.directory {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: blue;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.directory:hover {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11.5px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>cursor: pointer;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the dates in the directory */</p>
-<p class="p1">.date {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-style: italic;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the filenames in the directory */</p>
-<p class="p1">.filename {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* the style for the separators in the directory (you can set these below) */</p>
-<p class="p1">.separators {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>color: gray;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.directoryDiv {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.fileDiv {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;title&gt;_screenshot garden_&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="intro"&gt;</p>
-<p class="p1">&lt;text class="title"&gt; ____ screenshot garden ____&lt;/text&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">this page is a screenshot garden&lt;br&gt;</p>
-<p class="p1">it is meant to be a public-facing screenshot folder&lt;br&gt;</p>
-<p class="p1">(like a diary or a work blog)&lt;br&gt;</p>
-<p class="p1">edit this text to be about you!&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">build your own screenshot garden at &lt;br&gt;</p>
-<p class="p1">&lt;a href="https://screenshot-garden.neocities.org/build-your-own.html"&gt;screenshot-garden.neocities.org/build-your-own.html&lt;/a&gt;!&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">instructions:&lt;br&gt;</p>
-<p class="p1">click on each directory to expand &lt;br&gt;</p>
-<p class="p1">then mouse over each filename to view &lt;br&gt;</p>
-<p class="p1">(they may take a second to load)&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">a static, html-only directory is &lt;a href="html.html"&gt;here --&gt;&lt;/a&gt;&lt;br&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div id="image"&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">&lt;br&gt;&lt;br&gt;</p>
-<p class="p1">&lt;a id="screenshot garden" name="screenshot garden" class="directory directoryDiv"&gt;&lt;center&gt;unfold the screenshot garden&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;/a&gt;</p>
-<p class="p1">&lt;div id="screenshot gardendiv"&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;br&gt;&lt;br&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div id="footer"&gt;</p>
-<p class="p1">build your own screenshot garden at &lt;a href="https://screenshot-garden.neocities.org/build-your-own.html"&gt;screenshot-garden.neocities.org&lt;/a&gt;&lt;/div&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">/*<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">full instructions on building your screenshot garden available at;<span class="Apple-converted-space"> </span></p>
-<p class="p1">https://screenshot-garden.neocities.org/build-your-own.html</p>
-<p class="p2"><br></p>
-<p class="p1">---</p>
-<p class="p2"><br></p>
-<p class="p1">to generate the json:</p>
-<p class="p1">go to the local directory/folder where your files are stored</p>
-<p class="p1">open your terminal</p>
-<p class="p1">run the following command;<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">tree --timefmt=%F -trDJ ./ -o files.json</p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">to generate the html file:</p>
-<p class="p1">go to the local directory/folder where your files are stored</p>
-<p class="p1">open your terminal</p>
-<p class="p1">run the following command;</p>
-<p class="p2"><br></p>
-<p class="p1">tree -H . -D -t -r -T screenshot_garden -o html.html<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">-----</p>
-<p class="p2"><br></p>
-<p class="p1">to test locally, if needed :</p>
-<p class="p2"><br></p>
-<p class="p1">php -S localhost:8080</p>
-<p class="p2"><br></p>
-<p class="p1">*/</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">/*<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">the following variables are the separators. you can make them anything you want!</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">*/</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">var separator1 = " ~~~&gt; "</p>
-<p class="p1">var separator2 = " &gt;~~~ "</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">/*<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">the following code is the core functionality of the screenshot garden. feel free to edit it as needed, but be warned that doing so might break some things!</p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">*/</p>
-<p class="p2"><br></p>
-<p class="p1">//creates the json log and the image &amp; text elements</p>
-<p class="p1">const garden = document.getElementById("screenshot garden");</p>
-<p class="p1">const image = document.getElementById("image");</p>
-<p class="p2"><br></p>
-<p class="p1">const hover_img = document.createElement("img");</p>
-<p class="p1">const hover_text = document.createElement("text");</p>
-<p class="p2"><br></p>
-<p class="p1">var directoryCatcher = [];</p>
-<p class="p2"><br></p>
-<p class="p1">hover_img.id = "hover_img";</p>
-<p class="p1">hover_text.id = "hover_text";</p>
-<p class="p2"><br></p>
-<p class="p1">image.appendChild(hover_img);<span class="Apple-converted-space"> </span></p>
-<p class="p1">image.appendChild(hover_text);<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1">//loads the json document in and waits for a response</p>
-<p class="p1">fetch("files.json")</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.then(response =&gt; response.json())</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.then(json =&gt; populate(json));</p>
-<p class="p2"><br></p>
-<p class="p1">//creates a series of expandable directories with contents listed out of the json. only searches one folder deep</p>
-<p class="p1">function populate(json){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>garden.onmousedown = function(){show(garden)};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>for (x=0;x&lt;json[0].contents.length;x++){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>var currentFile = json[0].contents[x];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (currentFile.type == "file"){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>appendFileDir(currentFile,"screenshot garden")</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>else if (currentFile.type == "directory"){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>appendDirectory(currentFile,garden,"")</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function appendDirectory(currentFile,divToAttach,pastDivs){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>divToAttach = document.getElementById(divToAttach.id+"div")</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>line = document.createElement("div");</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>line.id = currentFile.name;</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>line.classList = ["directoryDiv"]</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>currentDirectory = currentFile.name;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line.innerHTML = "&lt;text class=date&gt;" + currentFile.time + "&lt;/text&gt;&lt;text class=separators&gt;" + separator1 + "&lt;/text&gt;&lt;br&gt;&lt;text class=separators&gt;" + separator2 + "&lt;/text&gt;";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>file = document.createElement("text")</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>file.innerHTML = "directory: &lt;text class=directory&gt;" + currentFile.name + "&lt;/text&gt;&lt;br&gt;&lt;br&gt;";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>file.onmousedown = function(){show(currentFile)};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>div = document.createElement("div");</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>div.id = currentFile.name+'div';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line.appendChild(file);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line.appendChild(div);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (pastDivs == undefined || pastDivs == ""){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>pastDivs = "";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>divToAttach.appendChild(line);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>else{</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>divToAttach.prepend(line);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line.style.display = "none";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>pastDivs = pastDivs + currentFile.name + "/"</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>fileAppender(currentFile,currentDirectory,line,pastDivs)</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function fileAppender(currentFile,currentDirectory,line,pastDivs){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (currentFile.contents != undefined){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>for (d=0;d&lt;currentFile.contents.length;d++){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>var newFile = currentFile.contents[d];</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (newFile.type == "file"){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>appendFileDir(newFile, currentDirectory, pastDivs)<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>else if (newFile.type == "directory"){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>console.log(newFile)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>setTimeout((a,b,c) =&gt; {</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>appendDirectory(a,b,c)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}, 100,newFile,line,pastDivs)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">//appends file element to a directory</p>
-<p class="p1">function appendFileDir(currentFile, currentDirectory, pastDivs){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>divToAppend = document.getElementById(currentDirectory+"div")</p>
-<p class="p1"><span class="Apple-tab-span">	</span>line = document.createElement("div");</p>
-<p class="p1"><span class="Apple-tab-span">	</span>line2 = document.createElement("div");</p>
-<p class="p1"><span class="Apple-tab-span">	</span>line.appendChild(line2);</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span></span>line.id = pastDivs + currentFile.name;</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span></span>line.style.display = "none";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">   <span class="Apple-tab-span">	</span></span>line.classList = ["fileDiv"]</p>
-<p class="p1"><span class="Apple-tab-span">	</span>line2.innerHTML = "&lt;text class=date&gt;" + currentFile.time + "&lt;/text&gt;&lt;text class=separators&gt;" + separator1 + "&lt;/text&gt;&lt;br&gt;&lt;text&gt;" + currentDirectory + "&lt;/text&gt; &lt;br&gt;&lt;text class=separators&gt;" + separator2 + "&lt;/text&gt;&lt;text id=filename&gt;" + currentFile.name + "&lt;/text&gt;&lt;br&gt;&lt;br&gt;";</p>
-<p class="p1"><span class="Apple-tab-span">	</span>line.onmouseover = imgHover;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>divToAppend.appendChild(line);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">//the function that is called as each line is hovered over, which populates the hover_img search</p>
-<p class="p1">function imgHover(){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>if (this.id != "undefined" &amp;&amp; (hover_text.innerHTML + "" != this.id + "")){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (hover_text.innerHTML != ""){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>var last_line = document.getElementById(hover_text.innerHTML)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>last_line.classList.remove("highlighted");</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>last_line.classList.add("previously-highlighted");</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_img.src = "";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>this.classList.remove("previously-highlighted");</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>this.classList.add("highlighted");</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_img.src = this.id;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_text.innerHTML = this.id;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_img.style.visibility = "visible";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>//the following variables are technically editable, but place the image and text on the page- proceed with caution</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_text.style.right = 20+"px";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_text.style.top = window.innerHeight-25+"px";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_img.style.top = window.innerHeight/20+"px";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>hover_img.style.left = window.innerWidth/4+"px";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>//preloads images around the current image</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (this.nextSibling != null){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>preloadImage(this.nextSibling.id)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (this.previousSibling != null){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>preloadImage(this.previousSibling.id)</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">//preload invisibly</p>
-<p class="p1">function preloadImage(url)</p>
-<p class="p1">{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var img=new Image();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>img.src=url;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">//expands directories</p>
-<p class="p1">function show(element){</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>console.log(element)</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>var element = document.getElementById(element.name+'div');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>for (f=0;f&lt;element.children.length;f++){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>var check = element.children[f];</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if (check.style.display == "none" || check.style.display == ""){</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>check.style.display = "block";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>else {</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>check.style.display = "none";</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p1"><span class="Apple-tab-span">	</span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/*</p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">screenshot garden demo code was made by everest pipkin - make build your own screenshot garden at .</p>
-<p class="p2"><br></p>
-<p class="p1">this code licensed under the ACSL v 1.4; license at anticapitalist.software</p>
-<p class="p2"><br></p>
-<p class="p1">----</p>
-<p class="p2"><br></p>
-<p class="p1">*/</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-</body>
-</html>
+</head> 
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+    #page-wrap { position: relative; width: 400px; margin-left: 30px; margin-top:30px; float:left; padding: 20px;  background-color:rgba(0, 0, 0, 0.76)}
+</style>
+<script>
+    function change(picture) {
+    document.body.background=picture;
+    }
+    
+    function ranchange(picture,num) {
+    var randomnumber=Math.floor(Math.random()*num)+1;
+    document.body.background=picture+randomnumber+".jpeg";
+    }
+    
+    var filtar= 0;
+    function pageScroll() {
+    
+    filtar = (filtar*481) + (Math.random()*444-222);
+    filtar /= 482;
+    window.scrollBy(0,filtar);
+    scrolldelay = setTimeout('pageScroll()',10);
+    }
+    </script>
+<body background="../garden.jpeg">
+<html>
+<title>_screenshot garden_</title>
+
+<div id="page-wrap" class="intro">
+<text class="title"> ____ screenshot garden ____</text><br><br>
+
+this page is a screenshot garden<br>
+it is meant to be a public-facing screenshot folder<br>
+(like a diary or a work blog)<br>
+edit this text to be about you!<br><br>
+
+<p>a static, html-only directory is <a href="html.html" onmouseover="change('../garden2.jpeg')">here --></a></p><br>
+
+build your own screenshot garden at <br>
+<a href="https://screenshot-garden.neocities.org/build-your-own.html">screenshot-garden.neocities.org/build-your-own.html</a>!<br><br><br>
+</div>
+
