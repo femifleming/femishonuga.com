@@ -40,6 +40,7 @@
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
         padding: 10px;
+        background-image: url('windowrain4.gif');
     }
     /* CSS animation for fade-in effect */
     @keyframes fadeIn {
@@ -76,7 +77,6 @@
         document.getElementById("randomImage").src = getRandomImage();
     });
 </script>
-<body background="windowrain4.gif">
 <font size="2">
 <marquee direction="left" scrollamount="5" bgcolor="#000000">
 <!-- The word whose letters' colors will change -->
@@ -222,7 +222,7 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
     flood.texture = "bluegrey.png";
     flood.textureWidth = 28; // Resize to match your image file
     flood.textureHeight = 28;
-    flood.drainSound = "water1.mp3";
+    flood.drainSound = "water2.mp3";
     flood.drainTooSoonSound = "water2.mp3";
     // Water Messages
     flood.msg.info = "🕳";

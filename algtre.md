@@ -1,4 +1,16 @@
 <body background="w.gif">
+<style>
+      section {
+      z-index: 1;
+}
+      img {
+      z-index: 2;
+      }
+      code {
+      z-index: 2;
+      }
+  </style>
+<section>
 
 ![](algtre1.jpg)
 
@@ -42,6 +54,8 @@
 <img src="JNatureAddictBlinkie.gif" width="200"><br>
 <img src="blinktastic_waterdrink.gif" width="200"><br>
 </div>
+
+</section>
 
 <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
 <script src="https://melonking.net/scripts/flood.js"></script>
