@@ -4,7 +4,16 @@
     padding: 10px
   }
 </style>
-
+<article>
+<h2>2024-04-09</h2>
+<h3><em><a href="dogevox.html">Dogevox V2</a></em></h3>
+<marquee behavior="alternate" height="360px">
+<img src="voxdog1.jpg" height="360px">
+<img src="voxdog3.jpg" height="360px">
+<img src="voxdog6.jpg" height="360px">
+<img src="voxdog7.jpg" height="360px">
+</marquee>
+</article>
 <article>
     <h1>updates:</h1>
     <h2>2023-10-10</h2>
