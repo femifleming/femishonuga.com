@@ -268,11 +268,11 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
     <h1>updates:</h1>
 <h2>2024-04-09</h2>
 <h3><em><a href="dogevox.html">Dogevox V2</a></em></h3>
-<marquee behavior="alternate" height="360px" scrollamount="4">
-<img src="voxdog1.jpg" height="360px" width="360px">
-<img src="voxdog3.jpg" height="360px" width="360px">
-<img src="voxdog6.JPG" height="360px" width="360px">
-<img src="voxdog7.JPG" height="360px" width="360px">
+<marquee behavior="alternate" height="302px" scrollamount="4">
+<img src="voxdog1.jpg" height="300px">
+<img src="voxdog3.jpg" height="300px">
+<img src="voxdog6.JPG" height="300px">
+<img src="voxdog7.JPG" height="300px">
 </marquee>
 <h2>2023-10-10</h2>
 <h3><em><a href="https://maxforlive.com/library/device/10165/buffreak">buffreak</a></em></h3>
