@@ -6,6 +6,8 @@
     background-color:rgba(19, 19, 26, 0.5); /* Even darker background for articles */
     padding: 10px;
     z-index: 2;
+    transition: filter s ease; /* Smooth transition for the filter application */
+
   }
         .wrapper {
             position: relative;
@@ -48,11 +50,11 @@
                 position: relative; 
                 width: 100%; 
                 background-color:rgba(18, 18, 20, 0.6); 
+                transition: filter 8s ease; /* Smooth transition for the filter application */
+
     }
     section {
-        /*padding: 10px;*/
-        /*background-color:rgba(19, 19, 22, 0.5); /* Even darker background for articles */
-        /*-moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;*/
+        padding: 0px
 }
 </style>
 <script>
@@ -108,6 +110,14 @@
   </script>
 </marquee>
 </font>
+<script>
+        document.getElementById('hoverImage').addEventListener('mouseenter', function() {
+            document.body.style.padding = '50px';  // Increase padding when hovered
+        });
+        document.getElementById('hoverImage').addEventListener('mouseleave', function() {
+            document.body.style.padding = '20px';  // Revert padding when not hovered
+        });
+    </script>
 <br>
 <br>
 <section>
@@ -162,7 +172,7 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
                 isAnimating = false; // Reset state to not animating
             }
         });
-    </script>
+</script>
 <font size="2">
 </font>
 <br>
@@ -182,7 +192,7 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 <div id="page-wrap">
 <br>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="20px"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
-<img src="https://webring.xxiivv.com/icon.white.svg" height="21px" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
+<img src="https://webring.xxiivv.com/icon.white.svg" height="21px" id="hoverImage" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
 <br>
 <br>
 </div>
