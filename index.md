@@ -35,7 +35,9 @@
         z-index: 2;
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
-        background-color:rgb(11, 11, 16); 
+        /*background-color:rgb(11, 11, 16); */
+        background-image: url("DFX_1619.jpg");
+
     }
     /* CSS animation for fade-in effect */
     @keyframes fadeIn {
@@ -312,3 +314,7 @@ Live coding spells will take place in the woods.<br></p>
 <marquee behavior="scroll" direction="left" scrollamount="4">
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
+
+<audio autoplay="" loop="">
+            <source src="indexbgm.mp3" type="audio/mpeg">
+        </audio>
