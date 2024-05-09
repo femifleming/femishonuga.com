@@ -31,6 +31,7 @@
     }
         /* Apply initial opacity to the body */
     body {
+        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=109787);
         opacity: 0;
         transition: opacity 1s ease-in-out;
         z-index: 2;
@@ -351,3 +352,4 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 <audio autoplay="" loop="">
             <source src="indexbgm.mp3" type="audio/mpeg">
         </audio>
+
