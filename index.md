@@ -2,12 +2,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blur Image on Hover</title>
+</head>
     <style>
         iframe {max-width:800px;
                 z-index: 2;
             }
         article {
-    background-color:rgba(19, 19, 26, 0.8); /* Even darker background for articles */
+    background-color:rgba(19, 19, 26, 0.5); /* Even darker background for articles */
     padding: 10px;
     z-index: 2;
     -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;
@@ -40,7 +41,7 @@
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
         padding: 10px;
-        background-image: url('windowrain4.gif');
+        background-color:rgb(11, 11, 15); 
     }
     /* CSS animation for fade-in effect */
     @keyframes fadeIn {
@@ -58,8 +59,19 @@
     section {
         z-index: 2;
 }
+  section {
+    animation: breathe 10s infinite alternate; /* Apply breathing animation */
+    filter: hue-rotate(0deg); /* Initial blur */
+  }
+  @keyframes breathe {
+    0%, 100% {
+      filter: hue-rotate(0deg); /* Start and end with blur */
+    }
+    50% {
+      filter: hue-rotate(360deg); /* Breathe in (reduce blur) */
+    }
+  }
     </style>
-</head>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // List of images
@@ -67,6 +79,10 @@
                 "header.jpeg",
                 "P4270158.jpeg",
                 "Sadnoise.jpeg",
+                "algotre1-1.jpeg",
+                "me1.jpg",
+                "savrus.jpg",
+                "shows1.jpg",  
         ];
         // Function to get a random image from the list
         function getRandomImage() {
@@ -82,7 +98,6 @@
 <!-- The word whose letters' colors will change -->
   <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT
 </div>
-
   <script>
         // Function to generate a random color in hexadecimal format
         function getRandomColor() {
@@ -93,22 +108,18 @@
             }
             return color;
         }
-
         // Function to change the color of letters in a word
         function changeLetterColors() {
             var word = document.getElementById('randomWord');
             var letters = word.textContent.split('');
             var coloredWord = '';
-
             // Change the color of each letter
             for (var i = 0; i < letters.length; i++) {
                 coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
             }
-
             // Update the word with colored letters
             word.innerHTML = coloredWord;
         }
-
         // Change letter colors every 20ms
         setInterval(changeLetterColors, 50);
   </script>
@@ -116,7 +127,6 @@
 </font>
 <br>
 <br>
-<div id="page-wrap">
 <a href="breath.html"><img id="randomImage" src="" alt="Random Image"></a>
 <div class="wrapper" align="right">
     <span class="trigger-word">Consolidate</span>
@@ -186,13 +196,10 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 <br>
 <br>
 </div>
-<marquee behavior="alternate" scrollamount="2" bgcolor="#372D2D">
+<marquee behavior="alternate" scrollamount="2" bgcolor="#303136">
 you are visitor number: <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
 </marquee>
 <br>
-<br>
-<br>
-</div>
 <br>
 <br>
 <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
@@ -223,18 +230,18 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
     flood.textureWidth = 28; // Resize to match your image file
     flood.textureHeight = 28;
     flood.drainSound = "water2.mp3";
-    flood.drainTooSoonSound = "water2.mp3";
+    flood.drainTooSoonSound = "water1.mp3";
     // Water Messages
     flood.msg.info = "🕳";
     flood.msg.rising = "Fluvial flood warning!";
     flood.msg.falling = "Flood warning lifted, drain duct open.";
     flood.msg.toosoon = "Coastal flood warning!";
-    flood.msg.one = "SEA LEVEL AT 0100 OR 1300 HRS";
-    flood.msg.two = "SEA LEVEL AT 0300 OR 1500 HRS";
-    flood.msg.three = "SEA LEVEL AT 0500 OR 1700 HRS";
-    flood.msg.four = "SEA LEVEL AT 0700 OR 1900 HRS";
-    flood.msg.five = "SEA LEVEL AT 0900 OR 2100 HRS";
-    flood.msg.six = "SEA LEVEL AT 1100 OR 2300 HRS";
+    flood.msg.one = "Slow drain flow, this site is slowly leaking...";
+    flood.msg.two = "This site is leaking, water level warning.";
+    flood.msg.three = "SEA LEVEL AT 0500 OR 1700 HRS...";
+    flood.msg.four = "Heavy rain flow today, this site is leaking...";
+    flood.msg.five = "80% chance of rain today, this site has a serious leak!";
+    flood.msg.six = "This site is flooded, click to open drain duct.";
 </script>
 <svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 93%;">
 		<defs>
@@ -254,31 +261,24 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
 		<a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🪣</button></a>
 </div>
 
-
 <article>
     <h1>updates:</h1>
     <h2>2023-10-10</h2>
     <h3><em><a href="https://maxforlive.com/library/device/10165/buffreak">buffreak</a></em></h3>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/NPGghA45MIE?si=nql5wUMYZtV90VqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</article>
 
-<article>
-    <h2>2023-10-02</h2>
-    <h3><em>SRST Sessioins 001: Cryptwarblr</em></h3>
+<h2>2023-10-02</h2>
+<h3><em>SRST Sessioins 001: Cryptwarblr</em></h3>
 <p>Welcome to the first installation of SRST Sessions. SRST Sessions is a video series highlighting local artists in Providence, RI in an attempt to bridge the gap between music academia at RISD and Brown and the local music scene in providence and the surrounding areas. The SRST or the Studio for Research in Sound and Technology is a 25.4 channel speaker array at RISD used primarily for teaching spatial audio and ambisonics, but has become a space for practice, performance and exploration over the years.</p>
 <p>Artist Bio: Cryptwarblr (Alex Bernhardt) is a circuit-bending project investigating bent ROM data in a Casio MT-240 synthesizer. Using homemade patch-bay-and-switchboard array controllers, data carrying lines between the ROM &amp; CPU can be cross-connected in various combinations for unusual sonic effects. These combinations can affect timbre, pitch, adsr, tremolo, gliss, texture, pattern, chord, and tuning, in a bizarre but repeatable way, as long as electric parameters are consistent. Alex’s research in electronics is in how to achieve precise control over small levels of resistance in order to clearly define logic levels across the types of cross-connection combinations. To facilitate music-making, Alex has developed their own hybrid music-electrical notation system and has cataloged hundreds of cross-connections. Their music weaves between combinations of connections in an attempt to explore a sonic landscape painted by the instrument’s offerings.</p>
 <p>These events are organized and curated by Femi Shonuga-Fleming with special thanks to Shawn Greenlee, Mark Cetilia and all of the wonderful artists in this series including Cryptwarbler for kicking off the series!</p>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/88jHhHF1vAA?si=u3zeu8oryACL5po7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</article>
 
-<article>
-    <h2>2023-04-22</h2>
+<h2>2023-04-22</h2>
     <h3><em>Studio for Research in Sound and Technology</em></h3>
 <p><a href="https://www.risd.edu/news/stories/expanded-studio-for-research-in-sound-and-technology-at-risd"><img src="int.jpg" alt="" /></a></p>
-</article>
 
-<article>
-    <h2>2023-01-23</h2>
+<h2>2023-01-23</h2>
     <h3<p><img src="algtre1.jpg" alt="" /></p>
 <p>SAT 22 April 2023; Cold Spring, NY; Bull Hill<br>
 A celebration for our Mother Earth, in the form of a low-impact walk, and performance.<br>
@@ -286,22 +286,16 @@ A celebration for our Mother Earth, in the form of a low-impact walk, and perfor
 Live coding spells will take place in the woods.<br></p>
 <p>Special thanks to Mark <a href="https://www.instagram.com/markdenardo/">Denardo</a> for organizing a beautiful event</p>
 <p><img src="algtre2.jpg" alt="" /></p></h3>
-</article>
 
-<article>
-    <h2>2022-08-05</h2>
+<h2>2022-08-05</h2>
     <h3><em>Blast Radio Summer Series</em></h3>
 <p><a href="https://shop.blastradio.com/blogs/blast-radio-news-updates/in-conversation-with-sadnoise"><img src="blast.jpg" alt="" /></a></p>
-</article>
 
-<article>
-    <h2>2022-11-04</h2>
+<h2>2022-11-04</h2>
     <h3><em>Ref Mag</em></h3>
     <p><a href="https://www.ref-mag.com/posts/creative-spotlight/femi-shonuga-fleming"><img src="ref.jpg" alt="" /></a></p>
-</article>
 
-<article>
-  <h2>2022-06-07</h2>
+<h2>2022-06-07</h2>
     <h3>
     <p><em>Research in Spatial Audio assisting Shawn Greenlee and Nick Thompson</em></p>
 <p><a href="https://github.com/risdsound/foafx?ref=codetea.com">Foafx</a> - A command line tool for applying spatially positioned audio effects to first order ambisonic sound files</p>
@@ -309,15 +303,11 @@ Live coding spells will take place in the woods.<br></p>
 <p>As its input, foafx expects a B-format, 4-channel first order ambisonic encoded file with ACN channel ordering. It supports file normalization either in SN3D or N3D formats.</p>
 <p>In order to apply a chosen effect, foafx decodes the B-format file using a simple Sampling Ambisonic Decoder (SAD) into an octahedral arrangement with six vertices that represent virtual microphone positions. Then, the effect is applied with the specified parameters including its spatial position (azimuth and elevation). After effect processing, the six signals are encoded back to B-format, panned to the matching octahedral positions of the decoder, and rendered to an output file. The result is an ambisonic wet/dry effect mix with wet focussed in a specific area of the sound field.</p>
 </h3>
-</article>
 
-<article>
   <h2>2022-04-06</h2>
     <h3><p><em>Local musicians look to 'demystify' live coding with New Haven music festival</em></p></h3>
     <a href="https://www.nhregister.com/entertainment/article/live-computer-coding-festival-new-haven-17061218.php"><img src="nhr.jpg" alt="" /></a>
-</article>
 
-<article>
   <h2>2022-03-22</h2>
     <h3><p><em>Documentation of the Moog, Buchla and Serge Modular Synthesizers at the Computer Music Center at Columbia University</em></p></h3>
   <p><a href="https://www.modulargrid.net/u/racks/view/1880891"><img src="b100c.jpeg" alt="" /></a></p>

@@ -19,11 +19,6 @@
 <a href="https://www.oliviaspringberg.com">{olivia springberg}<a>
 <a href="https://mark.cetilia.org">{Mark Cetilia}</a>
 
-
-
-
-
-
 <em>if you would like to be added to the webring: add a link on your site this page either with a simple link or the gif on my home page, go <a href="https://github.com/femifleming/femishonuga.com">here</a> and add your website information to the webring.md file and submit a pull request!<em>
 
 Mentions/Other Links:
@@ -50,6 +45,7 @@ Mentions/Other Links:
 <a href="https://shop.blastradio.com/blogs/blast-radio-news-updates/in-conversation-with-sadnoise">{blast radio}</a>
 <br>
 <br>
+
 <div align="center">
 <table border="10px" background="space.gif">
 <tr>
@@ -69,14 +65,15 @@ Mentions/Other Links:
 </div>
 <p><iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe></p>
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
-</marquee>
 <div id='adhdring'>
-    <script type="text/javascript" src="https://skyhold.org/adhd/onionring-variables.js"></script>
-    <script type="text/javascript" src="https://skyhold.org/adhd/onionring-widget.js"></script>
-    </div>
-    	<div id="eggs-bacon-webring"></div>
-	<script defer src="https://gardengremlin.neocities.org/webring/onionring-variables.js"></script>
-	<script defer src="https://gardengremlin.neocities.org/webring/onionring-widget.js"></script>
+<script type="text/javascript" src="https://skyhold.org/adhd/onionring-variables.js"></script>
+<script type="text/javascript" src="https://skyhold.org/adhd/onionring-widget.js"></script>
+</div>
+<div id="eggs-bacon-webring"></div>
+<script defer src="https://gardengremlin.neocities.org/webring/onionring-variables.js"></script>
+<script defer src="https://gardengremlin.neocities.org/webring/onionring-widget.js"></script>
+<object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#455cb0" type="image/svg+xml" style="width: 100%"></object>
+</marquee>
 </th>
 </tr>
 </table>

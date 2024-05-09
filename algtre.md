@@ -14,7 +14,6 @@
 
 ![](algtre1.jpg)
 
-
 <code>SAT 22 April 2023; Cold Spring, NY; Bull Hill</code><br>
 <code>A celebration for our Mother Earth, in the form of a low-impact walk, and performance.</code><br>
 <code>2 miles from the Cold Spring Hudson Line station, near the Cornish Estate Ruins.</code><br>

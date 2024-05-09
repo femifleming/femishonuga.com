@@ -4,7 +4,6 @@
     animation: breathe 10s infinite alternate; /* Apply breathing animation */
     filter: blur(10px); /* Initial blur */
   }
-
   @keyframes breathe {
     0%, 100% {
       filter: blur(2px); /* Start and end with blur */
@@ -22,7 +21,6 @@
 <br>
 
 ![](ww1.jpeg)
-
 
 <code>030924</code>
 
@@ -74,50 +72,32 @@
 
 ![](june.jpg)
 
-> > My case consists of the following modules 
+> > My case consists of the following modules
 
-- Whimsical Raps Cold Mac 
-- After Later Audio Monsoon (Clone of mutable instruments clouds with added cv inputs for specific parameters) 
-- Plankton Electeonics Envf 
+- Whimsical Raps Cold Mac
+- After Later Audio Monsoon (Clone of mutable instruments clouds with added cv inputs for specific parameters)
+- Plankton Electeonics Envf
 - Catoff Systems Catpaw
-- Diy 4 channel two way banana to eurorack format converter 
-- Diy 2 channel vactrol low pass gate 
+- Diy 4 channel two way banana to eurorack format converter
+- Diy 2 channel vactrol low pass gate
 - CruxFx EuRolz
 - Folktek Alter 2
-- 2hp dual vca 
-- Verbos Electronics Noise & Filter 
+- 2hp dual vca
+- Verbos Electronics Noise & Filter
 - Strymon AA.1
 - Rack Plumber
 - Happy Nerding 4x stereo mix
-- Monome Teletype 
-- 2x XOXO modular midi/i2c breakout 
-- 2x Expert Sleepers Disting EX 
-- XL13 Monolith 
-- Pittsburgh Modular Outs 
+- Monome Teletype
+- 2x XOXO modular midi/i2c breakout
+- 2x Expert Sleepers Disting EX
+- XL13 Monolith
+- Pittsburgh Modular Outs
 - Monome Crow (not in photo)
-- Attowatt i2c2midi (not in photo) 
-- Doepfer Usb Power (not in photo) 
+- Attowatt i2c2midi (not in photo)
+- Doepfer Usb Power (not in photo)
 
 <code>052921</code>
 
 ![](dastart.jpeg)
 
 ![](damartin.jpeg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
