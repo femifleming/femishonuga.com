@@ -80,9 +80,9 @@
                 "P4270158.jpeg",
                 "Sadnoise.jpeg",
                 "algotre1-1.jpeg",
-                "me1.jpg",
+                "me1.jpeg",
                 "savrus.jpg",
-                "shows1.jpg",  
+                "shows1.jpeg",  
         ];
         // Function to get a random image from the list
         function getRandomImage() {
