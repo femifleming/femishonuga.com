@@ -1,3 +1,0 @@
-![](beneath.jpg)
-
-![](whybass.jpg)

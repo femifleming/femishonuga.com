@@ -6,24 +6,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  background-image: url('rain.gif');
     display: none; /* Initially hidden */
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Ensure the overlay is on top of other content */
-    animation: fadeInOverlay 2s ease-in-out forwards; /* Fade in overlay */
+    animation: fadeInOverlay 4s ease-in-out forwards; /* Fade in overlay */
   }
 
   /* Popup container */
   .popup {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for blurred edges */
     text-align: center;
     opacity: 0; /* Initially transparent */
-    animation: fadeInPopup 2s ease-in-out forwards; /* Fade in popup */
-    font-family: Comic Sans MS, cursive; /* Comic Sans font */
+    animation: fadeInPopup 4s ease-in-out forwards; /* Fade in popup */
+    font-family: Times; /* Comic Sans font */
+    font-style: italic;
   }
 
   /* Text style */
@@ -54,17 +54,24 @@
       transform: scale(1); /* End with normal size */
     }
   }
+  body {
+  background-image: url('rainyday.gif');
+}
 </style>
-
-[![](lia.jpg)](https://www.ninaprotocol.com/profiles/lpw)
-
+<table border="20px" style="background-color: rgba(0, 0, 0, 0.6);">
+<tr>
+<th>
+<a href="https://www.ninaprotocol.com/profiles/lpw"><img src="lia.jpg"></a>
+</th>
+</tr>
+<table>
 <div class="overlay" id="overlay">
     <div class="popup">
       <p class="text">
-        <span>D</span><span>o</span><span> </span>
-        <span>Y</span><span>o</span><span>u</span> 
-        <span>M</span><span>i</span><span>s</span><span>s</span> 
-        <span>H</span><span>e</span><span>r</span><span>?</span>
+        <span>d</span><span>o</span><span> </span>
+        <span>y</span><span>o</span><span>u</span> 
+        <span>m</span><span>i</span><span>s</span><span>s</span> 
+        <span>h</span><span>e</span><span>r</span><span>?</span>
       </p>
     </div>
   </div>
