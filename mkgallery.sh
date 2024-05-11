@@ -24,10 +24,10 @@ do
     	if [ $height -ge $width ]
 	    then
 	        # portrait image
-    	    convert -resize x220 "$i" "$THUMBDIR"/"$filename"
+    	    convert -resize x1200 "$i" "$THUMBDIR"/"$filename"
     	else
         	#landscape image
-        	convert -resize 300x "$i" "$THUMBDIR"/"$filename"
+        	convert -resize 1120x "$i" "$THUMBDIR"/"$filename"
     	fi
 	fi
 	thumbheight="$(identify -format "%h" "$THUMBDIR"/"$filename")"

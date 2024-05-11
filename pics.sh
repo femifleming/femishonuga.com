@@ -18,7 +18,7 @@ if [ -z "$IMAGE_DIR" ]; then
 fi
 
 # Loop through all JPEG images in the directory
-for img in "$IMAGE_DIR"/*.jpg; do
+for img in "$IMAGE_DIR"/*.JPG; do
     if [ -f "$img" ]; then
         # Extract metadata using exiftool
         shutter_speed=$(exiftool -ShutterSpeed -b -n "$img")

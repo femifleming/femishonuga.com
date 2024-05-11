@@ -37,7 +37,7 @@
         z-index: 2;
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
-        background-color: #121212; 
+        background-color: #0d0d0d; 
         padding: 20px;
 
     }
@@ -79,9 +79,9 @@
     });
 </script>
 <font size="2">
-<marquee direction="left" scrollamount="5" bgcolor="#000000">
+<marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-  <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT
+  <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~NH
 </div>
   <script>
         // Function to generate a random color in hexadecimal format
@@ -188,16 +188,12 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 <img src="ponyponies2.gif" height="22px">
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-gray.jpg" alt="This website was made with hands." style="height: 22px; border: 1px solid #000;" /></a>
 </h1>
-<br>
-<div id="page-wrap">
-<br>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="20px"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" height="21px" id="hoverImage" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
 <br>
 <br>
 </div>
-</div>
-<marquee behavior="alternate" scrollamount="2" bgcolor="#303136">
+<marquee behavior="alternate" scrollamount="2" bgcolor="#1a1a1a">
 you are visitor number: <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
 </marquee>
 </section>
