@@ -37,8 +37,7 @@
         z-index: 2;
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
-        /*background-color:rgb(11, 11, 16); */
-        background-image: url("DFX_1619.jpg");
+        background-color: #121212; 
         padding: 20px;
 
     }
@@ -244,7 +243,7 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
     flood.msg.three = "SEA LEVEL AT 0500 OR 1700 HRS...";
     flood.msg.four = "Heavy rain flow today, this site is leaking...";
     flood.msg.five = "80% chance of rain today, this site has a serious leak!";
-    flood.msg.six = "This site is flooded, click to open drain duct.";
+    flood.msg.six = "This site is flooded...";
 </script>
 <svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 93%;">
 		<defs>
