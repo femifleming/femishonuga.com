@@ -40,6 +40,10 @@ do
 	lens="$(exiv2 -K Exif.Photo.FocalLengthIn35mmFilm -PEt "$IMGDIR"/"$filename" |cut -d. -f1)"
 
 	echo "
+	<style>
+	th, td {
+  border: 1px solid black;
+	</style>
 	<div class=\"gallerytile\" id=\"$filename\">
 	<a href=\"$IMGDIR/small/$filename\">
 	<img width=$thumbwidth height=$thumbheight src=\"$THUMBDIR/$filename\">

@@ -66,8 +66,8 @@
                 "Sadnoise.jpeg",
                 "algotre1-1.jpeg",
                 "me1.jpeg",
-                "savrus.jpg",
                 "shows1.jpeg",  
+                "stacie9.JPEG",
         ];
         // Function to get a random image from the list
         function getRandomImage() {
@@ -149,7 +149,7 @@ installs <a href="sound.html">work</a> that discusses the con<a href="victoria.h
 <a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
 makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="diy.html">DIY</a> electronics and <a href="code.html">code</a> based languages using <a href="random.html">random</a>,
 <a href="atc.html">chance</a> based systems,<br>
-<a href="ass.html">DJs</a> and produces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
+<a href="ass.html">DJs</a> and <a href="photo/gallery.html">p</a>roduces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows,<br>
 and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a> occasionally. 
 </div>
