@@ -37,7 +37,7 @@
         z-index: 2;
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
-        background-image: linear-gradient(#15171c, #646875);
+        background-image: linear-gradient(#000000, #646875);
         padding: 20px;
 
     }
