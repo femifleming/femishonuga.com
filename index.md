@@ -37,7 +37,8 @@
         z-index: 2;
         animation: fadeIn 1s ease-in-out forwards;
         background-attachment: fixed;
-        background-image: linear-gradient(#000000, #646875);
+        /* background-image: linear-gradient(#000000, #646875); */
+        background-color: "#1b1b1c";
         padding: 20px;
 
     }
@@ -81,7 +82,7 @@
 <font size="2">
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-  <div id="randomWord">Upcoming Show: SLABFEST @ Jewel Music Venue 0618/192024 ~NH
+  <div id="randomWord">Upcoming Show: Crosswired Frestival - A Festival of Live Electronic Music  @ Inspiria 06292024 ~PVD,  RI - WWW.CROSSWIREDPVD.COM
 </div>
   <script>
         // Function to generate a random color in hexadecimal format
@@ -244,7 +245,7 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
 		<defs>
 			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z"></path>
 			<pattern id="water" patternUnits="userSpaceOnUse" width="28" height="28">
-				<image xlink:href="bluegrey.png" x="0" y="0" width="28" height="28"></image>
+				<image xlink:href="bgtp.png" x="0" y="0" width="28" height="28"></image>
 			</pattern>
 		</defs>
 		<g class="wave">
