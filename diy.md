@@ -1,4 +1,15 @@
+<style>
+article {
+    background-color:rgba(19, 19, 26, 0.8); /* Even darker background for articles */
+    padding; 10px;
+}
+body {
+  padding: 10px
+}
+</style>
+
 <body background="algotre2.jpeg">
+<article>
 
 [![](dogevoxv2.jpeg)](dogevox.html)
 
@@ -134,7 +145,7 @@ Omit Speaker on Trains at Night:<br>
 </audio>
 
 
-
+</article>
 
 
 
