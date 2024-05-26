@@ -18,6 +18,7 @@
 <a href="https://eachspringnewbeginning.com">{madeline young}</a>
 <a href="https://www.oliviaspringberg.com">{olivia springberg}<a>
 <a href="https://mark.cetilia.org">{Mark Cetilia}</a>
+<a href="https://sacred-web.vercel.app/dots.html">{dots}</a>
 
 <em>if you would like to be added to the webring: add a link on your site this page either with a simple link or the gif on my home page, go <a href="https://github.com/femifleming/femishonuga.com">here</a> and add your website information to the webring.md file and submit a pull request!<em>
 
