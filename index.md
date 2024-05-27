@@ -190,6 +190,7 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 </h1>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="20px"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" height="21px" id="hoverImage" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
+<a target="_blank" href="https://github.com/mboxed" class="icon github external" height="22px"></a>
 <br>
 <br>
 </div>
