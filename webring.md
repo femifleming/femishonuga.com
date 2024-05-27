@@ -48,7 +48,7 @@ Mentions/Other Links:
 <br>
 
 <div align="center">
-<table border="10px" background="space.gif">
+<table border="10px" background="space.gif" height="400px">
 <tr>
 <th>
 <marquee direction="up" scrollamount="2">
@@ -66,10 +66,12 @@ Mentions/Other Links:
 </div>
 <p><iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe></p>
 <a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
-<div id='adhdring'>
+<h2>
+<div id='adhdring' align="center">
 <script type="text/javascript" src="https://skyhold.org/adhd/onionring-variables.js"></script>
 <script type="text/javascript" src="https://skyhold.org/adhd/onionring-widget.js"></script>
 </div>
+</h2>
 <div id="eggs-bacon-webring"></div>
 <script defer src="https://gardengremlin.neocities.org/webring/onionring-variables.js"></script>
 <script defer src="https://gardengremlin.neocities.org/webring/onionring-widget.js"></script>

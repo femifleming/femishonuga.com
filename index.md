@@ -28,7 +28,7 @@
     }
     img:hover {
         filter: blur(200px); /* Apply a blur of 8px on hover */
-    }
+      }
         /* Apply initial opacity to the body */
     body {
         cursor: url(http://www.rw-designer.com/cursor-extern.php?id=109787);
@@ -200,65 +200,6 @@ you are visitor number: <a href="https://www.cutercounter.com/" target="_blank">
 <br>
 <br>
 <br>
-<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
-<script src="https://melonking.net/scripts/flood.js"></script>
-<style>
-      #flood, .wave {
-        cursor: url("bucket.png"), pointer !important;
-        z-index: -1;
-      }
-      #flood-menu {
-        color: #FFF;
-        font-size: 14px;
-      }
-      #flood-menu button {
-        font-size: 14px;
-        border: none;
-        background: none;
-        padding: 2px;
-      }
-      #flood-menu button:hover {
-        background: none;
-      }
-</style>
-<script>
-    // Goo Flood!
-    // Water Flood!
-    flood.texture = "bluegrey.png";
-    flood.textureWidth = 28; // Resize to match your image file
-    flood.textureHeight = 28;
-    flood.drainSound = "water2.mp3";
-    flood.drainTooSoonSound = "water1.mp3";
-    // Water Messages
-    flood.msg.info = "🕳";
-    flood.msg.rising = "Fluvial flood warning!";
-    flood.msg.falling = "Flood warning lifted, drain duct open.";
-    flood.msg.toosoon = "Coastal flood warning!";
-    flood.msg.one = "Slow drain flow, this site is slowly leaking...";
-    flood.msg.two = "This site is leaking, water level warning.";
-    flood.msg.three = "SEA LEVEL AT 0500 OR 1700 HRS...";
-    flood.msg.four = "Heavy rain flow today, this site is leaking...";
-    flood.msg.five = "80% chance of rain today, this site has a serious leak!";
-    flood.msg.six = "This site is flooded...";
-</script>
-<svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 93%;">
-		<defs>
-			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z"></path>
-			<pattern id="water" patternUnits="userSpaceOnUse" width="28" height="28">
-				<image xlink:href="bgtp.png" x="0" y="0" width="28" height="28"></image>
-			</pattern>
-		</defs>
-		<g class="wave">
-			<use xlink:href="#gentle-wave" x="48" y="0"></use>
-			<use xlink:href="#gentle-wave" x="48" y="3"></use>
-			<use xlink:href="#gentle-wave" x="48" y="5"></use>
-		</g>
-</svg>
-<div id="flood-menu" style="display: block;">
-		<span id="flood-message">Coastal flood warning is in effect at 0100 hours.</span>
-		<a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🪣</button></a>
-</div>
-
 <article>
     <h1>updates:</h1>
 <h2>2024-04-09</h2>
