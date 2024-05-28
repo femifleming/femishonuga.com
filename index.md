@@ -190,9 +190,6 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 </h1>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="20px"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" height="21px" id="hoverImage" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
-<a target="_blank" href="https://github.com/mboxed" class="icon github external" height="22px"></a>
-<br>
-<br>
 </div>
 <marquee behavior="alternate" scrollamount="2" bgcolor="#1a1a1a">
 you are visitor number: <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=humxpnnop&nd=6&style=1" border="0" alt="best free website hit counter"></a>
@@ -266,8 +263,4 @@ Live coding spells will take place in the woods.<br></p>
 <marquee behavior="scroll" direction="left" scrollamount="4">
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
-
-<audio autoplay="" loop="">
-            <source src="indexbgm.mp3" type="audio/mpeg">
-        </audio>
 
