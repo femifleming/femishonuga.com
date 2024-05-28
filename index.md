@@ -186,7 +186,7 @@ and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a>
 <a href="https://www.mabsland.com/Adoption.html"><img src="pg.gif" height="22px"></a>
 <a href="https://journal.miso.town"><img src="banner-htmlj.png" height="22px"></a>
 <a href="BunieHopps/Sheet1.html"><img src="bh.gif" height="22px"></a>
-<a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-gray.jpg" alt="This website was made with hands." style="height: 22px; border: 1px solid #000;" /></a>  <a href="https://blowtopop.net"><img src="b2p.png" height="22px"></a>
+<a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-gray.jpg" alt="This website was made with hands." style="height: 22px; border: 1px solid #000;" /></a>  <a href="https://blowtopop.net"><img src="b2p.png" height="22px"></a><a href="https://github.com/femifleming"><img src="git.gif" height="22px"></a>
 </h1>
 <a href="webring.html" target="_blank" rel="noopener"><img src="webring.gif" height="20px"></a><a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
 <img src="https://webring.xxiivv.com/icon.white.svg" height="21px" id="hoverImage" alt="XXIIVV webring"/></a><a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="20px"></a>
@@ -264,3 +264,61 @@ Live coding spells will take place in the woods.<br></p>
 How can we properly acknowledge the displacement and destruction of indigenous land as the gentrification and backwards evolution of music and culture in the underground BIPOC communities in nyc. How can we design a space that bridges the gap between the two cultures and creates a welcoming space for new experimental sonic ritual practice. What are natural ways these interactions can form and what will aid both cultures during the design process. What do these communities need in order to feel welcome both physically and sonically.
 </marquee>
 
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://melonking.net/scripts/flood.js"></script>
+<style>
+      #flood, .wave {
+        cursor: url("bucket.png"), pointer !important;
+        z-index: -1;
+      }
+      #flood-menu {
+        color: #FFF;
+        font-size: 14px;
+      }
+      #flood-menu button {
+        font-size: 14px;
+        border: none;
+        background: none;
+        padding: 2px;
+      }
+      #flood-menu button:hover {
+        background: none;
+      }
+</style>
+<script>
+    // Goo Flood!
+    // Water Flood!
+    flood.texture = "bluegrey.png";
+    flood.textureWidth = 28; // Resize to match your image file
+    flood.textureHeight = 28;
+    flood.drainSound = "water2.mp3";
+    flood.drainTooSoonSound = "water1.mp3";
+    // Water Messages
+    flood.msg.info = "🕳";
+    flood.msg.rising = "Let the world rust in binary";
+    flood.msg.falling = "Thanks to this vessel and the ground beneath my feet";
+    flood.msg.toosoon = "Coastal flood warning!";
+    flood.msg.one = "Slow drain flow, this site is slowly leaking...";
+    flood.msg.two = "This site is leaking, water level warning.";
+    flood.msg.three = "Rainbow magic esolang synthesis";
+    flood.msg.four = "1184 3LCD CMOS 4015 data insert rotating left shift";
+    flood.msg.five = "80% chance of rain today, this site has a serious leak!";
+    flood.msg.six = "This site is flooded...";
+</script>
+<svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 93%;">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z"></path>
+            <pattern id="water" patternUnits="userSpaceOnUse" width="28" height="28">
+                <image xlink:href="watergrey.png" x="0" y="0" width="28" height="28"></image>
+            </pattern>
+        </defs>
+        <g class="wave">
+            <use xlink:href="#gentle-wave" x="48" y="0"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5"></use>
+        </g>
+</svg>
+<div id="flood-menu" style="display: block;">
+        <span id="flood-message">Coastal flood warning is in effect at 0100 hours.</span>
+        <a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🪣</button></a>
+</div>
