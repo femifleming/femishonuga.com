@@ -320,5 +320,5 @@ How can we properly acknowledge the displacement and destruction of indigenous l
 </svg>
 <div id="flood-menu" style="display: block;">
         <span id="flood-message">Coastal flood warning is in effect at 0100 hours.</span>
-        <a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🪣</button></a>
+        <a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🕳️</button></a>
 </div>
