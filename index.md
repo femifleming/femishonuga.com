@@ -69,6 +69,7 @@
                 "me1.jpeg",
                 "shows1.jpeg",  
                 "stacie9.JPEG",
+                "ben.jpeg",
         ];
         // Function to get a random image from the list
         function getRandomImage() {
@@ -132,7 +133,7 @@
     <a href="algtre.html">Above</a><a href="beneath.html">Beneath</a><br>
     <a href="https://sadnoise.bandcamp.com">Bandcamp</a><br>
     <a href="dajpg.html">Modular Synth Setup Archive</a><br>
-    <a href="diy.html">DIY Electronics</a><br>
+    <a href="diyportal.html">DIY Electronics</a><br>
     <a href="code.html">Code</a><br>
     <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">Youtube</a><br>
     <a href="log.html">log</a><br>
@@ -148,7 +149,7 @@
 <p>Femi is cur<a href="dreams.html">r</a>ently stu<a href="dbg.html">d</a>ying <a href="arch.html">architecture</a> at RISD (after a year in 2019 in <a href="textiles.html">textiles</a>),<br>
 installs <a href="sound.html">work</a> that discusses the con<a href="victoria.html">v</a>ersation between our ears and the ground <a href="algtre.html">above</a> and beneath our feet,<br>
 <a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
-makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="diy.html">DIY</a> electronics and <a href="code.html">code</a> based languages using <a href="random.html">random</a>,
+makes sounds using <a href="dajpg.html">digital/analog</a> synthesis, <a href="diyportal.html">DIY</a> electronics and <a href="code.html">code</a> based languages using <a href="random.html">random</a>,
 <a href="atc.html">chance</a> based systems,<br>
 <a href="ass.html">DJs</a> and <a href="photo/gallery.html">p</a>roduces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live shows,<br>
