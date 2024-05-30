@@ -1,12 +1,19 @@
 <style>
 body{
-  background-image: url("clbg.gif");
+  background-image: url("clbg2.gif");
+  background-attachment: fixed;
 }
 </style>
-<img src="clheader.jpeg">
+<img src="clheader.jpeg" width="140px">
 <h1>
 <p>ciat lonbarde builds</p>
 </h1>
+<img src="gmw.png">
+<img src="gmw1.jpg">
+<br><br>
+<img src="gmw2.jpg">
+Ciat Lonbarde Gyuto Monks Solar Sounder (circuit bent, for use with UV light/blacklight)
+<hr>
 <section style="background-color:rgb(1, 1, 2, 0.8); padding: 10px;"
 <hr>
 <br>
