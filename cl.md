@@ -1,4 +1,8 @@
-<body background="ramen.gif">
+<style>
+body{
+  background-image: url("clbg.gif");
+}
+</style>
 <h1>
 <p>ciat lonbarde builds</p>
 </h1>
