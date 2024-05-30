@@ -41,9 +41,16 @@ Risd Textiles, May 2021<br>
 <div align="center">
 <img src="cd.gif" width="200"><br>
 </div>
-
+<hr>
 Wallets: 
 
 <img src="textiles/wallet1.jpg"><br>
 <img src="textiles/wallet2.jpg"><br>
 <img src="textiles/wallet4.jpg"><br>
+<br>
+<div align="center">
+<img src="textiles/blue1b.jpeg" width="200px">
+<img src="textiles/blue2b.jpeg" width="200px">
+<img src="textiles/blue3b.jpeg" width="200px">
+<img src="textiles/blue4b.jpeg" width="400px">
+</div>

@@ -14,7 +14,7 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color:#111; max-width:800px; color:#ddd; 
+    body {max-width:800px; color:#ddd; 
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}
@@ -36,23 +36,59 @@
     }
     img {vertical-align: middle;
     }
+    /* unvisited link */
+a:link {
+  color:black;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color:white;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color:#539697;
+  text-decoration: underline;
+}
 </style>
 </head>
 <body align="center">
     <div style="margin:20px">
 <style>
-body {
-background-color: #727082;
+    html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.centered-content {
+    text-align: center; /* Center the text inside the container */
+}
+    hr {
+	border-top: 1px solid #ccc;
+
 }
 </style>
+<body background="slime.gif">
+<div class="centered-content">
 <img src="portal.png" usemap="#image-map">
 <map name="image-map">
-    <area target="" alt="" title="" href="diy.html" coords="577,135,226,46" shape="rect">
+    <area target="" alt="" title="" href="dogevox.html" coords="577,135,226,46" shape="rect">
     <area target="" alt="" title="" href="cl.html" coords="53,168,390,325" shape="rect">
     <area target="" alt="" title="" href="man.html" coords="70,351,411,605" shape="rect">
     <area target="" alt="" title="" href="cb.html" coords="424,152,759,366" shape="rect">
     <area target="" alt="" title="" href="other.html" coords="437,384,683,604" shape="rect">
 </map>
+<hr>
+<br>
+<a href="diy.html">Main</a> <a href="cl.html">Ciat Lonbarde Builds</a> <a href="man.html">Build Manuals</a> <a href="cb.html">Ciruit Bending Projects</a> <a href="other.html">Other Projects</a>
+</div>
 </div>
 </body>
 </html><!doctype html>
