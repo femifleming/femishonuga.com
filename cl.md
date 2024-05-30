@@ -1,6 +1,6 @@
 <style>
 body{
-  background-image: url("clbg2.gif");
+  background-image: url("gmwb.gif");
   background-attachment: fixed;
 }
 </style>
