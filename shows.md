@@ -6,11 +6,12 @@
 
 Upcoming Shows:
 
-SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT<br>
+Crosswired Festival @ Inspiria PVD 06292024 ~PVD, RI
 
 Past Shows:
 
-
+Untitled @ Hart Bar 05282024 ~Brooklyn, NY<br>
+SLABFEST @ Jewel Music Venue 0618/192024 ~New Haven, CT<br>
 Nether after hours @ 195 Brownn St 05042024 ~Providence, RI<br>
 A Surgeons Table @ Dancing Cats 05032024 ~Providence, RI<br>
 Untitled @ The Living Gallery 03162024 ~Brooklyn, NY<br>
