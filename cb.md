@@ -3,7 +3,7 @@
             padding: 10px;
 }
 body {
-  background-image: url("fol.gif");
+  background-image: url("tubes.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
