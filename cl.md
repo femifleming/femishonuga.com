@@ -1,6 +1,6 @@
 <style>
 body{
-  background-image: url("gmwb.gif");
+  background-image: url("lain2.gif");
   background-attachment: fixed;
 }
 </style>
@@ -9,9 +9,9 @@ body{
 <p>ciat lonbarde builds</p>
 </h1>
 <img src="gmw.png">
-<img src="gmw1.jpg">
+<img src="gmw1.JPG">
 <br><br>
-<img src="gmw2.jpg">
+<img src="gmw2.JPG">
 Ciat Lonbarde Gyuto Monks Solar Sounder (circuit bent, for use with UV light/blacklight)
 <hr>
 <section style="background-color:rgb(1, 1, 2, 0.8); padding: 10px;"
