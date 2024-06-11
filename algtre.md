@@ -9,7 +9,10 @@
       code {
       z-index: 2;
       }
-  </style>
+body {background-image: url('w.gif');
+    background-attachment: fixed;
+}
+</style>
 <section>
 
 ![](algtre1.jpg)
