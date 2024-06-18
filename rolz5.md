@@ -47,7 +47,7 @@ Paper Circuits:<br>
 <br>
 > ![](rollz5/orange.jpg) 
 
-Golden Master and [more](rollz5/ciat-lonbarde-diy-stuff.pdf):<br>
+Golden Master and [more](ciat-lonbarde-diy-stuff.pdf):<br>
 <br>
 > ![](rollz5/goldenmaster.jpg)
 
