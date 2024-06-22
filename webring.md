@@ -19,32 +19,7 @@
 <a href="https://www.oliviaspringberg.com">{olivia springberg}<a>
 <a href="https://mark.cetilia.org">{Mark Cetilia}</a>
 <a href="https://sacred-web.vercel.app/dots.html">{dots}</a>
-<a href="https://yasunaga.work/index.html">{yasunaga.work}</a>
-
-Mentions/Other Links:
-
-<a href="https://www.imdb.com/name/nm13834133/">{IMDB}</a>
-<a href="https://www.ref-mag.com/posts/creative-spotlight/femi-shonuga-fleming">{Ref Mag}</a>
-<a href="https://ra.co/dj/sadnoise/biography">{Resident Advisor}</a>
-<a href="https://www.risd.edu/news/stories/expanded-studio-for-research-in-sound-and-technology-at-risd">{Studio for Research in Sound and Technology Broadens Academic Scope at RISD}</a>
-<a href="https://www.discogs.com/artist/13149438-Sadnoise">{Discogs}</a>
-<a href="https://risdmuseum.org/exhibitions-events/events/sonic-salad">{Sonic Salad}</a>
-<a href="https://hvax.bandcamp.com">{HVAC}</a>
-<a href="https://rishows.com/?s=sadnoise">{RI Shows}</a>
-<a href="https://www.kinopoisk.ru/name/7036037/">{kinopoisk}</a>
-<a href="https://www.cara-nyc.org/program/events/cooler-night-4-featuring-ikue-mori-many-many-girls-sadnoise-and-ln-celestine">{Cara}</a>
-<a href="https://now.uiowa.edu/news/2018/07/inaugural-residencies-iowa-inspire-nations-next-generation-artists-writers">{uiowa}</a><br>
-<a href="https://www.smackmellon.org/wp-content/uploads/2019/02/content_00_press-release-art-ready-exhibition-2018.pdf">{smackmellon}</a>
-<a href="https://www.nonevent.org/concerts/2024-04-waterworks-fest-2024">{nonevent}</a>
-<a href="https://spinitron.com/WZBC/pl/18914411/Rare-Frequency">{WZBC 90.3FM}</a>
-<a href="https://somad.nyc/happenings/madworld24-filmscreening">{somad}</a>
-<a href="https://www.quaranzine.net/volume15">{quaranzine}</a>
-<a href="https://www.metmuseum.org/-/media/files/exhibitions/2018/scholastic-awards/gold-key-recipients-art.pdf">{met museum}</a>
-<a href="https://github.com/risdsound/foafx">{foafx}</a>
-<a href="https://www.nhregister.com/entertainment/article/live-computer-coding-festival-new-haven-17061218.php">{new haven register}</a>
-<a href="https://shop.blastradio.com/blogs/blast-radio-news-updates/in-conversation-with-sadnoise">{blast radio}</a>
-<br>
-<br>
+<a href="https://cancelled.work">{cancelled.work}</a>
 
 <div align="center">
 <table border="10px" background="space.gif" height="400px">
