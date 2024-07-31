@@ -70,7 +70,8 @@ border-radius: 50%;
 	<marquee style="color: white; background-color: #958431;">
 	This page takes a long time to load, please be patient... thumbnails are a work in progress...
 	</marquee>
-<script>
+
+	<script>
     function fetchImages() {
         // Use a relative path assuming images are in the same directory
         const images = [
@@ -87,21 +88,23 @@ border-radius: 50%;
             'wp11.jpg',
             'wp12.jpg',
             'wp13.jpg',
-            'wp14.jpg',
+            'wp14.jpg', 
             'wp15.jpg',
-            'wp16.jpg',
+		'wp16.jpg',
+		'wp17.jpg',
+		'wp18.jpg',
         ];
         const container = document.body;
 
         images.forEach(image => {
             const img = new Image();
-            img.src = image;
+            img.src = `thumbnails/${image}`;
             img.onload = () => {
                 const imageContainer = document.createElement('div');
                 imageContainer.className = 'wallpaper-container';
 
                 const imageElement = document.createElement('img');
-                imageElement.src = image;
+                imageElement.src = `thumbnails/${image}`;
                 imageContainer.appendChild(imageElement);
 
                 const infoContainer = document.createElement('div');
@@ -113,8 +116,12 @@ border-radius: 50%;
                 infoContainer.appendChild(imageName);
 
                 const imageSize = document.createElement('p');
-                imageSize.textContent = `Size: ${Math.round(img.naturalWidth)} x ${Math.round(img.naturalHeight)} pixels`;
-                infoContainer.appendChild(imageSize);
+                const imgFull = new Image();
+                imgFull.src = image;
+                imgFull.onload = () => {
+                    imageSize.textContent = `Size: ${imgFull.naturalWidth} x ${imgFull.naturalHeight} pixels`;
+                    infoContainer.appendChild(imageSize);
+                };
 
                 imageContainer.appendChild(infoContainer);
 
