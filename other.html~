@@ -25,13 +25,7 @@
     hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
     a {color:#aaa;}
     a:hover {color:#ccc;}
-    img {margin-top: -0.5em; 
-	    max-width:100%;
-	    border-radius: 0;
-    	transition: border-radius 1s ease;}
-	img:hover{
-	border-radius: 50%;
-	}
+    img {margin-top: -0.5em; max-width:100%;}
     input {font-family: inherit;}
     code {
       background: #555;
@@ -45,12 +39,7 @@
 <body>
     <div style="margin:20px">
 <body background="er301.gif">
-	<h1>
-Analog Timer Eurorack Power Supply
-	</h1>
-	<img src="bell0.jpg" width="50%"><img src="bell1.jpg" width="50%"><br>
-	<img src="bell2.jpg" width="50%"><img src="bell3.jpg" width="50%"><br>
-	<h1>
+<h1>
 My Custom Eurorack Module Panles in Plexi, Cherry and Walnut
 </h1>
 <img src="panels.jpg">
