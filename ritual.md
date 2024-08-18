@@ -115,8 +115,6 @@ bringing your technology at least 1000 ft above sea level.<br>
 </div>
 <p>See <a href="Systems.pdf">Documentation</a>.</p>
 <p><a href="Systems.pdf"><img src="hr.jpeg" alt="" /></a></p>
-<hr/>
-<p>updated 04/14/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

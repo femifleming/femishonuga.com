@@ -93,8 +93,6 @@ scrolldelay = setTimeout('pageScroll()',10);
 <p><img src="ani-tgirlpower.gif" width="200" onmouseover="change('tigercoming.gif')"><br>
 <img src="thebitcha.gif" width="200"><br>
 <img src="gif-fairyglobe.gif" width="200"><br></p>
-<hr/>
-<p>updated 04/29/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

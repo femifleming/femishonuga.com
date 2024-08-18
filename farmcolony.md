@@ -39,8 +39,6 @@
 <body>
     <div style="margin:20px">
 <p><a href="farmcolony.html">NYC Farm Colony Sept 2021</a></p>
-<hr/>
-<p>updated 04/23/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

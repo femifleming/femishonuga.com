@@ -49,8 +49,6 @@ All of these rooms look so familiar… I could've sworn I've been here before bu
 </th>
 </tr>
 <table>
-<hr/>
-<p>updated 05/09/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

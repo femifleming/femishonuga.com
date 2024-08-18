@@ -113,8 +113,6 @@
 <p><code>052921</code></p>
 <p><img src="dastart.jpeg" alt="" /></p>
 <p><img src="damartin.jpeg" alt="" /></p>
-<hr/>
-<p>updated 05/08/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

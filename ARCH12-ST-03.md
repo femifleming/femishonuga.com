@@ -48,8 +48,6 @@
 <p><img src="archpics/sfm7.jpeg" alt="" /></p>
 <p><img src="archpics/sfm3.jpeg" alt="" /></p>
 <p><img src="archpics/sfm1.jpeg" alt="" /></p>
-<hr/>
-<p>updated 03/20/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

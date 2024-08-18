@@ -139,8 +139,6 @@ x2 ciat lonbarde preamp<br>
 x2 ciat lonbarde antipreamp<br>
 </p>
 </section>
-<hr/>
-<p>updated 06/03/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

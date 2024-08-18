@@ -95,8 +95,6 @@
 </tr>
 </table>
 </div>
-<hr/>
-<p>updated 07/16/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

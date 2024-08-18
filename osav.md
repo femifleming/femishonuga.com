@@ -43,8 +43,6 @@
 <p>Using the Serge Modular Synthesizer, My personal <a href="dajpg.html">Eurorack</a> Modular Synth, Max MSP, Reaper, The <a href="https://sound.risd.edu/Loudspeaker-Array">25.4</a> Speaker Array and the Electron Monomachine, Machinedrum and Octatrack</p>
 <p><img src="soundpics/osav1.jpeg" alt="" /></p>
 <p><img src="3.jpeg" alt="" /></p>
-<hr/>
-<p>updated 03/20/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

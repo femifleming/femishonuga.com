@@ -80,8 +80,6 @@ Wallets:
 <img src="textiles/blue3b.jpeg" width="200px">
 <img src="textiles/blue4b.jpeg" width="400px">
 </div>
-<hr/>
-<p>updated 05/29/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

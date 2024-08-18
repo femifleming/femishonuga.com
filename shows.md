@@ -137,8 +137,6 @@ Creative Code Festival @ Lightbox NYC 11122020-11152020 ~Brooklyn, NY<br></p>
 <img src="soundpics/flyers/flyer37.jpg" height="200px">
 <img src="soundpics/flyers/flyer38.jpg" height="200px">
 </marquee>
-<hr/>
-<p>updated 06/01/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

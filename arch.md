@@ -56,8 +56,6 @@
 <p><img src="archpics/td.jpg" alt="" /></p>
 <p><a href="ARCH21-ST-07.html">ARCH21-ST-07</a> STATES OF EXCEPTION</p>
 <p><a href="ARCH12-ST-03.html">ARCH12-ST-03</a> SPACES FOR MEDIATION</p>
-<hr/>
-<p>updated 05/01/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

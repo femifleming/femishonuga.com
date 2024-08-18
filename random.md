@@ -149,8 +149,6 @@
       return color;
     }
   </script>
-<hr/>
-<p>updated 05/09/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

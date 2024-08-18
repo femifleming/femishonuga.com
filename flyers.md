@@ -38,8 +38,6 @@
 </head>
 <body>
     <div style="margin:20px">
-<hr/>
-<p>updated 03/20/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

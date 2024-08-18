@@ -70,8 +70,6 @@ Custom Screen Inlays for ER301 Sound Computer
 </th>
 </tr>
 </table>
-<hr/>
-<p>updated 05/30/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

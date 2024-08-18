@@ -88,8 +88,6 @@ SAVR started off as a B2B throwing underground techno parties in Providence RI w
 <br>
 <div align="center">
 <a href="index.html"><img src="djback.gif"></a>
-<hr/>
-<p>updated 05/09/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

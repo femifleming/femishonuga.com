@@ -83,8 +83,6 @@ body {background-image: url('w.gif');
 <img src="blinktastic_waterdrink.gif" width="200"><br>
 </div>
 </section>
-<hr/>
-<p>updated 06/11/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

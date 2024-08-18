@@ -43,8 +43,6 @@
 <p>In this work I experiment with mapping synthesized sounds in an imaginary, impossible space using and abusing 3rd order ambisonics spatialization techniques. I wanted to focus on the conversation between organic and synthesized sounds, and creating the organic from the synthetic. All sounds in this piece were synthesized. This piece was originally performed at the 25.4 hemisphere speaker array at RISD. The performance was recorded on 24 channels and decoded to stereo binaural.</p>
 <p>There is a full <a href="https://sadnoise.bandcamp.com/album/hyperencoder">album</a> attached to this project with all of my assignments from the course,</p>
 <p>along with a <a href="https://sadnoise.bandcamp.com/album/hyperencoder-remixes">remix</a> EP</p>
-<hr/>
-<p>updated 03/20/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

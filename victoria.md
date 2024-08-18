@@ -78,8 +78,6 @@ As I blink, my eyes open to being under the water at the pool. All the unfamilia
 </th>
 </tr>
 <table>
-<hr/>
-<p>updated 05/09/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

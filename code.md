@@ -560,8 +560,6 @@ C 400
 </th>
 </tr>
 </table>
-<hr/>
-<p>updated 05/28/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

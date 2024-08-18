@@ -126,8 +126,6 @@ Gongs:<br>
 <p><img src="woodrolz7.jpeg" alt="" /></p>
 <p><img src="woodrolz8.jpeg" alt="" /></p>
 <p><img src="woodrolz9.jpeg" alt="" /></p>
-<hr/>
-<p>updated 06/18/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

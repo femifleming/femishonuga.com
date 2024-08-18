@@ -54,8 +54,6 @@ Granular synthesis reminds me of raindrops in a storm</p>
 <p><img src="soundpics/sfm6.jpeg" alt="" /></p>
 <p><img src="soundpics/sfm7.jpeg" alt="" /></p>
 <p><img src="soundpics/sfm8.jpeg" alt="" /></p>
-<hr/>
-<p>updated 03/27/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

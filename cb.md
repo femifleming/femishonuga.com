@@ -79,8 +79,6 @@ Circuit Bent King Drone Box
 </th></tr>
 </table>
 </article>
-<hr/>
-<p>updated 06/03/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

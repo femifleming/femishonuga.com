@@ -122,8 +122,6 @@ PARAM.SCALE 0 10
 
 </codeblock>
 </pre>
-<hr/>
-<p>updated 03/20/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

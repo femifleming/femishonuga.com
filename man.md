@@ -48,8 +48,6 @@ DogeVox V2 Manual
 Rollz 5 Manual
 </h1>
 <img src="diypics/myrolz5manual.jpg">
-<hr/>
-<p>updated 05/30/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

@@ -168,8 +168,6 @@ function normalImg(x) {
 <div align="center">
 <img src="35m.gif" width="90"><br>
 </div>
-<hr/>
-<p>updated 04/15/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

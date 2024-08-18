@@ -90,8 +90,6 @@ scrolldelay = setTimeout('pageScroll()',10);
 <img src="dogevoxteo2.JPG" onmouseover="change('w.gif')">
 <br><br>
 <img src="dvbg.jpg" onmouseover="change('funerotik039.gif')">
-<hr/>
-<p>updated 04/18/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

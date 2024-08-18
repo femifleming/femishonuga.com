@@ -55,8 +55,6 @@
         </table>
     </div>
 </marquee>
-<hr/>
-<p>updated 04/14/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>

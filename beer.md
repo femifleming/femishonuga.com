@@ -53,8 +53,6 @@
   }
   </style>
   <div class="footer"></div>
-<hr/>
-<p>updated 05/06/24 – femi.fleming@gmail.com</p>
 </div>
 </body>
 </html><!doctype html>
