@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<p><img src="soundpics/c1.jpeg" alt="" /></p>
+<p><a href="https://www.youtube.com/watch?v=tYe3fY6j1IM">Performance</a> for Sound Synthesis Spring Semester</p>
+<p>I have been really interested in creating immersive and complex textures with the Serge and I wanted to focus more on this idea of maximality by using feedback paths and cross modulation of signals (feeding back and wave multiplier or cross patching oscillators using their frequency modulation input) instead of a random source such as noise or sample and hold to have more control over the patch overall. This effectively let all of the individual sounds or characters communicate in an easier and more efficient way, allowing for a balance of chaos and each sound's primary source. I also wanted to focus on giving every individual sound its own space, so as to not have the patch be so dense.For my final project I wanted to focus on the idea of characters and synthesizing organic and controlled random. I used two CRT TVs as a visual representation of these characters, one visualizes the Serge analog synthesizer, and the other visualizes SuperCollider, to show the communication between analog and digital. I performed this patch live because I felt it was important to interact with these characters in real time, or in an improvisational way.</p>
+<blockquote>
+<p>For the final project I want to focus on the idea of maximality and characters. I really enjoy building up textures over time with the serge and then sort of taming them to have more control over the patch, or even just the volume of specific elements of the patch, this way I can really perform the patch. I want to focus on introducing a lot more control and space into my patching techniques in order to have a lot of elements stack but be in their own space. Ways of doing this may include creating signals in very dissected frequency ranges to give their air to breath in between. Or separate more percussive notes from other sounds. I'm also in some ways inspired by the idea of feedback, cybernetics and AI that La Synthèse Humaine talks about on his YouTube channel, and I think that language of patching will help me create characters in a more controlled random way.</p>
+</blockquote>
+<blockquote>
+<p>As far as performance, I want to perform the patch live, which would require me to patch a few days in advance. I would like to use max just to rut audio directly to specific speakers in the spatial array. I was also thinking of routing audio to video ins of CRT TV’s to get scan lines for that data matrix style look , and having different audio from the patch go between the two TVs, to further expand the idea of characters and conversation, with visual oscillations.</p>
+</blockquote>
+<hr/>
+<p>updated 03/27/24 – femi.fleming@gmail.com</p>
+</div>
+</body>
+</html><!doctype html>

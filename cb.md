@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<style>
+ article {background-color:rgba(0,0,0,0.8);
+            padding: 20px;
+}
+</style>
+<body background="wiard.png" style="background-attachment: fixed;">
+<article>
+<h1>
+Circuit Bent Projects
+</h1>
+Circuit Bent Korg-DDD5
+<br>
+<br>
+    <img src="ddd5.jpeg">
+<br><br>
+    <img src="ddd52.jpeg">
+<br><br>
+    <img src="cbpg.JPG">
+<hr>
+<br>
+<h1>
+Circuit Bent King Drone Box
+</h1>
+<table border=40 background="tubes.png">
+<tr><th>
+<br>
+<img src="dronebox1.png" width="40%">
+<img src="dronebox2.png" width="40%">
+<br>
+<br>
+<img src="dronebox3.png" width="40%">
+<img src="dronebox4.png" width="40%">
+<br>
+<br>
+<img src="dronebox5.png" width="80%">
+<br>
+<br>
+</th></tr>
+</th></tr>
+</table>
+</article>
+<hr/>
+<p>updated 06/03/24 – femi.fleming@gmail.com</p>
+</div>
+</body>
+</html><!doctype html>

@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<style>
+  body {
+    background-color: black
+  }
+</style>
+<div align="center">
+<img src="lain.gif">
+<p><a href="https://funbox.sh/~cenzo/">{cenzo}</a>
+<a href="https://redeel.org">{grief}</a>
+<a href="https://cryptwarbler.net/">{cryptwarbler}</a>
+<a href="https://hissquiet.com/">{hissquiet}</a>
+<a href="https://williamhazard.co/">{william hazard}</a>
+<a href="https://heftexperience.net">{heft}</a>
+<a href="https://caloricmusic.com">{caloric}</a>
+<a href="https://sacred-web.vercel.app">{sacred-web}</a>
+<a href="https://eachspringnewbeginning.com">{madeline young}</a>
+<a href="https://www.oliviaspringberg.com">{olivia springberg}<a>
+<a href="https://mark.cetilia.org">{Mark Cetilia}</a>
+<a href="https://sacred-web.vercel.app/dots.html">{dots}</a>
+<a href="https://cancelled.work">{cancelled.work}</a>
+<a href="https://craow.net">{craow}</a>
+<a href="cca.org">{cca.org}</a>
+<a href="rcsri.org">{RCSRI}</a>
+<div align="center">
+<table border="10px" background="space.gif" height="400px">
+<tr>
+<th>
+<marquee direction="up" scrollamount="2">
+<div align="center">
+<h1>Webrings:</h1>
+<h2>
+<a href='https://webring.dinhe.net/prev/femishonuga.com'><img src="prev2.gif" height="16px"></a>
+<marquee direction="down" height="19px">
+<div align="center">
+<a href="https://webring.dinhe.net">  the retronaut webring  </a>
+</div>
+</marquee>
+<a href='https://webring.dinhe.net/next/femishonuga.com'><img src="next2.gif" height="16px"></a>
+</h2>
+</div>
+<p><iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=your name"></iframe></p>
+<a href="https://gossipsweb.net"><img src="https://gossipsweb.net/images/twwmwh-blue.jpg" alt="This website was made with hands." style="height: 43px; border: 1px solid #000;" /></a>
+<h2>
+<div id='adhdring' align="center">
+<script type="text/javascript" src="https://skyhold.org/adhd/onionring-variables.js"></script>
+<script type="text/javascript" src="https://skyhold.org/adhd/onionring-widget.js"></script>
+</div>
+</h2>
+<div id="eggs-bacon-webring"></div>
+<script defer src="https://gardengremlin.neocities.org/webring/onionring-variables.js"></script>
+<script defer src="https://gardengremlin.neocities.org/webring/onionring-widget.js"></script>
+<object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#455cb0" type="image/svg+xml" style="width: 100%"></object>
+</marquee>
+</th>
+</tr>
+</table>
+</div>
+<hr/>
+<p>updated 07/16/24 – femi.fleming@gmail.com</p>
+</div>
+</body>
+</html><!doctype html>

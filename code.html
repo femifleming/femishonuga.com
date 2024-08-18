@@ -52,6 +52,44 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
     body {max-width:800px; color:#ddd; 
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
@@ -264,80 +302,66 @@
 </textarea>
 <p><h1><a href="https://monome.org/docs/teletype/">Teletype:</a></h1></p>
 <textarea style="background-image:url('ogif.gif');">
-
-WATERWORKS 2024
+<p>WATERWORKS 2024
 BINARY: %B1
 SCALE OFFSET: %2
 TIMING: %3
-TIMER: %4
-
-
-
-#1
+TIMER: %4</p>
+<p>#1
 A RND 800; $ 6
 PROB 36: $ 2; B * 2 RND 4
 PROB 24: EX.P 60 A
 EX.P 61 ? LT A 200 92 K; K 70
 PROB 1: K 0
-DEL.R B / LAST 1 B: $ 4
-
-#2
+DEL.R B / LAST 1 B: $ 4</p>
+<p>#2
 DEL.X J / LAST 1 RND 8: $ 3
 J RND 8; PRINT 4 C
 L 1 2: CV I VV RND 1000
 L 1 2: CV.SLEW I 1200
 CV 4 V RND 10; CV.SLEW 4 900
-LIVE.DASH 1; EX.P 58 PRM
-
-#3
+LIVE.DASH 1; EX.P 58 PRM</p>
+<p>#3
 EX.N N + PRM J V RRND 3 10
 A + WRP A 1 0 RND 7
 J / * ? TOSS 4 9 A RND 2
 EX.P 13 RRND 20 60
 EX.P 12 RND 60; PRINT 3 LAST 3
-EX.P 10 ? TOSS -12 0
-
-#4
+EX.P 10 ? TOSS -12 0</p>
+<p>#4
 A RND 17
 L 1 4: TR.P ? BGET A I I 0
 CV 3 V RND 8; CV.SLEW 3 0
 PRINT 1 A; PRINT 2 PRM
 PROB 70: BRK
-I2M.N# 1 RRND 30 50 RND 127
-
-#5
+I2M.N# 1 RRND 30 50 RND 127</p>
+<p>#5
 CROW.AR 1 0 RND LAST 1 VV K
 K RRND 200 1000
-DEL.X RND 12 RND 1200: $ 7
-
-#6
+DEL.X RND 12 RND 1200: $ 7</p>
+<p>#6
 L 1 16: SC.CV.SLEW I 2000
 PROB 60: BRK
-L 1 16: SC.CV I VV RND 1000
-
-#7
+L 1 16: SC.CV I VV RND 1000</p>
+<p>#7
 PROB 20: BRK
-I2M.N# 1 RRND 30 50 RND 127
-
-#8
-CROW.AR 2 0 RND 200 V RND 5
-
-#M
+I2M.N# 1 RRND 30 50 RND 127</p>
+<p>#8
+CROW.AR 2 0 RND 200 V RND 5</p>
+<p>#M
 M C
-$ 1
-
-#I
+$ 1</p>
+<p>#I
 PARAM.SCALE 0 12; $ 1
 EX.PRE 49
 M.ACT 1
-C 400
-
-#P
+C 400</p>
+<p>#P
 0	0	0	0
 1	1	1	1
 0	0	0	0
-63	63	63	63
-
+63	63	63	63</p>
+<p>0	0	0	0
 0	0	0	0
 0	0	0	0
 0	0	0	0
@@ -400,10 +424,8 @@ C 400
 0	0	0	0
 0	0	0	0
 0	0	0	0
-0	0	0	0
-0	0	0	0
-
-#G
+0	0	0	0</p>
+<p>#G
 0000000000000000
 0000000000000000
 0000000000000000
@@ -419,13 +441,11 @@ C 400
 0000000000000000
 0000000000000000
 0000000000000000
-0000000000000000
-
+0000000000000000</p>
+<p>0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-
+0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0</p>
 </textarea>
 <p><h1><a href="https://100r.co/site/orca.html">Orca:</a></h1></p>
 <textarea style="background-image:url('orcabg.gif');">
@@ -562,6 +582,11 @@ C 400
 </table>
 <hr/>
 <p>updated 05/28/24 – femi.fleming@gmail.com</p>
+</div>
+</body>
+</html><!doctype html>
+<hr/>
+<p>updated 07/16/24 – sadnoise@femishonuga.com</p>
 </div>
 </body>
 </html><!doctype html>
