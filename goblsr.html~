@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<p><img src="soundpics/goblsr1.jpeg" alt="" /></p>
+<p><a href="https://www.youtube.com/watch?v=0yyna7Lrl2A">Watch</a> the performance</p>
+<p><a href="https://sadnoise.bandcamp.com/album/according-to-chance">Listen</a> to the performance</p>
+<p>Interactive performance for According to Chance Wintersession at RISD</p>
+<pre>
+<codeblock>
+<p>#1
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 0; D ? PN B 0 3 0
+B G.BTN.V 8
+C * B 2</p>
+<p>#2
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 1; K PN ? B 0 1 1
+IF &lt; Z 4: CV 1 V 5
+DEL * LAST 2 2: CV 1 V 0</p>
+<p>#3
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 2; K PN ? B 0 1 2
+IF &lt; Z 4: CV 2 V 5
+DEL * LAST 3 2: CV 2 V 0
+CV 3 N + 65 % T G.FDR.N 11
+CROW.AR 1 0 / LAST 1 4 V 5</p>
+<p>#4
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 3; K PN ? B 0 1 3
+CV 4 N + 36 % T 9
+CV.OFF 4 N + 12 G.FDR.N 13
+CROW.AR 2 0 / LAST RND 2 4 V 5</p>
+<p>#5
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 4; K PN ? B 0 1 4</p>
+<p>#6
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 5; K PN ? B 0 1 5</p>
+<p>#7
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 6; K PN ? B 0 1 6
+Z G.FDR.N 14</p>
+<p>#8
+EV + 1 G.FDR.N 0: I2M.N# J K A
+J PN * B 2 7; K PN ? B 0 1 7</p>
+<p>#M
+T + T 1; X G.FDR.N 11; CV 4 O
+M + + 20 * G.FDR.N 9 20 J
+J &lt;&lt; G.FDR.N 10 RND Z
+Y BGET X % T G.FDR.N + 12 K
+TR.P ? Y ? Z 1 4 ? TOSS 2 3
+K RND * G.FDR.N 13 4; $ 7</p>
+<p>#I
+G.FDX 0 0 0 4 1 0 0 0 1 8
+A 127; T 0; M.ACT 1; $ 1
+G.BTN 8 4 0 1 1 1 0 1
+G.FDR 9 4 1 1 7 1 0 0
+G.FDX 10 5 0 1 8 1 0 0 5 1
+PARAM.SCALE 0 10</p>
+<p>#P
+8    8    8    8
+1    1    1    1
+0    0    0    0
+63    63    63    63</p>
+<p>10    36    1    36
+10    48    2    37
+10    41    3    38
+10    58    4    39
+10    40    5    40
+10    49    6    41
+10    42    7    42
+10    39    8    43</p>
+</codeblock>
+</pre>
+</div>
+</body>
+</html><!doctype html>
+<hr/>
+<p>updated 08/18/24 – sadnoise@femishonuga.com</p>
+</div>
+</body>
+</html><!doctype html>

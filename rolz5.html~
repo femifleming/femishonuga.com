@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+<style>
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color:#111; max-width:800px; color:#ddd; 
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-weight:bold; font-size: 1.1em; color: #EE9999; background-color: #3E2D2D}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+    a {color:#aaa;}
+    a:hover {color:#ccc;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem; 
+    }
+</style>
+</head>
+<body>
+    <div style="margin:20px">
+<style>
+  body {
+    background-image: url('woodrolz2.jpeg');
+    animation: breathe 8s infinite alternate; /* Apply breathing animation */
+    filter: blur(4px); /* Initial blur */
+  }
+<p>@keyframes breathe {
+0%, 100% {
+filter: blur(4px); /* Start and end with blur <em>/
+}
+50% {
+filter: blur(0px); /</em> Breathe in (reduce blur) */
+}
+}
+</style></p>
+<p><img src="diypics/myrolz5manual.jpg" alt="" /><br></p>
+<p>Paper Circuits:<br></p>
+<blockquote>
+<p><a href="rollz5/01b.gif">Instructions</a><br>
+<a href="rollz5/02.gif">Rollz</a><br>
+<a href="rollz5/03.gif">Ultrasound FIlters</a><br>
+<a href="rollz5/04.gif">Gongs</a><br>
+<a href="rollz5/05.gif">AVDogs</a><br></p>
+</blockquote>
+<p>Mods:</p>
+<blockquote>
+<p>AVdogs:<br>
+<br>
+<img src="rollz5/AV%20Dogs%20Mods.png" alt="" /><br>
+Gongs:<br>
+<br>
+<img src="rollz5/Gongs%20Aux%20In%20Mod.png" alt="" /><br>
+2.2m resistor for either x or xx, and 2m trimpot for the other<br></p>
+</blockquote>
+<blockquote>
+<p>Ultrasound Filters:<br>
+<br>
+<img src="rollz5/Ultrasound%20Filters%20Mod.png" alt="" /><br></p>
+</blockquote>
+<blockquote>
+<p>Rollz LED Driver Outputs Mod, node to LED, ground of LED to ground:<br>
+<em>(Reccomended for Even Rolz only)</em><br>
+<br>
+<img src="rollz5/Rolz%20Led%20Drive%20Mod.png" alt="" /><br></p>
+</blockquote>
+<blockquote>
+<p>Gongs Orange (Theta) CV Output Mod:<br>
+<br>
+<img src="rollz5/orange.jpg" alt="" /></p>
+</blockquote>
+<p>Golden Master and <a href="ciat-lonbarde-diy-stuff.pdf">more</a>:<br>
+<br></p>
+<blockquote>
+<p><img src="rollz5/goldenmaster.jpg" alt="" /></p>
+</blockquote>
+<p>Gerbers from original <a href="rollz5/papers.zip">Papers</a>:<br>
+<em>(Upload these to <a href="https://oshpark.com">OSHPARK</a> to make pcbs)</em></p>
+<blockquote>
+<p><a href="rollz5/GerberFiles_3oror.zip">3oror</a><br>
+<a href="rollz5/GerberFiles_4oror.zip">4oror</a><br>
+<a href="rollz5/GerberFiles_5oror.zip">5oror</a><br>
+<a href="rollz5/GerberFiles_6oror.zip">6oror</a><br>
+<a href="rollz5/GerberFiles_ultra.zip">Ultrasound</a> Filters<br>
+<a href="rollz5/GerberFiles_gong.zip">Gongs</a><br>
+<a href="rollz5/GerberFiles_avdog.zip">AVdogs</a><br>
+<a href="rollz5/uploads_17fb6d7d-b603-48a2-980d-ea79f3d28964_LedDriver.zip">LED</a> Driver</p>
+</blockquote>
+<p>Capacitor Switches, for Hairy Caps:</p>
+<p><img src="rollz5/capswitch.gif" alt="" /></p>
+<p>Mixer:<br>
+<br></p>
+<blockquote>
+<p><img src="rollz5/mixer.jpg" alt="" /></p>
+</blockquote>
+<blockquote>
+<p><img src="rollz5/mixer2.png" alt="" />
+</br></p>
+</blockquote>
+<p><img src="woodrolz1.jpeg" alt="" /></p>
+<p><img src="woodrolz2.jpeg" alt="" /></p>
+<p><img src="woodrolz3.jpeg" alt="" /></p>
+<p><img src="woodrolz4.jpeg" alt="" /></p>
+<p><img src="woodrolz5.jpeg" alt="" /></p>
+<p><img src="woodrolz6.jpeg" alt="" /></p>
+<p><img src="woodrolz7.jpeg" alt="" /></p>
+<p><img src="woodrolz8.jpeg" alt="" /></p>
+<p><img src="woodrolz9.jpeg" alt="" /></p>
+</div>
+</body>
+</html><!doctype html>
+<hr/>
+<p>updated 08/18/24 – sadnoise@femishonuga.com</p>
+</div>
+</body>
+</html><!doctype html>
