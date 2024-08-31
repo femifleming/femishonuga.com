@@ -191,6 +191,44 @@ trigger.addEventListener('mouseenter', function() {
 <a href="webring.html"><img src="webring.gif" height="22px"></a><br>
 </section>
 <br>
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://melonking.net/scripts/flood.js"></script>
+<script>
+            // Goo Flood!
+            flood.texture = "rug.png";
+            flood.textureWidth = 256; // Resize to match your image file
+            flood.textureHeight = 256;
+            flood.drainSound = "dream-magic.mp3";
+            flood.drainTooSoonSound = "https://melonking.net/audio/ui/clunk.mp3";
+            // Goo Messages
+            flood.msg.info = "🧪";
+            flood.msg.rising = "Fairies are being harvested for potions, this must be the waste product";
+            flood.msg.falling = "You can mop it up and drink to see the site, but how will you cleanse your soul afterwards?";
+            flood.msg.toosoon = "You can't drink so much at once!";
+            flood.msg.one = "You see some potion goo on the floor";
+            flood.msg.two = "Oh wow goo is everywhere";
+            flood.msg.three = "Ahhh the goo is upto your knees!";
+            flood.msg.four = "The goo is overwhelming!";
+            flood.msg.five = "Everything is coverd in goo!";
+            flood.msg.six = "100% Gooooo!";
+        </script>
+<svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto" style="display: block; top: 9%;">
+		<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z"></path>
+			<pattern id="water" patternUnits="userSpaceOnUse" width="256" height="256">
+				<image xlink:href="fairy-goo.png" x="0" y="0" width="256" height="256"></image>
+			</pattern>
+		</defs>
+		<g class="wave">
+			<use xlink:href="#gentle-wave" x="48" y="0"></use>
+			<use xlink:href="#gentle-wave" x="48" y="3"></use>
+			<use xlink:href="#gentle-wave" x="48" y="5"></use>
+		</g>
+	</svg>
+	<div id="flood-menu" style="display: block;">
+		<span id="flood-message">100% Gooooo!</span>
+		<a href="https://melonking.net/free/software/flood.html" target="_blank"><button>🧪</button></a>
+	</div>
 <hr/>
 <p>updated 2024-08-31 14:14:54 – femi.fleming@gmail.com</p>
 </body>
