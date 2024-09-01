@@ -27,8 +27,6 @@
     z-index: 1001;
 }
 #flood-menu button {
-    border-radius: 0px;
-    background-color: #9ba8bb;
 }
 .wave > use {
     animation: slide var(--slide-duration, 40s) cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
