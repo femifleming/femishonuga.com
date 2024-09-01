@@ -1,10 +1,11 @@
 /* CSS Styles for the Flood.js Web Ring and Toy! */
 
 #flood,
+/*
 .wave {
     cursor: url("https://melonking.net/images/ui/bucket.png"), pointer !important;
 }
-
+*/
 #flood {
     display: none;
     position: fixed;
@@ -12,7 +13,7 @@
     height: 100%;
     top: 100%;
     left: 0px;
-    z-index: 1000;
+    z-index: -1001;
 }
 #flood-menu {
     display: none;
