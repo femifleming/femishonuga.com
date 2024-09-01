@@ -24,15 +24,15 @@ flood.disableMessages = false; // Hides the info message.
 
 flood.msg = {};
 flood.msg.info = "&#x1FAA3;";
-flood.msg.rising = "The water level is rising...";
-flood.msg.falling = "The water level is falling...";
-flood.msg.toosoon = "Its too soon to bilge again!";
+flood.msg.rising = "This sites sea level is rising with the moon...";
+flood.msg.falling = "The sites sea level is falling, leaving cold rocky sand...";
+flood.msg.toosoon = "Its too soon to let the eels back into the canal";
 flood.msg.one = "This page has a harmless leak.";
-flood.msg.two = "It looks like the page has a bad leak!";
-flood.msg.three = "Goodness, this page has a major leak!";
-flood.msg.four = "Oh my, there's flood on this page!";
-flood.msg.five = "The page is deep under water!";
-flood.msg.six = "This page is totaly submerged!";
+flood.msg.two = "This site has a bad leak...";
+flood.msg.three = "This page is beginning to flood...";
+flood.msg.four = "This site is flooded";
+flood.msg.five = "The page is deeply submerged";
+flood.msg.six = "This page is totaly submerged";
 
 // Active vars, do not edit!
 flood.updateLoop = undefined;
@@ -168,3 +168,13 @@ function renderWater() {
         }
     }
 }
+function randomizeSlideDuration() {
+        const waveElement = document.querySelector('.wave > use');
+        if (waveElement) {
+            const randomDuration = Math.random() * (60 - 20) + 20; // Random number between 20 and 60
+            waveElement.style.setProperty('--slide-duration', `${randomDuration}s`);
+        }
+    }
+
+    // Randomize duration every time the animation restarts
+    setInterval(randomizeSlideDuration, 200); // Adjust the interval as needed
