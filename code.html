@@ -224,66 +224,106 @@
 </textarea>
 <p><h1><a href="https://monome.org/docs/teletype/">Teletype:</a></h1></p>
 <textarea style="background-image:url('ogif.gif');">
-<p>WATERWORKS 2024
-BINARY: %B1
-SCALE OFFSET: %2
-TIMING: %3
-TIMER: %4</p>
-<p>#1
-A RND 800; $ 6
-PROB 36: $ 2; B * 2 RND 4
-PROB 24: EX.P 60 A
-EX.P 61 ? LT A 200 92 K; K 70
-PROB 1: K 0
-DEL.R B / LAST 1 B: $ 4</p>
-<p>#2
-DEL.X J / LAST 1 RND 8: $ 3
-J RND 8; PRINT 4 C
-L 1 2: CV I VV RND 1000
-L 1 2: CV.SLEW I 1200
-CV 4 V RND 10; CV.SLEW 4 900
-LIVE.DASH 1; EX.P 58 PRM</p>
-<p>#3
-EX.N N + PRM J V RRND 3 10
-A + WRP A 1 0 RND 7
-J / * ? TOSS 4 9 A RND 2
-EX.P 13 RRND 20 60
-EX.P 12 RND 60; PRINT 3 LAST 3
-EX.P 10 ? TOSS -12 0</p>
-<p>#4
-A RND 17
-L 1 4: TR.P ? BGET A I I 0
-CV 3 V RND 8; CV.SLEW 3 0
-PRINT 1 A; PRINT 2 PRM
-PROB 70: BRK
-I2M.N# 1 RRND 30 50 RND 127</p>
-<p>#5
-CROW.AR 1 0 RND LAST 1 VV K
-K RRND 200 1000
-DEL.X RND 12 RND 1200: $ 7</p>
-<p>#6
-L 1 16: SC.CV.SLEW I 2000
-PROB 60: BRK
-L 1 16: SC.CV I VV RND 1000</p>
-<p>#7
-PROB 20: BRK
-I2M.N# 1 RRND 30 50 RND 127</p>
-<p>#8
-CROW.AR 2 0 RND 200 V RND 5</p>
-<p>#M
-M C
-$ 1</p>
-<p>#I
-PARAM.SCALE 0 12; $ 1
-EX.PRE 49
-M.ACT 1
-C 400</p>
-<p>#P
-0	0	0	0
+
+COOLER NIGHTS 1 AUG 7 2022
+JKUE MORI, LN CELESTINE
+SADNOISE, MANY MANY GIRLS
+DOORS 7PM: %B1
+RSVP @CARA_THE_ORG: %2
+
+===
+
+DRY WET HUMIDITY: %3
+CELCIUS BIN 2: %B4
+DAYLIGHT: %5
+DEPTH: %B6
+
+
+
+#1
+DEL + B RND PRM: $ $
+DEL.R 8 / LAST 1 8: $ 2
+DEL.R J / LAST 1 K: $ 3
+J RND 10; K RRND 4 6; $ 5
+L 1 2: SC.CV I V RND 10
+L 3 8: SC.CV I VV RND 1000
+
+#2
+A RND 255
+L 1 4: SC.TR.P ? BGET A I I 0
+CV 1 V 0; $ 8
+I2M.N# 11 PN 0 RND 16 K
+K RND 127; $ 6
+PRINT 1 A; PRINT 2 A
+
+#3
+T + T 1; PRINT 5 T
+EX.N N + Z * 5 % T RND 5 V K
+K RND 8; $ 4; SC.TR.P 11
+CV 1 N ? TOSS 0 7
+EX.P 11 RND 120; PRINT 6 T
+EX.P 19 QT RRND -24 24 12
+
+#4
+EX.P 24 ? TOSS 0 -24
+SC.CV.SLEW 3 1200
+B ? GT PRM 2000 4000 200
+EX.P 18 ? TOSS 0 ? TOSS 0 23
+
+#5
+PROB ? GT PRM 200 40 0: BRK
+SC.CV 9 V RRND -10 10
+SC.CV.SLEW 9 V 3
+EV 8: Z PN.NEXT 2
+I2M.CC# 3 1 RRND 45 127
+I2M.CC# 3 11 RRND 72 127
+
+#6
+L 1 4: $ 7
+PRINT 4 PRM
+J + Z * 5 % T RND 5
+I2M.N# ? TOSS 0 9 J 127
+
+#7
+
+#8
+EV 50: LIVE.DASH + FLIP 1
+PRINT 3 PRM
+L 0 7: $S 4
+G.LED J I ? BGET A I 9 0
+J + WRP J 0 15 1
+DEL RND / PRM 8: G.RST
+
+#M
+
+#I
+PARAM.SCALE 1 4000; $ 1
+L 1 2: SC.CV.SLEW I 0
+EX.PRE 35
+L 3 8: SC.CV.SLEW I V 2
+
+#P
+16	0	4	0
 1	1	1	1
 0	0	0	0
-63	63	63	63</p>
-<p>0	0	0	0
+63	63	3	63
+
+49	0	0	0
+57	1	9	0
+53	1	4	0
+51	1	5	0
+50	0	0	0
+48	0	0	0
+45	0	0	0
+41	0	0	0
+37	0	0	0
+39	0	0	0
+42	0	0	0
+46	0	0	0
+36	0	0	0
+38	0	0	0
+44	0	0	0
+56	0	0	0
 0	0	0	0
 0	0	0	0
 0	0	0	0
@@ -332,22 +372,8 @@ C 400</p>
 0	0	0	0
 0	0	0	0
 0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0</p>
-<p>#G
+
+#G
 0000000000000000
 0000000000000000
 0000000000000000
@@ -363,11 +389,13 @@ C 400</p>
 0000000000000000
 0000000000000000
 0000000000000000
-0000000000000000</p>
-<p>0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+0000000000000000
+
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0</p>
+0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
 </textarea>
 <p><h1><a href="https://100r.co/site/orca.html">Orca:</a></h1></p>
 <textarea style="background-image:url('orcabg.gif');">
