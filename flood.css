@@ -25,9 +25,12 @@
     color: white;
     font-size: 13px;
     z-index: 1001;
+display: none;
 }
 #flood-menu button {
+display: none; 
 }
+
 .wave > use {
     animation: slide var(--slide-duration, 40s) cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     fill: url("#water");
