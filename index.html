@@ -21,6 +21,19 @@
     h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
     h4 {font-weight:normal; font-size: 0.9em;}
     hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+        #opacityToggle {
+            display: none;
+	}
+	    .blinkies {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+	    a.toggle-link {
+	    }
+	            #opacityToggle:checked ~ .blinkies {
+            opacity: 1;
+		    }
+
     a {color:#aaa;}
     a:hover {color:#ccc;}
     img {margin-top: -0.5em; max-width:100%;}
@@ -91,7 +104,7 @@ document.getElementById('last-modified').textContent = lastModified;
 </script>
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-  <div id="randomWord">Next Show: in Maine? Last Updates: 2024-08-31 02:33:19</div>
+  <div id="randomWord">Next Show: in Maine? Last Updated: 2024-08-31 02:33:19</div>
   <script>
         // Function to generate a random color in hexadecimal format
         function getRandomColor() {
@@ -154,7 +167,7 @@ installs <a href="/sound">work</a> that discusses the <a href="plaintext/yda4dww
 <a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
 makes sounds using <a href="/da">digital/analog</a> synthesis, <a href="/diy">DIY</a> electronics and <a href="code.html">code</a> based languages,
 <a href="sound/atc.html">chance</a> based systems,<br>
-DJ<a href="ass.html">s</a> and <a href="/photo">p</a>roduces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
+DJ<a href="ass.html">s</a> and <a href="/photo">p</a>roduces du<a href="#" class="toggle-link" onclick="document.getElementById('opacityToggle').click(); return false;">b</a> techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live sho<a href="wallpapers/index.html">w</a>s,<br>
 and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a> occasionally. 
 <br>
@@ -188,6 +201,25 @@ trigger.addEventListener('mouseenter', function() {
 <a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="22px"></a>
 <a href="webring.html"><img src="webring.gif" height="22px"></a><br>
 </section>
+    <input type="checkbox" id="opacityToggle">
+<div class="blinkies">
+	<marquee>
+	<br>
+		<img src="blinkies/35m.gif" height="24px">
+		<img src="blinkies/2001.gif" height="24px">
+		<a href="https://www.instagram.com/buniehopps/"><img src="blinkies/bh.gif" height="24px"></a>
+		<img src="blinkies/blinktastic_waterdrink.gif" height="24px">
+		<a href="https://cancelled.work"><img src="blinkies/blinkiesCafe-DQ.gif" height="24px"></a>
+		<img src="blinkies/code.gif" height="24px">
+		<img src="blinkies/openmind.gif" height="24px"> 
+		<img src="blinkies/coffee.gif" height="24px">
+		<a href="sadnoise@femishonuga.com"><img src="blinkies/ehbutton.gif" height="24px"></a>
+		<img src="blinkies/Censor_NYRc.gif" height="24px">
+		<img src="blinkies/lasexymalcria.gif" height="24px">
+		<img src="blinkies/mom.gif" height="24px">
+		<img src="blinkies/ponyponies2.gif" height="24px">
+	</marquee>
+</div>
 <link href="flood.css" rel="stylesheet" type="text/css" media="all" />
 <script src="flood.js"></script>
 <a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
