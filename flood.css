@@ -22,10 +22,9 @@
     bottom: 0px;
     padding: 5px;
     text-align: right;
-    color: white;
+    color: #574e43;
     font-size: 13px;
     z-index: 1001;
-display: none;
 }
 #flood-menu button {
 display: none; 
