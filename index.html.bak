@@ -12,7 +12,7 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color:#111; max-width:800px; color:#ddd; 
+    body {background-color: #345678; max-width:800px; color:#ddd; 
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}
@@ -21,6 +21,19 @@
     h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
     h4 {font-weight:normal; font-size: 0.9em;}
     hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+        #opacityToggle {
+            display: none;
+	}
+	    .blinkies {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+	    a.toggle-link {
+	    }
+	            #opacityToggle:checked ~ .blinkies {
+            opacity: 1;
+		    }
+
     a {color:#aaa;}
     a:hover {color:#ccc;}
     img {margin-top: -0.5em; max-width:100%;}
@@ -75,6 +88,12 @@ display: none;
                 "indass/shows1.jpeg",  
                 "indass/stacie9.jpeg",
                 "indass/ben.jpeg",
+                "indass/hex1.jpg",
+                "indass/hex3.jpg",
+                "indass/hex5.jpg",
+		"cara2.JPG",
+		"blown.JPG",
+		"indass/noisefunction22y2.JPG",
         ];
         // Function to get a random image from the list
         function getRandomImage() {
@@ -87,10 +106,9 @@ display: none;
     const lastModified = document.lastModified;
 document.getElementById('last-modified').textContent = lastModified;
 </script>
-<font size="2">
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-  <div id="randomWord">Next Show: in Maine? Last Updates: 2024-08-31 02:33:19</div>
+<div id="randomWord">Next Show: Robots, Bass and Mad Science @ Hex House Sat Oct 12, 2024 ~BK, New York</div>
   <script>
         // Function to generate a random color in hexadecimal format
         function getRandomColor() {
@@ -117,7 +135,6 @@ document.getElementById('last-modified').textContent = lastModified;
 setInterval(changeLetterColors, 50);
 </script>
 </marquee>
-</font>
 <script>
 document.getElementById('hoverImage').addEventListener('mouseenter', function() {
     document.body.style.padding = '50px';  // Increase padding when hovered
@@ -133,10 +150,10 @@ document.getElementById('hoverImage').addEventListener('mouseleave', function() 
 <div class="wrapper" align="right">
 <span class="trigger-word">Consolidate</span>
 <div class="scrolling-text" id="scrollText">
-<a href="/arch">Architecture</a><br>
-<a href="/textiles">Textiles Work</a><br>
-<a href="/sound">Sound Work</a><br>
-<a href="/diy">DIY Electronics</a><br>
+<a href="wiki/arch.html">Architecture</a><br>
+<a href="wiki/textiles.html">Textiles Work</a><br>
+<a href="wiki/audio.html">Sound Work</a><br>
+<a href="/wiki/diy.html">DIY Electronics</a><br>
 <a href="code.html">Code</a><br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">Youtube</a><br>
 <a href="log.html">Log</a><br>
@@ -149,12 +166,10 @@ document.getElementById('hoverImage').addEventListener('mouseleave', function() 
 <div class="toggle-section" id="toggleSection">
 <font size="2">
 </font>
-<p><a href="/about">Femi</a> is cur<a href="plaintext/dreams.html">r</a>ently studying <a href="/arch">architecture</a> at RISD (after a year in 2019 in <a href="/textiles">textiles</a>),<br>
-installs <a href="/sound">work</a> that discusses the <a href="plaintext/yda4dww.html">c</a>on<a href="plaintext/victoria.html">v</a>ersation betwee<a href="plaintext/noise.html">n</a> our ears and the ground <a href="/above">above</a> and beneath our feet,<br>
-<a href="shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
-makes sounds using <a href="/da">digital/analog</a> synthesis, <a href="/diy">DIY</a> electronics and <a href="code.html">code</a> based languages,
-<a href="sound/atc.html">chance</a> based systems,<br>
-DJ<a href="ass.html">s</a> and <a href="/photo">p</a>roduces dub techno/micro house under the alias <a href="https://blakkcatrecords.bandcamp.com/album/airing-ep">Ṣonuga</a>,<br>
+<p><a href="/about">Femi</a> is cur<a href="plaintext/dreams.html">r</a>ently studying <a href="wiki/arch.html">architecture</a> at RISD (after a year in 2019 in <a href="wiki/textiles.html">textiles</a>),<br>
+installs <a href="wiki/audio.html">work</a> that discusses the <a href="plaintext/yda4dww.html">c</a>on<a href="plaintext/victoria.html">v</a>ersation betwee<a href="plaintext/noise.html">n</a> our ears and the ground <a href="/above">above</a> and beneath our feet,<br>
+<a href="wiki/shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
+makes sounds using <a href="/da">digital/analog</a> synthesis, <a href="wiki/diy.html">DIY</a> electronics and <a href="code.html">code</a> based languages,<br>
 <a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live sho<a href="wallpapers/index.html">w</a>s,<br>
 and update<a href="screenshotgarden/index.html">s</a> <a href="log.html">log</a> occasionally. 
 <br>
@@ -183,13 +198,33 @@ trigger.addEventListener('mouseenter', function() {
 <font size="2">
 </font>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
-<img src="https://webring.xxiivv.com/icon.white.svg" height="31px" alt="XXIIVV webring"/><a href="https://github.com/femifleming"><img src="github-mark.svg" height="28px"></a><br>
-<br>
-<a href="screenshotgarden/index.html"><img src="ssgbutton.gif" height="22px"></a>
-<a href="webring.html"><img src="webring.gif" height="22px"></a><br>
+<img src="https://webring.xxiivv.com/icon.white.svg" height="31px" alt="XXIIVV webring"/><a href="https://github.com/femifleming"><img src="github-mark.svg" height="28px"></a> <a href="webring.html"><img src="webring.gif" height="22px"></a><br>
 </section>
-<br>
+    <input type="checkbox" id="opacityToggle">
+<!-- <div class="blinkies">
+	<marquee>
+	<br>
+		<img src="blinkies/35m.gif" height="24px">
+		<img src="blinkies/2001.gif" height="24px">
+		<a href="https://www.instagram.com/buniehopps/"><img src="blinkies/bh.gif" height="24px"></a>
+		<img src="blinkies/blinktastic_waterdrink.gif" height="24px">
+		<a href="https://cancelled.work"><img src="blinkies/blinkiesCafe-DQ.gif" height="24px"></a>
+		<img src="blinkies/code.gif" height="24px">
+		<img src="blinkies/openmind.gif" height="24px"> 
+		<img src="blinkies/coffee.gif" height="24px">
+		<a href="sadnoise@femishonuga.com"><img src="blinkies/ehbutton.gif" height="24px"></a>
+		<img src="blinkies/Censor_NYRc.gif" height="24px">
+		<img src="blinkies/lasexymalcria.gif" height="24px">
+		<img src="blinkies/mom.gif" height="24px">
+		<img src="blinkies/ponyponies2.gif" height="24px">
+		<a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated" height="24px"></a>
+	</marquee>
 </div>
+--!>
+<link href="flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="flood.js"></script>
+<a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
 <hr/>
-<p>updated DATE – femi.fleming@gmail.com</p>
+<p>updated DATE – sadnoise@femishonuga.com</p>
 </body>
+</!doctype HTML>
