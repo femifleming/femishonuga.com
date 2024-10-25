@@ -34,8 +34,8 @@
             opacity: 1;
 		    }
 
-    a {color:#aaa;}
-    a:hover {color:#ccc;}
+    a {transition: color 1s ease; color:#aaa;}
+    a:hover {color:#fff;}
     img {margin-top: -0.5em; max-width:100%;}
     input {font-family: inherit;}
     code {
@@ -75,6 +75,15 @@ display: none;
             transition: filter 8s ease; /* Smooth transition for the filter application */
 
 }
+	section {
+		transition: background-color 10s ease;
+		margin-left: 0px;
+	
+	}
+	section:hover {
+background-color: #000;
+	}
+
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -146,7 +155,7 @@ document.getElementById('hoverImage').addEventListener('mouseleave', function() 
 <br>
 <br>
 <section>
-<img id="randomImage" src="" alt="Random Image">
+<img id="randomImage" src="" alt="Random Image" style="border: 5px solid #111;">
 <div class="wrapper" align="right">
 <span class="trigger-word">Consolidate</span>
 <div class="scrolling-text" id="scrollText">
