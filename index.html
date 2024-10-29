@@ -83,7 +83,10 @@ display: none;
 	section:hover {
 background-color: #000;
 	}
-
+	.container {
+display: flex;
+justify-content: space-between;
+	}
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -134,11 +137,11 @@ document.getElementById('last-modified').textContent = lastModified;
             var letters = word.textContent.split('');
             var coloredWord = '';
             // Change the color of each letter
-    for (var i = 0; i < letters.length; i++) {
-	coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
-    }
-    // Update the word with colored letters
-    word.innerHTML = coloredWord;
+for (var i = 0; i < letters.length; i++) {
+coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
+}
+// Update the word with colored letters
+word.innerHTML = coloredWord;
 }
 // Change letter colors every 20ms
 setInterval(changeLetterColors, 50);
@@ -146,10 +149,10 @@ setInterval(changeLetterColors, 50);
 </marquee>
 <script>
 document.getElementById('hoverImage').addEventListener('mouseenter', function() {
-    document.body.style.padding = '50px';  // Increase padding when hovered
+document.body.style.padding = '50px';  // Increase padding when hovered
 });
 document.getElementById('hoverImage').addEventListener('mouseleave', function() {
-    document.body.style.padding = '20px';  // Revert padding when not hovered
+document.body.style.padding = '20px';  // Revert padding when not hovered
 });
 </script>
 <br>
@@ -190,47 +193,28 @@ const scrollText = document.getElementById('scrollText');
 const toggleSection = document.getElementById('toggleSection');
 let isAnimating = false; // Track animation state
 trigger.addEventListener('mouseenter', function() {
-    if (!isAnimating) {
-	scrollText.style.display = 'block'; // Show scrolling text
-	scrollText.classList.add('animate');
-	toggleSection.style.display = 'none'; // Hide toggle section
-	isAnimating = true; // Set state to animating
-    } else {
-	scrollText.style.display = 'none'; // Hide scrolling text
-	scrollText.style.transform = 'translateX(0)'; // Reset position
-	scrollText.classList.remove('animate');
-	toggleSection.style.display = 'block'; // Show toggle section
-	isAnimating = false; // Reset state to not animating
-    }
+if (!isAnimating) {
+scrollText.style.display = 'block'; // Show scrolling text
+scrollText.classList.add('animate');
+toggleSection.style.display = 'none'; // Hide toggle section
+isAnimating = true; // Set state to animating
+} else {
+scrollText.style.display = 'none'; // Hide scrolling text
+scrollText.style.transform = 'translateX(0)'; // Reset position
+scrollText.classList.remove('animate');
+toggleSection.style.display = 'block'; // Show toggle section
+isAnimating = false; // Reset state to not animating
+}
 });
 </script>
 <font size="2">
 </font>
 <a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
-	<img src="https://webring.xxiivv.com/icon.white.svg" height="40px" alt="XXIIVV webring"></a><br>
+<img src="https://webring.xxiivv.com/icon.white.svg" height="40px" alt="XXIIVV webring"></a><br>
+<br>
 </section>
     <input type="checkbox" id="opacityToggle">
-<!-- <div class="blinkies">
-	<marquee>
-	<br>
-		<img src="blinkies/35m.gif" height="24px">
-		<img src="blinkies/2001.gif" height="24px">
-		<a href="https://www.instagram.com/buniehopps/"><img src="blinkies/bh.gif" height="24px"></a>
-		<img src="blinkies/blinktastic_waterdrink.gif" height="24px">
-		<a href="https://cancelled.work"><img src="blinkies/blinkiesCafe-DQ.gif" height="24px"></a>
-		<img src="blinkies/code.gif" height="24px">
-		<img src="blinkies/openmind.gif" height="24px"> 
-		<img src="blinkies/coffee.gif" height="24px">
-		<a href="sadnoise@femishonuga.com"><img src="blinkies/ehbutton.gif" height="24px"></a>
-		<img src="blinkies/Censor_NYRc.gif" height="24px">
-		<img src="blinkies/lasexymalcria.gif" height="24px">
-		<img src="blinkies/mom.gif" height="24px">
-		<img src="blinkies/ponyponies2.gif" height="24px">
-		<a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated" height="24px"></a>
-	</marquee>
-</div>
---!>
 <link href="flood.css" rel="stylesheet" type="text/css" media="all" />
 <script src="flood.js"></script>
 <a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
