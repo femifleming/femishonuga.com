@@ -20,12 +20,29 @@
             background-color: #000;
             padding: 10px;
         }
+	.back {
+	margin: 0px;
+	padding: 0px;
+	transition: text-align 1s ease;
+	}
+	.back:hover {
+text-align: left;
+	}
+	.forward {
+	margin: 0px;
+	padding: 0px;
+	transition: text-align 1s ease;
+	}
+	.forward:hover {
+text-align: right;
+	}
         #top-bar button {
             color: white;
             background-color: #000;
             border: none;
             margin: 0 5px;
             cursor: pointer;
+	    flex-grow: 1;
 	    font-size: 1em;
 	    font-family: 'Times';
             transition: background-color 0.3s;
@@ -45,11 +62,11 @@
 
     <!-- Top Bar with Buttons -->
 <div id="top-bar">
-<button onclick="goBack()"> <-- back</button>
+	<button onclick="goBack()"><div class="back"><-- back</div></button>
         <button onclick="window.location.href='webring.html'">portal</button>
         <button onclick="goRandom()">random</button>
-	<button onclick="goForward()">forward --></button>
         <button onclick="visitLink()">visit</button>
+	<button onclick="goForward()"><div class="forward">forward --></div></button>
     </div>
  <!-- Marquee displaying the current site name -->
     <marquee style="background-color: #1c1c1c; color: white;">
