@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webring Navigation</title>
+    <style>
+        /* Basic styling for the top bar and buttons */
+        body, html {
+            margin: 0;
+            padding: 0;
+	    font-family: 'Times';
+	    font-size:16px;
+	    background-color: black;
+        }
+        #top-bar {
+            display: flex;
+	    font-family: 'Times';
+	    justify-content: center;
+            background-color: #000;
+            padding: 10px;
+        }
+        #top-bar button {
+            color: white;
+            background-color: #000;
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+	    font-family: 'Times';
+            transition: background-color 0.3s;
+        }
+        #top-bar button:hover {
+            background-color: #fff;
+	    color: black;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 50px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar with Buttons -->
+<div id="top-bar">
+<button onclick="goBack()"> <-- back</button>
+        <button onclick="window.location.href='webring.html'">portal</button>
+        <button onclick="goRandom()">random</button>
+	<button onclick="goForward()">forward --></button>
+        <button onclick="visitLink()">visit</button>
+    </div>
+ <!-- Marquee displaying the current site name -->
+    <marquee style="background-color: #1c1c1c; color: white;">
+        You are currently viewing the site of <span id="site-name">Example Site</span>
+    </marquee>
+
+    <!-- Main Iframe Area -->
+    <iframe id="main-iframe" src=""></iframe>
+
+    <script>
+        // List of site URLs
+        const sites = [
+            "https://funbox.sh/~cenzo/",
+            "https://redeel.org",
+            "https://cryptwarbler.net/",
+            "https://williamhazard.co/",
+            "https://caloricmusic.com",
+            "https://sacred-web.vercel.app",
+            "https://eachspringnewbeginning.com",
+            "https://mark.cetilia.org",
+            "https://sacred-web.vercel.app/dots.html",
+            "https://cancelled.work",
+            "https://craow.net",
+            "https://cca.org",
+            "https://rcsri.org",
+            "https://dfiction.com",
+            "https://yasunaga.work",
+            "https://ru6y.com",
+            "https://whereditgo.diamonds/",
+            "https://claracollins.love/",
+            "https://hankhurst.com/",
+        ];
+
+        // List of site names corresponding to each URL
+        const siteNames = [
+            "C Enzo",
+            "Red Eel",
+            "Cryptwarbler",
+            "William Hazard",
+            "Caloric",
+            "Sacred Web",
+            "Madeline Young",
+            "Mark Cetelia",
+            "Dots",
+            "Cancelled.Work",
+            "Craow",
+            "CCA",
+            "RCSRI",
+            "Daniel Fishkin",
+            "Yasunaga.Work",
+            "RUBY",
+            "incognitotheif",
+            "Clara Collins",
+            "Hank Hurst",
+        ];
+
+        // Current site index
+        let currentIndex = 0;
+
+        // Set the initial iframe source and marquee text
+        function updateIframeAndMarquee() {
+            document.getElementById("main-iframe").src = sites[currentIndex];
+            document.getElementById("site-name").textContent = siteNames[currentIndex];
+        }
+        updateIframeAndMarquee();
+
+        // Back button: move one step back in the list
+        function goBack() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = sites.length - 1; // Wrap around to the last site
+            }
+            updateIframeAndMarquee();
+        }
+
+        // Forward button: move one step forward in the list
+        function goForward() {
+            if (currentIndex < sites.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Wrap around to the first site
+            }
+            updateIframeAndMarquee();
+        }
+
+        // Random button: go to a random site from the list
+        function goRandom() {
+            currentIndex = Math.floor(Math.random() * sites.length);
+            updateIframeAndMarquee();
+        }
+
+        // Portal button: go to "webring.html" in the iframe
+        function goToPortal() {
+            document.getElementById("main-iframe").src = "webring.html";
+            document.getElementById("site-name").textContent = "Webring Portal";
+        }
+
+        // Visit button: open the current link in a new tab
+        function visitLink() {
+            window.open(sites[currentIndex], "_blank");
+        }
+    </script>
+</body>
+</html>
+
