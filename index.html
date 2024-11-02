@@ -28,12 +28,24 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
+	    .nostyle {
+	    transition: filter 0s;
+	    }
+	    .nostyle:hover {
+	    filter: blur(0px) hue-rotate(0deg);
+	    }
 	    a.toggle-link {
 	    }
 	            #opacityToggle:checked ~ .blinkies {
             opacity: 1;
 		    }
-
+		    img {
+			    transition: filter 8s ease;
+			    filter: blur(0px);
+		    }
+		    img:hover {
+filter: blur(100px) hue-rotate(180deg);
+		    }
     a {transition: color 1s ease; color:#aaa;}
     a:hover {color:#fff;}
     img {margin-top: -0.5em; max-width:100%;}
@@ -157,8 +169,8 @@ document.body.style.padding = '20px';  // Revert padding when not hovered
 </script>
 <br>
 <br>
-<section>
 <img id="randomImage" width="98.5%" src="" alt="Random Image" style="border: 5px solid #111;">
+<section>
 <div class="wrapper" align="right">
 <span class="trigger-word">Consolidate</span>
 <div class="scrolling-text" id="scrollText">
@@ -212,7 +224,7 @@ isAnimating = false; // Reset state to not animating
 </font>
 <a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener">
-<img src="https://webring.xxiivv.com/icon.white.svg" height="40px" alt="XXIIVV webring"></a><br>
+<img class="nostyle" src="https://webring.xxiivv.com/icon.white.svg" height="40px" alt="XXIIVV webring"></a><br>
 <br>
 <p><h2>Recent Changes:</h2></p>
 <ul>
@@ -220,7 +232,7 @@ isAnimating = false; // Reset state to not animating
 	<li>Updated <a href="https://cancelled.work/feemee/clguide/index.html">ciat lonbarde diy guide</a> on <a href="https://cancelled.work">cancelled.work</a></li>
 </ul>
 <br>
- <p><a href="../webring.html"><img src="trans.png" width=200px></a></p>
+ <p><a href="../webring.html"><img class="nostyle" src="trans.png" width=200px></a></p>
 </section>
     <input type="checkbox" id="opacityToggle">
 <link href="flood.css" rel="stylesheet" type="text/css" media="all" />
