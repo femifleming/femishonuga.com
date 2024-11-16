@@ -28,6 +28,12 @@ z-index: 2;
 border-radius: 0px;
 transition: margin-left 1s ease, border-radius 1s ease, transform 1s ease;
 }
+.efloat {
+position: absolute;
+top: 100px;
+left: 1000px;
+z-index: 5;
+}
 .dfloat {
 position: absolute;
 top: 500px;
@@ -64,7 +70,6 @@ height: 100%;
 z-index: -2;
 }
 .a {
-background-image: url("jay.gif");
 position: fixed;
 top: 0;
 left: 0;
@@ -76,7 +81,7 @@ z-index: -1;
 border-width: 2px;
 }
 .other {
-margin-left: 200px;
+margin-left: 300px;
 }
 .main {
 height: 100%;
@@ -84,13 +89,20 @@ width: 222px;
 color: white;
 background-color:rgba(0,0,0,0.5);
 position: fixed;
-z-index: -2
+z-index: -2;
+margin-left: 100px
+}
+.pre {
+	height: 100%;
+	position: fixed;
+background-color:rgba(3,4,100, 0.4);
+width: 100px;
+z-index: 4;
 }
 </style>
 <body background="ab1.jpg">
-	<div class="main">
-		<p>this is a tribute page to abelle</p>
-		<p><h1>ARMA17 MIXES</h1></p><br>
+	<div class="pre">
+		<p><img src="white.png" width="90px"></p>
 		<audio controls autoplay>
         <source src="arma17abelle080711.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -99,6 +111,23 @@ z-index: -2
         <source src="abelle251111.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+	</div>
+	<div class="main">
+		<p>this is a tribute page to abelle</p>
+		<p><h1>ARMA17 MIXES</h1></p><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div style="border-style: solid; border-color: black; border-width: 5px;">
+			<marquee height="400px" scrollamount=4 style="background-image:url('villalobos.gif');"direction="up"><p><h3><i>This mix is everything i want out of a minimal mix. long mixes, weird textures, hypnotic melodies, skillful DJ, 240p video, the prime time for minimal house in russia and in the states. I could listen to this all day long, i cant wait to have a studio and blast this out of my speaker system. I want to build a speaker stack just to hear this set in its highest fidelity. This inspires me to make minimal house music with my euroradk modular, the way it was done in 2006-2012 era. I have been (nov 16 2024) super obsessed with ricardo villalobs for the past year and a half now. It makes sense, im really into weird textural modular music, and house and techno, and hes the perfect marrige of the two. I couldnt beleive i hadnt heard of him sooner, im so glad he brought me into this world. what crazy music!</i></h3></p>
+		</marquee>
+		</div>
 	</div>
 	<div class="other">
 <marquee  id="marqueeText">abelle :heart eyes: <3 <3 <3</marquee>
@@ -109,6 +138,7 @@ You are now listening to: Arma17: Abelle - RTS.FM.080711 July 25 2013
 
 Key artists like Jan Jelinek (as Farben), Luomo (with the influential Vocalcity album), and labels such as Playhouse, Kompakt, Perlon, and Force Tracks played pivotal roles in popularizing the genre during the late 1990s and early 2000s. Microhouse continues to thrive, with artists like Jon Hopkins, Pantha du Prince, Four Tet, and others contributing to its evolution.</div></marquee>
 	<img src="ab1.gif" class="bfloat" onmouseover="ranchange('abelle',8)">
+	<iframe width="240px" height="500px" src="https://www.youtube.com/watch?v=NUyQBZ4nIUQ&t=2687s" class="efloat"></iframe>
 	<img src="beach.gif" class="cfloat" onmouseover="ranchange('abelle',8)">
 	<img src="brick.gif" class="dfloat" onmouseover="ranchange('abelle',8)">
 	<img src="abelle3.jpg" class="afloat" onmouseover="ranchange('abelle',8)">
