@@ -1,15 +1,67 @@
 <!doctype HTML>
 <style>
-marquee {color: white; background-color: #5ac477;}
+marquee {color: white; background-color: #5ac477; transition: background-color 0.5s, color 0.5s, font-size 0.5s;
+}
+.afloat {
+position: absolute;
+top: 100px;
+left: 800px;
+transition: margin-top 1s ease;
+}
+.bfloat {
+transition: margin-left 3s ease;
+}
+.afloat:hover {
+margin-top: 400px;
+}
+.bfloat:hover {
+margin-left: 1200px;
+}
 </style>
-<marquee>abelle :heart eyes:</marquee>
+<marquee  id="marqueeText">abelle :heart eyes:</marquee>
 <body background="ab1.jpg">
-	<img src="ab.jpg">
-
+	<img src="ab.jpg" class="bfloat" onmouseover="ranchange('abelle',7)">
+	<img src="ab3.jpg" class="afloat" onmouseover="ranchange('abelle',7)">
 	<audio autoplay>
         <source src="arma17abelle080711.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+<script>
+function change(picture) {
+document.body.background=picture;
+}
+
+function ranchange(picture,num) {
+var randomnumber=Math.floor(Math.random()*num)+1;
+document.body.background=picture+randomnumber+".jpg";
+}
+</script>
+<script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function getRandomFontSize() {
+      // Random font size between 20px and 50px
+      return Math.floor(Math.random() * 120) + 11 + 'px';
+    }
+
+    function changeStyles() {
+      const marquee = document.getElementById('marqueeText');
+      marquee.style.color = getRandomColor(); // Change text color
+      marquee.style.backgroundColor = getRandomColor(); // Change background color
+      marquee.style.fontSize = getRandomFontSize(); // Change font size
+    }
+
+    setInterval(changeStyles, 1000); // Change styles every second
+  </script>  
+
 	</body>
 
 
