@@ -12,12 +12,12 @@ find . -type f -name "*.html" | while read -r file; do
         echo "$line" >> "$temp_file"
         if [[ "$line" =~ \<head\> ]]; then
             echo '<!-- Google tag (gtag.js) -->' >> "$temp_file"
-            echo '<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC2DPN1YEH"></script>' >> "$temp_file"
+            echo '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>' >> "$temp_file"
             echo '<script>' >> "$temp_file"
             echo 'window.dataLayer = window.dataLayer || [];' >> "$temp_file"
             echo 'function gtag(){dataLayer.push(arguments);}' >> "$temp_file"
             echo "gtag('js', new Date());" >> "$temp_file"
-            echo "gtag('config', 'G-CC2DPN1YEH');" >> "$temp_file"
+            echo "gtag('config', 'G-FCQXVD7YXZ');" >> "$temp_file"
             echo '</script>' >> "$temp_file"
         fi
     done < "$file"
