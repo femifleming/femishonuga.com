@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .tree {
+            margin: 20px;
+        }
+        .tree ul {
+            padding-left: 20px;
+        }
+        .tree li {
+            list-style-type: none;
+            margin: 10px 0;
+            position: relative;
+        }
+        .tree li::before {
+            content: "└─";
+            position: absolute;
+            left: -20px;
+        }
+        .tree a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .tree a:hover {
+            text-decoration: underline;
+        }
+        .relationship {
+            font-size: 0.8em;
+            color: #666;
+            margin-left: 10px;
+        }
+        .self {
+            color: #009900;
+        }
+        .parent {
+            color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site Map</h1>
+    <div class="tree">
+        <ul>
+            <li>
+                <a href="index.html">index.html</a>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // Add last updated timestamp
+        document.body.insertAdjacentHTML('beforeend', 
+            '<p style="text-align: center; color: #666; margin-top: 40px;">' +
+            'Last updated: ' + new Date().toLocaleString() +
+            '</p>'
+        );
+    </script>
+</body>
+</html>
