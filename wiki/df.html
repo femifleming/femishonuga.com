@@ -22,6 +22,9 @@ gtag('config', 'G-FCQXVD7YXZ');
 	  font-weight: normal;
 
     }
+    #time:hover {
+color: black;
+    }
 </style>
 <nav>
         <ul>
@@ -39,8 +42,16 @@ gtag('config', 'G-FCQXVD7YXZ');
 	<p><h3>This is the portal for my apprenticeship with Daniel Fishkin in NY during the summer and fall of 2024</h3></p>
 	<p>During this apprenticeship Daniel and I worked on building Daxophones, Arbrassons and Solar Sounders, while I learned woodworking, pcb design and arduino code.</p>
 	<p><img src="links/arb2.jpg"></p>
-	<a href="https://dfiction.com"><h1 class="custom-font">sadnoise</h1></a><br>
-
+	<a href="https://dfiction.com"><h1 class="custom-font"><div id="time"></div></h1></a><br>
+<script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString(); // e.g., "2:34:56 PM"
+            document.getElementById('time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call
+    </script>
 <style>
 @media (prefers-color-scheme:dark) {
     .dodark { display:block !important }

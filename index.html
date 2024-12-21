@@ -116,6 +116,12 @@ opacity: 0;
 opacity: 1;
 filter: blur(0);
 	}
+	.inline-div {
+        float: left;
+	}
+	#time {
+display: inline; 
+	}
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -153,7 +159,7 @@ document.getElementById('last-modified').textContent = lastModified;
 </script>
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
-<div id="randomWord">Next Show: Weird Music Night @ Satellite Art Gallery Nov 2nd 2024 ~New York</div>
+<div id="randomWord">Next Show: Machines with Magnets, Jan 23 2025 :)</div>
   <script>
         // Function to generate a random color in hexadecimal format
         function getRandomColor() {
@@ -265,7 +271,9 @@ isAnimating = false; // Reset state to not animating
 --!>
 
 <hr/>
-<p>updated 2024-10-25 01:03:23 – sadnoise@femishonuga.com</p>
+<div style="line-height:1em; height:1em;"
+<p>updated 2024-12-21 11:11:04 – sadnoise@femishonuga.com - <div id="time"></div></p>
+</div>
 </body>
 <script>
         // Define the secret key sequence (left, right, up, down)
@@ -307,5 +315,14 @@ isAnimating = false; // Reset state to not animating
                 window.location.href = 'fog.html'; // Redirect to fog.html
             }
         });
+    </script>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString(); // e.g., "2:34:56 PM"
+            document.getElementById('time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call
     </script>
 </!doctype HTML>
