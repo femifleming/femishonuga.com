@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time and Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #time {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        #weather {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Current Time and Weather</h1>
+    <div id="time">Loading time...</div>
+    <div id="weather">Loading weather...</div>
+
+    <script>
+        // Function to update the time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('time').textContent = `Current Time: ${timeString}`;
+        }
+        setInterval(updateTime, 1000); // Update time every second
+        updateTime(); // Initial call
+
+        // Function to fetch weather using wttr.in
+        async function fetchWeather() {
+            const weatherElement = document.getElementById('weather');
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    const url = `https://wttr.in/${lat},${lon}?format=%C+%t`;
+                    try {
+                        const response = await fetch(url);
+                        const weatherData = await response.text();
+                        weatherElement.textContent = `Weather: ${weatherData}`;
+                    } catch (error) {
+                        weatherElement.textContent = `Unable to fetch weather data.`;
+                    }
+                }, () => {
+                    weatherElement.textContent = `Geolocation access denied.`;
+                });
+            } else {
+                weatherElement.textContent = `Geolocation is not supported by your browser.`;
+            }
+        }
+        fetchWeather();
+    </script>
+</body>
+</html>
+
