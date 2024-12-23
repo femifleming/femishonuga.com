@@ -19,7 +19,7 @@ gtag('config', 'G-FCQXVD7YXZ');
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color: #141414; max-width:800px; color:#ddd; 
+    body {background-color: #141414; max-width:800px; color: white; 
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}
@@ -53,8 +53,8 @@ gtag('config', 'G-FCQXVD7YXZ');
 		    img:hover {
 filter: blur(100px) hue-rotate(180deg);
 		    }
-    a {transition: color 1s ease; color:#cccccc;}
-    a.x {color:#ddd;
+    a {transition: color 1s ease; color:#bbbbbb;}
+    a.x {color: white;
     text-decoration: none !important;}
     a:hover {color:#fff;}
     a.x:hover{color:#ddd;}
@@ -122,6 +122,19 @@ filter: blur(0);
 	#time {
 display: inline; 
 	}
+	.feed {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .date {
+      text-align: right;
+      color: white;
+    }
+    .link {
+	color: white;
+      text-align: left;
+    }
 </style>
 <body>
 <script>
@@ -223,7 +236,7 @@ Sadnoise is embedded in the ritual practice of performance in existing and impos
 installs <a href="wiki/audio.html">work</a> that discusses the <a class="x" href="plaintext/yda4dww.html">c</a>on<a class="x" href="plaintext/victoria.html">v</a>ers<a class="x" href="a.html">a</a>tion betwee<a class="x" href="plaintext/noise.html">n</a> our ears and the ground <a href="/above">above</a> and <span class="hover-word">beneath</span> our feet,<br>
 <a href="wiki/shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
 makes sounds using <a href="/da">digital/analog</a> synthesis, <a href="wiki/diy.html">DIY</a> electronics and <a href="code.html">code</a>,<br>
-<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live sho<a href="wallpapers/index.html">w</a>s,<br>
+<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live sho<a class="x" href="wallpapers/index.html">w</a>s,<br>
 and update<a class="x" href="screenshotgarden/index.html">s</a> <a href="log.html">log</a> occasionally. 
 <br>
 <br>
@@ -263,14 +276,26 @@ isAnimating = false; // Reset state to not animating
 </ul>
 <br>
 <p><a href="../webring.html"><img class="nostyle" src="trans.png" width=200px></a></p>
-</section>
 
 <!-- <input type="checkbox" id="opacityToggle">
 <link href="flood.css" rel="stylesheet" type="text/css" media="all" />
 <script src="flood.js"></script>
 <a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
 --!>
-
+<p style="background-color:#2a2a2a">news:<p>
+<div class="feed">
+	<a href="wiki/cldiy.html" class="link">DIY Ciat Lonbarde Synthesizers</a>
+	<span class="date"><b><time datetime="2024-12-01">December 12st, 2024</time></b></span>
+</div>
+<div class="feed">
+	<a class="link" href="https://sadnoise.bandcamp.com/album/addressed-to-the-king-s-mistress-ms-tallulah-ocone-baggarlee">Addressed to the King’s Mistress, Ms. Tallulah-Ocone Baggarlee</a>
+	<span class="date"><b><time datetime="2024-06-24">December 6th, 2024</time></b></span>
+</div>
+<div class="feed">
+<a href="wiki/arb.html" class="link">Arbrasson Workshop at Flux Factory</a>
+<span class="date"><b><time datetime="2024-11-04">November 4th, 2024</time></b></span>
+</div>
+</section>
 <hr/>
 <div style="line-height:1em; height:1em;"
 <p>updated 2024-12-21 11:11:04 – sadnoise@femishonuga.com - <div id="time"></div></p>
