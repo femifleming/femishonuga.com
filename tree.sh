@@ -1,182 +1,65 @@
 #!/bin/bash
 
-# Output file name
-OUTPUT="sitemap.html"
+# Output file for the tree visualization
+output_file="link_tree.html"
 
-# Function to find all links in an HTML file and their context
-get_links() {
-    local file="$1"
-    # Look for lines containing href and analyze their context
-    grep -i "href=.*\.html.*" "$file" | while read -r line; do
-        # Extract the href value
-        href=$(echo "$line" | grep -o 'href="[^"]*\.html"' | sed 's/href="\(.*\)"/\1/')
-        if [ ! -z "$href" ]; then
-            # Check if line contains indicators of relationship
-            if echo "$line" | grep -qi "self"; then
-                echo "$href self"
-            elif echo "$line" | grep -qi "parent"; then
-                echo "$href parent"
-            else
-                echo "$href link"
-            fi
+# Function to recursively build the tree structure
+generate_tree() {
+    local current_file=$1
+    local indent=$2
+
+    # Start a new unordered list
+    echo "${indent}<ul>" >> "$output_file"
+
+    # Extract all links and their display text
+    grep -oP '<a href="[^"]+">.*?</a>' "$current_file" | while read -r anchor_tag; do
+        # Extract the display text between <a> and </a>
+        display_text=$(echo "$anchor_tag" | grep -oP '(?<=<a href="[^"]+">).*?(?=</a>)')
+
+        # Extract the target file from href attribute
+        target_file=$(echo "$anchor_tag" | grep -oP '(?<=<a href=")[^"]+')
+
+        # Add the link text to the current tree level
+        echo "${indent}  <li>$display_text</li>" >> "$output_file"
+
+        # If the target is an HTML file and exists, recursively process it
+        if [[ "$target_file" == *.html && -f "$target_file" ]]; then
+            generate_tree "$target_file" "  $indent"
         fi
-    done | sort | uniq
+    done
+
+    # Close the unordered list
+    echo "${indent}</ul>" >> "$output_file"
 }
 
-# Create the sitemap HTML file
-cat > "$OUTPUT" << EOL
+# Start building the HTML page
+echo "Generating HTML link tree..."
+
+cat <<EOL > "$output_file"
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Map</title>
+    <title>HTML Link Tree</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .tree {
-            margin: 20px;
-        }
-        .tree ul {
-            padding-left: 20px;
-        }
-        .tree li {
-            list-style-type: none;
-            margin: 10px 0;
-            position: relative;
-        }
-        .tree li::before {
-            content: "└─";
-            position: absolute;
-            left: -20px;
-        }
-        .tree a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .tree a:hover {
-            text-decoration: underline;
-        }
-        .relationship {
-            font-size: 0.8em;
-            color: #666;
-            margin-left: 10px;
-        }
-        .self {
-            color: #009900;
-        }
-        .parent {
-            color: #990000;
-        }
+        ul { list-style-type: none; }
+        ul li { margin: 5px; }
     </style>
 </head>
 <body>
-    <h1>Site Map</h1>
-    <div class="tree">
-        <ul>
+    <h1>HTML Link Tree</h1>
 EOL
 
-# First, find index.html or default.html as the root
-ROOT_FILE=""
-if [ -f "index.html" ]; then
-    ROOT_FILE="index.html"
-elif [ -f "default.html" ]; then
-    ROOT_FILE="default.html"
-else
-    # Use the first HTML file found as root
-    ROOT_FILE=$(find . -type f -name "*.html" | head -n 1)
-fi
+# Find all root-level HTML files to start the tree
+find . -type f -name "*.html" | while read -r html_file; do
+    echo "<h2>Tree for: $(basename "$html_file")</h2>" >> "$output_file"
+    generate_tree "$html_file" "  "
+done
 
-# Function to process a file and its links recursively
-process_file() {
-    local file="$1"
-    local indent="$2"
-    local processed_files="$3"
-    
-    # Skip if we've already processed this file or if it's the sitemap
-    if [[ " $processed_files " =~ " $file " ]] || [ "$(basename "$file")" == "$OUTPUT" ]; then
-        return
-    fi
-    
-    # Add this file to processed files
-    processed_files="$processed_files $file"
-    
-    # Get the relative path and filename
-    relative_path=${file#./}
-    filename=$(basename "$file")
-    
-    echo "${indent}<li>" >> "$OUTPUT"
-    echo "${indent}    <a href=\"$relative_path\">$filename</a>" >> "$OUTPUT"
-    
-    # Get and process links
-    links=$(get_links "$file")
-    if [ ! -z "$links" ]; then
-        echo "${indent}    <ul>" >> "$OUTPUT"
-        while IFS=' ' read -r link relationship; do
-            if [ ! -z "$link" ]; then
-                # Resolve the actual path of the linked file
-                linked_file=$(realpath --relative-to=. "$(dirname "$file")/$link" 2>/dev/null)
-                if [ -f "$linked_file" ]; then
-                    # Add relationship indicator
-                    rel_class=""
-                    rel_text=""
-                    case "$relationship" in
-                        "self") 
-                            rel_class="self"
-                            rel_text="(self-reference)"
-                            ;;
-                        "parent") 
-                            rel_class="parent"
-                            rel_text="(parent)"
-                            ;;
-                    esac
-                    
-                    echo "${indent}        <li>" >> "$OUTPUT"
-                    echo "${indent}            <a href=\"$link\">$(basename "$link")</a>" >> "$OUTPUT"
-                    if [ ! -z "$rel_text" ]; then
-                        echo "${indent}            <span class=\"relationship $rel_class\">$rel_text</span>" >> "$OUTPUT"
-                    fi
-                    echo "${indent}        </li>" >> "$OUTPUT"
-                    
-                    # Recursively process the linked file with increased indentation
-                    if [ "$relationship" != "self" ] && [ "$relationship" != "parent" ]; then
-                        process_file "$linked_file" "${indent}    " "$processed_files"
-                    fi
-                fi
-            fi
-        done <<< "$links"
-        echo "${indent}    </ul>" >> "$OUTPUT"
-    fi
-    echo "${indent}</li>" >> "$OUTPUT"
-}
-
-# Start processing from the root file
-echo "Generating site map..."
-process_file "$ROOT_FILE" "            " ""
-
-# Close the HTML file
-cat >> "$OUTPUT" << EOL
-        </ul>
-    </div>
-    <script>
-        // Add last updated timestamp
-        document.body.insertAdjacentHTML('beforeend', 
-            '<p style="text-align: center; color: #666; margin-top: 40px;">' +
-            'Last updated: ' + new Date().toLocaleString() +
-            '</p>'
-        );
-    </script>
+# Finish the HTML page
+cat <<EOL >> "$output_file"
 </body>
 </html>
 EOL
 
-echo "Site map generated as $OUTPUT"
+echo "HTML link tree generated: $output_file"
+
