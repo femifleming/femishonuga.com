@@ -1,1 +1,0 @@
-[seamstress](https://github.com/ryleelyman/seamstress) is really great
