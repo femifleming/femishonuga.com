@@ -37,7 +37,7 @@
                     img:hover {
 filter: blur(100px) hue-rotate(180deg);
                     }
-    a {transition: color 1s ease; color:#bbbbbb;}
+    a {text-decoration-style:dotted; transition: color 1s ease; color:#ddd;}
     a.x {color: white;
     text-decoration: none !important;}
     a:hover {color:#fff;}
@@ -113,6 +113,7 @@ display: inline;
       align-items: center;
     }
     .date {
+	    font-style: italic;
       text-align: right;
       color: grey;
     }
