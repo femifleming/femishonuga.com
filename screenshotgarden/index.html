@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<style>
+    @font-face {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 200;
+        src: local(''), url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'), url('../include/roboto-mono-v21-latin-regular.woff') format('woff');
+    }
+    
+    body {
+        max-width: 800px;
+        color: #ddd;
+        font-family: 'Tiems New Roman';
+        font-size: 1.0em;
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+    
+    pre {
+        font-size: 1.0em;
+        color: #ddd;
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        background-color: #737A8A
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #EE9999;
+        background-color: #3E2D2D
+    }
+    
+    h3 {
+        font-weight: bold;
+        font-size: 0.9em;
+        color: #E7E9F1
+    }
+    
+    hr {
+        margin-top: 2em;
+        border: none;
+        background-color: #555;
+        color: #555;
+        height: 1px;
+    }
+    
+    a {
+        color: #aaa;
+    }
+    
+    a:hover {
+        color: #ccc;
+    }
+    
+    img {
+        margin-top: -0.5em;
+        max-width: 100%;
+    }
+    
+    input {
+        font-family: inherit;
+    }
+    
+    code {
+        background: #555;
+        word-wrap: break-word;
+        box-decoration-break: clone;
+        padding: .1rem .3rem .2rem;
+        border-radius: .2rem;
+    }
+    
+    #page-wrap {
+        position: relative;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 30px;
+        float: left;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.76)
+    }
+</style>
+<script>
+    function change(picture) {
+        document.body.background = picture;
+    }
+
+    function ranchange(picture, num) {
+        var randomnumber = Math.floor(Math.random() * num) + 1;
+        document.body.background = picture + randomnumber + ".jpeg";
+    }
+
+    var filtar = 0;
+
+    function pageScroll() {
+
+        filtar = (filtar * 481) + (Math.random() * 444 - 222);
+        filtar /= 482;
+        window.scrollBy(0, filtar);
+        scrolldelay = setTimeout('pageScroll()', 10);
+    }
+</script>
+
+<body background="../garden.jpeg">
+    <html>
+    <title>_screenshot garden_</title>
+
+    <div id="page-wrap" class="intro">
+        <text class="title"> ____ screenshot garden ____</text><br><br> this page is a screenshot garden<br> it is meant to be a public-facing screenshot folder<br> (like a diary or a work blog)<br>
+
+        <p>a static, html-only directory is <a href="html.html" onmouseover="change('../garden2.jpeg')">here --></a></p><br> build your own screenshot garden at <br>
+        <a href="https://screenshot-garden.neocities.org/build-your-own.html">screenshot-garden.neocities.org/build-your-own.html</a>!<br><br><br>
+    </div>
