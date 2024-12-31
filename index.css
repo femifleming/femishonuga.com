@@ -3,14 +3,14 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color: #141414; max-width:800px; color: white;
+    body {background-color: #e2e3d5; max-width:800px; color: black;
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}
     h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
     h2 {font-style: bold; font-size: 1.1em;}
     h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
-    h4 {font-weight:normal; font-size: 0.9em;}
+    h4 {font-weight:normal; font-size: 0.9em; background-color:#4a4a4a; color: white;}
     hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
         #opacityToggle {
             display: none;
@@ -37,10 +37,10 @@
                     img:hover {
 filter: blur(100px) hue-rotate(180deg);
                     }
-    a {text-decoration-style:dotted; transition: color 1s ease; color:#ddd;}
-    a.x {color: white;
+    a {text-decoration-style:dotted; transition: color 1s ease; color:#0d0a0a;}
+    a.x {color: black;
     text-decoration: none !important;}
-    a:hover {color:#fff;}
+    a:hover {color:#000;}
     a.x:hover{color:#ddd;}
     img {margin-top: -0.5em; max-width:100%;}
     input {font-family: inherit;}
@@ -87,7 +87,7 @@ display: none;
 
         }
         section:hover {
-background-color: #000;
+background-color: #beige;
         }
         .container {
 display: flex;
@@ -127,3 +127,24 @@ display: inline;
 color: black;
 background-color: grey;
     }
+    @media (prefers-color-scheme:dark) {
+        * { color:#fff }
+        body {background-color: #141414;}
+    a {text-decoration-style:dotted; transition: color 1s ease; color:#ddd;}
+	    a.x {color: black;
+    text-decoration: none !important;}
+    a:hover {color:#fff;}
+    a.x:hover{color:#ddd;}    
+    a.x {color: white;
+    text-decoration: none !important;}
+    a:hover {color:#fff;}
+    a.x:hover{color:#ddd;}
+            section:hover {
+background-color: #000;
+        }
+    h4 {font-weight:normal; font-size: 0.9em; background-color:#2a2a2a; color: white;}
+    img[src*="svg"] { filter:invert(1)!important;}
+        img[src*="svg"] { background:transparent ;filter:invert(1) hue-rotate(180deg) }
+        .nodark { filter:invert(0) hue-rotate(0deg) !important;background:transparent !important }
+        footer { border-top:1px solid #fff }
+}

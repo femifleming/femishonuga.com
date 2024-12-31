@@ -13,42 +13,66 @@ gtag('config', 'G-FCQXVD7YXZ');
     <title>Femi Shonuga-Fleming</title>
     <meta name="keywords" content="sad, noise">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+    <body>
+	    <script>
+    document.addEventListener("DOMContentLoaded", function () {
         // List of images
         var images = [
-                "indass/header.jpeg",
-		"loonPOP.JPG",
-                "indass/P4270158.jpeg",
-                "indass/Sadnoise.jpeg",
-                "indass/algotre1-1.jpeg",
-                "indass/me1.jpeg",
-                "indass/shows1.jpeg",  
-                "indass/stacie9.jpeg",
-                "indass/ben.jpeg",
-                "indass/hex1.jpg",
-                "indass/hex3.jpg",
-                "indass/hex5.jpg",
-		"cara2.JPG",
-		"blown.JPG",
-		"indass/noisefunction22y2.JPG",
-		"indass/rocks.png",
-		"aug1.jpg",
-		"aug2.JPG",
-		"indass/algpano.png",
+            "indass/header.jpeg",
+            "loonPOP.JPG",
+            "indass/P4270158.jpeg",
+            "indass/Sadnoise.jpeg",
+            "indass/algotre1-1.jpeg",
+            "indass/me1.jpeg",
+            "indass/shows1.jpeg",
+            "indass/stacie9.jpeg",
+            "indass/ben.jpeg",
+            "indass/hex1.jpg",
+            "indass/hex3.jpg",
+            "indass/hex5.jpg",
+            "cara2.JPG",
+            "blown.JPG",
+            "indass/noisefunction22y2.JPG",
+            "indass/rocks.png",
+            "aug1.jpg",
+            "aug2.JPG",
+            "indass/algpano.png",
         ];
+
         // Function to get a random image from the list
-        function getRandomImage() {
-                var index = Math.floor(Math.random() * images.length);
-                return images[index];
+        function getRandomImage(isDarkMode) {
+            var index = Math.floor(Math.random() * images.length);
+            var originalImage = images[index];
+
+            // Modify the file path based on the theme
+            if (!isDarkMode && /\.(jpg|jpeg|JPG|png)$/.test(originalImage)) {
+                return originalImage.replace(/\.(jpg|jpeg|JPG|png)$/, "_dithered.$1");
+            }
+
+            return originalImage;
         }
-        // Set the source of the image to a random image from the list
-        document.getElementById("randomImage").src = getRandomImage();
+
+        // Function to update the random image based on the theme
+        function updateRandomImage() {
+            var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            var randomImage = getRandomImage(isDarkMode);
+            document.getElementById("randomImage").src = randomImage;
+        }
+
+        // Initial image setup
+        updateRandomImage();
+
+        // Listen for theme changes
+        window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", updateRandomImage);
+
+        // Update "last modified" text
+        const lastModified = document.lastModified;
+        document.getElementById("last-modified").textContent = lastModified;
     });
-    const lastModified = document.lastModified;
-document.getElementById('last-modified').textContent = lastModified;
 </script>
+
 <marquee direction="left" scrollamount="5">
 <!-- The word whose letters' colors will change -->
 <div id="randomWord">Next Show: Machines with Magnets, Jan 23 2025 :)</div>
@@ -142,7 +166,7 @@ isAnimating = false; // Reset state to not animating
 <font size="2">
 </font>
 <a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
-<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.white.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.png" height="40px" class="nostyle"></a><br>
+<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.black.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.svg" height="40px" class="nostyle"></a><br>
 <img class="display" height="40px" src="code1.png">
 <br>
 <p><h2>Recent Changes:</h2></p>
@@ -153,14 +177,14 @@ isAnimating = false; // Reset state to not animating
 	<li>Walked through the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
 </ul>
 <br>
-<p><a href="../webring.html"><img class="nostyle" src="trans.png" width=200px></a></p>
+<p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
 
 <!-- <input type="checkbox" id="opacityToggle">
 <link href="flood.css" rel="stylesheet" type="text/css" media="all" />
 <script src="flood.js"></script>
 <a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
 --!>
-<p style="background-color:#2a2a2a">news:<p>
+<h4>news:</h4>
 <div class="feed">
 	<a href="wiki/cldiy.html" class="link">DIY Ciat Lonbarde Synthesizers</a>
 	<span class="date"><time datetime="2024-12-01">December 12st, 2024</time></span>
@@ -196,7 +220,7 @@ isAnimating = false; // Reset state to not animating
 </section>
 <hr/>
 <div style="line-height:1em; height:1em;"
-<p>updated 2024-12-21 11:11:04 – sadnoise@femishonuga.com - <div id="time"></div></p>
+<p>updated 2024-12-31– sadnoise@femishonuga.com - <div id="time"></div></p>
 </div>
 </body>
 <script>
