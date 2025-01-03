@@ -148,3 +148,15 @@ background-color: #000;
         .nodark { filter:invert(0) hue-rotate(0deg) !important;background:transparent !important }
         footer { border-top:1px solid #fff }
 }
+.phar::after {
+border-radius: 4px;
+transition: color 2s ease;
+background-color: #000;
+color: #000;
+margin-left: 3px;
+}
+.phar:hover::after {
+content: "the arrows will guide you around the branches";
+position: absolute;
+color: #fff;
+} 
