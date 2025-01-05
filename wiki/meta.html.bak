@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+        <ul>
+                <li><a href="audio.html">audio</a></li>
+                <li><a href="textiles.html">textiles</a></li>
+                <li><a href="arch.html">architecture</a></li>
+                <li><a href="visual.html">visual</a></li>
+                <li><a href="research.html">research</a></li>
+        </ul>
+        <ul>
+                <li><a href="meta.html" class="self">internal</a></li>
+                <li><a href="inventory.html">inventory</a></li>
+        </ul>
+        <ul>
+                <li><a href="sitemap.html">sitemap</a></li>
+		<li><a href="ap.html">archived pages</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+        <p>Hello from my terminal! This is the internal hyper meta magic portal for the site.</p>
+	<img src="labback.jpg">
+	<article style="border-left: 2px solid #fff;">
+	<p>This site is hosted on Github and coded by hand with HTML, CSS, JS and BASH. The wiki is inspired by 100r and the XXIIVV wiki, which I have been following for many years. Some CSS and HTML styling elements are also inspired by Peter Blassers site, the Monome site, and my friend Enzo's server Funbox.sh. Shoutout to William Hazard for helping me setup this site, and to all my friends in providence and at cancelled.work for helping me with learning to code, especially Grief and Enzo. This site is meant to be pretty low level and run on most computers, however I prioritize image quality over anything else, so it might be slow loading images, trying to work on a separate low level theme or port, for smaller systems. There are also more css animations on my site than xxiivv.</p>
+	</article>
+        <p class="incoming"><b>incoming <a href="meta.html">meta</a></b> <a href="../webring.html">webring</a> <a href="../log.html">log</a><br>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Dec 25 2024 - <a href="sitemap.html">sitemap</a><div class="right"><a href="https://wiki.xxiivv.com/site/about.html#license"><img src="cc.svg" height="0.8em"></a></div></footer>
+</body></html>

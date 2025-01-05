@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+        <ul>
+                <li><a href="audio.html">audio</a></li>
+                <li><a href="textiles.html">textiles</a></li>
+                <li><a href="arch.html">architecture</a></li>
+                <li><a href="visual.html">visual</a></li>
+                <li><a href="research.html" class="parent">research</a></li>
+        </ul>
+        <ul>
+                <li><a href="essays.html" class="self">essays and papers</a></li>
+		<li><a href="thesis.html">undergrad thesis</a></li>
+                <li><a href="df.html">daniel fishkin</a></li>
+		<li><a href="code.html">code</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+	<p>Essays and Text Documents in no particular order:</p>
+	<p><a href="oya.pdf">Interview with Oya Damla for Thesis - October 9th, 2024</a></p>
+	<p><a href="links/Gago!.pdf">Gago! (<i>an essay about memes</i>)</a></p>
+	<p><a href="links/Arch 2141_FemiShonugaFleming_Documentation_Spread.pdf">Architectural Projection Final Booklet</a></p>
+	<p><a href="links/pffas.pdf">Porosity, Frame, Field, Add and Subtract Arch Drawings</a></p>
+	<p><a href="links/Arch 2142_FemiShonuga-Fleming_Documentation.pdf">Architectural Analysis of Luigi Moretti, Casa Delle Armi</a></p>
+	<p><a href="links/tfp.pdf">Textiles Final Presentation</a></p>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+</body></html>

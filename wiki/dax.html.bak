@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<style>
+@font-face {
+    font-family: 'dax';
+    src: url('Daxoph.ttf') format('truetype');
+}
+.custom-font {
+    font-family: 'dax', times; /* Fallback font */
+}
+    h1 {  font-size: 4em;
+          font-weight: normal;
+
+    }
+    #time:hover {
+color: black;
+    }
+</style>
+<nav>
+        <ul>
+                <li><a href="essays.html">essays and papers</a></li>
+                <li><a href="thesis.html">undergrad thesis</a></li>
+                <li><a href="df.html" class="parent">daniel fishkin</a></li>
+        </ul>
+        <ul>
+                <li><a href="arb.html">arbrasson workshop</a></li>
+                <li><a href="dax.html" class="self">daxophone drawings</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+	<p><img src="dax/dax1.jpg"></p>
+	<p><img src="dax/dax2.jpg"></p>
+	<p><img src="dax/dax3.jpg"></p>
+	<p><img src="dax/dax4.jpg"></p>
+	<p><img src="dax/dax5.jpg"></p>
+	<p><img src="dax/dax6.jpg"></p>
+	<p><img src="dax/dax7.jpg"></p>
+	<p><img src="dax/dax8.jpg"></p>
+	<p><img src="dax/dax9.jpg"></p>
+	<p><img src="dax/dax10.jpg"></p>
+	<p><img src="dax/dax11.jpg"></p>
+	<p><img src="dax/dax12.jpg"></p>
+	<p><img src="dax/dax13.jpg"></p>
+	<p><img src="dax/dax14.jpg"></p>
+	<p><img src="dax/dax15.jpg"></p>
+	<p><img src="dax/dax16.jpg"></p>
+	<p><img src="dax/dax17.jpg"></p>
+	<p><img src="dax/dax18.jpg"></p>
+	<p><img src="dax/dax19.jpg"></p>
+	<p><img src="dax/dax20.jpg"></p>
+	<p><img src="dax/dax21.jpg"></p>
+	<p><img src="dax/dax22.jpg"></p>
+	<p><img src="dax/dax23.jpg"></p>
+	<p><img src="dax/dax24.jpg"></p>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+</body></html>

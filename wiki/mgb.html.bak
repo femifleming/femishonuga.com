@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+         <ul>
+                <li><a href="algotrek.html">algotrek</a></li>
+                <li><a href="pp.html" class="parent">portfolio photography</a></li>
+		<li><a href="places.html">spaces and places</a></li>
+         </ul>
+         <ul>
+                 <li><a href="mgb.html" class="self">Martin Baggarly</a></li>
+                 <li><a href="www.html">Black Cat Recordings</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+	<img src="links/mgb.jpg" width="200px">
+	<h2>
+        Martin Baggarly
+        </h2>
+	<figure>
+		<img src="links/mh1.jpg">
+		<figcaption><span class="right"><b>Helm</b> ~ May 2023</span></figcaption>
+		<br>
+		<p><img src="links/mh2.jpg"></p>
+		<p><img src="links/mh3.jpg"></p>
+		<p><img src="links/mh4.jpg"></p>
+		<p><img src="links/mh5.jpg"></p>
+	<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+</body></html>

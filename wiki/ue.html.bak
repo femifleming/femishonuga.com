@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+        <ul>
+                <li><a href="audio.html">audio</a></li>
+                <li><a href="textiles.html">textiles</a></li>
+                <li><a href="arch.html" class="parent">architecture</a></li>
+                <li><a href="visual.html">visual</a></li>
+                <li><a href="research.html">research</a></li>
+        </ul>
+        <ul>
+                <li><a href="soe.html">states of exception</a></li>
+                <li><a href="sfm.html">spaces for mediation</a></li>
+		<li><a href="p.html">projection</a></li>
+                <li><a href="ue.html" class="self">urban ecologies</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+	<p><img src="links/planb.jpg"></p>
+        <h3>
+        Urban Ecologies
+        </h3>
+	<p><img src="links/e2c.jpg"></p>
+	<p><img src="links/img4.jpg"></p>
+	<p><img src="links/img5.jpg"></p>
+	<p><img src="links/waterdiagram.jpg"></p>
+	<p><img src="links/plazaplan.jpg"></p>
+	<p><img src="links/r1.jpg"></p>
+	<p><img src="links/r2.jpg"></p><br>
+	<p><b>incoming:</b> <a href="cock.html">cockrete</a></p>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+</body></html>

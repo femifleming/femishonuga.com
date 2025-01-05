@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+         <ul>
+                <li><a href="algotrek.html">algotrek</a></li>
+                <li><a href="pp.html">portfolio photography</a></li>
+                <li><a href="places.html" class="parent">spaces and places</a></li>
+         </ul>
+         <ul>
+                <li><a href="fc.html">farm colony 2024</a></li>
+                <li><a href="ft.html">fort tilden 2020</a></li>
+                <li><a href="nigeria.html">nigeria 2020</a></li>
+                <li><a href="london.html" class="self">london 2019</a></li>
+         </ul>
+</nav>
+</nav>
+<main><h2>&nbsp;</h2>
+        <h3>
+                London
+        </h3>
+	<p>I visited CSM in London in 2019 for a tour from my friend Viktor, who went was attending at the time</p>
+<p><img src="london/london1.jpg"></p>
+<p><img src="london/london2.jpg"></p>
+<p><img src="london/london3.jpg"></p>
+<p><img src="london/london4.jpg"></p>
+<p><img src="london/london5.jpg"></p>
+<p><img src="london/london6.jpg"></p>
+<p><img src="london/london7.jpg"></p>
+<p><img src="london/london8.jpg"></p>
+<p><img src="london/london9.jpg"></p>
+<p><img src="london/london10.jpg"></p>
+<p><img src="london/london11.jpg"></p>
+<p><img src="london/london12.jpg"></p>
+<p><img src="london/london13.jpg"></p>
+<p><img src="london/london14.jpg"></p>
+<p><img src="london/london15.jpg"></p>
+<p><img src="london/london16.jpg"></p>
+<p><img src="london/london17.jpg"></p>
+<p><img src="london/london18.jpg"></p>
+<p><img src="london/london19.jpg"></p>
+<p><img src="london/london20.jpg"></p>
+<p><img src="london/london21.jpg"></p>
+<p><img src="london/london22.jpg"></p>
+<p><img src="london/london23.jpg"></p>
+<p><img src="london/london24.jpg"></p>
+<p><img src="london/london25.jpg"></p>
+<p><img src="london/london26.jpg"></p>
+<p><img src="london/london27.jpg"></p>
+<p><img src="london/london28.jpg"></p>
+<p><img src="london/london29.jpg"></p>
+<p><img src="london/london30.jpg"></p>
+<p><img src="london/london31.jpg"></p>
+<p><img src="london/london32.jpg"></p>
+<p><img src="london/london33.jpg"></p>
+<p><img src="london/london34.jpg"></p>
+<p><img src="london/london35.jpg"></p>
+<p><img src="london/london36.jpg"></p>
+<p><img src="london/london37.jpg"></p>
+<p><img src="london/london38.jpg"></p>
+<p><img src="london/london39.jpg"></p>
+<p><img src="london/london40.jpg"></p>
+<p><img src="london/london41.jpg"></p>
+<p><img src="london/london42.jpg"></p>
+<p><img src="london/london43.jpg"></p>
+<p><img src="london/london44.jpg"></p>
+<p><img src="london/london45.jpg"></p>
+<p><img src="london/london46.jpg"></p>
+<p><img src="london/london47.jpg"></p>
+<p><img src="london/london48.jpg"></p>
+<p><img src="london/london49.jpg"></p>
+<p><img src="london/london50.jpg"></p>
+<p><img src="london/london51.jpg"></p>
+<p><img src="london/london52.jpg"></p>
+<p><img src="london/london53.jpg"></p>
+<p><img src="london/london54.jpg"></p>
+<p><img src="london/london55.jpg"></p>
+<p><img src="london/london56.jpg"></p>
+<p><img src="london/london57.jpg"></p>
+<p><img src="london/london58.jpg"></p>
+<p><img src="london/london59.jpg"></p>
+<p><img src="london/london60.jpg"></p>
+<p><img src="london/london61.jpg"></p>
+<p><img src="london/london62.jpg"></p>
+<p><img src="london/london63.jpg"></p>
+<p><img src="london/london64.jpg"></p>
+<p><img src="london/london65.jpg"></p>
+<p><img src="london/london66.jpg"></p>
+<p><img src="london/london67.jpg"></p>
+<p><img src="london/london68.jpg"></p>
+<p><img src="london/london69.jpg"></p>
+<p><img src="london/london70.jpg"></p>
+<p><img src="london/london71.jpg"></p>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+</body></html>
