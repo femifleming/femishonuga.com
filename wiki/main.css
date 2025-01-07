@@ -49,6 +49,20 @@ a {transition: background-color 0.3s ease;}
 .blowjob {
 background-color: #e6e6e6;
 }
+textarea {
+background-color: white;
+color: black;
+width:100%;
+}
+@font-face {
+font-family: 'code';
+src: url('../Hack-Regular.ttf') format('truetype');
+}
+code {
+background-color: grey;
+font-size: 1em;
+font-family: 'code', monospace;
+}
 .fishnets {
 filter:opacity(0.5);
 }
@@ -83,6 +97,11 @@ line-height: 1.1em;
 height: 1.1em;
 display:inline;
 	}
+textarea {
+background-color: black;
+color: white;
+width:100%;
+}
 	main a:hover, main a:hover > *, nav a:hover, nav a:hover > * { background-color:#fff;color:#000;text-decoration:none }
 	img[src*="svg"], img[src*="png"] { background:#fff;filter:invert(1) hue-rotate(180deg) }
 	main pre { background:#111 }
