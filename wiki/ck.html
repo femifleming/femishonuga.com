@@ -46,6 +46,12 @@ width: 200%;
 <textarea>convert -dither FloydSteinberg -colors 4 -strip "*.jpeg" -set filename:base "%[basename]" "%[filename:base].jpeg"</textarea>
 </li>
 <li>
+<p>vim ruby command for replacing text</p>
+<textarea>
+:%s/old/new/g
+</textarea>
+</li>
+<li>
 <p>mac terminal command to dither all gifs in a directory. must have imagemagik installed.</p>
 <textarea>magick mogrify -dither FloydSteinberg -colors 12 -strip -format gif “*.gif”</textarea>
 </li>

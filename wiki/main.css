@@ -46,7 +46,7 @@ footer img { height:30px;vertical-align:middle;margin:0 3px }
 footer div.right img { margin-left:10px }
 a {transition: background-color 0.3s ease;}
 .grey {background-color: #1c1c1c;}
-.blowjob {
+.odd {
 background-color: #e6e6e6;
 }
 textarea {
@@ -88,7 +88,7 @@ div.codeview pre a { float:right;color:#72dec2;text-decoration:none;font-weight:
 @media (prefers-color-scheme:dark) {
 	* { color:#fff }
 	body { background:#000 }
-	.blowjob {
+	.odd {
 	background-color: #1c1c1c;
 	}
 	.andbigboobs {
