@@ -1,0 +1,30 @@
+horn
+
+driver:
+  pioneer
+    4ohm
+    15w
+    6in
+
+horn:
+   cutoff 80hz
+   max length: 48in
+   throat area: St = 18.6sq in(4.3in×4.3in)
+   mouth area: Sm = 729sq in(27in×27in)
+   horn length: L = 343/4⋅80 ≈ 42in
+
+Exponetial Horn Angles:
+Section 1: 3°
+Section 2: 4°
+Section 3: 5°
+Section 4: 48°
+
+
+Final lengths:
+Throat (Start): 4.3" x 4.3"
+Section 1: 5.4" x 5.4" — 3° Flare
+Section 2: 6.9" x 6.9" — 4° Flare
+Section 3: 8.7" x 8.7" — 5° Flare
+Mouth (End): 27" x 27" — 48° Flare
+Section Length: 10.5 inches each
+
