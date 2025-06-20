@@ -18,25 +18,29 @@ gtag('config', 'G-FCQXVD7YXZ');
     document.addEventListener("DOMContentLoaded", function () {
         // List of images
         var images = [
-            "indass/header.jpeg",
-            "loonPOP.JPG",
-            "indass/P4270158.jpeg",
-            "indass/Sadnoise.jpeg",
-            "indass/algotre1-1.jpeg",
-            "indass/me1.jpeg",
-            "indass/shows1.jpeg",
-            "indass/stacie9.jpeg",
-            "indass/ben.jpeg",
-            "indass/hex1.jpg",
-            "indass/hex3.jpg",
-            "indass/hex5.jpg",
-            "cara2.JPG",
-            "blown.JPG",
-            "indass/noisefunction22y2.JPG",
-            "indass/rocks.png",
-            "aug1.jpg",
-            "aug2.JPG",
-            "indass/algpano.png",
+            "indass2/stacie1.JPEG",
+            "indass2/stacie6.JPEG",
+            "indass2/stacie10.JPEG",
+            "indass2/SadNoise-7.jpg",
+            "indass2/SadNoise-5.jpg",
+            "indass2/hex1.jpg",
+            "indass2/hex3.jpg",
+            "indass2/hex5.jpg",
+            "indass2/algtrefemi1.PNG",
+            "indass2/algtrefemi2.PNG",
+            "indass2/algtrefemi3.PNG",
+            "indass2/algtrefemi4.PNG",
+            "indass2/pp1.jpg",
+            "indass2/pp2.jpg",
+            "indass2/pp3.jpg",
+            "indass2/pp4.jpg",
+            "indass2/pp5.jpg",
+            "indass2/pp6.jpg",
+            "indass2/cara1.JPG",
+            "indass2/cara2.JPG",
+            "indass2/cara3.JPG",
+            "indass2/cara4.JPG",
+            "indass2/cara5.JPG",
         ];
 
         // Function to get a random image from the list
@@ -45,8 +49,8 @@ gtag('config', 'G-FCQXVD7YXZ');
             var originalImage = images[index];
 
             // Modify the file path based on the theme
-            if (!isDarkMode && /\.(jpg|jpeg|JPG|png)$/.test(originalImage)) {
-                return originalImage.replace(/\.(jpg|jpeg|JPG|png)$/, "_dithered.$1");
+            if (!isDarkMode && /\.(jpg|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
+                return originalImage.replace(/\.(jpg|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
             }
 
             return originalImage;
