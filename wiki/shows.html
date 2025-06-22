@@ -12,56 +12,68 @@ display: none;
 display:block;
 }
 .content {
-  background-color: white;
-  padding: 20px;
-  transition: background-color 0.3s;
+  background-color: #fafafa;
+  padding: 11px;
+  transition: background-color 0.5s;
 }
 .content p {
-  color: black;
-  transition: color 0.3s;
+  color: #030303;
+  transition: color 0.5s;
 }
 /* When exhibitions are targeted */
 #ex:target ~ .content {
-  background-color: #f5f5dc; /* beige */
+  background-color: #fefff2;
+  transition: background-color 0.5s;
 }
 #ex:target ~ .content p {
-  color: #8b4513; /* brown */
+  color: #1c1c1a; 
+  transition: color 0.5s;
 }
 /* When exhibitions are targeted */
 #fest:target ~ .content {
-  background-color: #238472; /* beige */
+  transition: background-color 0.5s;
+  background-color: #191921; /* beige */
 }
 #fest:target ~ .content p {
-  color: #384000; /* brown */
+  color: #a3a3d1; /* brown */
+  transition: color 0.5s;
 }
 /* When performances are targeted */
 #p:target ~ .content {
+  transition: background-color 0.5s;
   background-color: #e0f7fa; /* light cyan */
 }
 #p:target ~ .content p {
   color: #006064; /* teal */
+  transition: color 0.5s;
 }
 /* When shows are targeted */
 #s:target ~ .content {
+  transition: background-color 0.5s;
   background-color: #fff0f5; /* lavender blush */
 }
 #s:target ~ .content p {
   color: #800080; /* purple */
+  transition: color 0.5s;
 }
 
 /* When museum is targeted */
 #ws:target ~ .content {
+  transition: background-color 0.5s;
   background-color: #f0f0f0; /* light gray */
 }
 #ws:target ~ .content p {
   color: #333333; /* dark gray */
+  transition: color 0.5s;
 }
 /* When museum is targeted */
 #tour:target ~ .content {
-  background-color: #g0g0g0; /* light gray */
+  transition: background-color 0.5s;
+  background-color: #96801d;
 }
 #tour:target ~ .content p {
-  color: #444444; /* dark gray */
+  color: white;
+  transition: color 0.5s;
 }
     body { font-family: sans-serif; padding: 20px; }
 
