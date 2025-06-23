@@ -7,6 +7,12 @@ color: white;
 @font-face {
 font-family: times;
 }
+.flip {
+transition: transform 0.3s ease;
+}
+.flip:hover {
+transform: rotate(-180deg);
+}
 </style>
 <body background="enidithe.jpg">
 <p>This is enid!</p>
@@ -17,5 +23,6 @@ font-family: times;
 <marquee scrollamount="8">
 <p><img src="endipotato.png"></p>
 </marquee>
+<a href="wiki/wikitree.html"><img class="flip" src="wiki/links/enidegg.png"></a>
 </body>
 </html>
