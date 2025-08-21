@@ -13,6 +13,13 @@ margin-left: 810px;
 background-color:rbga(0,0,0,0.5);
 position: fixed;
 max-width: 400px;
+transition: background-color 0.5s ease, margin-left 1s ease;
+border-radius: 10px;
+z-index: 3;
+}
+.sidebar:hover {
+margin-left: 600px;
+background-color:rgba(0,0,0,0.9);
 }
 .sidebar a {
 color: pink;
@@ -80,8 +87,16 @@ content: "<--";
 color: grey;
 font-style: italic;
 }
+.sbt input:checked + .sidebar {
+margin-left: 600px;
+background-color:rgba(0,0,0,0.9);
+}
 </style>
 <div class="sidebar">
+<label class="sbt">
+  <input type="checkbox" hidden>
+  Toggle Sidebar
+</label>
 <p>diy links:</p>
 <ul>
 <li><a href="https://www.cowanaudio.com">cowana audio</a></li>
@@ -104,7 +119,9 @@ font-style: italic;
 <li><a href="https://6moons.com/industryfeatures/goto/goto.html">Goto Unit</a></li>
 </ul>
 </div>
+<!-- BODY START --!>
 <body>
+<p id="contract"><em>contract</em></p>
 <article>
 <marquee><h2><i>Speaker Building Log</i></h2></marquee>
 <p><a href="speakers.html">back to speakers</a></p>
