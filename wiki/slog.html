@@ -2,11 +2,25 @@
 <style>
 body {
 max-width: 800px;
-margin: 20px auto;
+margin: 20px;
 padding: 0 10px;
 color: white;
-background-image:url('links/orange.jpg');
+background-image:url('links/cafedaxo2.jpg');
 background-attachment: fixed;
+}
+.sidebar {
+margin-left: 810px;
+background-color:rbga(0,0,0,0.5);
+position: fixed;
+max-width: 400px;
+}
+.sidebar a {
+color: pink;
+}
+ul {
+background-color:rgba(0,0,0,0.3);
+list-style-type: none;
+border-radius: 5px;
 }
 p {
 color: #f0ece4;
@@ -21,6 +35,9 @@ backdrop-filter: blur(40px);
 .fixed {
 position: fixed;
 z-index:-1;
+}
+.blur {
+filter: blur(8px);
 }
 article {
 background-color:rgba(0,0,0,0.2);
@@ -59,11 +76,53 @@ color: orange;
 a:hover:after {
 content: "<--";
 }
+.after {
+color: grey;
+font-style: italic;
+}
 </style>
+<div class="sidebar">
+<p>diy links:</p>
+<ul>
+<li><a href="https://www.cowanaudio.com">cowana audio</a></li>
+<li><a href="https://www.speakerplans.com">speakerplans.org</a></li>
+<li><a href="https://www.centauriaudio.com.au/diy">Graeme's DIY Pages</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Loudspeaker_technology">Loudspeaker Technology</a></li>
+<li><a href="https://volvotreter.de/dl-section/plans">Volvotreter</a></li>
+<li><a href="https://education.lenardaudio.com/en">Lenard Audio Institute</a></li>
+<li><a href="https://diyaudio.com">DIYaudio.com</a></li>
+<li><a href="https://www.planet10-hifi.com">Planet 10 Hifi</a></li>
+<li><a href="https://audiojudgement.com/folded-horn-speaker-design">Loudspeaker Horns</a></li>
+<li><a href="https://sound-au.com">Eliott Sound Projects</a></li>
+</ul>
+<p>Audio History/Education links:</p>
+<ul>
+<li><a href="https://www.acoustic-glossary.co.uk">Acoustic Glossary</a></li>
+<li><a href="https://www.audioheritage.org">Lansing Heritage</a></li>
+<li><a href="https://beetech-inc.com/turbosound-history">Turbosound History</a></li>
+<li><a href="https://www.turbosound.com/our-story.html">Turbosound History</a></li>
+<li><a href="https://6moons.com/industryfeatures/goto/goto.html">Goto Unit</a></li>
+</ul>
+</div>
 <body>
 <article>
 <marquee><h2><i>Speaker Building Log</i></h2></marquee>
 <p><a href="speakers.html">back to speakers</a></p>
+<!-- LOG START --!>
+<div class="artbg">
+<h1>08-20-2025</h1>
+<p>I dont know much about hifi audio just yet but I want to start documenting all of the awesome projects im inspired by at the moment so i know where they are, where to reference them and pics of the crazy builds. I'll probably do that on this log, here are some im interested in recently. Most of these are from forums and internet archive hifi audio sites. Theres some real craft and construction and sculpural nature to these.</p>
+<p>The first is this concrete horn with a phaseplug for mid bass frequencies. The goal of the phase plug is to: Equalize Path Length-In a cone driver, sound from the outer edge has farther to travel to the throat than sound from the center. A phase plug helps compensate for this difference so the wavefront entering the horn is more coherent. Improve coupling efficiency-It narrows and shapes the exit path so the driver’s output matches the throat size of the horn, avoiding losses. Reduce high-frequency cancellation (“beaming” or lobing)-Even in the mid-bass, frequencies are short enough that interference can occur. A phase plug smooths response and extends usable bandwidth upward. Control directivity / wavefront shape-It helps form a more ideal wavefront (spherical or planar, depending on design) to match the horn’s flare. At lower frequencies (below ~150 Hz), the wavelength is so long that phase-plug effects are less critical—many designs skip it. For higher mid-bass or low midrange (~150–500 Hz), a phase plug can make a big difference in clarity, efficiency, and avoiding comb-filter effects.</p>
+<p><a href="http://www.goodsoundclub.com/Forums/PrintPost.aspx?PostID=5484"><img src="links/sinsp/phaseplugmidbasshornconcrete1.jpg"></a></p>
+<p><img src="links/sinsp/phaseplugmidbasshornconcrete2.jpg"></p>
+<p><img src="links/sinsp/phaseplugmidbasshornconcrete3.jpg"></p>
+<p><img src="links/sinsp/phaseplugmidbasshornconcrete4.jpg"></p>
+<p>The other diy Tractrix horn (without a phase plug) I'm interested is talked about in my last post here, below.</p>
+<p>Another crazy speaker I came across online recently are these backwards open baffle speakers Ricardo Villalobos has in his studio in If I Think Of Germany At Night by Reflector Audio , 218Q. 4 18in drivers tilted in 15-25deg to create a beam of bass from the back waves of the speaker driver, with a compression driver in the center. I want to DIY these, theyre so insane. With my DIY projects, I think it will be fun and easy to get a wide frequency response out of my projects but things like room acoustics, phase and amping will be the hard part. How do these speakers not have crazy phase issues and the woofers are just blasting sound backwards? insane. I guess no one wanted them, the site has been down since 2018/2019.</p>
+<p><img src="links/sinsp/reflector1.jpg" style="width:100%"></p>
+<p><img src="links/sinsp/reflector2.jpg"></p>
+<p><img src="links/sinsp/reflector3.jpg" style="width:100%"></p>
+</div>
 <div class="artbg">
 <h1>08-18-2025</h1>
 <p>I'm thinking of building a 3/4 way system with 12-15 inch woofers in a W bin desgin similar to the W bin subwoofers of Altec in the 1940s-1970s for the theatre applications, with these dimentions:</p>
