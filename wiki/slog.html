@@ -10,15 +10,21 @@ background-attachment: fixed;
 }
 .sidebar {
 margin-left: 810px;
+margin-top: 0px;
 background-color:rbga(0,0,0,0.5);
 position: fixed;
-max-width: 400px;
-transition: background-color 0.5s ease, margin-left 1s ease;
+max-width: 240px;
+transition: margin-top 1s ease, padding 0.5s ease, background-color 0.5s ease, margin-left 1s ease;
 border-radius: 10px;
 z-index: 3;
+overflow-y: auto;
+height: 100vh;
+scrollbar-width: none;
 }
 .sidebar:hover {
 margin-left: 600px;
+margin-top: 20px;
+padding: 10px;
 background-color:rgba(0,0,0,0.9);
 }
 .sidebar a {
@@ -87,11 +93,22 @@ content: "<--";
 color: grey;
 font-style: italic;
 }
+.piclog {
+background: radial-gradient(circle,rgba(250, 252, 227, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+border-radius: 50%;
+padding: 2px;
+}
 .sbt input:checked + .sidebar {
 margin-left: 600px;
 background-color:rgba(0,0,0,0.9);
+padding: 10px;
+}
+.smol {
+font-size: 0.8em;
+text-align: right;
 }
 </style>
+<!-- SIDEBAR --!>
 <div class="sidebar">
 <label class="sbt">
   <input type="checkbox" hidden>
@@ -101,7 +118,7 @@ background-color:rgba(0,0,0,0.9);
 <ul>
 <li><a href="https://www.cowanaudio.com">cowana audio</a></li>
 <li><a href="https://www.speakerplans.com">speakerplans.org</a></li>
-<li><a href="https://www.centauriaudio.com.au/diy">Graeme's DIY Pages</a></li>
+<li><a href="httpcs://www.centauriaudio.com.au/diy">Graeme's DIY Pages</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Category:Loudspeaker_technology">Loudspeaker Technology</a></li>
 <li><a href="https://volvotreter.de/dl-section/plans">Volvotreter</a></li>
 <li><a href="https://education.lenardaudio.com/en">Lenard Audio Institute</a></li>
@@ -118,6 +135,21 @@ background-color:rgba(0,0,0,0.9);
 <li><a href="https://www.turbosound.com/our-story.html">Turbosound History</a></li>
 <li><a href="https://6moons.com/industryfeatures/goto/goto.html">Goto Unit</a></li>
 </ul>
+<div class="piclog">
+<p><a href="links/tahsub.png" target="_blank"><img src="links/tahsub.jpg" style="width: 180px"></a></p>
+<p class="smol"><em>aww so cute!</em></p>
+<p><a href="links/sheets.jpg" target="_blank"><img src="links/sheets.jpg" style="width: 180px"></a></p>
+<p class="smol"><em>just use sheets on the ceiling hanging from some random 2x4 frame for acoustic sound absorbtion!</em></p>
+<p><a href="links/nonpolar.jpg" target="_blank"><img src="links/nonpolar.jpg" style="width: 180px"></a></p>
+<p class="smol"><em>look at this! to make polarized caps into non-polarized caps with half the value, good for finding caps in old stuff, didnt know this.</em></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
 </div>
 <!-- BODY START --!>
 <body>
