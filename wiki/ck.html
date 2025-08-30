@@ -42,6 +42,15 @@ width: 200%;
 </figure>
 <ul>
 <li>
+<p>vim command to increment images or links:</p>
+<textarea>
+for i in range(0, 30)
+  let line = '<p><img src="links/sspecs/vitaphonereference' . i . '.png"></p>'
+  put =line
+endfor
+</textarea>
+</li>
+<li>
 <p>mac terminal command to convert all jpeg images in a directory to 4 color dithered images. must have imagemagik installed.</p>
 <textarea>convert -dither FloydSteinberg -colors 4 -strip "*.jpeg" -set filename:base "%[basename]" "%[filename:base].jpeg"</textarea>
 </li>
