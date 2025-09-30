@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Sine Wave Breathing Marquee</title>
+<style>
+article {
+background: linear-gradient(0deg ,rgba(0, 0, 0, 0) 0%, rgba(0,0,0, 1) 100%);
+}
+  body {
+    margin: 0;
+    background-image:url('wiki/links/vt/rutlandvt16.jpg');
+background-attachment: fixed;
+background-size: cover;
+    overflow: hidden;
+height: 100%;
+  }
+
+  .marquee-viewport {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+align: center;
+  }
+
+  .marquee-track {
+    position: absolute;
+align: center;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: marquee 300s linear infinite;
+animation-delay: -145s;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(100%) translateY(-50%); }
+    100% { transform: translateX(-100%) translateY(-50%); }
+  }
+
+  .char {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    line-height: 1;
+    white-space: pre;
+    transform: translateY(0);
+    color: #e6eef8;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+<article>
+  <div class="marquee-viewport">
+    <div class="marquee-track" id="track"></div>
+  </div>
+<script>
+const text = "The waveform is the sound of the ocean. The wind blows cool air past your ears, as you soak your feet in deep sepia sand, with a clear mind and your pen soaked with infinite words for paper. The beading sun stabbing though plush white clouds. Even the fog sings poetry as it wades in the shallow waters of the amber treetops. The owls swoop low to smooch the kiss of mystery while bullfrogs thick in their baritone voice seduce your solemn slumber. The mountains remind you the history of the ground and tell their story to the passing ponies and pink peony pedals hugging lily pads at the mouth of the river. The waves crash in buoyant brashness. The moon floods the stippled massive sky, the clouds arms stretch wide into fog near your feet, whispering sonder songs from its hollow breath. • ";
+const repeat = 8;
+const track = document.getElementById('track');
+
+// helper to measure char widths
+const meas = document.createElement('span');
+meas.style.position='absolute';
+meas.style.visibility='hidden';
+meas.style.whiteSpace='pre';
+meas.style.fontFamily='"Times New Roman", Times, serif';
+meas.style.fontSize='28px';
+document.body.appendChild(meas);
+
+// build repeated text
+let full = '';
+for (let i=0; i<repeat; i++) full += text;
+
+let x=0;
+for (let i=0; i<full.length; i++){
+  meas.textContent = full[i];
+  const w = Math.ceil(meas.getBoundingClientRect().width);
+  const s = document.createElement('span');
+  s.className = 'char';
+  s.textContent = full[i];
+  s.style.left = x + 'px';
+  track.appendChild(s);
+ x += w * 0.6;
+}
+track.style.width = (x+10)+'px';
+meas.remove();
+
+// initialize offset so the text starts at the right edge of the viewport
+let last = performance.now(), phase = 0;
+let viewportWidth = document.querySelector('.marquee-viewport').clientWidth;
+let offset = viewportWidth; // start at right edge
+
+function loop(now){
+  const t = now/1000; // seconds
+  const dt = (now - last)/1000;
+  last = now;
+
+  // Breathing amplitude (40–90px) and wavelength (90–300px)
+  const amplitude = 56 + 10 * Math.sin(t * 0.8);
+  const wavelength = 110 + 4 * Math.sin(t * 0.9);
+
+  // advance sine phase slowly so letters wiggle
+  phase += dt * 0.4;
+
+  // slow horizontal scroll
+  offset -= dt * 1; // ~0.2 px/sec
+  if (offset < -x) offset = viewportWidth; // loop back when fully left
+
+  for (const el of track.querySelectorAll('.char')) {
+    const left = parseFloat(el.style.left);
+    const y = amplitude * Math.sin((left / wavelength) + phase);
+    el.style.transform = `translate(${left + offset}px, ${y}px)`;
+  }
+
+  requestAnimationFrame(loop);
+}
+
+requestAnimationFrame(loop);
+
+</script>
+</article>
+</body>
+</html>
+
