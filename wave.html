@@ -7,6 +7,37 @@
 article {
 background: linear-gradient(0deg ,rgba(0, 0, 0, 0) 0%, rgba(0,0,0, 1) 100%);
 }
+img {
+border-radius: 50%;
+}
+marquee{
+height: 100px;
+}
+.bloop {
+width: 100px;
+  height: 80px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+border-right: 0
+animation-timing-function: ease-in-out;
+transition: border-right 1s ease;
+}
+@keyframes myAnimation {
+  0%   {border-radius: 20px; width="120px"; background-color:rgba(255,255,255,0.4); left:0px; top:0px;}
+  50%  {border-radius: 50%; width="600px"; background-color:rgba(0,0,200,0.4); left:200px; top:0px;}
+  100%   {border-radius: 20px; width="120px"; background-color:rgba(255,255,255,0.4); left:0px; top:0px;}
+}
+.bloop:hover {
+
+}
+.bloop:hover::after{
+content:"the sail pushes forward";
+font-family: cursive;
+color: white;
+}
   body {
     margin: 0;
     background-image:url('wiki/links/vt/rutlandvt16.jpg');
@@ -44,7 +75,8 @@ animation-delay: -180s;
     top: 0;
     left: 0;
     font-family: "Times New Roman", Times, serif;
-    font-size: 28px;
+  font-style: italic;
+    font-size: 30px;
     line-height: 1;
     white-space: pre;
     transform: translateY(0);
@@ -124,6 +156,25 @@ function loop(now){
 requestAnimationFrame(loop);
 
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<marquee direction="right"><div class="bloop"><a href="https://wiki.xxiivv.com/site/pino.html"><img src="wiki/links/pino.png" width="120px"></a></div></marquee>
 </article>
 </body>
 </html>
