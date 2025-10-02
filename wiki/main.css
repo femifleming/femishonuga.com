@@ -1,6 +1,6 @@
 * { margin:0;padding:0;text-decoration:none;box-sizing:border-box;color:#000 }
 html { background-image:url(../media/icon/halftone.gif);background-repeat:repeat }
-body { background:#fff;font-family:serif;font-size:16px;overflow-x:hidden }
+body { background:#fff;font-family:serif;font-size:16px;overflow-x:hidden; min-height:calc(100vh - 15px)  }
 body > *, body main > *, main figure > div > *, main p, main q, main cite, main pre { margin-bottom:30px }
 body .right { float:right }
 body a.self, body a.parent { font-style:italic }
@@ -15,7 +15,7 @@ nav { padding:25px 45px 60px;margin:0 }
 nav ul { padding:0;margin:0 45px 0 0;display:inline-block;vertical-align:top }
 nav ul li { list-style-type:none;white-space:pre }
 nav ul li a { padding:0 4px}
-main { margin-left:30px;max-width:624px;clear:both }
+main { margin-left:30px;max-width:624px;clear:both; position:relative;}
 main a { text-decoration:underline; text-decoration-style: dotted; }
 main a[target="_blank"] { text-decoration-style:dotted }
 main article { border-left:1px dotted #000;padding-left:25px;clear:both }
@@ -39,7 +39,7 @@ main pre code, main pre i { color:#888 }
 main code { white-space:pre }
 main hr { clear:both }
 main kbd { font-size:12px;display:inline-block;padding:0 5px;font-weight:bold;border-radius:4px;line-height:20px;border:2px solid #222 }
-footer { padding:30px;line-height:30px;clear:both;margin:0;border-top:1px solid #000 }
+footer { padding:30px;line-height:30px;clear:both;margin:0;border-top:1px solid #000;}
 footer a { display:inline-block;margin-right:3px }
 footer a:hover { text-decoration:underline }
 footer img { height:30px;vertical-align:middle;margin:0 3px }

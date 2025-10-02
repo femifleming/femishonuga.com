@@ -28,14 +28,16 @@ color: black;
 </style>
 <nav>
         <ul>
-                <li><a href="essays.html">essays and papers</a></li>
+                <li><a href="essays.html">papers and resources</a></li>
                 <li><a href="thesis.html">undergrad thesis</a></li>
                 <li><a href="df.html" class="self">daniel fishkin</a></li>
 		<li><a href="code.html">code</a></li>
+                <li><a href="ps.html">places and spaces</a></li>
         </ul>
 	<ul>
 		<li><a href="arb.html">arbrasson workshop</a></li>
 		<li><a href="dax.html">daxophone drawings</a></li>
+		<li><a href="daxpics.html">daxophone pictures</a></li>
 	</ul>
 </nav>
 <main><h2>&nbsp;</h2>
@@ -59,5 +61,5 @@ color: black;
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
 </body></html>

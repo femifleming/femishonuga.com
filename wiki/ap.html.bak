@@ -21,6 +21,7 @@ gtag('config', 'G-FCQXVD7YXZ');
         <ul>
                 <li><a href="meta.html" class="self">internal</a></li>
                 <li><a href="inventory.html">inventory</a></li>
+                <li><a href="ck.html">code kaizen</a></li>
         </ul>
         <ul>
                 <li><a href="sitemap.html">sitemap</a></li>
@@ -30,10 +31,6 @@ gtag('config', 'G-FCQXVD7YXZ');
 <main><h2>&nbsp;</h2>
 	<ul>
                 <li><a href="../diy/index.html">old diy | portal</a></li>
-                <li><a href="../diy/dogevox.html">old diy | drunken dogevox</a></li>
-                <li><a href="../diy/cl.html">old diy | ciat lonbarde</a></li>
-                <li><a href="../diy/cb.html">old diy | circuit bent</a></li>
-                <li><a href="../diy/other.html">old diy | other</a></li>
 	</ul>
 <style>
 @media (prefers-color-scheme:dark) {

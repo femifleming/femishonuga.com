@@ -12,13 +12,12 @@ gtag('config', 'G-FCQXVD7YXZ');
 <header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
 <nav>
          <ul>
-                <li><a href="algotrek.html">algotrek</a></li>
-                <li><a href="pp.html" class="parent">portfolio photography</a></li>
-		<li><a href="places.html">spaces and places</a></li>
-         </ul>
-         <ul>
                  <li><a href="mgb.html" class="self">Martin Baggarly</a></li>
                  <li><a href="www.html">Black Cat Recordings</a></li>
+		 <li><a href="hcy.html">HuiChun Yang</a></li>
+        </ul>
+         <ul>
+                 <li><a href="anne.html">Anne Helm</a></li>
         </ul>
 </nav>
 <main><h2>&nbsp;</h2>
@@ -41,5 +40,5 @@ gtag('config', 'G-FCQXVD7YXZ');
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
 </body></html>

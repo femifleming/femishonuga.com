@@ -17,11 +17,13 @@ gtag('config', 'G-FCQXVD7YXZ');
                 <li><a href="arch.html">architecture</a></li>
                 <li><a href="visual.html" class="self">visual</a></li>
 		<li><a href="research.html">research</a></li>
+		<li><a href="meta.html">internal</a></li>
         </ul>
 	 <ul>
                 <li><a href="algotrek.html">algotrek</a></li>
         	<li><a href="pp.html">portfolio photography</a></li>
 		<li><a href="places.html">spaces and places</a></li>
+		<li><a href="../redeelinstallations/index.html">red eel installations (archive)</a></a></li>
 	 </ul>
 </nav>
 <main><h2>&nbsp;</h2>
@@ -33,7 +35,6 @@ gtag('config', 'G-FCQXVD7YXZ');
         <img src="links/gord.gif">
 	<figcaption><span class="right">Gourds behind Atlantic Mills</span></figcaption>
         </figure>
-	<p class="incoming"><b>incoming </b><a href="../screenshotgarden/index.html">screenshot garden</a> <a href="../photo/">photos</a>
 <style>
 @media (prefers-color-scheme:dark) {
     .dodark { display:block !important }
@@ -41,5 +42,5 @@ gtag('config', 'G-FCQXVD7YXZ');
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
 </body></html>

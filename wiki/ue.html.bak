@@ -19,6 +19,7 @@ gtag('config', 'G-FCQXVD7YXZ');
                 <li><a href="research.html">research</a></li>
         </ul>
         <ul>
+		<li><a href="um.html">urban metabolism</a></li>
                 <li><a href="soe.html">states of exception</a></li>
                 <li><a href="sfm.html">spaces for mediation</a></li>
 		<li><a href="p.html">projection</a></li>
@@ -26,17 +27,19 @@ gtag('config', 'G-FCQXVD7YXZ');
         </ul>
 </nav>
 <main><h2>&nbsp;</h2>
+<style>
+.diagrams {
+display: flex;
+align-items: center;
+width: 100%;
+gap: 10px;
+}
+</style>
 	<p><img src="links/planb.jpg"></p>
         <h3>
         Urban Ecologies
         </h3>
 	<p><img src="links/e2c.jpg"></p>
-	<p><img src="links/img4.jpg"></p>
-	<p><img src="links/img5.jpg"></p>
-	<p><img src="links/waterdiagram.jpg"></p>
-	<p><img src="links/plazaplan.jpg"></p>
-	<p><img src="links/r1.jpg"></p>
-	<p><img src="links/r2.jpg"></p><br>
 	<p><b>incoming:</b> <a href="cock.html">cockrete</a></p>
 <style>
 @media (prefers-color-scheme:dark) {
@@ -45,5 +48,5 @@ gtag('config', 'G-FCQXVD7YXZ');
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - updated Mon Sep  9 11:45:17 EDT 2024 </footer>
+<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
 </body></html>
