@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webring Navigation</title>
+    <style>
+        /* Basic styling for the top bar and buttons */
+        body, html {
+            margin: 0;
+            padding: 0;
+	    font-family: 'Times';
+	    font-size:16px;
+	    background-color: black;
+        }
+        #top-bar {
+            display: flex;
+	    font-family: 'Times';
+	    justify-content: center;
+            background-color: #000;
+            padding: 10px;
+        }
+	.back {
+	margin: 0px;
+	padding: 0px;
+	transition: text-align 1s ease;
+	}
+	.back:hover {
+text-align: left;
+	}
+	.forward {
+	margin: 0px;
+	padding: 0px;
+	transition: text-align 1s ease;
+	}
+	.forward:hover {
+text-align: right;
+	}
+        #top-bar button {
+            color: white;
+            background-color: #000;
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+	    flex-grow: 1;
+	    font-size: 1em;
+	    font-family: 'Times';
+            transition: background-color 0.3s;
+        }
+        #top-bar button:hover {
+            background-color: #fff;
+	    color: black;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 50px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar with Buttons -->
+<div id="top-bar">
+	<button onclick="goBack()"><div class="back"><-- back</div></button>
+        <button onclick="window.location.href='webring.html'">portal</button>
+        <button onclick="goRandom()">random</button>
+        <button onclick="visitLink()">visit</button>
+	<button onclick="goForward()"><div class="forward">forward --></div></button>
+    </div>
+ <!-- Marquee displaying the current site name -->
+    <marquee style="background-color: #1c1c1c; color: white;">
+        You are currently viewing the site of <span id="site-name">Example Site</span>
+    </marquee>
+
+    <!-- Main Iframe Area -->
+    <iframe id="main-iframe" src=""></iframe>
+
+    <script>
+        // List of site URLs
+        const sites = [
+            "https://funbox.sh/~cenzo/",
+            "https://redeel.org",
+            "https://cryptwarbler.net/",
+            "https://williamhazard.co/",
+            "https://caloricmusic.com",
+            "https://sacred-web.vercel.app",
+            "https://eachspringnewbeginning.com",
+            "https://mark.cetilia.org",
+            "https://sacred-web.vercel.app/dots.html",
+            "https://cancelled.work",
+            "https://craow.net/pastperfromances",
+            "https://cca.org",
+            "https://rcsri.org",
+            "https://dfiction.com",
+            "https://yasunaga.work",
+            "https://ru6y.com",
+            "https://whereditgo.diamonds/",
+            "https://claracollins.love/",
+            "https://hankhurst.com/",
+            "https://solarprotocol.net/",
+            "https://terryjamesconrad.com/",
+            "https://proto.garden/",
+		"https://taylaproberge.cargo.site/",
+		"https://www.clubclubpvd.com",
+		"https://www.oyadamla.com",
+		"https://www.pasmusique.net",
+		"https://loess-labs.net",
+        ];
+
+        // List of site names corresponding to each URL
+        const siteNames = [
+            "C Enzo. Enzo is my good friend in providence who does live visuals with his analog video synthesis mixer and 16mm film. He helped me build my site, set up my email and learn html and bash! He is my favorite providence wizard.",
+            "Red Eel",
+            "Cryptwarbler. Cryptwarbler is my good friend robin who is a circuit bending genious!",
+		"William Hazard. William helped be build my first html site and makes awesome music with modular synths.",
+            "Caloric",
+            "Sacred Web. Sacred Web was built by my goof friend π",
+            "Madeline Young. Maddie helped me build the box for my Rolz5",
+            "Mark Cetelia. Mark was my professor at RISD for Sound Synthesis and Of Sound and Vision, He tought me max, supercollider and the serge modular synth. We have a duo project titled Triplets",
+            "Dots. Dots was created as live visuals for sadnoise sets by π",
+            "Cancelled.Work. cancelled.work is a community of people in the local provicence, RI and boston MA area. It started based on the idea me and Grief had for a server co-op where local artists can host their site or have pages on a local web board. Its an homage to early internet, webrings, neocities etc. with a focus on being a wiki, archive comment board and media hosting platform for local artists. There server lives at grove st in providence, RI.",
+            "Craow",
+            "CCA",
+            "RCSRI",
+            "Daniel Fishkin. Daniel is my good friend! We work together to build Daxophones, Solar Sounders and Arbrassons. He is a good friend of Peter Blasser as well.",
+            "Yasunaga.Work",
+            "RUBY",
+            "incognitotheif",
+            "Clara Collins",
+            "Hank Hurst. Hank is my good friend from RISD, we DJ house and techno together as Select All Vertical Rivers",
+		"Solar Protocol",
+		"Terry James Conrad",
+		"Proto",
+		"Tayla Proberge",
+		"CLUB CLUB",
+		"Oya Damla",
+		"Pas Musique",
+		"Loess Labs",
+        ];
+
+        // Current site index
+        let currentIndex = 0;
+
+        // Set the initial iframe source and marquee text
+        function updateIframeAndMarquee() {
+            document.getElementById("main-iframe").src = sites[currentIndex];
+            document.getElementById("site-name").textContent = siteNames[currentIndex];
+        }
+        updateIframeAndMarquee();
+
+        // Back button: move one step back in the list
+        function goBack() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = sites.length - 1; // Wrap around to the last site
+            }
+            updateIframeAndMarquee();
+        }
+
+        // Forward button: move one step forward in the list
+        function goForward() {
+            if (currentIndex < sites.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Wrap around to the first site
+            }
+            updateIframeAndMarquee();
+        }
+
+        // Random button: go to a random site from the list
+        function goRandom() {
+            currentIndex = Math.floor(Math.random() * sites.length);
+            updateIframeAndMarquee();
+        }
+
+        // Portal button: go to "webring.html" in the iframe
+        function goToPortal() {
+            document.getElementById("main-iframe").src = "webring.html";
+            document.getElementById("site-name").textContent = "Webring Portal";
+        }
+
+        // Visit button: open the current link in a new tab
+        function visitLink() {
+            window.open(sites[currentIndex], "_blank");
+        }
+    </script>
+</body>
+</html>
+
