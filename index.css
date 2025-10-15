@@ -1,0 +1,162 @@
+    @font-face {
+      font-family: 'Times New Roman'; font-style: normal; font-weight: 200;
+      src: local(''),
+        url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
+        url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
+    body {background-color: #141414; max-width:800px; color: black;
+      font-family: 'Tiems New Roman'; font-size: 1.0em;
+      margin:40px auto; padding: 0 10px;}
+    pre {font-size: 1.0em; color:#ddd;}
+    h1 {font-weight:bold; font-size: 1.2em; color: white; background-color: #737A8A}
+    h2 {font-style: bold; font-size: 1.1em;}
+    h3 {font-weight:bold; font-size: 0.9em; color: #E7E9F1}
+    h4 {font-weight:normal; font-size: 0.9em; background-color:#4a4a4a; color: white;}
+    hr {margin-top: 2em; border: none; background-color: #555; color: #555; height: 1px;}
+        #opacityToggle {
+            display: none;
+        }
+            .blinkies {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+            .nostyle {
+            transition: filter 0s;
+            }
+            .nostyle:hover {
+            filter: blur(0px) hue-rotate(0deg);
+            }
+            a.toggle-link {
+            }
+                    #opacityToggle:checked ~ .blinkies {
+            opacity: 1;
+                    }
+                    img {
+                            transition: filter 8s ease;
+                            filter: blur(0px);
+                    }
+                    img:hover {
+filter: blur(100px) hue-rotate(180deg);
+                    }
+    a {text-decoration-style:dotted; transition: color 1s ease; color:#0d0a0a;}
+    a.x {color: black;
+    text-decoration: none !important;}
+    a:hover {color:#000;}
+    a.x:hover{color:#ddd;}
+    img {margin-top: -0.5em; max-width:100%;}
+    input {font-family: inherit;}
+    code {
+      background: #555;
+      word-wrap: break-word;
+      box-decoration-break: clone;
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem;
+    }
+        iframe {max-width:800px;
+                z-index: 2;
+            }
+        article {
+    background-color:rgba(19, 19, 26, 0.5);
+    padding: 10px;
+    z-index: 2;
+    transition: filter s ease;
+        }
+        .wrapper {
+                position: relative;
+                width: 100%;
+                height: auto;
+}
+.trigger-word {
+}
+.scrolling-text {
+display: none;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+        #page-wrap {
+            position: relative;
+            width: 100%;
+            background-color:rgba(18, 18, 20, 0.6);
+            transition: filter 8s ease; /* Smooth transition for the filter application */
+
+}
+        section {
+                transition: background-color 10s ease;
+                margin-left: 0px;
+
+        }
+        section:hover {
+background-color: #beige;
+        }
+        .container {
+display: flex;
+justify-content: space-between;
+        }
+        .display {
+opacity: 0;
+        }
+        .display:hover {
+opacity: 1;
+filter: blur(0);
+        }
+        .inline-div {
+        float: left;
+        }
+        #time {
+display: inline;
+        }
+        .feed {
+      display: flex;
+      color:#ddd;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .date {
+	    font-style: italic;
+      text-align: right;
+      color: grey;
+    }
+    .link {
+            transition: color 1s ease, background-color 1s ease;
+            background-color:rgba(0,0,0,0);
+        color: grey;
+      text-align: left;
+    }
+    .link:hover {
+color: black;
+background-color: grey;
+    }
+    @media (prefers-color-scheme:dark) {
+        * { color:#fff }
+        body {background-color: #141414;}
+    a {text-decoration-style:dotted; transition: color 1s ease; color:#ddd;}
+	    a.x {color: black;
+    text-decoration: none !important;}
+    a:hover {color:#fff;}
+    a.x:hover{color:#ddd;}    
+    a.x {color: white;
+    text-decoration: none !important;}
+    a:hover {color:#fff;}
+    a.x:hover{color:#ddd;}
+            section:hover {
+background-color: #000;
+        }
+    h4 {font-weight:normal; font-size: 0.9em; background-color:#2a2a2a; color: white;}
+    img[src*="svg"] { filter:invert(1)!important;}
+        img[src*="svg"] { background:transparent ;filter:invert(1) hue-rotate(180deg) }
+        .nodark { filter:invert(0) hue-rotate(0deg) !important;background:transparent !important }
+        footer { border-top:1px solid #fff }
+}
+.phar::after {
+border-radius: 4px;
+transition: color 2s ease;
+background-color: #000;
+color: #000;
+margin-left: 3px;
+}
+.phar:hover::after {
+content: "the arrows will guide you around the branches";
+position: absolute;
+color: #fff;
+} 
