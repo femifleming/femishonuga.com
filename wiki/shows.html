@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta charset="UTF-8">
+  <style>
+/* Default styles */
+.flyer {
+display: none;
+}
+#flyers:target ~ .content .flyer {
+display:block;
+}
+.content {
+transition: background-color 0.5s;
+  background-color: #e0f7fa; /* light cyan */
+  padding: 11px;
+  transition: background-color 0.5s;
+}
+.content p {
+  color: #006064;
+  transition: color 0.5s;
+}
+/* When exhibitions are targeted */
+#ex:target ~ .content {
+  background-color: #fefff2;
+  transition: background-color 0.5s;
+}
+#ex:target ~ .content p {
+  color: #1c1c1a; 
+  transition: color 0.5s;
+}
+/* When exhibitions are targeted */
+#fest:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #191921; /* beige */
+}
+#fest:target ~ .content p {
+  color: #a3a3d1; /* brown */
+  transition: color 0.5s;
+}
+/* When performances are targeted */
+#p:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #e0f7fa; /* light cyan */
+}
+#p:target ~ .content p {
+  color: #006064; /* teal */
+  transition: color 0.5s;
+}
+/* When shows are targeted */
+#s:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #fff0f5; /* lavender blush */
+}
+#s:target ~ .content p {
+  color: #800080; /* purple */
+  transition: color 0.5s;
+}
+
+/* When museum is targeted */
+#ws:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #f0f0f0; /* light gray */
+}
+#ws:target ~ .content p {
+  color: #333333; /* dark gray */
+  transition: color 0.5s;
+}
+/* When museum is targeted */
+#tour:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #96801d;
+}
+#tour:target ~ .content p {
+  color: white;
+  transition: color 0.5s;
+}
+    body { font-family: sans-serif; padding: 20px; }
+
+    .filters a {
+      color: blue;
+      text-decoration: underline;
+      margin-right: 10px;
+    }
+    .content p {
+      display: block;
+    }
+    /* Hide everything except matching category when :target is active */
+    #ex:target ~ .content p:not(.ex),
+    #p:target ~ .content p:not(.p),
+    #fest:target ~ .content p:not(.fest),
+    #ws:target ~ .content p:not(.ws),
+    #tour:target ~ .content p:not(.tour) {
+      display: none;
+    }
+    /* Optional: Add anchor targets for layout flow */
+    #ex, #p, #fest, #ws, #tour, #all {
+      display: block;
+      height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<p><img src="shead.webp" width="100%"></p>
+<span id="flyers"></span>
+  <!-- Invisible anchors for :target -->
+  <span id="ex"></span>
+  <span id="p"></span>
+  <span id="fest"></span>
+  <span id="ws"></span>
+  <span id="tour"></span>
+  <span id="all"></span>
+
+  <!-- Filter sentence -->
+  <p class="filters">
+    See 
+    <a href="#ex">exhibitions</a>
+    <a href="#p">performances</a>
+    <a href="#fest">festivals</a>
+    <a href="#ws">workshops/talks</a>and
+    <a href="#tour">tours</a>.
+    <a href="#all" style="color: gray; margin-left: 15px;">[Show all]</a>
+  </p>
+    <p style="font-size: 0.8em"><a href="#flyers">Show flyers</a> | <a href="#">Hide flyers</a></p>
+
+  <!-- Your content -->
+  <section class="content">
+<p class="p">Sonuga @ Mimi's Lounge 10112025 ~ PVD, RI</p>
+<p class="p">Providence takeover night @ Dawnlands 09282025 ~ Westerly, RI (Moved to The Washing Machnie @ New Machine ~ PVD, RI)</p>
+<p class="p">Untitled @ Pyxis 09272025 ~ PVD, RI</p>
+<p class="p">Bunie Hopps Popup @ New Machine 09252025 ~ PVD, RI</p>
+<p class="ex">We Collapse and Dream Together @ 42 Grand St 08292025 ~ NY, NY</p>
+<p class="ex">Listening Session with Femi Shonuga @ Silence Please NYC 08292025 ~ NY, NY</p>
+<p class="ex">Algorave @ Toledo Museum of Art 09132025 ~ Ohio</p>
+<p class="p">Oreo Cookie Therapy @ Firehouse 07132025 ~ Worchester, MA</p>
+<p class="fest">Fuck the Fourth Fest @ Obreins Pub 07062025 ~ Allston, MA</p>
+<p class="p">Untitled @ Cold Spring Hollow 07112025 ~ Belchertown, MA</p>
+<p class="tour">BNC TOUR: Bittersweet, Barbienoise, Cryptwarbler, Tayla R. @ Machines with Magnets 06262025 ~ Pawtucket, RI</p>
+<p class="tour">BNC TOUR: Sadnoise, Cryptwarbler, Barbie.ai, Prognoz @ Red Room 06242025 ~ Baltimore, MD</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Surf Hair, dedBoi, Glowhazed, Programmed Cell Death @ Clearbrook Center of the Arts 06212025 ~ Lake Ridge, CT</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Tayla R. @ Never Ending Books 06192025 ~ New Haven, CT</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Will Hicks, Ollie Becker @ Pity Parlor 06182025 ~ Cambridge MA</p>
+<p class="tour">BNC Tour: Cryptwarbler, Femi Shonuga-Fleming + Daniel Fishkin + Will Mullany, Barbie AI, Levi Lu @ Cutelab 06152025 ~ NY, NY</p>
+<p class="tour">BNC Tour: Cryptwarblr, Sadnoise, Kristina Warren, Hissquiet @ Firehouse 06132025 ~ MA</p>
+<p class="ex"><a href="https://www.cprnyc.org/events/open-studios-curated-by-johann-diedrick">OPEN STUDIOS</a> | If the stars align…: Rena Anakwe, Sonic Liberation Devices, and Femi Shonuga-Fleming, curated by Johann Diedrick @ Center for Preformance Research 06122025 ~ Brooklyn, NY</p>
+<p class="ws">2025 AMIS Meeting June 2025 @ Georgia Southern University ~Savannah, GA 0601-062025</p>
+<p class="p">DISCOTEQUE @ The New Machine 04222025 ~ PVD, RI</p>
+<p class="ex">War Goes Strait to Their Tummies @ Below Grand | On view April 19 - May 17th, 2025 ~ NY, NY <i>Exhibiting my <a href="cldiy.html">Ciat Lonbarde diy synthesizers</a></i></p>
+<p class="ex">Future Sketches: Live Letters @ MIT Museum 04182025 ~ MA</p>
+<p class="p">Sadwarbler @ AS220 03122025 ~ PVD, RI</p>
+<p class="ws">Mixology: Ciat Lonbarde Paper Circuit Workshop @ Roulette 03012025 ~ NY, NY</p>
+<p class="ws">HundredRabbits Orca Workshop 01172025 @ RISD CIT ~PVD, RI</p>
+<p class="p">Untitled @ Hart Bar 01122025 ~ NY</p>
+<p class="ws">HundredRabbits Orca Workshop 12142024 @ NYC Resistor ~NY, NY</p>
+<p class="p">Kouruga @ Red Ink 12072024 ~Providence, RI</p>
+<p class="p">Bass, Robots and Mad Science @ Hex House 10082024 ~ Queens, NY</p>
+<p class="p">Movement and Noise @ The Living Gallery 08262024 ~BK, NY</p>
+<p class="ws">HundredRabbits Orca Workshop 07272024 @ Red Eel Lab ~Atlantic Mills, PVD, RI</p>
+<p class="p">After Hours @ Symposuim Books 03222024 ~Providence, RI</p>
+<p class="p">CFPT @ Trans Pecos 03032024 ~Brooklyn, NY</p>
+<p class="p">Untitled @ Machines With Magnets 02292024 ~Pawtucket, RI</p>
+<p class="p">Full Moon Sonic Dream Temple @ The Living Gallery 02242025 ~ Ny, NY</p>
+<img class="flyer" src="links/flyers/dithefly40.webp" width="40%">
+<p class="p">Safe Sounds @ Sleepwalk 02182024 ~New York, NY</p>
+<p class="p">Fundraver for Palestinian Legal Defense @ AS220 01272024 ~ PVD, RI</p>
+<img class="flyer" src="links/flyers/dithefly39.webp" width="40%">
+<p class="p">Femi's 23rd Birthday Party!</p>
+<img class="flyer" src="links/flyers/cuties.gif" width="40%">
+<p class="p">Public Speaking @ Mayday 12082023 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly8.webp" width="40%">
+<p class="p">Retrograth Tour @ Mayday 11292023 ~Olneyville, RI</p>
+<p class="p">XProject: Public Operation Manual Issue Two @ Gymnopedie 11182023 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly36.webp" width="40%">
+<p class="p">Daedelus, Retribution Body, Sadnoise @ Columbus Theatre 10312023 ~Providence, RI</p>
+<img class="flyer" src="links/flyers/dithefly35.webp" width="40%">
+<p class="p">Alex C., XLR Sex, Noeisgirl, Thought Gore @ 1911 10262023 ~Olneyville, RI</p>
+<p class="ex">Ambiance As Noise @ RISD Museum 10152023 ~Providence, RI</p>
+<img class="flyer" src="links/flyers/dithefly34.webp" width="40%">
+<p class="p">Hidden Monthly  @ 1911 09302023 ~Olneyville, RI</p>
+<p class="p">Syanide, Sadnoise, Waves Over Heaven @ Blacklace 09252023 ~Olneyville, RI</p>
+<p class="p">Untitled @ Mayday 09242023 ~Olneyville, RI</p>
+<p class="p">Gayngel Night @ AS220 BlackBox 09172023 ~Providence, RI</p>
+<p class="p">Hidden Monthly @ 1911 00302023 ~Olneyville, RI</p>
+<p class="p">Rave By Design III @ Mayday 09152023 ~Olneyville, RI</p>
+<p class="p">Blacklace 5 Year Anniversary @ 1911 ~Olneycille, RI</p>
+<p class="p">Untitled @ Firehouse 09082023 ~Worcester, MA</p>
+<p class="p">Cooler Nights @ CARA 08072023 ~New York, NY</p>
+<p class="p">Frederiks Dead Tour @ Fucking Gallery 08132023 ~NJ</p>
+<p class="p">Sadnpoise, Sara Brodsky, Iris Ipsum @ Heaven Can Wait 07072023 ~Brooklyn, NY</p>
+<p class="p">Asher White Album Release Show: Sadnoise, Theadore, Asher White @ The Columbus Theatre 06242023 ~Providence, RI</p>
+<p class="p">Constellations: Sadnoise, MDN, Che Buford, Ritchse, Hell Hooks @ Trans Pecos 06232023 ~Brooklyn, NY</p>
+<p class="p">Sadnoise, Cryptwarblr, viliji and Hissquiet @ Red Ink Community Library 05062023 ~Providence RI</p>
+<p class="p"><a href="algotrek.html">Algotrek</a> 4 04222023 ~Cold Springs, NY <i>live code music hike</i></p>
+<p class="p">Hidden Monthly @ 1911 04152023 ~Olneyville, RI</p>
+<p class="p">Beautiful Machines @ ZUZU 04122023 ~Boston, MA</p>
+<p class="ex">Sonic Salad @ Risd Museum 04062023 ~Providence, RI <i>Processing live sounds from Anarchestra Instruments with modular synth</i></p>
+<p class="p">Focus Group @ AS220 02162023 ~Providence, RI</p>
+<p class="p">Rave By Design @ Mayday 02012023 ~Olneyville, RI</p>
+<p class="p">Macula Dog, Triplets (Femi Fleming &amp; Mark Cetilia), Cabo Boing @ 1911 12092022 ~Olneyville, RI</p>
+<p class="p">Abstract (Select All Vertical Rivers) @ 1911 11222022 ~Olneyville, RI</p>
+<p class="p">Noise/Function Livecode.nyc @ Littlefield 09092022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly31.webp" width="40%">
+<p class="p">CFPT Presents Sadnoise, Primitive Tounges, Saturn Lavender, Many Many Girls @ Trash Bridge 07292022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly24.webp" width="40%">
+<p class="fest">Electropixel and Ende Tymes Presents Electronoise 12 (Irrational Collective) @ Trans Pecos 06202022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly28.webp" width="40%">
+<p class="p">Craow, Kai b2b Manton, Aadnoise, Adaa, s4m23 @ Dirt Palace 06042022 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly21.webp" width="40%">
+<p class="p">Fasc Smash, Repairer of Reputations, Sadnoise, Bionic Girl @ News Cafe 06092022 ~Pawtucket, RI</p>
+<img class="flyer" src="links/flyers/dithefly10.webp" width="40%">
+<p class="fest">Ende Tymes 12 @ Trans Pecos 04162022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly4.webp" width="40%">
+<p class="p">Lil Kevo, Sadnoise, FEARDOTCOM, Kerry Quirk @ O’briens Pub 04092022 ~Allston, MA</p>
+<img class="flyer" src="links/flyers/dithefly9.webp" width="40%">
+<p class="p">Oxalis, Bill T Miller, Daedelus, Sadnoise @ Mayday 04082022 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly7">
+<p class="fest">Live Coding Electronic Music Festival @ The State House 04172022 ~New Haven, CT</p>
+<p class="fest">Lunar Noise Festival @ The Upspace (Brown Campus) 11182021-11202021 ~Providence, RI</p>
+<p class="p">Apologist, Human Guilt, Xenojothsz, Sadnoise, Yü//f @ Blacklace (1911) 11092021 ~Providence, RI</p>
+<p class="p"><a href="https://flashcrash.net">Flash</a> Crash (Stream) 09042021 ~flashcrash.net</p>
+<img class="flyer" src="links/flyers/dithefly2.webp" width="40%">
+<p class="p">Deep <a href="http://dwgartjzmsw4bdux.onion/">Web</a> Gallery @ The Living Gallery 04022021 ~Brooklyn, NY<i>Live Streamed tot he Dark Web</i></p>
+<p class="p">Thunderdome IRL @ H0L0 08252021 ~Brooklyn, NY</p>
+<p class="p">CFPT Sunkhaven, Syanide, Afterlife Online, Gyna Bootleg + Tamio Shiraishi @ Satellite Art Club 07152021 ~ Brooklyn, NY <i>first show!</i></p>
+<p class="fest">Creative Code Festival @ Lightbox NYC 11122020-11152020 ~ Brooklyn, NY <i>Orca live code visuals and sound from modular synths</i></p>
+  </section>
+
+<footer>sadnoise@femishonuga.com - Updated June 21 2025 </footer>
+</body></html>

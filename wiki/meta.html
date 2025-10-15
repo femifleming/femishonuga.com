@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<style>
+.sass:hover::after {
+content: "[fort thunder]";
+}
+</style>
+<nav>
+        <ul>
+                <li><a href="meta.html" class="self">internal</a></li>
+                <li><a href="inventory.html">inventory</a></li>
+                <li><a href="ck.html">code kaizen</a></li>
+		<li><a href="server.html">server</a></li>
+		<li><a class="sass" href="dh.html">digital higene </a></li>
+        </ul>
+        <ul>
+                <li><a href="sitemap.html">sitemap</a></li>
+		<li><a href="ap.html">archived pages</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+        <p>Hello from my terminal! This is the internal hyper meta magic portal for the site.</p>
+	<img src="labback.webp">
+	<article style="border-left: 2px solid #fff;">
+	<p>This site is hosted on Github and coded by hand with HTML, CSS, JS and BASH. The wiki is inspired by 100r and the XXIIVV wiki, which I have been following for many years. Some CSS and HTML styling elements are also inspired by Peter Blassers site, the Monome site, and my friend Enzo's server Funbox.sh. Shoutout to William Hazard for helping me setup this site, and to all my friends in providence and at cancelled.work for helping me with learning to code, especially Grief and Enzo. This site is meant to be pretty low level and run on most computers, however I prioritize image quality over anything else, so it might be slow loading images, trying to work on a separate low level theme or port, for smaller systems. There are also more css animations on my site than xxiivv.</p>
+	</article>
+<h3>2011</h3><br>
+	<article style="border-left: 2px solid white">
+<p>Dell Latitude D400 intel pentium with Windows 7. My first computer. These pics were taken in San Diego, CA in 2011.</p>
+<img src="links/2011_1.webp" width="50%">
+<img src="links/2011_2.webp" width="50%">
+</article>
+<h3>Sun, 18 Aug 2024 14:06:45 -0400</h3>
+<article style="border-left: 2px solid white;">
+<p>how to use your funbox email</p>
+<p>I have a longer, more rambling text on email theory so I'll keep this
+intro short.<br>
+To set it up in any mail client, you need to tell it the "incoming
+server" and "outgoing server".
+This is the way it is because sending mail and receiving mail.
+(including sorting, moving, marking as this and that, etc) are handled
+seperately.<br>
+The incoming server uses IMAP (the Internet Message Access Protocol) to
+interact with your mailbox. This is where you read new messages, sort
+them into folders, mark them as read or unread or important or
+unimportant, and all that. Your mailbox lives on the server, many
+different devices can connect at once and you can get to your mail on
+all of them.<br>
+IMAP settings for funbox:<br>
+server address: funbox.sh<br>
+protocol: IMAP<br>
+Port: 993<br>
+Security: SSL/TLS (required)<br>
+Authentication Method: PLAIN or LOGIN<br>
+Username: Your username. Not your whole email! Not [user@domain], just
+[user]<br>
+<br>
+<br>
+Sending mail works completely differently. In the same way that you can
+read physical mail, sort it, and write letters in the comfort of your
+home, you have to go put your letter in a mailbox to actually send it.
+The outgoing server uses SMTP (the Simple Mail Transport Protocol) to
+receive mail from you. Then, it figures out what SMTP server the
+message needs to be sent to, and sends it.<br>
+If email were still as simplistic as its bones, this is all we would
+need. There would be no need for IMAP because your mail would be
+delivered by SMTP directly to the computer you're on, and you'd use
+some local program to read and manage your mail. But that way of doing
+things only worked in the mainframe era. Once we started puttng
+computers in our homes and moving around with them, getting a server to
+connect directly to us to deliver mail beacame completely impractical
+(not the least of which being that personal computers can't be on all
+the time waiting for mail).<br>
+No, for this the mainframe had to stay. To get your mail (on any and
+many devices) you need to have an incoming server that sits ready and
+easily findable, waiting to receive your mail.
+When yo're ready to check it, you then undestand the need for IMAP
+because you now need to interact with your mailbox remotely.
+So, now it should make sense why we need to confiure two servers for
+any email account.<br>
+In many cases, including this one, the incoming and outgoing servers
+are the same server. There's no reason why one server can't send your
+mail out and also wait to receive mail for you. There's also no reason
+why they they can't be different servers. In our case, they're the
+same. We have one and only server.<br>
+<br>
+SMTP settings for funbox:<br>
+Outgoing server: funbox.sh<br>
+Port: 587<br>
+Security: StartTLS<br>
+Authentication method: PLAIN<br>
+Username: Your username. JUST the [user] part, not the whole
+[user@domain]<br>
+
+
+If you are an external domain:<br>
+The only thing you need to do is add an MX (Mail Exchagne) record to
+your DNS zone.<br>
+it should be for your domain, and point to funbox.sh, and have a
+priority number (1 is fine).<br>
+When somebody wants to send mail to you, and submits a message to their
+outgoing SMTP server, that server will resove the MX record for your
+domain to determine where to actually send the mail. Your MX record
+identifies funbox.sh as the server handling your mail. Large operations
+would return a list of servers (hence the priority field) but we only
+have one.<br>
+The foreign SMTP server then sends the message to funbox's SMTP server,
+which receives it, checks its list of virtual alias domains to make
+sure the message belongs here, then delivers the message to your
+mailbox. Ready for you to connect by IMAP and read it.
+<br>
+<br>
+--
+C. Enzo<br>
+Flex Plateau Research<br>
+"I come and go like a comet; we are wanderers"<br>
+</article>
+        <p class="incoming"><b>incoming <a href="meta.html">meta</a></b> <a href="../webring.html">webring</a> <a href="../log.html">log</a><br>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Dec 25 2024 - <a href="sitemap.html">sitemap</a><div class="right"><a href="https://wiki.xxiivv.com/site/about.html#license"><img src="cc.svg" height="0.8em"></a></div></footer>
+</body></html>
