@@ -1,0 +1,184 @@
+<!doctype HTML>
+<style>
+marquee {color: white; background-color: #5ac477; transition: background-color 0.5s, color 0.5s, font-size 0.5s;
+z-index: -5;
+}
+body {
+overflow: hidden;
+}
+.afloat {
+position: absolute;
+top: 100px;
+left: 800px;
+border-radius: 0px;
+transition: border-radius 1s ease, margin-top 1s ease, transform 1s ease;
+}
+img {
+border-radius: 0px;
+transition: border-radius 1s ease, margin-top 1s ease, transform 1s ease;
+}
+img:hover {
+border-radius: 50%;
+}
+.cfloat {
+position: absolute;
+top: 600px;
+left: 450px;
+z-index: 2;
+border-radius: 0px;
+transition: margin-left 1s ease, border-radius 1s ease, transform 1s ease;
+}
+.efloat {
+position: absolute;
+top: 100px;
+left: 1000px;
+z-index: 5;
+}
+.dfloat {
+position: absolute;
+top: 500px;
+left: 900px;
+border-radius: 0px;
+z-index: 3;
+}
+.bfloat {
+transition: border-radius 1s ease, margin-left 3s ease, transform 1s ease;
+border-radius: 0px;
+}
+.afloat:hover {
+margin-top: 400px;
+border-radius: 50%;
+transform: scale(60%);
+}
+
+.bfloat:hover {
+margin-left: 1200px;
+border-radius: 50%;
+transform: rotate(180deg);
+}
+.cfloat:hover {
+margin-left: -400px;
+border-radius: 50%;
+}
+.jay {
+background-image: url("rain.gif");
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -2;
+}
+.a {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+.b:hover {
+border-width: 2px;
+}
+.other {
+margin-left: 300px;
+}
+.main {
+height: 100%;
+width: 222px;
+color: white;
+background-color:rgba(0,0,0,0.5);
+position: fixed;
+z-index: -2;
+margin-left: 100px
+}
+.pre {
+	height: 100%;
+	position: fixed;
+background-color:rgba(3,4,100, 0.4);
+width: 100px;
+z-index: 4;
+}
+</style>
+<body background="ab1.webp">
+	<div class="pre">
+		<p><img src="white.webp" width="90px"></p>
+		<audio controls autoplay>
+        <source src="arma17abelle080711.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+		</audio><br>
+		<audio controls>
+        <source src="abelle251111.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+	</div>
+	<div class="main">
+		<p>this is a tribute page to abelle</p>
+		<p><h1>ARMA17 MIXES</h1></p><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div style="border-style: solid; border-color: black; border-width: 5px;">
+			<marquee height="400px" scrollamount=4 style="background-image:url('villalobos.gif');"direction="up"><p><h3><i>This mix is everything i want out of a minimal mix. long mixes, weird textures, hypnotic melodies, skillful DJ, 240p video, the prime time for minimal house in russia and in the states. I could listen to this all day long, i cant wait to have a studio and blast this out of my speaker system. I want to build a speaker stack just to hear this set in its highest fidelity. This inspires me to make minimal house music with my euroradk modular, the way it was done in 2006-2012 era. I have been (nov 16 2024) super obsessed with ricardo villalobs for the past year and a half now. It makes sense, im really into weird textural modular music, and house and techno, and hes the perfect marrige of the two. I couldnt beleive i hadnt heard of him sooner, im so glad he brought me into this world. what crazy music!</i></h3></p>
+		</marquee>
+		</div>
+	</div>
+	<div class="other">
+<marquee  id="marqueeText">abelle :heart eyes: <3 <3 <3</marquee>
+<marquee scrollamount="6" style="background-color: black;">
+You are now listening to: Arma17: Abelle - RTS.FM.080711 July 25 2013
+</marquee>
+<marquee scrollamount="7" style="background-color:rgba(0,0,0,0); background-image:url('rain.gif');" height="17px"><div class="a">Microhouse is a genre rooted in minimal techno, bitpop, and house music. Emerging in the early 1990s, its foundations were influenced by the experimental glitch work of German artist Oval in 1993. The genre blends "housey minimal techno" with elements of funky, groovy house, bitpop, and the repetitive structures of techno, emphasizing cushiony kick drums, hi-hats, and faint synthetic textures.
+
+Key artists like Jan Jelinek (as Farben), Luomo (with the influential Vocalcity album), and labels such as Playhouse, Kompakt, Perlon, and Force Tracks played pivotal roles in popularizing the genre during the late 1990s and early 2000s. Microhouse continues to thrive, with artists like Jon Hopkins, Pantha du Prince, Four Tet, and others contributing to its evolution.</div></marquee>
+	<img src="ab1.gif" class="bfloat" onmouseover="ranchange('abelle',8)">
+	<img src="beach.gif" class="cfloat" onmouseover="ranchange('abelle',8)">
+	<img src="brick.gif" class="dfloat" onmouseover="ranchange('abelle',8)">
+	<img src="abelle3.webp" class="afloat" onmouseover="ranchange('abelle',8)">
+
+<script>
+function change(picture) {
+document.body.background=picture;
+}
+
+function ranchange(picture,num) {
+var randomnumber=Math.floor(Math.random()*num)+1;
+document.body.background=picture+randomnumber+".webp";
+}
+</script>
+<script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function getRandomFontSize() {
+      // Random font size between 20px and 50px
+      return Math.floor(Math.random() * 120) + 11 + 'px';
+    }
+
+    function changeStyles() {
+      const marquee = document.getElementById('marqueeText');
+      marquee.style.color = getRandomColor(); // Change text color
+      marquee.style.backgroundColor = getRandomColor(); // Change background color
+      marquee.style.fontSize = getRandomFontSize(); // Change font size
+    }
+
+    setInterval(changeStyles, 1000); // Change styles every second
+  </script>  
+	</div>
+	</body>
+
+
+
+</html>

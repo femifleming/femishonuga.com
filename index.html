@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link href="index.css" type="text/css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+    <title>Femi Shonuga-Fleming</title>
+    <meta name="keywords" content="sad, noise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+	    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // List of images
+        var images = [
+            "indass2/stacie1.webp",
+            "indass2/stacie6.webp",
+            "indass2/stacie10.webp",
+            "indass2/SadNoise-7.webp",
+            "indass2/SadNoise-5.webp",
+            "indass2/hex1.webp",
+            "indass2/hex3.webp",
+            "indass2/hex5.webp",
+            "indass2/algtrefemi1.webp",
+            "indass2/algtrefemi2.webp",
+            "indass2/algtrefemi3.webp",
+            "indass2/algtrefemi4.webp",
+            "indass2/pp1.webp",
+            "indass2/pp2.webp",
+            "indass2/pp3.webp",
+            "indass2/pp4.webp",
+            "indass2/pp5.webp",
+            "indass2/pp6.webp",
+            "indass2/cara1.webp",
+            "indass2/cara2.webp",
+            "indass2/cara3.webp",
+            "indass2/cara4.webp",
+            "indass2/cara5.webp",
+            "indass2/cpr1.webp",
+            "indass2/cpr2.webp",
+            "indass2/cpr3.webp",
+            "indass2/cpr4.webp",
+            "indass2/cpr5.webp"
+        ];
+
+        // Function to get a random image from the list
+        function getRandomImage(isDarkMode) {
+            var index = Math.floor(Math.random() * images.length);
+            var originalImage = images[index];
+
+            // Modify the file path based on the theme
+            if (!isDarkMode && /\.(jpg|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
+                return originalImage.replace(/\.(jpg|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
+            }
+
+            return originalImage;
+        }
+
+        // Function to update the random image based on the theme
+        function updateRandomImage() {
+            var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            var randomImage = getRandomImage(isDarkMode);
+            document.getElementById("randomImage").src = randomImage;
+        }
+
+        // Initial image setup
+        updateRandomImage();
+
+        // Listen for theme changes
+        window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", updateRandomImage);
+
+        // Update "last modified" text
+        const lastModified = document.lastModified;
+        document.getElementById("last-modified").textContent = lastModified;
+    });
+</script>
+
+<marquee direction="left" scrollamount="5">
+<!-- The word whose letters' colors will change -->
+<div id="randomWord">Next Show: House DJ Set at Mimi's Lounge Oct 11th 2025!</div>
+  <script>
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        // Function to change the color of letters in a word
+        function changeLetterColors() {
+            var word = document.getElementById('randomWord');
+            var letters = word.textContent.split('');
+            var coloredWord = '';
+            // Change the color of each letter
+for (var i = 0; i < letters.length; i++) {
+coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
+}
+// Update the word with colored letters
+word.innerHTML = coloredWord;
+}
+// Change letter colors every 20ms
+setInterval(changeLetterColors, 50);
+</script>
+</marquee>
+<script>
+document.getElementById('hoverImage').addEventListener('mouseenter', function() {
+document.body.style.padding = '50px';  // Increase padding when hovered
+});
+document.getElementById('hoverImage').addEventListener('mouseleave', function() {
+document.body.style.padding = '20px';  // Revert padding when not hovered
+});
+</script>
+<br>
+<br>
+<a href="wiki/index.html"><img id="randomImage" width="98.5%" src="" alt="Random Image" style="border: 5px solid #111;"></a>
+<section>
+<div class="wrapper" align="right">
+<span class="trigger-word">Consolidate</span>
+<div class="scrolling-text" id="scrollText">
+<a href="wiki/arch.html">Architecture</a><br>
+<a href="wiki/textiles.html">Textiles Work</a><br>
+<a href="wiki/audio.html">Sound Work</a><br>
+<a href="/wiki/diy.html">DIY Electronics</a><br>
+<a href="code.html">Code</a><br>
+<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">Youtube</a><br>
+<a href="log.html">Log</a><br>
+<a href="webring.html">Webring</a><br>
+<a href="/about">About</a><br>
+<a href="mentions.html">Mentions</a><br>
+<br>
+</div>
+</div>
+<div class="toggle-section" id="toggleSection">
+	<div style="font-size: 0.6em"><p>
+Sadnoise is embedded in the ritual practice of performance in existing and impossible spaces. It is a conversation between the source of sound and it’s environment, the performer and the audience. Sadnoise lives in live environments as nonlinear moments in time, for no one. It is an abstract representation of the esotericism of Internet and binary codes bed within dying grass and mossy floors. Sadnoise lives online as a flowing faucet, with homages to breath, air, birds and the ground. It lives within an abstract architecture that develops through the conversation between the technology, non-traditional musical instruments, synthesis and organic materials. Sadnoise gives thanks to and acknowledges indigenous land, traditions and philosophy, as well as the ground beneath our feet.
+</p></div>
+<p><a href="wiki/index.html">Femi</a> is cur<a class="x" href="plaintext/dreams.html">r</a>ently studying <a href="wiki/arch.html">architecture</a> at RISD,<br>
+installs <a href="wiki/audio.html">work</a> that discusses the <a class="x" href="plaintext/yda4dww.html">c</a>on<a class="x" href="plaintext/victoria.html">v</a>ers<a class="x" href="a.html">a</a>tion betwee<a class="x" href="plaintext/noise.html">n</a> our ears and the ground <a href="/above" class="x">above</a> and <span class="hover-word">beneath</span> our feet,<br>
+<a href="wiki/shows.html">performs</a> <a href="ritual.html">rituals</a> as <a href="https://sadnoise.bandcamp.com">sadnoise</a>,<br>
+makes sounds using <a href="/da/index.html">digital/analog</a> synthesis, <a href="wiki/diy.html">DIY</a> electronics and <a href="wiki/code.html" class="x">code</a>,<br>
+<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">uploads</a> tutorials, music videos, patches, live sho<a class="x" href="wallpapers/index.html">w</a>s,<br>
+and updates <a id="hoverLink" href="log.html" target="_blank">log</a> frequently. 
+<br>
+<br>
+</div>
+<script>
+const trigger = document.querySelector('.trigger-word');
+const scrollText = document.getElementById('scrollText');
+const toggleSection = document.getElementById('toggleSection');
+let isAnimating = false; // Track animation state
+trigger.addEventListener('mouseenter', function() {
+if (!isAnimating) {
+scrollText.style.display = 'block'; // Show scrolling text
+scrollText.classList.add('animate');
+toggleSection.style.display = 'none'; // Hide toggle section
+isAnimating = true; // Set state to animating
+} else {
+scrollText.style.display = 'none'; // Hide scrolling text
+scrollText.style.transform = 'translateX(0)'; // Reset position
+scrollText.classList.remove('animate');
+toggleSection.style.display = 'block'; // Show toggle section
+isAnimating = false; // Reset state to not animating
+}
+});
+</script>
+<font size="2">
+</font>
+<a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
+<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.black.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.svg" height="40px" class="nostyle"></a><br>
+<img class="display" height="40px" src="code1.webp">
+<br>
+<p><h2>Recent Changes:</h2></p>
+<ul>
+	<li>Updated <a href="wiki/slog.html">Speaker Building Log</a></li>
+	<li>Released <a href="clguide/clguide.html">ciat lonbarde diy guide</a></li>
+	<li>Walked <a href="#" class="phar">through</a> the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
+</ul>
+<br>
+<p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
+
+<!-- <input type="checkbox" id="opacityToggle">
+<link href="flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="flood.js"></script>
+<a href="https://melonking.net/melon.html?z=/free/software/flood" id="flood-menu"></a>
+--!>
+<h4>news:</h4>
+<div class="feed">
+<a href="https://arts.brown.edu/programs/ignite/campus-projects/residual-noise" class="link">Residual Noise @ Lindemann Performing Arts Center</a>
+<span class="date"><time datetime="2025-04-05">April 5th, 2025</time></span>
+</div>
+<div class="feed">
+<a href="https://www.youtube.com/watch?v=ezmCV6x6S30" class="link">Ciat Lonbarde Workshop @ Roulette NYC</a>
+<span class="date"><time datetime="2025-03-05">March 5th, 2025</time></span>
+</div>
+<div class="feed">
+<a href="https://femishonuga.com/wiki/algotrek.html" class="link">Algotrek 2025</a>
+<span class="date"><time datetime="2025-03-29">March 29th, 2025</time></span>
+</div>
+<div class="feed">
+	<a href="wiki/cldiy.html" class="link">DIY Ciat Lonbarde Synthesizers</a>
+	<span class="date"><time datetime="2024-12-01">December 12st, 2024</time></span>
+</div>
+<div class="feed">
+	<a class="link" href="https://sadnoise.bandcamp.com/album/addressed-to-the-king-s-mistress-ms-tallulah-ocone-baggarlee">Addressed to the King’s Mistress, Ms. Tallulah-Ocone Baggarlee</a>
+	<span class="date"><time datetime="2024-06-24">December 6th, 2024</time></span>
+</div>
+<div class="feed">
+<a href="wiki/arb.html" class="link">Arbrasson Workshop at Flux Factory</a>
+<span class="date"><time datetime="2024-11-04">November 4th, 2024</time></span>
+</div>
+<div class="feed">
+<a href="https://www.nonevent.org/concerts/2024-04-waterworks-fest-2024" class="link">Waterworks Festival</a>
+<span class="date"><time datetime="2024-04-26">April 26th, 2024</time></span>
+</div>
+<div class="feed">
+<a href="https://www.risd.edu/news/stories/expanded-studio-for-research-in-sound-and-technology-at-risd" class="link">SRST @ RISD</a>
+<span class="date"><time datetime="2023-01-23">January 23rd, 2023</time></span>
+</div>
+<div class="feed">
+<a href="https://mark.cetilia.org/news/2022/12" class="link">Triplets Live @ 1911</a>
+<span class="date"><time datetime="2022-12-09">December 9th, 2022</time></span>
+</div>
+<div class="feed">
+<a href="https://shop.blastradio.com/blogs/blast-radio-news-updates/in-conversation-with-sadnoise" class="link">Blast Radio | In Conversation with Sadnoise</a>
+<span class="date"><time datetime="2022-07-05">August 5th, 2022</time></span>
+</div>
+<div class="feed">
+<a href="https://disquiet.com/2021/02/02/femi-flemings-ambient-noise/" class="link">Disquiet</a>
+<span class="date"><time datetime="2021-02-02">Feburary 2nd, 2021</time></span>
+</div>
+</section>
+<hr/>
+<div style="line-height:1em; height:1em;"
+<p>updated 2025-06-22– sadnoise@femishonuga.com - <div id="time"></div></p>
+</div>
+<script>
+        const link = document.getElementById("hoverLink");
+        let hoverTimeout;
+
+        // Trigger on mouseover
+        link.addEventListener("mouseenter", () => {
+            hoverTimeout = setTimeout(() => {
+                link.textContent = "dream journal";
+                link.href = "dd.html";
+            }, 2000); // Change after 2 seconds
+        });
+
+        // Cancel on mouseout
+        link.addEventListener("mouseleave", () => {
+            clearTimeout(hoverTimeout);
+        });
+    </script>
+</body>
+<script>
+        // Define the secret key sequence (left, right, up, down)
+        const secretCombo = ['ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowDown'];
+        let enteredKeys = [];
+
+        // Listen for key presses
+        document.addEventListener('keydown', (event) => {
+            enteredKeys.push(event.key);
+
+            // Keep only the last N keys, where N is the length of the secretCombo
+            if (enteredKeys.length > secretCombo.length) {
+                enteredKeys.shift();
+            }
+
+            // Check if the entered keys match the secret combination
+            if (enteredKeys.join('') === secretCombo.join('')) {
+                window.location.href = 'onmail.html'; // Redirect to the secret page
+            }
+        });
+    </script>
+    <script>
+        // Initialize a variable to track the entered word
+        let typedWord = '';
+        const targetWord = 'fog'; // The word to trigger the redirect
+
+        // Listen for key presses
+        document.addEventListener('keydown', (event) => {
+            // Add the pressed key to the typedWord
+            typedWord += event.key.toLowerCase();
+
+            // Keep only the last N characters, where N is the target word length
+            if (typedWord.length > targetWord.length) {
+                typedWord = typedWord.slice(-targetWord.length);
+            }
+
+            // Check if the typedWord matches the target word
+            if (typedWord === targetWord) {
+                window.location.href = 'fog.html'; // Redirect to fog.html
+            }
+        });
+    </script>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString(); // e.g., "2:34:56 PM"
+            document.getElementById('time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call
+    </script>
+</html>
+</!doctype HTML>

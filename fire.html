@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fire Effect Text</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .fire-text {
+      position: absolute;
+      bottom: 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 24px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    function createFireText() {
+      const fireText = document.createElement('div');
+      fireText.classList.add('fire-text');
+      fireText.textContent = getRandomText();
+      fireText.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+      fireText.style.color = getRandomColor(); // Random red-orange color
+      document.body.appendChild(fireText);
+
+      animateFireText(fireText);
+    }
+
+    function getRandomText() {
+      const chars = ['!', '#', '@', '$', '%', '^', '&', '*', '~', '°', '+', '-', '>', '<', '|'];
+      const textLength = Math.floor(Math.random() * 30) + 3; // Random text length between 3 and 7 characters
+      let randomText = '';
+
+      for (let i = 0; i < textLength; i++) {
+        randomText += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return randomText;
+    }
+
+    function getRandomColor() {
+      const red = Math.floor(Math.random() * 256);
+      const green = Math.floor(Math.random() * 100); // Less green for a more orange/red effect
+      const blue = Math.floor(Math.random() * 50); // Less blue for a more warm color
+      return `rgb(${red}, ${green}, ${blue})`;
+    }
+
+    function animateFireText(fireText) {
+      let movementSpeed = Math.random() * 6 + 1; // Random vertical movement speed between 2 and 5px/frame
+      let initialPosition = parseFloat(fireText.style.bottom) || 0;
+
+      // Animation loop to simulate fire-like movement and opacity changes
+      function move() {
+        let currentTop = parseFloat(fireText.style.bottom) || 0;
+        let opacityFactor = Math.max(0, 1 - (currentTop / (window.innerHeight / 2))); // Decrease opacity as it moves up
+
+        fireText.style.bottom = `${currentTop + movementSpeed}px`; // Move text upwards
+        fireText.style.opacity = opacityFactor; // Fade text as it moves up
+
+        if (currentTop > window.innerHeight) {
+          fireText.remove(); // Remove the element when it moves out of view
+        } else {
+          requestAnimationFrame(move); // Keep the animation going
+        }
+      }
+
+      requestAnimationFrame(move); // Start the movement
+    }
+
+    // Create new fire text with variable density
+    function createFireWithDensity() {
+      const randomDensity = Math.random(); // Random value between 0 and 1 to control density
+
+      if (randomDensity < 0.8) {
+        // Higher density near the bottom (60% chance to create text)
+        createFireText();
+      }
+
+      const nextUpdate = Math.random() * (400 - 20) + 20; // Random update interval between 150ms and 400ms
+      setTimeout(createFireWithDensity, nextUpdate);
+    }
+
+    // Start the fire effect
+    createFireWithDensity();
+  </script>
+
+</body>
+</html>
+

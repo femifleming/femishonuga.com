@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<style>
+@font-face {
+font-family: times;
+}
+.pop {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: rgba(0, 0, 0, 0.8);
+color: white;
+padding: 20px 40px;
+border-radius: 8px;
+font-size: 20px;
+text-align: center;
+opacity: 0;
+pointer-events: none;
+animation: fadeInPopup 4s ease 20s forwards; /* 3-second delay before fading in */
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+z-index: 3;
+}
+.pop iframe {
+}
+body {
+margin: 20px auto;
+max-width: 900px;
+background-color: #232113;
+color: white;
+transition: filter 180s ease;
+}
+body:hover .pop {
+animation fadeInPopup 20s ease 60s forwards;
+}
+@keyframes fadeInPopup {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+div {
+background-color: #334322;
+padding: 10px;
+max-width: 790px;
+}
+.someothershit {
+margin-left: 800px;
+color: pink;
+background-color: purple;
+transition: margin-left 0.5s ease, border-color 0.5s ease, border-width 0.5s ease;
+border-width: 0px;
+position: fixed;
+border-style: solid;
+border-color: white;
+}
+.someothershit:hover {
+border-color: blue;
+border-width: 100px;
+margin-left: 700px;
+}
+.someothershit img {
+display: none;
+}
+.someothershit:hover img {
+display: initial;
+border-radius: 0;
+transform: rotate(0deg);
+margin-left: 0px;
+border-width: 0px;
+}
+article {
+border-radius: 40px;
+padding: 40px;
+color: yellow;
+background-color:rgba(122,100,49, 0.5);
+}
+marquee {
+background-color: #281372;
+color: #398495;
+transition: background-color 2s ease, font-size 2s ease;
+font-size: 1em;
+}
+marquee:hover::after {
+background-color: #958654;
+content: "yeah i KNOW theres a typo below";
+font-size: 4em;
+}
+img {
+border-radius: 0px;
+transition: border-width 1s ease, border-color 1s ease, border-radius 1s ease, margin-left 1s ease, transform 1s ease;
+border-style: solid;
+border-width: 0px;
+border-color: #123456;
+position: relative;
+}
+img:hover {
+border-radius: 50%;
+position: relative;
+transform: rotate(360deg);
+margin-left: 400px;
+border-width: 20px;
+border-color: beige;
+}
+figcaption:hover::after {
+content: " isnt this so cute!!";
+color: orange;
+}
+article:hover::before {
+content: "this comes BEFORE the article, how do you feel about THEM apples";
+font-weight: bold;
+font-style: italic;
+margin-left: 20px;
+}
+textarea {
+font-style: monospace;
+width: 800px;
+height: 400px;
+background-image:url(waterflow.gif);
+color: white;
+}
+.tboxpause {
+}
+textarea:hover {
+filter: blur(100px);
+}
+.tboxpause:hover::after {
+color: white;
+/* font-style: italic; */
+font-size: 1.5em;
+filter: blur(0px);
+content: "hahah nonono you cant steal this code!!!!!!!";
+position: fixed;
+}
+.notherenoway:hover::after {
+font-size: 5em;
+background-color: #594322;
+color: #494222;
+filter: blur(4px);
+content: "somethings off...";
+}
+</style>
+<div class="pop">
+<p>I keep having dreams about failed travel. missing my stop on a train, late for a flight at the airport, missing days and weeks of school. I wonder what it means, in all of these dreams, a strange architecture, and pouring of sunlight, a wash of brigh yellow and orange, glowing on all surfaces. Thin air and impossible hights above the ground. My apartment walls run alongside screetching train rails. Moments in the dark are breif and romantic. Plotting a persuit for months enbedded in the echos of the data. What was it i was longing for, or missing with every stop or new line of code. Does the water flow with ones and zeros?</p>
+<a href="https://cancelled.work/esofetish.html"><img src="51.gif"></a>
+</div>
+<body>
+<p>this is in the body? </p>
+	<div class="someothershit">
+		<img src="lain-dance.gif">
+			<p>and over here is some other shit!</p>
+	</div>
+	<div>
+		<marquee>
+		this is a markiosk, whats the news?? this is an outrage!!!
+		</marquee>
+	<p>
+	this is a test. is it cnetered??
+	</p>
+<article>
+	<p>This is an article, do you read it loud and clear?</p>
+</article>
+<figure>
+	<img src="thisisagif.gif" width="20%">
+	<figcaption>this is a figure caption. hover over to roll! this is the power of css and the anime girl.</figcaption>
+</figure>
+</div>
+<marquee class="notherenoway" direction="right" style="font-size: 1.2em; background-color:#323432;">
+yo theres boutta be some code below
+</marquee>
+<textarea class="tboxpause">
+this is some code cus im a HACKER.
+...........................................................
+...........................................................
+........R5...........R5...........R5...........R5..........
+......hX3..........hX2..........hX1..........hX4...........
+.....2I4..........2I4..........2I4..........2I4............
+....2X2..........2X2..........2X2..........2X2.............
+.......R............R............R............R............
+.......u3TmM........53TmM........k3TmM........u3TmM........
+.....2b.Gm........2b.G.........2b.G.........2b.Gm..........
+...R............R............R............R................
+...84Taaaa......94Taaaa......i4Taaaa......o4Taaaa..........
+...5Xa..........5Xa..........5Xa..........5Xa..............
+...R............R............R............R................
+...i3T579.......u3T579.......b3T579.......q3T579...........
+.....5............5............9............9..............
+.....J.R5.........J.R5.........J.R5.........J.R5...........
+.....5M3..........5M0..........9M2..........9M4............
+....aAf....Ra....aA0....Ra....aAi....Ra....aA0....Ra.......
+.....pA1.2X6......aA1.2X3......sA1.2X3......aA1.2X7........
+...R4.qAZ.......R4.bAZ.......R4.tAZ.......R4.bAZ...........
+..D12.XP.1m....D22.XAM1.....D12.XSm1.....D22.XA.1m.........
+..*Y*:53P.6.....Y.:52a.3....*Y*:51S.3.....Y.:54A.7.........
+....j............j............j............j...............
+....*;5oscswsw....;5oscswsw...*;5oscswsw....;5oscswsw......
+...........................................................
+...........................................................
+...........................................................
+</textarea>
+</body>
+</html>
+
