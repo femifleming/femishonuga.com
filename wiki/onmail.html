@@ -1,0 +1,88 @@
+<!doctype HTML>
+<style>
+body {
+max-width: 800px;
+background-color: #049492;
+color: white;
+}
+@font-face {
+	font-family: Mirai;
+	src:url('Mirai.ttf');
+	font-size: 1em;
+}
+</style>
+<body>
+	<p>To set it up in any mail client, you need to tell it the "incoming
+server" and "outgoing server".
+This is the way it is because sending mail and receiving mail
+(including sorting, moving, marking as this and that, etc) are handled
+seperately.
+The incoming server uses IMAP (the Internet Message Access Protocol) to
+interact with your mailbox. This is where you read new messages, sort
+them into folders, mark them as read or unread or important or
+unimportant, and all that. Your mailbox lives on the server, many
+different devices can connect at once and you can get to your mail on
+all of them.
+
+IMAP settings for funbox:
+server address: funbox.sh
+protocol: IMAP
+Port: 993
+Security: SSL/TLS (required)
+Authentication Method: PLAIN or LOGIN
+Username: Your username. Not your whole email! Not [user@domain], just
+[user]
+
+
+Sending mail works completely differently. In the same way that you can
+read physical mail, sort it, and write letters in the comfort of your
+home, you have to go put your letter in a mailbox to actually send it.
+The outgoing server uses SMTP (the Simple Mail Transport Protocol) to
+receive mail from you. Then, it figures out what SMTP server the
+message needs to be sent to, and sends it.
+If email were still as simplistic as its bones, this is all we would
+need. There would be no need for IMAP because your mail would be
+delivered by SMTP directly to the computer you're on, and you'd use
+some local program to read and manage your mail. But that way of doing
+things only worked in the mainframe era. Once we started puttng
+computers in our homes and moving around with them, getting a server to
+connect directly to us to deliver mail beacame completely impractical
+(not the least of which being that personal computers can't be on all
+the time waiting for mail).
+No, for this the mainframe had to stay. To get your mail (on any and
+many devices) you need to have an incoming server that sits ready and
+easily findable, waiting to receive your mail.
+When yo're ready to check it, you then undestand the need for IMAP
+because you now need to interact with your mailbox remotely.
+So, now it should make sense why we need to confiure two servers for
+any email account.
+In many cases, including this one, the incoming and outgoing servers
+are the same server. There's no reason why one server can't send your
+mail out and also wait to receive mail for you. There's also no reason
+why they they can't be different servers. In our case, they're the
+same. We have one and only server.
+
+SMTP settings for funbox:
+Outgoing server: funbox.sh
+Port: 587
+Security: StartTLS
+Authentication method: PLAIN
+Username: Your username. JUST the [user] part, not the whole
+[user@domain]
+
+
+If you are an external domain:
+The only thing you need to do is add an MX (Mail Exchagne) record to
+your DNS zone.
+it should be for your domain, and point to funbox.sh, and have a
+priority number (1 is fine).
+When somebody wants to send mail to you, and submits a message to their
+outgoing SMTP server, that server will resove the MX record for your
+domain to determine where to actually send the mail. Your MX record
+identifies funbox.sh as the server handling your mail. Large operations
+would return a list of servers (hence the priority field) but we only
+have one.
+The foreign SMTP server then sends the message to funbox's SMTP server,
+which receives it, checks its list of virtual alias domains to make
+sure the message belongs here, then delivers the message to your</p>
+</body>

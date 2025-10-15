@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{GALLERY_INFO}" />
+
+        <link href="gallery.css{ANTI_CACHE}" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>
+        <header>
+            <h1><img src="https://pixelsea.neocities.org/icons/book-0114.gif" alt="Index Icon" /> {GALLERY_TITLE}</h1>
+            <p>{GALLERY_INFO}</p>
+            <p>This gallery contains {COUNT_IMAGES} images in {COUNT_ALBUMS} albums!</p>
+        </header>
+
+        <section>
+            <nav id="index">
+                <h2>Album Index</h2>
+                <ul>
+                    {ALBUMS}
+                </ul>
+            </nav>
+        </section>
+
+        <footer>Made with <a href="https://melonking.net/melon?z=/free/software/gallery-maker" target="_blank">Melon's Gallery {MAKER_VERSION}</a> - Updated: {LAST_UPDATE}</footer>
+
+        <audio autoplay loop>
+            <!-- <source src="my-song.mp3" type="audio/mpeg" /> -->
+        </audio>
+    </body>
+</html>

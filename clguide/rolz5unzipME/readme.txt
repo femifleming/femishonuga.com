@@ -1,0 +1,1 @@
+Don’t unzip these files, upload them to jlcpcb or oshpark as Gerber zips.

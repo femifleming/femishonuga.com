@@ -1,0 +1,477 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<style>
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../Hack-Regular.ttf') format('truetype');
+}
+    textarea {
+                width: 100%;
+                height: 800px;
+                background-image: url("../fishing.gif");
+                color: white;
+		font-family: 'CustomFont';
+            }
+</style>
+<nav>
+        <ul>
+                <li><a href="audio.html">audio</a></li>
+                <li><a href="textiles.html">textiles</a></li>
+                <li><a href="arch.html">architecture</a></li>
+                <li><a href="visual.html">visual</a></li>
+                <li><a href="research.html" class="parent">research</a></li>
+        </ul>
+        <ul>
+                <li><a href="essays.html">papers and resources</a></li>
+                <li><a href="thesis.html">undergrad thesis</a></li>
+                <li><a href="df.html">daniel fishkin</a></li>
+                <li><a href="code.html" class="self">code</a></li>
+                <li><a href="ps.html">places and spaces</a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+<p><img src="links/teldo3.webp"></p>
+        <p><h3>Sometimes I use different coding languages to make sounds such as:</h3></p>
+	<ul>
+		<li><a href="#orca">orca</a></li>
+		<li>supercollider</li>
+		<li><a href="#fish">shlisp/fish</a></li>
+		<li><a href="#tt">teletype</a></li>
+	</ul>
+	<p>see <em><a href="#FAQ">FAQ</a></em></p>
+<p id="fish"><a href="https://www.youtube.com/watch?v=1boZyGLL5Cc&amp;t=969s">Fish:</a></p>
+<article style="border-left: 2px solid #fff; padding 20px;">
+	<p>Fish is the program (for Windows, Linux, and Macintosh) to edit and upload patches for Shbobo devices (SHNTH and SHTAR). With the release of the new Shbobo SHTAR, the program has received an overhaul. Most noticeably, the older system of tabbed soups has been replaced with a universal map of the whole file as loaded. Thus, soups are all visible, adjacent to each other. It is like a world map, and users are encouraged to use both horizontal and vertical layouts to organize their patch ideas.</p>
+</article>
+<textarea>
+{(jump (major 1))
+ (srate (togoc (dustb 4) 14 2 3 6 7 9 16)) ;fun voice.com synth for tutorial
+ (left
+ (waveb (sawb (short (togob (dustb 3) 114 12 64 62 86 4) 64) 64 (corpb)) 40 (bard))
+ (leakc (sawe (short (togod (dustd (bard 20)) -104 5 12 20 24 72 12) 64) -8 (barb)) 97)
+ (combb (zitherb (minord) 40) (salsab (dustf (corp)) (smokeb)) 64 -69)
+ (saltb (zitherd (minor) -47) 26 (corpb)) (saltb (wind) (corp) (barb)))
+ (right
+ (sawc (short (togoc (lights (dustc 4)) -56 25 20 9 32 34 22) 64) 64 (corp))
+ (wavec (leakb (sawf (short (togoe (duste (barc 20)) 84 -21 82 -5 15 -12 38 -29 10) 64) 111 (barc)) 94) 40 (bar))
+ (combc (zitherc (minorc) -95) (salsac (dustg (corpb)) (smokec)) 64 64)
+ (saltc (zither (minorb) -119) -107 (corp)) (saltc (wind) (corpb) (barc)))
+}
+ {(jump (major 1))
+ (srate 16)
+ (left
+ (saltb (sawb 28 123 (slewd (barb) 17 -66)) -70 (wheele 26 -64))
+ (saltc (sawc -27 -59 (slewe (barc) -117 -50)) -97 (corp))
+ (waveb (sawf -105 -86 (slewf (bard) 123 -11)) 90 (wheeld 54 26))
+ (wavec (sawg -97 73 (slewg (bar) -112 -50)) 107 (corpb))
+ (wavef (zitherb (dusth (corpb 64)) -24) -113 (wave 60 95 -88))
+ (fogd (dustb 74) 117 114 -80 100 (wheelb 35 85)))
+ (right
+ (saltd (sawd 54 99 (slewh (barb) 85 -56)) 56 (corp))
+ (salt (wind (barc)) -45 (wheelc 93 7))
+ (waved (sawh 20 59 (slewb (bard) -4 115)) 81 (corpb))
+ (wavee (saw -42 123 (slewc (bar) -25 14)) -68 (wheelb -104 -40))
+ (waveg (zitherc (dust (corp 64)) 67) 90 (waveb 68 12 -7))
+ (fogb (dustc 40) -72 -103 80 -90 (wheelc -90 16)))
+}
+ {
+ (jump (minord 1)) (srate (add (add 23 (slewd (major) 90 6))) (mul (slewc (minor) 100 12) 2))
+ (right (left
+ (saltb (sawb (add -133 (bard)) (add 112 (majorc)) (barb)) 90 (corpb))
+ (saltc (sawc (add -57 (bara)) (add -117 (majorb)) (barc)) 90 (corp))
+ (saltc (sawd (add 15 (barb)) (add 62 (majorb)) (bard)) 90 (corp))
+ (saltc (sawe (add -62 (barc)) (add 24 (majorc)) (bar)) 90 (corp)) (wind (bard)) (wind (bar))))
+ (left
+ (wavec (sawf 22 66 (swamp (dustc 20) -1 20 -17 -2)) 20 (swampc (dustf 20) -36 -126 -124 -66))
+ (hornb (corpb) 54 (fog (dustg 23) 40 38 20 90)) (fogb (dustb (corp 112)) 20 123 12 111)
+)
+ (right
+ (waveb (sawg 10 50 (swampb (dustd 17) 36 -20 -10 -44)) 20 (swamp (duste 30) -109 90 62 3))
+ (hornc (corp) 23 (fogb (dusth 23) 40 59 20 80)) (fogc (dustc (corpb 112)) 4 50 35 80))
+ (lights (dustb (corp))) (lights (dustb (corpb)))
+}
+ {(jump (major 1))
+ (srate (add 16 (mul (add (corp) (corpb)) 5)))
+ (left
+ (salt (sawb 20 (salsad (minord) (smokeh)) (barc)) 13 (bar))
+ (waveb (sawc -52 (salsab (minorb) (smokeb)) (barb)) 6 (barb))
+ (zitherb (lights (dustf (barb))) (corp))
+ (saltb (hazeb (dustd -84) 69 -13 (salsab (majorb) (smokee)) 20 (barc)) (salsaf (dust -9) (corpb)) (corpb))
+)
+ (right
+ (saltd (sawd -20 (salsah (minor) (smoke)) (bard)) 5 (bard))
+ (wavec (sawe 58 (salsa (minorc) (smokec)) (bar)) 12 (barc))
+ (zitherc (dustg (barc)) (corpb))
+ (saltc (hazec (duste -25) 24 -39 (salsac (major) (smokeb)) 34 (bar)) (salsag (dusth -13) (corp)) (corp)))
+}
+ {(jump (major 1)) (srate (short (corp)) 22)
+ (leakb (left
+ (leakb (saltb (hazeb (dustb (mul (corpb)) 10) 20 70 (salsab (minorb) (smokeb) 60) 90) 100
+ (corp) (barc)) (corpb))
+ (zitherb (majorb) (salsab (minord) (smokeb))) (wind (barc))
+ (waveb (hazed (duste (mul (corp) 20)) 5 80 (salsac (minorb) (smokec)) 23) 100
+ (corpb) (bard))
+ (wavec (dustc (corp)) 2 (slewb (corpb) 20 20)) (wind)
+ (sawb (salsah (minorc) (smoke)) 40 (bar))
+ (sawc (salsa (minorc) (smokeh)) 90 (barb))) (wheelc (bar) (barb)))
+ (leakc (right
+ (leakc (saltc (haze (dustg (mul (corp) 40)) 8 90 (salsad (minorb) (smoked)) -87) 100
+ (corp) (bar)) (corp))
+ (zitherc (majorc) (salsac (minord) (smokec))) (wind (barb))
+ (saltd (hazeb (lights (dusth (mul (corpb) 30))) 12 67 (salsae (minorb) (smokee)) -68) 100
+ (corpb) (barb))
+ (waved (dustd (corpb)) 2 (slewc (corp) 20 20)) (wind)
+ (sawd (salsaf (minorc) (smokeg)) 40 (bard))
+ (sawe (salsag (minorc) (smokef)) 101 (barc))) (corpb))
+}
+ {(jump (major 1))
+ (srate (short (corp) 24))
+ (leak (left
+ (leakd (sawb 60 64 (slewb (barb) 127 (corp))) (corpb)) (stringb (minorb) (togof (minorb) (dust 2) 2 8 16 24 56 45 32 120 72) (add 64 (corpb -24)) 122)
+ (leakc (wavec (saltb (smokeb (wheelb 20 64)) 110 (wheeld 4 69)
+ (slewf (togoc (dustd 28) (dustg 30) 10 90 34 26 120) 20 20)) 100 (wheelf 73 -106) 20) (bard)) (combc (saltd (leakc (smokee) (corpb) (corp)) (bard) (bar)) (bard) (bar) (wheelf (corp) (majorb))) 4 (leakc (wind)
+ (wheele 94 -23))
+ (waveb (sawd 96 64 (slewc (barc) 127 (corp))) 60 (salsad (dustc (corpb 50)) (smokec))) (leakd (combd (stringc (minorc) 4 (add 64 (corpb -24)) 122) 8 100 124) (wheelb (corpb) (corp)))) (corpb))
+ (leakb (right (leak (sawe 36 64 (slewd (bard) 127 (corp))) (corp)) (stringd (minord) 6 (add 64 (corpb -24)) 122)
+ (saltb (leakb (sawf 45 64 (slewe (bar) 127 (corp))) (corpb)) 90 (salsae (dustd (corp)) (smoked))) (zitherb (minor) (togoe (minor) (dusth 1) 110 20 60 80 24 36))
+ (leak (waved (saltc (smokec (wheelc 16 120)) 110 (wheele 28 68)
+ (slewg (togod (duste -24) (dustf 60) 10 20 80 30 100) 20 20)) 90 (wheelg -118 -34) 20) (combb (wavec (leakd (smokef) (corpb) (barc)) (barb) (barc)) (barb) (minorb) (wheelg (minorc) (corpb))) (leakb (wind)
+ (wheeld 19 53)) (salsac (dustb 6) (smokeb)))) (corp))
+}
+ {(jump (major 1))
+ (srate (short (corpb) 44))
+ (leak (left
+ (lights (dust (togo (dustc 5) (dustd 4) 20 2 4 6 3 60 1 70 18) (wheelb (corp) (wheelb (wheele -115 -50) -86) 64)))
+ (leakb (waveg (pulsec (square (corp) 54) 54) 1 (corp) 90) (barb))
+ (leakc (modo (hazeb (duste 12) 2 109 (togoh (dustg -61) (dusth -53) 2 4 6 8 10 24 59) 89 64) (corp)) (barc))) (wheelh 22 85))
+ (leakb (right
+ (lights (dustb (togob (duste 2) (dustf 4) 2 8 19 35 2 4 100 1 7) (wheelc (corpb) (wheelc (wheeld -9 -1) -32) 64)))
+ (leakd (waveh (pulsed (square (corpb) 72) 20) 1 (corpb) 90) (corpb))
+ (leak (modo (hazec (dustf 6) 4 82 (togo (dust 108) (dustb -71) 2 3 5 7 9 12 23 64) 119 64) (corpb)) (corp))) (wheel -104 79))
+}
+ {(jump (major 1))
+ (left
+ (leakc (saltb (sawf (add 12 (toggleg (dustf 2) 18)) 120 (slewh (barb) 120 1)) 64 (corpb)) (corp))
+ (saltc (sawg (add 24 (toggleh (dustg 1) 16)) 45 (slew (barc) 120 1)) 64 (corp)))
+ (right
+ (leakb (saltd (sawh (add 44 (toggle (dusth 3) 24)) 84 (slewb (bard) 120 1)) 64 (corpb)) (corpb))
+ (salt (saw (add 56 (toggleb (dust 4) 12)) 90 (slewc (bar) 120 1)) 64 (corp)))
+} ;NICE SOUNDS MELODY
+ {(jump (major 1)) (srate (slewb (short (togob (dustb 2) (dustc 3) 16 33 45 22 11 54) 54) (wheelb 104 68) (wheelc -54 -46)))
+ (left
+ (wavec (dustb 2) 3 (salsab (dustb 2) (smokeb) 80))
+ (stringb (dustb 1) (salsad (dustf 30) (smoked) 10) 120 124)
+ (hornb 24 60 (slewb (minorb) 100 3)) (hornc 32 60 (slewc (minorc) 84 4))
+ (reflect (horng (add 28 (togglec (and (minord) (minor)) 30)) 60 (slewf (and (minord) (minor)) 122 2)) (corp))
+ (hornh (add 28 (togglec (and (minorb) (minorc)) 16)) 40 (slewf (and (minord) (minor)) 122 2)))
+ (right
+ (waved (dustc 1) 3 (salsac (dustc 4) (smokec) 80))
+ (stringc (lights (dustc 2)) (salsae (dustg 20) (smokee) 10) 120 124)
+ (horne 40 60 (slewd (minord) 112 4))
+ (reflect (horng (add 28 (togglec (and (minord) (minor)) 16)) 60 (slewf (and (minord) (minor)) 122 2)) (corpb))
+ (hornf 80 60 (slewe (minor) 118 5))
+ (hornh (add 28 (togglec (and (minorb) (minorc)) 16)) 40 (slewf (and (minord) (minor)) 122 2)))
+}
+ {(jump (major 1)) (srate (short (corp) 117))
+ (leak (left
+ (saltb (hazeb (dustb (mul (corpb)) 10) 20 70 (salsab (minorb) (smokeb) 60) 90)
+ (add 4 (slewf (mul (togglec (majord)) 110) 22 86)) (corp) (barc))
+ (zitherb (majorb) (salsab (minord) (smokeb))) (wind (barc))
+ (waveb (hazed (duste (mul (corp) 20)) 5 80 (salsac (minorb) (smokec)) 23)
+ (add 4 (slewg (mul (toggled (majord)) 110) -33 90)) (corpb) (bard))
+ (wavec (dustc (corp)) 2 (slewb (corpb) 20 20))
+ (sawb (salsah (minorc) (smoke)) 40 (bar))
+ (sawc (salsa (minorc) (smokeh)) 90 (barb))) (corpb))
+ (leakd (right
+ (saltc (haze (dustg (mul (corp) 40)) 8 90 (salsad (minorb) (smoked)) -87)
+ (add 4 (slewd (mul (togglee (majord)) 110) 20 -120)) (corp) (bar))
+ (zitherc (majorc) (salsac (minord) (smokec))) (wind (barb))
+ (saltd (hazeb (lights (dusth (mul (corpb) 30))) 12 67 (salsae (minorb) (smokee)) -68)
+ (add 4 (slewe (mul (togglef (majord)) 110) 20 110)) (corpb) (barb))
+ (waved (dustd (corpb)) (corpb) (slewc (corp) 20 20))
+ (sawd (salsaf (minorc) (smokeg)) 40 (bard))
+ (sawe (salsag (minorc) (smokef)) 101 (barc))) (corp))
+}
+ {(jump (major 1)) (srate (short 22 (corpb)))
+ (right (saltb (leakb (combb (comb (left
+ (horn (wheelb (barb) (barc)) 64 (bar 40))
+ (combc (hornb 16 64 (barb 100)) 1 60 125)
+ (hornc 16 64 (barc))
+ (hornd 17 64 (bard))) 2 -124 (corp (corpb) 127)) 3 -48 125) (corp)) 57 (corpb))
+ (leakc (waveb (combd (left
+ (saw 32 64 (bar 40))
+ (combc (sawb 16 64 (barb 62)) 1 60 125)
+ (sawc (wheelc (bard) (bar)) 64 (barc))
+ (leakd (sawd (wheeld (minorb) (minorc)) 64 (bard)) (barb))) -41 -88 104) 41 (corp)) (corpb)))}
+{(jump (major 1)
+(srate (wheeld -80 -46 24))
+ (left
+ (saltb (lights (smokeb (wheelb -20 54))) -111 (wheelg -76 -117))
+ (sawc (sawd -119 (wheelg -32 -125)) (wheele 7 102))
+ (leakb (saltc (smokec (wheelc 17 73)) -96 (wheelh 63 -75)) (wheelb 87 -13))
+ (zitherb (dustd (wheel -8 -74)) 33) (sawf -93 (wheelc 86 11)))
+ (right
+ (saltd (smoked (wheeld -61 114)) 32 (wheelf -9 -17))
+ (sawb (sawe 95 (wheelf 43 -72)) (wheeld -67 -117))
+ (leakc (salt (smokee (wheele 51 111)) -119 (wheel -15 -102)) (wheelc 113 -14))
+ (zitherc (dustc (wheelh 42 1)) 101) (sawg -105 (wheelb -68 -9)))
+}
+</textarea>
+<p id="tt">Teletype:</p>
+<p><a href="https://www.youtube.com/watch?v=0PmH63eAuQc&t=1487s"><em>my workflow</em></a></p>
+<article style="border-left: 2px solid #fff; padding 20px;">
+	Monome Teletype is a "musical event triggering platform" within the modular synthesizer ecosystem, essentially a device that allows users to create complex musical sequences and patterns by writing simple scripts, often used for live coding, where users can dynamically manipulate sounds and events through a keyboard interface connected to the device; it features eight trigger inputs, multiple CV outputs, and a straightforward scripting language for creating intricate patterns and behaviors.
+</article>
+<textarea style="background-image:url('links/orca.gif');">
+
+COOLER NIGHTS 1 AUG 7 2022
+JKUE MORI, LN CELESTINE
+SADNOISE, MANY MANY GIRLS
+DOORS 7PM: %B1
+RSVP @CARA_THE_ORG: %2
+
+===
+
+DRY WET HUMIDITY: %3
+CELCIUS BIN 2: %B4
+DAYLIGHT: %5
+DEPTH: %B6
+
+
+
+#1
+DEL + B RND PRM: $ $
+DEL.R 8 / LAST 1 8: $ 2
+DEL.R J / LAST 1 K: $ 3
+J RND 10; K RRND 4 6; $ 5
+L 1 2: SC.CV I V RND 10
+L 3 8: SC.CV I VV RND 1000
+
+#2
+A RND 255
+L 1 4: SC.TR.P ? BGET A I I 0
+CV 1 V 0; $ 8
+I2M.N# 11 PN 0 RND 16 K
+K RND 127; $ 6
+PRINT 1 A; PRINT 2 A
+
+#3
+T + T 1; PRINT 5 T
+EX.N N + Z * 5 % T RND 5 V K
+K RND 8; $ 4; SC.TR.P 11
+CV 1 N ? TOSS 0 7
+EX.P 11 RND 120; PRINT 6 T
+EX.P 19 QT RRND -24 24 12
+
+#4
+EX.P 24 ? TOSS 0 -24
+SC.CV.SLEW 3 1200
+B ? GT PRM 2000 4000 200
+EX.P 18 ? TOSS 0 ? TOSS 0 23
+
+#5
+PROB ? GT PRM 200 40 0: BRK
+SC.CV 9 V RRND -10 10
+SC.CV.SLEW 9 V 3
+EV 8: Z PN.NEXT 2
+I2M.CC# 3 1 RRND 45 127
+I2M.CC# 3 11 RRND 72 127
+
+#6
+L 1 4: $ 7
+PRINT 4 PRM
+J + Z * 5 % T RND 5
+I2M.N# ? TOSS 0 9 J 127
+
+#7
+
+#8
+EV 50: LIVE.DASH + FLIP 1
+PRINT 3 PRM
+L 0 7: $S 4
+G.LED J I ? BGET A I 9 0
+J + WRP J 0 15 1
+DEL RND / PRM 8: G.RST
+
+#M
+
+#I
+PARAM.SCALE 1 4000; $ 1
+L 1 2: SC.CV.SLEW I 0
+EX.PRE 35
+L 3 8: SC.CV.SLEW I V 2
+
+#P
+16      0       4       0
+1       1       1       1
+0       0       0       0
+63      63      3       63
+
+49      0       0       0
+57      1       9       0
+53      1       4       0
+51      1       5       0
+50      0       0       0
+48      0       0       0
+45      0       0       0
+41      0       0       0
+37      0       0       0
+39      0       0       0
+42      0       0       0
+46      0       0       0
+36      0       0       0
+38      0       0       0
+44      0       0       0
+56      0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+0       0       0       0
+
+#G
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+
+0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+
+</textarea>
+<p id="orca"><a href="https://wiki.xxiivv.com/site/orca.html">Orca</a></p>
+<article style="border-left: 2px solid #fff; padding 20px;">
+Orca is an esoteric programming language and live editor designed to quickly create procedural sequencers. Every letter of the alphabet is an operation, lowercase letters execute on *bang* , and uppercase letters execute each frame.
+</article>
+<textarea style="background-image:url('../ogif.gif')">
+..........................................................................................................................................
+..........................#................#..............................................................................................
+..........................#................#..............................................................................................
+.....Rq..R................#....R...........#..............................................................................................
+...1Vc.2Vx................#....n3Tabb......#..............................................................................................
+..........................#......b...R2....#..............................................................................................
+..........................#......J.2X1.Ra..#..............................................................................................
+........#............#....#....1Xb...1X3...#..............................................................................................
+........#....V1......#....#...H1.....Ra....#.D...................................................V1.......................................
+........#..2Xo.......#....#...*$bpm:153....#..$bpm:137.........................................2Xc........................................
+........#....V2......#....#................#.....................................................V2.......................................
+........#....h9T#....#...........................................................................x9T#.....................................
+........#...o1G......#..........................................................................c1G.......................................
+........#............#....................................................................................................................
+........#............#.............R3......................R3.............................................................................
+........#............#...........2X1.....................2X2..............................................................................
+..................................R.......................R...............................................................................
+.........#..............#.........o4Tcafe.................44Tcafe.........................................................................
+.........#..............#.........1Mc.......C.............2Mc.............................................................................
+.........#......R.......#........2Xc.R4.....7.....R8Ra...2Xo.R4...........................................................................
+.........#....1Xp.......#......R7..1X2..R3..J.....7X8..R7..1X3............................................................................
+.........#......R.RZ....#.....D62R6R...D2..273Q.#129#.D52R6R............aRhR6R............aRh.............................................
+.........#.....pvG6.....#......:12cs2...YY.!148.#148#..:75or3..........3Xb.8kd0..........3Xd..............................................
+.........#..............#......R4...............#139#...................R5................R5..............................................
+.........#..............#.....D0................#148#.................1X2...............1X2...............................................
+...............................$cc:00...........#149#....Ra.......Ra.2R5...Ra.......Ra.2R5................................................
+..............................j.................#149#....5XE......04G:42b..4XE......34G:32d...............................................
+..............................j;..R.............#148#..........E.E..:42b..............:43d................................................
+...............................!12o.............#148#...............:40b...........E..:24b................................................
+...............................R4...........C..............E.E....E.:20b........E.....:33f................................................
+..............................D3............7.....R8Ra..............:34a......E.......:32d................................................
+...............................$cc:00...R3..J.....6X9...............:30f....E.........:21e................................................
+..............................j........D1..273Q.#129#.....E........E:20b..........E...:21f................................................
+..............................j;..R....*YY*!149.#159#...............:21f..............:30c................................................
+...............................!13l.............#158#.......E.......:41d..............:43e................................................
+................................................#159#..............*:30a.........E..E*:33g................................................
+................................................#158#.........E.E...:20c.............E:23a................................................
+................................................#148#..............j.................j....................................................
+................................................#159#..............j...R.............j...R................................................
+................................................#149#...............!72y..............!72r................................................
+..........................................................................................................................................
+</textarea>
+<p id="FAQ">FAQ</p>
+<p><em>1. How did you get into coding? What drew you into coding?</em></p>
+<p>I entered the world of electronic music production from a very non-musical background, so during my experimentation I would always look for new ways to make something musical in non-conventional ways. Diving into the experimental electronic music world and listening to artists like Autechre and Mark Fell who use Max MSP and various other music oriented coding languages, I wanted to explore more ways to approach music production that involved thinking about randomness and melody in an algorithmic or computer controlled approach. I love the idea of being able to write to create a set of rules or bounds that can create something completely generative while still being under my control.</p>
+<p><em>
+What style or styles of music is your focus? Do you do anything else music-related or play another instrument outside of live coding?</p></em>
+<p>I focus on making experimental electronic music in the genres of noise and ambient, and most recently techno. Im especially interested in texture, and designing organic sounds from a more or less completely digital root. I mainly use my modular synthesizer and sampler to create, and the live coding is housed in Teletype, which is a live coding module for my modular synth that uses its own language with its own syntax. I don’t play any acoustic instruments. I’m most experienced at Teletype, but I haver used other languages such as Orca, SuperCollider and MaxMSP.</p>
+<p><em>
+	At the festival, what will your act involve? Do you bring in other elements to the coding?</em></p>
+<p>Im still deciding how much hardware I will bring, because my synth is an important part of most of my live sets, but instead of using Teletype ill be exploring midi sequencing from Orca by hundredrabbits, an “esoteric programming language designed to quickly create procedural sequencers.” Ive been kind of obsessed with these developers for a while. I discovered a few of their games on the App Store almost a decade ago, and only found orca revisiting their site a couple years ago. My set will be mostly textural, I hope to play around with granular synthesis and live resampling, and using Pilot, a synth designed for use with orca, and/or sending note information to my modular synth.</p>
+<p><em>
+What is your advice for someone who is looking to get into live coding, or just coding in general, and doesn’t know where to start?</em></p>
+<p>There are amazing resources online, the Lines forum is a place for people who want to explore the world of Teletype, I go there fort all of my questions and they’re all super welcoming to beginners. I personally like to just follow a lot of people and ask them all questions about how they make the music they make and gather information to do research that way. The internet is really my best friend when it comes to that. Most programs will have help forums or a GitHub page explaining everything as well. MaxMSP is really good at making all of their objects user friendly by creating help patches that explain in detail all the functions ins and outs and uses of that specific object within the program. I would say to not be intimidated, even though it may seem like a lot, most of these languages will take a while to dive into, but if you really want to explore them you just have to set aside time and commit, and obsess over it.</p>
+        <p class="incoming"><b>incoming </b><a href="ck.html">code kaizen</a> <a href="../Systems.pdf">systems</a><br>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
+</body></html>

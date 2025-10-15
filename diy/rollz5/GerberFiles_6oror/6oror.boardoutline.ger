@@ -1,0 +1,6 @@
+%FSTAX24Y24*%
+%MOIN*%
+%IN 6oror.boardoutline.ger *%
+%ADD10C,0.0100*%
+D10*G01Y023D01*X023D01*Y0D01*X0D01*
+M02*

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{ALBUM_INFO}" />
+
+        <link href="../gallery.css{ANTI_CACHE}" rel="stylesheet" type="text/css" media="all" />
+        {CUSTOM_CSS}
+    </head>
+    <body>
+        <header>
+            <h1><img src="https://pixelsea.neocities.org/icons/camera-014.gif" alt="Camera Icon" /> {ALBUM_TITLE}</h1>
+            <p>{ALBUM_INFO}</p>
+            <a href="../index.html">&#8592; Back to the index!</a>
+        </header>
+
+        <section>
+            <nav class="page-links">{PAGELINKS}</nav>
+            <section id="photos">{PHOTOS}</section>
+            <nav class="page-links">{PAGELINKS}</nav>
+        </section>
+
+        <footer>Made with <a href="https://melonking.net/melon?z=/free/software/gallery-maker" target="_blank">Melon's Gallery {MAKER_VERSION}</a> - Updated: {LAST_UPDATE}</footer>
+
+        <audio autoplay loop>{ALBUM_MUSIC}</audio>
+    </body>
+</html>

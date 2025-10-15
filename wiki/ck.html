@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FCQXVD7YXZ');
+</script>
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>codex &mdash; home</title></head><body>
+<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<nav>
+        <ul>
+                <li><a href="audio.html">audio</a></li>
+                <li><a href="textiles.html">textiles</a></li>
+                <li><a href="arch.html">architecture</a></li>
+                <li><a href="visual.html">visual</a></li>
+                <li><a href="research.html">research</a></li>
+        </ul>
+        <ul>
+                <li><a href="meta.html">internal</a></li>
+                <li><a href="inventory.html">inventory</a></li>
+                <li><a href="ck.html" class="self">code kaizen</a></li>
+		<li><a href="server.html">server</a></li>
+                <li><a class="sass" href="dh.html">digital higene </a></li>
+        </ul>
+</nav>
+<main><h2>&nbsp;</h2>
+<style>
+textarea {
+transition: width 2s ease;
+}
+textarea:hover {
+width: 200%;
+}
+</style>
+        <p>Code Kaizen</p>
+<figure>
+<img src="links/ck.webp">
+<figcaption><span class-"right">Kaizen (Japanese: 改善, "improvement") is a concept referring to business activities that continuously improve all functions -</span></figcaption>
+</figure>
+<ul>
+<li>
+<p>vim command to increment images or links:</p>
+<textarea>
+for i in range(0, 30)
+  let line = '<p><img src="links/sspecs/vitaphonereference' . i . '.webp"></p>'
+  put =line
+endfor
+</textarea>
+</li>
+<li>
+<p>mac terminal command to convert all jpeg images in a directory to 4 color dithered images. must have imagemagik installed.</p>
+<textarea>convert -dither FloydSteinberg -colors 4 -strip "*.webp" -set filename:base "%[basename]" "%[filename:base].webp"</textarea>
+</li>
+<li>
+<p>vim ruby command for replacing text</p>
+<textarea>
+:%s/old/new/g
+</textarea>
+</li>
+<li>
+<p>mac terminal command to dither all gifs in a directory. must have imagemagik installed.</p>
+<textarea>magick mogrify -dither FloydSteinberg -colors 12 -strip -format gif “*.gif”</textarea>
+</li>
+<li>
+<p>mac terminal command to replace "clogo.png" text in all html files in a directory to "clogo.png"</p>
+<textarea>sed -i '' 's/clogo\.webp/clogo\.webp/g' *.html</textarea>
+</li>
+<li>
+<p>vim command for creating a list of images named london + x (london1.jpg, london2.webp, etc.) to make it easier to make gallery html pages.</p>
+<textarea>for i in range(1, 10) | call append(line('$'), '<p><img src="london/london'.i.'.webp"></p>') | endfor</textarea>
+</li>
+<li>
+<p>":call PasteHtml()" script for ~/.vimrc to help me with my discography html page. generates html.</p>
+<textarea>
+function! PasteHtml()
+    let title = input('Enter title: ')
+    let format = input('Enter format: ')
+    let timedate = input('Enter timedate: ')
+    let artist = input('Enter artist: ')
+    let tracks = input('Enter tracks: ')
+    let coverfile = input('Enter coverfile: ')
+    let what = input('Enter what: ')
+let link = input('Enter link: ')
+let id = input('Enter id: ')
+
+    let html = '<table id="' . id . '">' . "\n"
+    let html .= '    <tr>' . "\n"
+    let html .= '        <td>' . title . '</td>' . "\n"
+    let html .= '        <td>' . format . '</td>' . "\n"
+    let html .= '        <td><time datetime="' . timedate . '">' . timedate . '</time></td>' . "\n"
+    let html .= '        <td>' . artist . '</td>' . "\n"
+    let html .= '        <td>' . tracks . '</td>' . "\n"
+    let html .= '    </tr>' . "\n"
+    let html .= '</table>' . "\n"
+let html .= '<ul>' . "\n"
+let html .= '<li><a href="' . link . '"><img src="links/ac/' . coverfile . '"></a></li>' . "\n"
+let html .= '</ul>'  . "\n"
+let html .= '<p>' . what . '</p>'
+
+    " Insert the HTML code at the current cursor position
+    execute "normal! i" . html
+endfunction
+</textarea>
+</li>
+<li>
+<p>records actions in vim and then plays them back, or iterated them x amount of times.</p>
+<textarea>
+qa 
+@a
+x@a
+</textarea>
+</li>
+</ul>
+        <p class="incoming"><b>incoming <a href="meta.html">meta</a></b> <a href="../webring.html">webring</a> <a href="../log.html">log</a><br>
+<style>
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+        .nodark { display:none !important }
+}
+</style>
+<ul></ul></main>
+<footer>sadnoise@femishonuga.com - updated Dec 25 2024 - <a href="sitemap.html">sitemap</a><div class="right"><a href="https://wiki.xxiivv.com/site/about.html#license"><img src="cc.svg" height="0.8em"></a></div></footer>
+</body></html>

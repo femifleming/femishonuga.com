@@ -1,0 +1,8 @@
+1	1	cel1		U7	
+2	3	chairy		U3	U3_1	U3_2	
+3	1	do3		U6	
+4	3	qnpn		U1	U1_1	U1_2	
+5	3	r3	22k	U2	U2_2	U2_4	
+6	3	r3	470k	U2_1	U2_3	U2_5	
+7	1	wobelisk		U8	
+8	3	wsqout		U4	U4_1	U4_2	

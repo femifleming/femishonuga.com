@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 200px;
+      width: 640px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const coordinates = [
+      [38.8951, -77.0364],  // Washington, DC
+      [34.0522, -118.2437], // Los Angeles
+      [40.7128, -74.0060],  // New York City
+    ];
+
+    const map = L.map('map').setView([39.5, -98.35], 4);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    coordinates.forEach(coord => {
+      const [lat, lng] = coord;
+      L.marker(coord)
+        .addTo(map)
+        .bindPopup(`${lat}, ${lng}`);
+    });
+  </script>
+</body>
+</html>
+
