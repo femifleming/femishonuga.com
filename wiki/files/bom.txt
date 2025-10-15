@@ -1,0 +1,93 @@
+Partlist exported from /Users/femishonugafleming/Documents/eagle/rolz40xx/rolzsounder8.sch at 10/27/24 4:19 PM
+
+Part  Value   Device            Package               Description                      
+C1    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C2    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C3    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C4    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C5    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C6    hairy1  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C7    hairy2  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C8    hairy2  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C9    hairy2  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C10   hairy2  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C11   hairy2  CAP_POLPTH2       CPOL-RADIAL-10UF-25V  Capacitor Polarized              
+C12   0.1uf   CAPPTH            CAP-PTH-SMALL         Capacitor                        
+C13   0.1uf   CAPPTH            CAP-PTH-SMALL         Capacitor                        
+C15   0.1uf   CAPPTH            CAP-PTH-SMALL         Capacitor                        
+C16   4.7uf   CAPPTH            CAP-PTH-SMALL         Capacitor                        
+C17   4.7uf   CAPPTH            CAP-PTH-SMALL         Capacitor                        
+C18   .01uf   C-US050-035X075   C050-035X075          CAPACITOR, American symbol       
+C22   4.7uf   C-US050-035X075   C050-035X075          CAPACITOR, American symbol       
+C23   .1      C-US025-025X050   C025-025X050          CAPACITOR, American symbol       
+D2    914     SMALL_DIODEDO35-7 DO35-7                Small Signal Diode               
+G1    AB9V    AB9V              AB9V                  9-V BATTERY CLIP                 
+IC1   4015N   4015N             DIL16                 Dual 4-bit static SHIFT REGISTER 
+IC2   4046N   4046N             DIL16                 Micropower PLL                   
+JP1           JP8Q              JP8Q                  JUMPER                           
+JP4           M023.5MM          SCREWTERMINAL-3.5MM-2 Header 2                         
+LED1          LED5MM            LED5MM                LED                              
+LED2          LED5MM            LED5MM                LED                              
+PAD1  4ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD2  4ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD3  4ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD4  4ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD5  4ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD6  6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD7  6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD8  6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD9  6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD10 6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+PAD11 6ROLZ   1,6/0,9           1,6/0,9               THROUGH-HOLE PAD                 
+R1    470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R2    22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R3    470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R4    22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R5    470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R6    22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R7    470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R8    22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R9    470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R10   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R11   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R12   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R13   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R14   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R15   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R16   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R17   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R18   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R19   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R20   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R21   470k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R22   22k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R25   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R26   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R27   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R28   2m      TRIMPOTPTH        TRIM_POT_PTH                                           
+R29   2m      TRIMPOTPTH        TRIM_POT_PTH                                           
+R30   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R31   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R32   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R33   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R36   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R37   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R38   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R39   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R40   100k    R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R41   10k     R-EU_0204/5       0204/5                RESISTOR, European symbol        
+R46   10k     R-US_0204/5       0204/5                RESISTOR, American symbol        
+R47   10k     R-US_0204/5       0204/5                RESISTOR, American symbol        
+R48   100k    R-US_0204/5       0204/5                RESISTOR, American symbol        
+T1    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T2    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T3    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T4    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T5    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T6    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T7    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T8    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T9    BC547   BC547             TO92                  NPN TRANSISTOR                   
+T10   BC547   BC547             TO92                  NPN TRANSISTOR                   
+T11   BC547   BC547             TO92                  NPN TRANSISTOR                   
+U$6   NJM2073 NJM2073-DIP       DIL08                                                  
