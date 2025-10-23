@@ -3,7 +3,7 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color: #141414; max-width:800px; color: black;
+    body {background-color: #ffffed; max-width:800px; color: black;
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}

@@ -54,8 +54,8 @@ gtag('config', 'G-FCQXVD7YXZ');
             var originalImage = images[index];
 
             // Modify the file path based on the theme
-            if (!isDarkMode && /\.(jpg|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
-                return originalImage.replace(/\.(jpg|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
+            if (!isDarkMode && /\.(webp|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
+                return originalImage.replace(/\.(webp|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
             }
 
             return originalImage;
