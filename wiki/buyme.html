@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAEVuU-PPJNXzJLppcLmYs6ainMSHnwNfCalPS7mtBAbQ4xAhu5GNfHNiAyefSw1kJdf8ItZX5xXlguMw&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+<meta charset="UTF-8">
+<style>
+h4 {
+color: white;
+}
+.buyme {
+  animation: blueblue 0.3s steps(2, start) infinite;
+  display: inline-block;
+  padding: 5px 10px; /* optional: gives the text some breathing room */
+}
+div {
+align: center;
+align-content: center;
+padding: 20px auto;
+margin: 0 auto;
+}
+p {
+color: white;
+}
+/* The keyframes define how colors change over time */
+@keyframes blueblue {
+  0% {
+    background-color: #3e32a8;
+    color: #d7d5e8;
+  }
+  100% {
+    background-color: #918db3;
+    color: #232042;
+  }
+}
+fancy {
+font-family: cursive;
+color: white;
+}
+body {
+  background-image:url('clouds2.gif');
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0; /* 'auto' isn't valid for padding */
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.6);
+text-align: center;
+align: center;
+}
+</style>
+</head>
+<body>
+  <article>
+<p><img src="links/cloud1.webp" width="100%"></p>
+<h4><i>$5555</i></h4>
+    <p class="buyme">buy me!!!!!!!</p>
+<p><em>These are the only speakers you'll ever need! Your ears will be floating on clouds! You butt massaged with smooth bass! these speakers FILL the room. Rated for around 200w RMS these speakers get LOUD. The open baffle design suits ANY room size, while keeping the bass tight and intact. Use with a graphic eq to get your sound TUNED IN.</em></p>
+<br>
+<div style="align: center;" id="paypal-container-NMBSZFBEJ9PNC"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "NMBSZFBEJ9PNC",
+  }).render("#paypal-container-NMBSZFBEJ9PNC")
+</script>
+  </article>
+</body>
+</html>
+
