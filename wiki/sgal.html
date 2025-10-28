@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
 <html>
 <style>
 body {
@@ -25,16 +25,50 @@ display: flex;
 justify-content: center, space-between;
 width: 900px;
 }
+a {
+color: white;
+}
+li {
+list-style-type: none;
+}
+ul a {
+font-style: italic;
+}
+ul a:hover:after {
+content:" ◀~"
+}
 </style>
 </head>
 <body>
-<p>These are soundsystems, semi-hifi and horn loaded speakers that I have been designing myself and with Enid Corcoran.</p>
+<p>These are soundsystems, semi-hifi and horn loaded speakers that I have been designing myself and with Enid Corcoran. This is research for my <a href="thesis.html">thesis</a>.</p>
+<li>
+<ul><a href="#hcp">Hifi Cloud Speakers</a></ul>
+<ul><a href="#ct">Cone Tweeter</a></ul>
+<ul><a href="#hlmd">Horn Loaded Midrange Driver</a></ul>
+<ul><a href="#pvs">Ponyville Sub</a></ul>
+</li>
+<hr>
 <figure>
-<img src="links/buriedelectric3.jpg">
+<a href="buyme.html"><img src="links/cloud1.webp" id="hcp"></a>
+<figcaption class="right">These are the ponyville clouds. See the <a href="clouds.html">log</a> for more details. 3 way hybrid open baffle speaker. The mid range drivers harvested from a ceiling  PA system in my stuido, are open baffle, while the tweeters and the bass driver are enclosed. The bass driver boxed are actually ported. The bass cutoff is around 300hz with the high crossover around 2800hz. The midrange drivers needed to be scaled down about 20db with power resistors.</figcaption>
+</figure>
+<p><img src="links/cloud3.webp"></p>
+<figure>
+<img src="links/buriedelectric3.jpg" id="ct">
 <figcaption class="right">The traffic cone calls "scream through me!" The cone is loaded with a high frequency compression driver, and designed as a 'reentrant (reflex) horn loudspeaker, or bullhorn, is a type of folded horn speaker used widely in public address systems. To reduce the size of the horn, the sound follows a zigzag path through exponentially expanding concentric ducts in the central projection, emerging from the outer horn.' The bass is the "buried electric" The speaker is the shrine, this is a sonic artifact in the sound anthology.</figcaption>
 </figure>
-<div class="funkmaster">
-<img src="links/buriedelectric1.jpg" width="50%"><img src="links/buriedelectric2.jpg" width="50%">
-</div>
+<p><img src="links/buriedelectric2.jpg"></p>
+<figure>
+<img src="links/hornwithtweetytwo-05.webp" id="hlmd">
+<figcaption class="right"><i>steel, plywood, 6in full range driver, aluminum rivets, silicon, banana binding posts, speaker wire, fiberglass insulation, steel mesh, drywall screws, leather.</i> This is an exponential speaker horn I build with Enid Corcoran for my architecture class titled Urban Metabolism. This speaker is meant to amplify mid range frequencies from an driver at the throat of the horn, specifically the sound of water rushing though the moshassuck river. The driver is 6 inches at the base of the throat. I have been using a special cable with a 60uf capacitor at around 600hz to protect the driver from bass frequencies that might blow it. The back is enclosed and ported, with fiberglass insulation to absorb the back reflections and silicon to ensure a tight seal at the base of the throat, where its 4x4 inches.</figcaption>
+</figure>
+<p><img src="links/hornwithtweetytwo-02.webp"></p>
+<p><img src="links/hornwithtweetytwo-06.webp"></p>
+<figure>
+<img src="links/ponyvillesoundsystem-24.webp" id="pvs">
+<figcaption class="right"><i>plywood, danish oil, 10in subwoofer driver (dayton audio), aluminum mesh, speaker wire, fiberglass insulation, drywall screws (steel and brass), banana binding posts, acrylic paint, mahogany.</i> This is the second speaker me and Enid have built. It has no crossover, but is to be used as a subwoofer or mid range speaker. Its a closed enclosure design.</figcaption>
+</figure>
+<p><img src="links/ponyvillesoundsystem-25.webp"></p>
+<p><img src="links/ponyvillesoundsystem-26.webp"></p>
 </body>
 </html>
