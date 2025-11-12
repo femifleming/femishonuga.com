@@ -174,7 +174,7 @@ isAnimating = false; // Reset state to not animating
 </script>
 <font size="2">
 </font>
-<p><a href="https://2026.sonicacts.com/artists/femi-shonuga-fleming"><img src="2.jpg"></a></p>
+<p><a href="https://2026.sonicacts.com/artists/femi-shonuga-fleming"><img src="large_250923_SAB_2026_19by9_1_069a21fc6f.png"></a></p>
 <a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
 <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.black.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.svg" height="40px" class="nostyle"></a><br>
 <img class="display" height="40px" src="code1.png">
@@ -184,6 +184,31 @@ isAnimating = false; // Reset state to not animating
 	<li>Updated <a href="wiki/slog.html">Speaker Building Log</a></li>
 	<li>Released <a href="clguide/clguide.html">ciat lonbarde diy guide</a></li>
 	<li>Walked <a href="#" class="phar">through</a> the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
+<li>Is Mercury in retrograde? <input type="checkbox" id="yesCheck" disabled> <a href="#" class="mur">Yes</a> <input type="checkbox" id="noCheck" disabled> No</li>
+
+    <script>
+        const retrograde2025 = [
+            { start: new Date('2025-03-15'), end: new Date('2025-04-07') },
+            { start: new Date('2025-07-18'), end: new Date('2025-08-11') },
+            { start: new Date('2025-11-09'), end: new Date('2025-11-29') }
+        ];
+
+        const today = new Date();
+        let isRetrograde = false;
+
+        for (const period of retrograde2025) {
+            if (today >= period.start && today <= period.end) {
+                isRetrograde = true;
+                break;
+            }
+        }
+
+        if (isRetrograde) {
+            document.getElementById('yesCheck').checked = true;
+        } else {
+            document.getElementById('noCheck').checked = true;
+        }
+    </script>
 </ul>
 <br>
 <p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
