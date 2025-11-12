@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.st {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+color: white;
+    left: 100%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+z-index: 2;
+transition: border-width 2s ease, margin-left 2s ease;
+border-width: 0px;
+border-style: inset;
+margin-left: 0px
+  }
+.st:hover{
+border-width: 900px;
+margin-left: -900px;
+background-image:url('see.gif');
+background-attachment: fixed;
+}
+body {
+background-image:url('links/thesis_probe-03.jpg');
+background-attachment: fixed;
+max-width: 900px;
+}
+article {
+transition: background-color 2s ease;
+background-color:rgba(0,0,0,0.4);
+color: white;
+}
+article:hover {
+background-color:rgba(0,0,0,0.9);
+}
+img {
+width: 880px;
+border-style: inset;
+border-width: 5px;
+    transition: filter 1s;
+
+}
+img:hover {
+    animation: rainbow 4s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+.smaller {
+width: 90px;
+}
+</style>
+<body>
+<div id="text" class="st"><marquee>The speaker stack is a representation, a totem, a shrine, a ritual object in translating sound 
+</marquee></div>
+<article>
+<p><img src="links/thesis_probe-01.jpg"></p>
+<p><img src="links/thesis_probe-02.jpg"></p>
+<p><img src="links/thesis_probe-04.jpg"></p>
+<p><img src="links/thesis_probe-05.jpg"></p>
+<p><img src="links/thesis_probe-06.jpg"></p>
+<p><img src="links/thesis_probe-07.jpg"></p>
+<p><img src="links/thesis_probe-08.jpg"></p>
+<p><img src="links/thesis_probe-09.jpg"></p>
+<p><img src="links/thesis_probe-10.jpg"></p>
+<p><img src="links/thesis_probe-11.jpg"></p>
+<p><a href="buyme.html"><img src="clickme.gif" class="smaller" width="90px"></a></p>
+<br>
+<br>
+<br>
+<br>
+</article>
+<script>
+const textEl = document.getElementById('text');
+const text = textEl.textContent;
+textEl.textContent = ''; // clear it to rebuild with spans
+
+// Wrap each character in a span
+[...text].forEach(char => {
+  const span = document.createElement('span');
+  span.textContent = char;
+  textEl.appendChild(span);
+
+  // Random jitter function
+  const jitter = () => {
+    span.style.fontSize = (20 + Math.random() * 200) + 'px'; // random size between 16–32px
+    setTimeout(jitter, 20 + Math.random() * 800); // re-run between 20–200 ms
+  };
+  jitter();
+});
+
+// Scroll animation
+let x = window.innerWidth;
+function scroll() {
+  x -= 2; // pixels per frame — adjust speed here
+  textEl.style.left = x + 'px';
+  if (x < -textEl.offsetWidth) {
+    x = window.innerWidth;
+  }
+  requestAnimationFrame(scroll);
+}
+scroll();
+</script>
+</body>
