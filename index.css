@@ -169,4 +169,16 @@ padding: 3px;
 color: beige;
 max-width: 200px;
 background-color: black;
+margin-left: 2px;
+}
+.dur:hover::after {
+content: "Oh thank god 😅";
+position: absolute;
+border-style: inset;
+border-width: 2px;
+padding: 3px;
+color: beige;
+max-width: 200px;
+background-color: black;
+margin-left: 2px;
 }
