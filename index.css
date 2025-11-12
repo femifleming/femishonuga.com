@@ -160,3 +160,13 @@ content: "the arrows will guide you around the branches";
 position: absolute;
 color: #fff;
 } 
+.mur:hover::after {
+content: "During Mercury retrograde, you should avoid starting new ventures, making major purchases, signing contracts, or taking long-distance trips. It's also wise to postpone important decisions, as communication issues can lead to misunderstandings and delays, so focus instead on reviewing, revising, and getting things in order.";
+position: absolute;
+border-style: inset;
+border-width: 2px;
+padding: 3px;
+color: beige;
+max-width: 200px;
+background-color: black;
+}
