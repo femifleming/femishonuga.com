@@ -3,78 +3,371 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sticky Scroll Image Layout</title>
+<title>Scroll-Synced Overlay Between Columns</title>
 <style>
-body {
-  margin: 0;
-  font-family: sans-serif;
+  body {
+    font-family: serif;
+padding: 0 10;
+margin-left: 300px;
+margin-right: 300px;
+    color: white;
+background-color: black;
+  }
+a {
+color: white;
+text-decoration-style: dotted;
 }
+  section {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
 
-.container {
-  display: flex;
-  align-items: flex-start;
-  min-height: 100vh;
-  position: relative;
-  margin-bottom: 200px; /* spacing between sections */
+  /* Left column: sticky image */
+  .image-col {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+padding-right: 50px;
+  }
+
+  .image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Right column: scrollable text */
+  .text-col {
+    flex: 1;
+    padding: 4px;
+padding-left: 50px;
+    background: black;
+    box-sizing: border-box;
+  }
+
+  .text-col h2 {
+    margin-top: 0;
+  }
+.reading {
+background-color: #7d692c;
 }
-
-.image-col {
-  flex: 1;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
+.reading2 {
+background-color: #353857;
 }
-
-.image-col img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.reading3 {
+background-color: #4a2243;
 }
-
-.text-col {
-  flex: 1;
-  padding: 4rem;
-  background: #fff;
-  box-sizing: border-box;
+  .text-col p {
+    margin-bottom: 1.5rem;
+  }
+.text-col img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
 }
-
-.text-col h2 {
-  margin-top: 0;
+  /* Overlay text between columns */
+  .overlay-text {
+    position: fixed; /* stays in center between columns */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9em;
+max-width: 95px;
+text-align: center;
+align: center;
+    color: grey;
+background-color: black;
+    pointer-events: none;
+    z-index: 10;
+  }
+html {
+  scroll-behavior: smooth;
 }
-
+.chapters {
+position: fixed;
+max-width: 100px;
+text-align: right;
+margin-left: -120px;
+color: beige;
+font-size: 1em;
+z-index: 5;
+}
+.chapters a {
+color: white;
+}
+.chapters a:hover::after {
+content: "<--"
+}
+</style>
 </head>
 <body>
-
-<section class="container">
+<div class="chapters">
+<a href="#c1">chapter 1</a>
+<a href="#c2">chapter 2</a>
+<a href="#c3">chapter 3</a>
+<a href="#c4">chapter 4</a>
+</div>
+<!-- Section 1 -->
+<section data-section="1" id="c1">
   <div class="image-col">
-    <img src="https://picsum.photos/id/1018/600/800" alt="Example 1">
+    <img src="links/thesis_probe-11.jpg" alt="">
   </div>
   <div class="text-col">
-    <h2>Section 1</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, nisl a convallis dignissim, augue justo tincidunt neque, a porta justo odio a risus. Sed sed est vitae enim viverra facilisis. Donec ac ante euismod, blandit est in, efficitur justo.</p>
+    <h2>DIRT, SOIL, STASIS</h2>
+    <h3>pre 1636</h3>
+<p>During my research I found that the Lenape Indigenous tribe lived on that land first. Sound became a huge part of my research because it was an ally and familiar medium for me to research the Lenape people and the current day techno and music scene. I then began drawing connections in sound between the Lenape people and the current inhabitants of Bushwick. The rhythm and minimalism in sole heart beat rate drum and vocal use I the indigenous songs of the Lenape people directly related to techno. The ritual practice of performance and dance to simple repeating rhythmic beats and vocal drones directly relates to the ritual practices of attending raves and listening to techno. Both are celebrations, the Lenape people are celebrating the land and the environment, and I am celebrating music, meditation and ritual practice in itself in parallel to the Lenape people. My research on various forms of sonic practice to present my research brought me to granular synthesis because of its relation to nature, generation and generativeness, an initial state of being, and evolution over time.</p>
+<div class="reading">
+<p><i>From Curtis Roads: Microsound p.3</i></p>
+<p>
+Above the level of an individual piece
+are the cultural time spans defining the oeuvre of a composer or a stylistic
+period. Beneath the level of the note lies another multilayered stratum, the
+microsonic hierarchy. Like the quantum world of quarks, leptons, gluons,
+and bosons, the microsonic hierarchy was long invisible. Modern tools let us
+view and manipulate the microsonic layers from which all acoustic phenomena
+emerge. Beyond these physical time scales, mathematics defnes two ideal
+temporal boundariesÐthe in®nite and the in®nitesimalÐwhich appear in the
+theory of musical signal processing.
+</p>
+</div>
+<div class="reading">
+<p><i>From Curtis Roads: Microsound p.328 ~ On the Aesthetics of Composing with Microsound</i></p>
+<p>The aesthetic of organized sound places great emphasis on the initial stage of
+compositionÐthe construction and selection of sound materials. This may involve
+synthesis, which often begins with microsounds, furnishing the elementary
+components used in the assembly of higher-level sound objects. Just as the
+molecular properties of wood, thatch, mud, steel, and plastic determine the
+architectural structures one can construct with them, so sonic microstructure
+inevitably shapes the higher layers of musical structure.
+The middle layers of musical structureÐmesostructureÐarise through interaction
+with the material.</p>
+</div>
+<p>The formal qualities of granular synthesis directly relate to musical and architectural composition. Granular synthesis and microsound are a lens for me to compose music for architecture, spaces for sound and the ritual of composing and performing experimental music.</p>
+<p><img src="links/graingeneration.jpg"></p>
+<div style="margin-left: 10px">
+<p>Granular synthesis reminds me of grains of sand. The wind blows grains of sand in the wind to create a new portrait in the ground. recorded audio is a trim and cut/sample of that moment in time representing sound visually, sand and dust in relation to minimalism and minimalistic moves within composition. Granular synthesis reminds me of evolution. You start with a set of genes, that is your audio, your initial state, first generation, and as you stretch that state, that initial audio over time, the longer the audio is stretched, the audio adapts to itself and has to inevitably evolve into a new form of being. Granular synthesis reminds me of raindrops in a storm</p>
+</div>
+<div style="text-align: right; font-size: 0.9rem">
+<p>Land Acknowledgment:
+We acknowledge that Lantern Hill Trail is located on the ancestral lands of the Mashantucket Pequot Tribal Nation, who have stewarded this land for countless generations. The Mashantucket Pequot people have deep historical, cultural, and spiritual ties to this region, and their ongoing presence and contributions continue to shape this land today.
+As we walk these trails, we recognize the histories of Indigenous peoples who have cared for this land before us and remain its rightful stewards. We honor their resilience, their traditions, and their connection to the natural world.
+We encourage all visitors to approach this land with respect, mindfulness, and a commitment to learning about and supporting Indigenous communities both past and present.</p>
+</div>
+<p><img src="links/thesis/metastasis.webp"></p>
+<p><i>The Phillips Pavilion at the Brussels World Fair in 1958 where Iannis Xenakis performed Metastasis, An audio/visual experimental sound performance involving hundreds of speakers and lights.</i></p>
+<p>This structure also uses parabolic curves to design a space for performance, with the idea of spatial audio and the experience. This work by Xenakis was in response to the war and was a cacophony of rolling flashing and soaring lights, synthesized sound, gunshots and other recordings from war. I love to think about architecture in the expression and experience of all the senses at once.</p>
+<p><img src="links/placeholder.jpg"></p>
+<p>"The Acousmonium is an orchestra of loudspeakers arranged in front of, around and within the concert audience. It has been designed to be directed by a performer who projects a sound work or music into the auditorium space via a diffusion console.
+The Acousmonium can take many forms, changing at will to adapt to the type of work and to circumstances.
+It was designed and inaugurated by François Bayle in 1974, and is still mainly used for the performance of acoustic works. But it is also used by artists performing mixed musical forms, improvised music and multimedia."
+During the Music Concrete movement from the 1940s to the 1970s, people began to experiment with loudspeakers as members of an orchestra and as objects in a spatial performance. They are set up the same way musicians in an orchestra would be placed, with different acacousticualities for different sections of the orchestra, and with composed sound separated to these specific speakers. Alto, Tenor, etc.</p>
+<h3>1980s <i>Soundsystem Culture in Kingston, Jamaica and Sau Paulo, Brazil</i></h3>
+<p><img src="links/thesis/ssc.webp"></p>
+<p>Soundsystem culture brings the
+community together to engage in the ritual practice of collective deep listing, giving thanks to the land and celebrating dance and music
+culture.
+Dub is a subgenre of reggae most popular in the late 1960s and early 1970s. It is commonly considered a
+subgenre of reggae, though it has developed to extend beyond
+that style into techno and house music. Generally dub consists of remixes or "dubs" of existing recordings created by significantly manipulating the original, usually through the removal of vocal parts, emphasis of the rhythm and drum sections and with the addition of echos and reverb, with cuts of the original vocals. Because of the importance of the drums and bass in the tracks, it became the most popular genre for the sound system, as the culture focused and competed on making the loudest, bassiest sound systems for
+emphasizing those parts of the music.</p>
+<h3>1990s <i>Sacred/Profane and Club Culture in NYC</i></h3>
+<p><img src="links/thesis/sacredprofane16.png"></p>
+<p>within a predominant monoculture, the depictions of the sacred and the profane are weaponized to control and erase the imagery of counter-cultural movements, therefore further marginalizing their members. The sacred is elevated as an untouchable realm associated with established values, while the profane is cast as deviant and rebellious counter-cultural movements, seeking safety, work to unlearn narratives and reclaim symbolism to represent their journeys, create new spaces, and build community.
+The diptych of club and DJ culture: the crowd facing forwards, the elevated dj, the sound coming from the front ~ and the church: the priest at the front, the crowd facing forwards, both collective listening, both gathering for a sonic act, both ritual in nature, both a party in some ways, both giving homage to some god or some earth.</p>
+<p><img src="links/sinsp/we13adiy18.webp"></p>
+<p>Interesting things happen in the world of Hi-Fi audio. Audiophiles and hifi enthusiasts focus on the highest fidelity sound for their home stereo system. This came from the evolution of vinyl and home listening setups in the 70s but with the rapid advancement of technology, people searched for higher and higher quality sound. This high quality sound refers to a lot of different elements, but most importantly the full range of the frequency spectrum, from bass to high frequencies. In speaker design the most popular way to get bass is with good box design and a really large
+(16-18in) speaker driver. This is the most efficient use of space and has the most range in the speaker drivers. But for those interested in horns, this becomes a huge architectural and sculptural project. To get bass frequencies from horn loaded speakers, you need a long path and a wide mouth, like feet wide. Im interested in this overlap of incorporating these folding and swirling horn designs in hifi DIY because of its architectural qualities and the idea that the horn as a shape amplifies sound without electronics. It's the architecture that amplifies. These horns are popular in Japanese HiFi
+and have been made primarily of concrete.</p>
+<p><img src="links/thesis/roomsizesubwoofer1.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer2.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer3.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer4.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer5.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer6.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer7.jpg" width="100%"></p>
+<p><img src="links/thesis/roomsizesubwoofer8.jpg" width="100%"></p>
+<p>"SUBWOOFER horns are built underneath the floor in a cavity of 1 meter deep. Each horn is driven by 8 x 18" (47 cm) woofers. A total of 16 woofers.
+
+Each horn is 9.5 meters long and has a floor mouth area of 2.2 square meters and reproduce starting from 10 Hertz FULL POWER. The real mouth area IS NOT the one on the floor. The real mouth have to be considered together with the side vertical frontal panels. The total horn is calculated onto the listening point considering the side walls and the ceiling loadings. This reduces the floor mouth that is not in open air."</p>
+<h3>Equilibrium</h3>
+<p><img src="links/thesis_probe-05.jpg"></p>
+<p>The speaker stack is a representation, a totem, a shrine, a ritual object in translating sound 
+
+Each layer of the speaker stack directly correlates to its own architecture and program 
+
+The bottom of the speaker stack, the bass, beneath a layer of grass, represents the ground and the dirt and the earth beneath our feet. We dance on this land, we kick our feet on this dirt together. The indigenous practice of drum circles and dance give thanks and homage to the ground beneath our feet, we celebrate by moving on the ground. The bass frequencies, with their long wavelengths, take seconds to fill a room, they have the longest history. They tell the stories of the elders, as the high frequencies tell the stories of the future, moving past our ears faster than we can perceive. We can hear down to 60hz, but no more than 20,000. 
+
+The speaker cabinet is a temple for the speaker driver, an architecture to acoustically amplifying its voice. Of the driver is the person in program, the cabinet is the architecture to make sure that voice is heard loud and clear. There’s a reason the wound copper, the heart of what makes a speaker driver work, is called the voice coil. If your skin, like a drum, is the paper cone attached to the voice coil that’s excited with voltage as purpose to make sound, what would you say? 
+
+The architecture of the horn lets your voice free, extending your voice through the people. 
+
+This mechanical object, the speaker driver, so technical in nature, explodes with sound when attached to the proper enclosure. The design of the box, makes a huge difference in the sound of the speaker, as the design of a space make a huge impact on the voices that pass through it. It’s this balance that makes speakers so beautiful. It’s not Ying and Yang, it’s Kaizen: continuous improvement or an uphill battle. There’s no perfect balance, and that’s what makes the experience of spaces so unique. 
+
+The wood against the speaker diaphragm extends the frequencies through the enclosure and amplifies the sound. Coupling the body to the architecture in the same way creates this deep connection to the space you’re interacting with. 
+
+The Yari Kanna Copy Paper, the hand carving wood tool in direct connection to the manufactured, machined, clean printer paper. It’s what makes these ritual objects. The use, over and over. The sound system playing songs, hymns, archival recordings, live performances, hours and hours and miles and miles of wavelengths that makes this architecture tell its own story. 
+
+There is this ephemeral nature to an object that emits sound: you hear a song and then it’s over, you may never hear it again, there’s no evidence it was ever played, you may even forget it the next day, but you can always go back to this object and experiment it new, like a sunrise the next morning. 
+
+There is real power in the speaker stack. The bass frequencies are so long and big that you can feel them physically, the high frequencies of not tamed can sound shrill like a baby crying or nails on a chalkboard. Years and years of club design and acoustics for the discotheque have led to the design of systems with such personalities and are a testament to our desire to feel sound on a physical comfortable level. This amplifier sounds “warm”. “The highs are easy on the ears”. A kick box you can “feel in your chest”. It’s the same as the car audio people that put 12 speakers in the back of their car, pull up to an empty lot where all of there friends also put 12 speakers in the backs of their cars, and see which systems make your hair fly into the air the  most when you push the bass. 
+
+This is the reason why In loudspeaker design, these tuned systems, not for the room or the venue, but for the people and their ears, are so highly praised, weather it be the smooth deep sound of house music at the paradise garage in heart of NYC the 90s, or the cold harsh punchy kicks reverberating through warehouses at tresor and berghain in Berlin. The most popular and praised speakers designers being Altec Lansing and JBL, speakers originally designed for large scale theatre use, and home audio listening. These designs have been remixed and adapted for small and large scale speaker systems since the 70s and modified versions of their designs are still used in massive venues around the world. 
+
+When sound is architecture, these speakers appealed to many programs. There’s the designer; that wants them for the living room, the audiophile, that wants the best most “realistic” reproduction of sound for his record collection. “I want to feel like the Beetles are right in front of me on stage”. The average consumer that knows the name is good and wants to listen to anything. The musician that wants personalized sound for amplifying their sound. The monk that treats the sound system as a device for deep listening, where electronically amplified sound is needed, like the ritual of dance music. 
+
+It is clear, the speaker stack is the temple for the voice. </p>
+</div>
+</section>
+
+<!-- Section 2 -->
+<section data-section="2" id="c2">
+  <div class="image-col">
+    <img src="links/sfm8.webp">
+  </div>
+  <div class="text-col">
+<h3>
+        Spaces for Mediation ~ Arch Advanced Studio
+        </h3>
+<p>Land Acknowledgement Journal and Final Drawing</p>
+<p><img src="links/sfm2.webp" alt="" /></p>
+<p><i>This is the beginning of my research, starting with indigenous culture and its connection to sound as a ritual practice ~ in conversation with <a href="sadnoise.html">sadnoise</a></i></p>
+<p><a href="https://www.youtube.com/watch?v=LfcN7Q_NTWU&amp;list=PL9PHlNXlpafKfYjTxSiDPazwz1W0A_m4K&amp;index=11">Watch</a> the performance</p>
+<div class="reading2">
+<p><i>
+from The First Water Is the Body by Natalie Diaz
+</i></p>
+<p>"I must preserve the river in my body"</p>
+<p>
+
+Jacques Derrida says, Every text remains in mourning until it is translated.
+
+When Mojaves say the word for tears, we return to our word for river, as if our river were flowing from our eyes. A great weeping is how you might translate it. Or a river of grief.
+
+But who is this translation for and will they come to my language’s four-night funeral to grieve what has been lost in my efforts at translation? When they have drunk dry my river will they join the mourning procession across our bleached desert?
+
+The word for drought is different across many languages and lands. The ache of thirst, though, translates to all bodies along the same paths—the tongue, the throat, the kidneys. No matter what language you speak, no matter the color of your skin.
+
+↞
+
+We carry the river, its body of water, in our body.</p>
+</div>
+<p>In the same way that water flows through our bodies, sound is something we all experience, a universal medium. The practice of listening itself is a translation beyond words, on an architectural scale. There is this focus to preserve language in culture. In my practice the lost information in that translation presents itself as part of the conversation of sound. Sound has no history or future, it exists in the moment. In my search for sound and performance as a way to give homage to certain cultures, this misinformation and conversations around translation presents itself in the grains between words. The sound is the river that physically connects us all, it has no words at its base.</p>
+<p>I presented my work as an installation and sonic performance where I placed real grass in between all electronic musical instruments (my modular synthesizer and speakers) and the ground, creating a filter between the electronic and the organic, a filter between the new, grass as regrowth and generativeness, and the land itself. I processed and manipulated existing authentic Lenape music using Teletype (a live coding eurorack with its own syntax, voltage followed from the amplitude of the incoming Lenape songs informed and was translated into binary, whose values were converted to digital pulses and slewed voltages to trigger and manipulate the granular algorithms controls). This performance was not only a presentation of my land acknowledgment and research but a ritual practice in itself and a representation of the history of music culture through creative computation.</p>
+<img src="links/sfm1.webp">
+<div class="reading3">
+<p><i>From Tara Rodgers: Pink Noises</i></p>
+<p>To think against the grain of cultural ideologies that have aligned women with normative modes of heterosexual and capitalist repro-duction, and to construct electronic music histories differently, we can consider how sounds themselves are reproductive. Reproductive sounds are variously produced by bodies, technologies, environments, and their accompanying histories; reproduced in multiple reflections off reverberant surfaces or in recording media; reproducible within spaces of memory and storage that hold sounds for future playbacks; and productive, by generating multiple meanings in various contexts.
+To account for reproductive sounds in all their temporal depth is to challenge the patrilineal lines of descent and the universalizing male claims to creation that have thus far characterized dominant discourses in electronic music.</p>
+</div>
+<img src="links/sfm3.webp">
+<img src="links/sfm4.webp">
+<img src="links/sfm5.webp">
+<img src="links/sfm6.webp">
+<img src="links/sfm7.webp">
+<img src="links/sfm8.webp">
   </div>
 </section>
 
-<section class="container">
-  <div class="image-col">
-    <img src="https://picsum.photos/id/1015/600/800" alt="Example 2">
+<!-- SECTION 3 -->
+
+<section data-section="3" id="c3">
+<div class="image-col">
+    <img src="links/af.webp">
   </div>
   <div class="text-col">
-    <h2>Section 2</h2>
-    <p>Curabitur quis ipsum in magna tempor varius. Duis vitae viverra felis, vitae iaculis libero. Cras a consequat velit. Aliquam erat volutpat. Nullam ac cursus turpis.</p>
-  </div>
+        <h3>
+        States of Exception ~ Arch Advanced Studio
+        </h3>
+<br/>
+<br/><p><img src="links/sdheader.webp" alt="" /></p>
+<p><i>This is where i explore the sacred and the profane in relation to sound culture and architecture</i></p>
+<p>ACT 01 - Sacred/Profane</p>
+<p>Within a predominant monoculture, the depictions of the sacred and the profane are weaponized to control and erase the imagery of counter-cultural movements, thereby further marginalizing their members. The sacred is elevated as an untouchable realm associated with established values, while the profane is cast as deviant and rebellious. Counter-cultural movements, seeking safety, work to unlearn narratives and reclaim symbolism to represent their journeys, create new spaces, and build community.</p>
+<img src="links/sp1.webp">
+<img src="links/sp2.webp">
+<p>ACT 02 - THE ASSEMBLAGE</p>
+<p>Building in research on the idea of sacred and profane, this ritual object is a representation of indigenous drum circles and adjacent customs and ritual practices. The materiality is a direct symbolism of the body (wood) and skin (leather). The shape is a shrine, a spiritual/holy space, a form of archiving, a vessel, a body, a temple. The preservation and acknowledgment of concrete is a symbol of the dichotomies between ritual practice and modern day sound system/club culture, with particular homage to warehouse raves and the use and abstraction of existing concrete structures as ritual as collective dance is a ritual practice. communities hold themselves together with simple bindings/shared experience, material propitiates of of leather, they are mailable natural and ever changing shapes.</p>
+<p><img src="links/af.webp" alt="" /></p>
+<p>ACT 03 - Dirt Palace</p>
+<p>This space addresses the remnant between the circadian. a space for ritual sonic practices, transforming the profanity of existing surrounding infrastructure into a sacred ritual space through the manipulation and orientation of sound. The vibrations from the highway environment resonate in this cavity creating a meditative space addressing the intersection of the highway and an invisible block through the sacred and profane. In act 1 me and jay explored the sacred and profane though the dichotomies between club culture,  church and religion in their symbolic and ritualistic intersection. During act 2 I Began to explore different ritual practices connected to sound and meditation, specifically the Lenape water drum and how meditation circles are structured to bring community together through sound and the body. The structure of the closed loop both symbolical and structurally influenced my artifact. In my artifact I explored ideas of skin, the body and preservation through natural and man made material studies with the use of leather concrete and wood. Thinking about the symbolism of the church in its sacredness and the profanity of underground music and counterculture music through the preservation of concrete as the preserved object. This artifact is a preservation of both the ritual practice of meditation and of the underground and profane. Structurally I was thinking of the closed circle, the way the communities of the sacred and profane hold each other together, each ritual is individual and self sufficient. When choosing a site for act 3 I was exploring the sonic properties of different spaces and a came across a patch of grass surrounded on all sides by highway infrastructure that I was instantly drawn to. The space connected to the idea of profane spaces as it was neglected, almost invisible but preserved in its blandness because of its location. In experiments exploring the sonic propertied of the materials in the landscape vibration became a very important element in the design process. The vibrations from the highways transmit sound into the space through the concrete of the highway columns, steel pipes and soft soil. I learned through taking sonograms of my recordings that high frequencies are transmitted though steel, resonant mid range frequencies are transmitted though concrete and low frequencies are transmitted mostly though soil. I then made small scale models where I played field recordings of the space and of the vibrations from the highway though their respective materials to think about how I can orient sound in the space, and transform the profanity of the highways into a sacred ritual and meditative space. I began excavating the neglected plot as to submerge the space into the soil. The columns from the highway protruding through the spaces to bring sound into the space, and the large aperture to bring out of the space became an important part of the design as it presented a ritual cycle of listening and performance, meditation and amplification receiving and transmitting. My material studies informed the program as various spaces within the excavation will sound different, with the main space translating full range sound from the highway. During the day the space is a place for meditation as the vibrations from the highway will be transmitted and resonate though the space though various materials, translating the profanity of sonic properties of the highway into a space for deep listening and meditation. Each material has a purpose in creative a unique experience as they all have different acoustic properties. During the day on the highway the space acts as a threshold unknowing of drivers as they contribute to a ritual act in passing. During the night, the space is open for use of other sonic practices produced by humans and the body, constructed with soffit mounted speakers embedded in the design, the space is designed to amplify sound produced by and for the underground upwards into the existing environment. During the night the passerbys and people on the highway engage in the ritual practice as listeners as sound is amplified acoustically and directionally by design. The design of overground and underground interaction addresses the intersections of the sacred and profane through vibration and acoustics, and creates a sacred and preserved space for both parties. Over time as this space is used through the nature of natural materials and vibration the acoustic propertied of the space and the way the space sounds will begin to morph and change over time. Ideally the space will never sound the same, making every ritual interaction with the space unique and personal, until the space is in a state that makes the space more profane than sacred in that it is not in use and becomes a part of the existing environment, the space is not allowed to be repaired in any way.</p>
+<p><img src="links/gif.gif" alt="" /></p>
+<div class="reading">
+<p><i>From Pauline Oliveros on Deep Listening</i></p>
+<p>Deep Listening, as developed by Pauline Oliveros, explores the difference between the involuntary nature of hearing and the conscious nature of listening. The practice includes bodywork, sonic meditations, and interactive performance, as well as listening to the sounds of daily life, nature, one’s own thoughts, imagination, and dreams. It cultivates a heightened awareness of the sonic environment, both external and internal, and promotes experimentation, improvisation, collaboration, playfulness, and other creative skills vital to personal and community growth. </p>
+</div>
+<p>Deep listening is a life long lens to view the spaces of sound. Through this practice you begin to see how much sound is a part of daily life, the body, the mind and the soul. Deep listening is an active lens in my research and professional practice. All spaces I design are to encourage this practice, amongst other conversations. </p>
+<p><img src="links/b1.webp" alt="" /></p>
+<p><img src="links/sdd.webp" alt="" /></p>
+<p><img src="links/sdn.webp" alt="" /></p>
+</div>
 </section>
 
-<section class="container">
-  <div class="image-col">
-    <img src="https://picsum.photos/id/1020/600/800" alt="Example 3">
+<!-- SECTION 4 -->
+
+<section data-section="4" id="c4">
+<div class="image-col">
+    <img src="links/wow.gif">
   </div>
   <div class="text-col">
-    <h2>Section 3</h2>
-    <p>Ut sagittis justo et mi euismod, sit amet consectetur erat dapibus. Quisque id libero nec velit varius tincidunt. Fusce vel nisl neque. Integer eget augue sed nunc accumsan euismod.</p>
-  </div>
+<h3>Urban Metabolism</h3>
+<p>An extention of <a href="soe.html">states of exception</a></p>
+<p>The speaker horn creates an enclosure for acoustics, directly amplifying the sound of the river passage on its journey, in its loud and quiet moments. The pavilion creates a ritual space for sonic exfoliation. A place for ambiance and meditation, for performance and research. With no direct program, the sound and environment inform actions taken in the space. With both passive and active horns, the sound of water, the environment, and human interaction are amplified to reorient and intervene the user as well as nature and the surroundings infrastructure. </p>
+<p><img src="links/SiteMap.webp"></p>
+<p><img src="links/Section1.webp"></p>
+<p><img src="links/Section2.webp"></p>
+<p><img src="links/Section3.webp"></p>
+<p><img src="links/axonemetriquediagramatique.webp"></p>
+<p><img src="links/banner.webp"></p>
+<p>Act 1</p>
+<div class="container">
+<img src="links/book-5.webp" width="50%">
+<img src="links/book-6.webp" width="50%">
+</div>
+<p>The spillway is located locally on Smithfield ave near Legion drive, in between a baseball field and a graveyard. During my visits, the water in the spillway was low, but always flowing. At the grate of the tunnel you can hear the reverberation from the cars passing over the manhole nearby. The snow surrounding the spillway and the ice along the cobblestone path and made it difficult to navigate. There were a few waterfalls, from random paths, and new drains that connected. the spillway became quieter as i ducked under fallen trees. the ice coated the low skinny water path in a thin layer, making a wonderful sploshy crunch sound as I walked along. The end of the spillway widened and shallowed, and was full with icy, dark water, before leading to mush, and eventually rejoining with the rest of the river. the air was cold and it was partly cloudy, it had not rained recently. </p>
+<p><img src="links/spillway_documentation3.webp"></p>
+<p><img src="links/field_notes_1.webp"></p>
+</div>
 </section>
+
+
+<!-- Overlay text -->
+<div class="overlay-text" id="progress-text">what</div>
+
+<script>
+const overlay = document.getElementById('progress-text');
+
+function updateOverlay() {
+  const sections = document.querySelectorAll('section');
+  const windowHeight = window.innerHeight;
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const textCol = section.querySelector('.text-col');
+    const sectionNum = section.dataset.section;
+
+    // Only update if section is in viewport
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      overlay.textContent = `${sectionNum}`;
+
+      // Compute scroll progress for this section
+      const total = Math.max(textCol.scrollHeight - windowHeight, 1);
+      const scrolled = Math.min(Math.max(-rect.top, 0), total);
+      const progress = scrolled / total;
+
+      // Move overlay top-to-bottom (10% → 80%)
+      overlay.style.top = (0 + progress * 100) + "%";
+    }
+  });
+}
+
+// Listen for scroll
+window.addEventListener('scroll', updateOverlay);
+window.addEventListener('resize', updateOverlay); // recalc on resize
+updateOverlay(); // initial position
+</script>
 
 </body>
 </html>
