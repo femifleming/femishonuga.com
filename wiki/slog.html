@@ -5,13 +5,14 @@ max-width: 800px;
 margin: 20px auto;
 padding: 0 10px;
 color: white;
-background-image:url('links/daxaway.webp');
+background-image:url('links/cloud1.webp');
 background-attachment: fixed;
+background-size: cover;
 }
 .sidebar {
 margin-left: 810px;
 margin-top: 0px;
-background-color:rbga(0,0,0,0.5);
+background-color:rbga(0,0,0,0.9);
 position: fixed;
 max-width: 240px;
 transition: margin-top 1s ease, padding 0.5s ease, background-color 0.5s ease, margin-left 1s ease;
@@ -60,9 +61,9 @@ text-align: right;
 filter: blur(8px);
 }
 article {
-background-color:rgba(0,0,0,0.2);
+background-color:rgba(0,0,0,0.5);
 border-radius: 20px;
-width: 600px"
+width: 780px;
 backdrop-filter: blur(10px);
 padding: 10px;
 }
@@ -162,6 +163,21 @@ text-align: right;
 <marquee><h2><i>Speaker Building Log</i></h2></marquee>
 <p><a href="speakers.html">back to speakers</a></p>
 <!-- LOG START --!>
+<div class="artbg">
+<h2>09-22-2025</h2>
+<p>The cloud speakers are done! This was a wild learning experience. I was super excited when the crossover came in to set it up. I did a lot of testing at 4ohms with the crossover around 290 for the bass and 2400 for the mid to tweeter, and at 8 ohms with the crossover for the bass around 300 and the tops around 3400. I decided to stick with running the speakers at 4 ohms. One of the immediate things i noticed was that there wasn't enough bass at all. This could be because the bass drivers I was using were 4 ohm, and the mid ones were 8 ohms and covering a wider range, but also because the mid drivers were open back and the subs were enclosed, so you're getting twice as loud of a sound coming out of the mid range drivers. I added two power resistors, whatever I had lying around in the studio to the back of the mid range drivers to make them about 10db quieter which helped but they still feel loud and I don't think ill get much out of these cheap 10in bass drivers, so I'm leaving it where it is for now, and maybe ill add another resistor in series to the back if its too mid heavy. That said, there is a lot of clarity in those mids, not so much in the highs, I wish i had used compression drivers or added a piezo or super tweeter to get up to 20khz, but this is the gonzo build. It just needed to happen and now its done. They sound great! I have a lot of ear fatigue from lots of listening so I'm going to take a break from them, listen to them in new spaces and ask for peoples opinions on ho they sound so I don't feel crazy.</p>
+<p><img src="links/cloud1.webp"></p>
+<p><img src="links/cloud2.webp"></p>
+<p><img src="links/cloud3.webp"></p>
+</div>
+<div class="artbg">
+<h1>09-09-2025</h1>
+<p>The cloud speakers are almost complete! Today I ordered the crossover. When me and Matt did a sweep on the low, mid and high frequency drivers, we found that the mid range drivers roll off around 2400 hz. When doing the crossover manually with my modular synth I found it works well for the woofer driver around 300hz. I didn't really want to design the crossover from scratch so i went looking for one for similar specs for cheap, but could only find one with a crossover of 300hz and 3000hz. This means most likely there will be a drop between 2400/2800 hz and 3000hz, that im hoping isn't too drastic. I think it also rolls off on the bottom end around 100hz, which isnt ideal but its what i got for these. Tested them all today with separate amplifies and no crossover and it sounds pretty good! Wont know how flat it is until doing another full sweep after the crossover is wired up. The crossover I'm using is a cheaper copy of the <a href="https://www.parts-express.com/Dayton-Audio-XO3W-375-3K-3-Way-Crossover-375-3-000-Hz-260-150?quantity=1">Dayton audio XO3W-375/3K 3-Way Crossover</a>. The one I'm using is the Audiopipe CRX-3003K. I have a feeling the super high frequencies are not really there yet too, maybe I will have to add some sort of super tweeter or piezo tweeter at the top, maybe with some simple tractrix horn. And the crossover matches the speakers in blue!</p>
+<p><img src="links/audiopipe.webp"></p>
+<p><a href="https://www.newark.com/audiopipe/crx-3003k/accessory-type-crossover/dp/85T8908"><img src="links/clog1.webp"></a></p>
+<p><a href="https://www.diyaudioandvideo.com/Calculator/ApcSpeakerCrossover"><img src="links/clog2.webp"></a></p>
+<p>After doing some calculations and looking at the schematic of the crossover, It turns out my crossover points are actually shifting because of the ohm of my drivers. The tweeter driver is 6ohm, the midrange 8ohm and the woofer 4ohm. If I use the crossover in 8ohm mode, the low pass cutoff for the woofer becomes 425hz and the tweeter high pass becomes 3465hz, which is way too high for where my midrange driver rolls off. Instead I'll have to use it at 4ohms: the tweeter rolloff becomes 2400hz which is actually better for my midrange driver, and the woofer low pass becomes 212hz which is pretty low, but I believe the midrange driver can go that low or at least with only a little rolloff so I'm okay with that.</p>
+</div>
 <div class="artbg">
 <h1>08-30-2025</h1>
 <p>Vitaphone <a href="vitaphone.html">Reference</a> and Diy finds: the Western Electric 13A Horn</p>
@@ -269,6 +285,15 @@ text-align: right;
 <p><img src="links/orang5.webp"></p>
 <p><img src="links/orang6.webp"></p>
 <p><img src="links/orang3.webp"></p>
+</div>
+<div class="artbg">
+<h1>07-30-2025</h1>
+<p>Right now I'm <a href="speakers.html">building</a> these hifi open baffle hybrid speakers from sub drivers that Hoolihan dropped off at the studio, mid range Page drivers that were used at PA speakers in the ceilings at my studio probably in the offices that occupied the space in the 90s and early 2000s, and tweeters Eli harvested from some studio monitors. This is my first HiFi Build and I'm doing it right, trying to build a nice crossover and everything, I was quad amping it for a while, using my modular to make crossover filters before the amp. The page drivers are open baffle and the BASS (bad ass serious sub) drivers are in a closed box, with no port. Matt Azevedo is helping me do the calculations, I need a windows computer to run Hornresp and RoomEQWizard. And i need to order some more parts for the crossover, but I've harvested some power caps and inductors from old speaker cabinets in the basement of the Firehouse. I'm learning a lot about crossover design and speaker impedance. The page drivers had transformers on the back of them that made me think that they would be a super high impedance but they ended up just being 8ohms. I have been looking at a lot of Japan HiFi Audio listening rooms with crazy compression drivers for the whole system, connected to these insane sculptural horns that spiral the house into the attic to make the length of the horn for bass response and I want to build something like that for my architecture thesis.</p>
+<p><img src="links/cloudforlog4.webp"></p>
+<p><img src="links/cloudforlog5.webp"></p>
+<p><img src="links/cloudforlog6.webp"></p>
+<p><img src="links/cloudforlog7.webp"></p>
+<p><img src="links/cloudforlog1.webp"></p>
 </div>
 </article>
 </body>
