@@ -22,11 +22,24 @@ gtag('config', 'G-FCQXVD7YXZ');
         </ul>
 	<ul>
                 <li><a href="essays.html">papers and resources</a></li>
-		<li><a href="stickyresearch.html">undergrad thesis</a></li>
+		<li><a href="#" id="myLink">undergrad thesis</a></li>
 		<li><a href="df.html">daniel fishkin</a></li>
 		<li><a href="code.html">code</a></li>
 		<li><a href="ps.html">places and spaces</a></li>
 	</ul>
+<script>
+const mobilePage = "thesis.html";
+const desktopPage = "stickyresearch.html";
+
+document.getElementById("myLink").addEventListener("click", function(e) {
+  e.preventDefault();
+
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  window.location.href = isMobile ? mobilePage : desktopPage;
+});
+</script>
+
 </nav>
 <main><h2>&nbsp;</h2>
 	<p><h3>This is the research portal for femishonuga.com</h3></p>
