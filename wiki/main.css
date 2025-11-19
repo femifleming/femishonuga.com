@@ -49,6 +49,12 @@ a {transition: background-color 0.3s ease;}
 .odd {
 background-color: #e6e6e6;
 }
+body img {
+z-index: 5;
+}
+body p {
+z-index: 5;
+}
 textarea {
 background-color: white;
 color: black;
