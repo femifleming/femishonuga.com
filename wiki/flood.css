@@ -2,7 +2,7 @@
 
 #flood,
 .wave {
-    cursor: url("https://melonking.net/images/ui/bucket.png"), pointer !important;
+    cursor: url("../drainme.png"), pointer !important;
 }
 
 #flood {
