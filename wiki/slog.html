@@ -5,18 +5,17 @@ max-width: 800px;
 margin: 20px auto;
 padding: 0 10px;
 color: white;
-background-image:url('links/cloud1.webp');
+background-color: black;
 background-attachment: fixed;
 background-size: cover;
 }
 .sidebar {
 margin-left: 810px;
 margin-top: 0px;
-background-color:rbga(0,0,0,0.9);
+background-color:rgba(0,0,0,0.1);
 position: fixed;
 max-width: 240px;
 transition: margin-top 1s ease, padding 0.5s ease, background-color 0.5s ease, margin-left 1s ease;
-border-radius: 10px;
 z-index: 3;
 overflow-y: auto;
 height: 100vh;
@@ -25,26 +24,23 @@ scrollbar-width: none;
 .sidebar:hover {
 padding: 10px;
 margin-left: 600px;
-background-color:rgba(0,0,0,0.9);
+background-color: black;
 }
 .sidebar a {
 color: pink;
 }
 ul {
-background-color:rgba(0,0,0,0.3);
+background-color: #121212;
 list-style-type: none;
-border-radius: 5px;
 }
 p {
 color: #f0ece4;
 background-color:rgba(0,0,0,0.4);
-border-radius: 10px;
 padding: 5px;
 }
 figure {
 color: grey;
 }
-backdrop-filter: blur(40px);
 .fixed {
 position: fixed;
 z-index:-1;
@@ -62,7 +58,6 @@ filter: blur(8px);
 }
 article {
 background-color:rgba(0,0,0,0.5);
-border-radius: 20px;
 width: 780px;
 backdrop-filter: blur(10px);
 padding: 10px;
@@ -70,17 +65,21 @@ padding: 10px;
 .artbg {
 background-color:rgba(0,0,0,0.3);
 padding: 10px;
-border-radius: 10px;
 }
 img {
-transition: 1s ease;
+    cursor: zoom-in;
+transition: margin-left 1s ease, transfrom 0.3s ease;
 margin-left:0px;
-border-radius: 20px;
-width: 600px;
+width: 50%;
+align: right;
+align-content: right;
 }
+  img:active {
+    transform: scale(2.2); /* 2x size */
+    cursor: zoom-out;
+  }
 h1 {
 background-color:rgba(0,0,0,0.3);
-border-radius: 10px;
 padding: 5px;
 color: #dbc68c;
 }
