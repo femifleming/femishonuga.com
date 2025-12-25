@@ -29,6 +29,9 @@ background-color: black;
 .sidebar a {
 color: pink;
 }
+.artbg::after {
+content:"____________________________________";
+}
 ul {
 background-color: #121212;
 list-style-type: none;
@@ -64,6 +67,10 @@ padding: 10px;
 }
 .artbg {
 background-color:rgba(0,0,0,0.3);
+padding: 10px;
+}
+.mebg {
+background-color:#272645;
 padding: 10px;
 }
 img {
@@ -169,8 +176,8 @@ background-color: black;
 <marquee><h2><i>Speaker Building and Research Log and Archive</i></h2></marquee>
 <p><a href="speakers.html">back to speakers</a></p>
 <!-- LOG START --!>
-<div class="artbg">
-<h2>12-09-2025</h2>
+<div class="mebg">
+<h2>12-09-2025</h2><p style="text-align: right; color: pink;"><i>my project</i></p>
 <p>The clouds have been SEVERED. Added 15 in woofers and replaced the tweeter with an 8ohm fostex tweeter, now all the drivers are 8ohm and the soundstage has much more bass ;). Very happy. Because of the matching impedence I can now use them with tube amplifiers, and the crossovers are back where they are supposed to be. These will pair nicely with my ripole subwoofers.</p>
 <p><img src="links/chopped-1.webp"></p>
 <p><img src="links/chopped-2.webp"></p>
@@ -187,15 +194,15 @@ background-color: black;
 <p><img src="links/sinsp/ripole4.jpg"></p>
 <p><a href="https://www.lautsprechershop.de/hifi/ridtahler_en.htm"><img src="links/axel_rechts.jpg"></a></p>
 </div>
-<div class="artbg">
-<h2>09-22-2025</h2>
+<div class="mebg">
+<h2>09-22-2025</h2><p style="text-align: right; color: pink;"><i>my project</i></p>
 <p>The cloud speakers are done! This was a wild learning experience. I was super excited when the crossover came in to set it up. I did a lot of testing at 4ohms with the crossover around 290 for the bass and 2400 for the mid to tweeter, and at 8 ohms with the crossover for the bass around 300 and the tops around 3400. I decided to stick with running the speakers at 4 ohms. One of the immediate things i noticed was that there wasn't enough bass at all. This could be because the bass drivers I was using were 4 ohm, and the mid ones were 8 ohms and covering a wider range, but also because the mid drivers were open back and the subs were enclosed, so you're getting twice as loud of a sound coming out of the mid range drivers. I added two power resistors, whatever I had lying around in the studio to the back of the mid range drivers to make them about 10db quieter which helped but they still feel loud and I don't think ill get much out of these cheap 10in bass drivers, so I'm leaving it where it is for now, and maybe ill add another resistor in series to the back if its too mid heavy. That said, there is a lot of clarity in those mids, not so much in the highs, I wish i had used compression drivers or added a piezo or super tweeter to get up to 20khz, but this is the gonzo build. It just needed to happen and now its done. They sound great! I have a lot of ear fatigue from lots of listening so I'm going to take a break from them, listen to them in new spaces and ask for peoples opinions on ho they sound so I don't feel crazy.</p>
 <p><img src="links/cloud1.webp"></p>
 <p><img src="links/cloud2.webp"></p>
 <p><img src="links/cloud3.webp"></p>
 </div>
-<div class="artbg">
-<h1>09-09-2025</h1>
+<div class="mebg">
+<h1>09-09-2025</h1><p style="text-align: right; color: pink;"><i>my project</i></p>
 <p>The cloud speakers are almost complete! Today I ordered the crossover. When me and Matt did a sweep on the low, mid and high frequency drivers, we found that the mid range drivers roll off around 2400 hz. When doing the crossover manually with my modular synth I found it works well for the woofer driver around 300hz. I didn't really want to design the crossover from scratch so i went looking for one for similar specs for cheap, but could only find one with a crossover of 300hz and 3000hz. This means most likely there will be a drop between 2400/2800 hz and 3000hz, that im hoping isn't too drastic. I think it also rolls off on the bottom end around 100hz, which isnt ideal but its what i got for these. Tested them all today with separate amplifies and no crossover and it sounds pretty good! Wont know how flat it is until doing another full sweep after the crossover is wired up. The crossover I'm using is a cheaper copy of the <a href="https://www.parts-express.com/Dayton-Audio-XO3W-375-3K-3-Way-Crossover-375-3-000-Hz-260-150?quantity=1">Dayton audio XO3W-375/3K 3-Way Crossover</a>. The one I'm using is the Audiopipe CRX-3003K. I have a feeling the super high frequencies are not really there yet too, maybe I will have to add some sort of super tweeter or piezo tweeter at the top, maybe with some simple tractrix horn. And the crossover matches the speakers in blue!</p>
 <p><img src="links/audiopipe.webp"></p>
 <p><a href="https://www.newark.com/audiopipe/crx-3003k/accessory-type-crossover/dp/85T8908"><img src="links/clog1.webp"></a></p>
@@ -292,7 +299,7 @@ background-color: black;
 <p>I'm thinking of building a 3/4 way system with 12-15 inch woofers in a W bin design similar to the W bin subwoofers of Altec in the 1940s-1970s for the theatre applications, with these dimensions:</p>
 <p><img src="links/wbin.webp"></p>
 <p>For the ultra low frequencies (anywhere between 20-60hz) I want to tune some transmission line tapped horns with big sub drivers, and pair them togethet to get the same dimentions as the W bin. I havnt chose or done the math for them yet but I plan to sort of wing it, because of my specific dimentions, and just do the math for the length of the horn and size of the driver. Ideally all speakers used in the project are 8ohm, thinking Dayton audio. <a href="https://education.lenardaudio.com/en/07_horns.html">This</a> is my reference for math for the transmission line horns: "In theory, to achieve maximum efficiency, horn dimension should be 1 wave-length long and 1 wave-length in mouth circumference at the lowest frequency.   At 3 octaves higher the wavelengths are 1/10 of horn size and too small for the horn to direct them.   These small wave-lengths bounce around inside the horn chaotically.   It is essential to rescale a smaller horn for the next 3 octaves.   Long horns are for low frequencies.   Short horns are for high frequencies.   Saxophones Trumpets French horns Tubas Etc obey this rule.   There is no such thing in physics as   long-throw or short-throw horns.   These irresponsible marketing terms loosely refer to horn directivity. Low frequency horns using cone speakers can be 1/2 but not less than 1/4 wave-length at the lowest frequency, with reduced efficiency.   40Hz wave-length is 8m / 24ft   It is not practical to make a bass horn this size so the horn is shortened (truncated) to 1/4 wavelength 2m / 6ft.   Bass bin horns can be folded to control size.   Made in sections and grouped to form a single bin."</p>
-<p>For the midrange horns I want to load a mid range 12-15in driver in the style of Altec a7 VOT speakers or A1. Aiming for Tractrix style horns with 2 or 4 sided from the driver. <a href="https://volvotreter.de/projects/pics_plans/traxtrix-midbass-fronthorns">This</a> is my build reference for them: "You might ask why this guy used the Tractrix contour for his midbass, where everybody knows, that a horn of such geometry runs out of gas way before reaching fs. You’re right it’s true. However, my idea was to design a horn which should sound wise match the Tractrix midrange as good as possible. That’s why I decided to use Tractrix instead of a hyperbolic (m<1) or exponential (m=1) contour. Actually, in my room, these horns measure 140Hz to 700Hz within a range of ± 2dB. Below 140Hz these horns rolls off with approx 12dB/oct."</p>
+<p>For the midrange horns I want to load a mid range 12-15in driver in the style of Altec a7 VOT speakers or A1. Aiming for Tractrix style horns with 2 or 4 sided from the driver. <a href="https://volvotreter.de/projects/pics_plans/traxtrix-midbass-fronthorns">This</a> is my build reference for them: "You might ask why this guy used the Tractrix contour for his midbass, where everybody knows, that a horn of such geometry runs out of gas way before reaching fs. You’re right it’s true. However, my idea was to design a horn which should sound wise match the Tractrix midrange as good as possible. That’s why I decided to use Tractrix instead of a hyperbolic (m&lt1) or exponential (m=1) contour. Actually, in my room, these horns measure 140Hz to 700Hz within a range of ± 2dB. Below 140Hz these horns rolls off with approx 12dB/oct."</p>
 <p><img src="links/tractrix2.webp"></p>
 <p>For the high frequencies I want to design exponential horns for a compression driver or two, 3D printed or lathe cut. OR try and diy the classic altec acoustic lens. OR i try to do some 3d printing/Rhino designs for a multicellular/sectoral horn like Altec's 1505, 1005 and 805 A and B, most likely B so it can be modular, easier to print that way. </p>
 <p><a href="https://www.audioheritage.org/intro.htm"><img src="links/page01.webp"></a></p>
@@ -300,8 +307,8 @@ background-color: black;
 <p><img src="links/page3.webp"></p>
 
 </div>
-<div class="artbg">
-<h1>08-18-2025</h1>
+<div class="mebg">
+<h1>08-18-2025</h1><p style="text-align: right; color: pink;"><i>my project</i></p>
 <p>Recently I had the idea to make a reflex loudspeaker out of a compression driver I found, random parts and a traffic cone. The horn boosted the low end response of the compression driver while taking away some high frequencies. The horn also made the driver way more efficient (It gets a lot louder without needing to push the gain nearly as much. The horn is also a lamp! Here are some pics from my experiments. The large cone is the finished one with the compression driver attached. I want to use this for mid range in a 3 way speaker system. Maybe along with a horn loaded subwoofer and piezo tweeter, or smaller diaphragm compression driver tweeter attached to an exponential horn.</p>
 <p><img src="links/orang1.webp"></p>
 <p><img src="links/orang2.webp"></p>
@@ -310,8 +317,8 @@ background-color: black;
 <p><img src="links/orang6.webp"></p>
 <p><img src="links/orang3.webp"></p>
 </div>
-<div class="artbg">
-<h1>07-30-2025</h1>
+<div class="mebg">
+<h1>07-30-2025</h1><p style="text-align: right; color: pink;"><i>my project</i></p>
 <p>Right now I'm <a href="speakers.html">building</a> these hifi open baffle hybrid speakers from sub drivers that Hoolihan dropped off at the studio, mid range Page drivers that were used at PA speakers in the ceilings at my studio probably in the offices that occupied the space in the 90s and early 2000s, and tweeters Eli harvested from some studio monitors. This is my first HiFi Build and I'm doing it right, trying to build a nice crossover and everything, I was quad amping it for a while, using my modular to make crossover filters before the amp. The page drivers are open baffle and the BASS (bad ass serious sub) drivers are in a closed box, with no port. Matt Azevedo is helping me do the calculations, I need a windows computer to run Hornresp and RoomEQWizard. And i need to order some more parts for the crossover, but I've harvested some power caps and inductors from old speaker cabinets in the basement of the Firehouse. I'm learning a lot about crossover design and speaker impedance. The page drivers had transformers on the back of them that made me think that they would be a super high impedance but they ended up just being 8ohms. I have been looking at a lot of Japan HiFi Audio listening rooms with crazy compression drivers for the whole system, connected to these insane sculptural horns that spiral the house into the attic to make the length of the horn for bass response and I want to build something like that for my architecture thesis.</p>
 <p><img src="links/cloudforlog4.webp"></p>
 <p><img src="links/cloudforlog5.webp"></p>

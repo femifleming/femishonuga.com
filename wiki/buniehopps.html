@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: times, serif;
+            background: black;
+color: white;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #1f1d1b;
+            overflow: hidden;
+        }
+
+        h1 {
+            padding: 10px;
+            background-image:url('links/beer-10.gif');
+background-size: cover;
+color: white;
+border-width: 10px;
+border-style: outset;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #292017;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            user-select: none;
+            position: relative;
+        }
+
+        th:hover {
+            background: #332a15;
+        }
+
+        th::after {
+            content: 'æ';
+            position: absolute;
+            right: 15px;
+            opacity: 0.2;
+        }
+
+        th.sort-asc::after {
+            content: 'α';
+            opacity: 0.2;
+        }
+
+        th.sort-desc::after {
+            content: 'δ';
+            opacity: 0.2;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #cc9f37;
+        }
+
+        tr:hover {
+            background: #241d11;
+        }
+
+        .item-cell {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .item-image {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            background: #786740;
+        }
+
+        .item-desc {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .item-details {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .rating {
+            font-weight: 600;
+            color: #f39c12;
+        }
+
+img:hover{
+width: 500px;
+height: 500px;
+border-radius: 0%;
+}
+img {
+border-radius: 50%;
+transition: border-width 0.5s ease, width 0.5s ease, height 1s ease;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>૮꒰ ˶• ༝ •˶꒱ა <i>buniehopps</i> ૮꒰ ˶• ༝ •˶꒱ა</h1>
+<p>beer reviews by femi shonuga ;)</p>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Beer</th>
+                    <th onclick="sortTable(1)">Type</th>
+                    <th onclick="sortTable(2)" width="120px">Date</th>
+                    <th onclick="sortTable(3)">ABV</th>
+                    <th onclick="sortTable(4)">Rating</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh40.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">New England Brewing - Fuzzy Baby Ducks</div>
+                                <div class="item-details">classic IPA, very refreshing! Juicy and hints of sweetness and citrus flavors. Get this at campus fine wines!</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>IPA</td>
+                    <td>2023-09-13</td>
+                    <td>6.2%</td>
+                    <td class="rating">8/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh39.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">OEC Brewing - Exilis With Raspberries</div></div>
+                                <div class="item-details">Amazing sour. very tart, fruity and refreshing. A very full flavor, not too sweet like most sour art house beers, balanced nicely with hops and raspberries. Matured in oak barrels. Get this at The Den!</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-09-13</td>
+                    <td>4.0%</td>
+                    <td class="rating">9/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh38.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Praire Artisan Ales - Heatwave</div>
+                                <div class="item-details">Delicious, sweet sour and spicy, not super sweet. Mango pineapple and habanero flavor. Almost tamarind flavors. Get this at Campus Fine Wines!</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-09-14</td>
+                    <td>6.7%</td>
+                    <td class="rating">7.5/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh37.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Origin Beer Project - Relentless Optimism</div>
+                                <div class="item-details">Pretty good refreshing pale ale, not too hoppy so not really calling it an IPA. Love the bitter and little bit is sweetness at the end. Good light beer. Get this at Mayday!</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Pale Ale</td>
+                    <td>2023-09-16</td>
+                    <td>4%</td>
+                    <td class="rating">7/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh36.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Canned Heat - Roundabout</div>
+                                <div class="item-details">On the fruitier side, sweet and sour, but not too sweet like candy. Love it. Berries. Approved by Betsey. Kind of a wack label tho. They need a new GD team. Get this at Scurvy Dog!</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-09-18</td>
+                    <td>5.4%</td>
+                    <td class="rating">7/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh35.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Japas - Yuzu Nama Biiru</div>
+                                <div class="item-details">Delicious unique lager with a very full flavor, light and refreshing! Slightly fruity with a light sweetness. More silky of a texture than other lagers. Get this at Mayday! Yuzu is one of my fav flavors in beer and sake lately.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Rice Lager</td>
+                    <td>2023-09-24</td>
+                    <td>4.9%</td>
+                    <td class="rating">9.5/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh34.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Ebbs - Gose No.1 with watermelon and salt</div>
+                                <div class="item-details">Interesting natural watermelon flavor, could use another fruit I suppose, actual watermelon flavored things doesn’t really taste like anything to me. Light sour, the salt also maybe throws the watermelon off. Liked it more halfway through.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-09-28</td>
+                    <td>6.2%</td>
+                    <td class="rating">6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh33.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Dogfish Head - Citrus Squall</div>
+                                <div class="item-details">Too sweet for me but really good citrus flavor! Taste a lot better kind of flat, good dessert beer/day beer.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>IPA</td>
+                    <td>2023-09-30</td>
+                    <td>8%</td>
+                    <td class="rating">5/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh32.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">The Hudson Valley's Brewery - Mother's Milk</div>
+                                <div class="item-details">hick and creamy, lighter and fuller deeper flavor than Guiness which I love, every sip has flavor and a bitter bite at the end that keeps it from losing flavor from flatness over the course of drinking it. For desert, cheesecake</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Stout</td>
+                    <td>2023-10-05</td>
+                    <td>6%</td>
+                    <td class="rating">9.6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh31.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Kiuchi Brewery - Yuzu Lager</div>
+                                <div class="item-details">pretty rich for a light beer with a little more dense of a flavor than most lagers, amazing with any meal, leaning towards a dessert beer because of its yumminess factor but it’s pretty tame as well.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Rice Lager</td>
+                    <td>2023-10-15</td>
+                    <td>4.9%</td>
+                    <td class="rating">8.5/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh30.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Mighty Squirrel Brewing - Sour Face</div>
+                                <div class="item-details">alright wack graphic design but it’s cheeky for what it taste like. I like the lightness of the kiwi strawberry flavor, it’s not super sweet or synthetic, however you do kind of get that acidic flavor in the back of your throat after a while, which isn’t terrible but was a downside for me. A smaller can of this would have been perfect as a day treat:)</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-10-15</td>
+                    <td>5.0%</td>
+                    <td class="rating">6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh29.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Hermit Thrush Brewery - Party Jam</div>
+                                <div class="item-details">awesome sour, light and refreshing, almost like a soda, not very sweet, perfect with my fried chicken sandwich I had with it :)</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2023-12-11</td>
+                    <td>5.9%</td>
+                    <td class="rating">7/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh28.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Wandering Soul Beer Co. - Melody Maker</div>
+                                <div class="item-details">sort of exactly what I want from an IPA, nice, refreshing, not too hoppy or too bitter</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>IPA</td>
+                    <td>2024-01-14</td>
+                    <td>4.9%</td>
+                    <td class="rating">8/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh27.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Providence Pilsner</div>
+                                <div class="item-details">Casual Pilsner, nothing special.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Pilsner</td>
+                    <td>2025-01-17</td>
+                    <td>?%</td>
+                    <td class="rating">6.6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/ss2.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Alagash - White</div>
+                                <div class="item-details">Classic all around lager, sweets and spices.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Witbier</td>
+                    <td>2024-01-19</td>
+                    <td>5.2%</td>
+                    <td class="rating">6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/ss2.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Jack Abby - Post Shift</div>
+                                <div class="item-details">Very Crispy, perfect post work beer. Light and refreshing.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Pilsner</td>
+                    <td>2024-01-19</td>
+                    <td>4.7%</td>
+                    <td class="rating">7.2/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/ss1.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Narragansett - Music Express</div>
+                                <div class="item-details">not that interesting of an ipa imo but pretty tasty, not funky enough but very fitting in the music theme for the night.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>IPA</td>
+                    <td>2024-01-19</td>
+                    <td>6.3%</td>
+                    <td class="rating">6.6/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/ss1.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Moniker - Blessed Be the Fruit</div>
+                                <div class="item-details">Such a good sour, not too sweet for me but comments on it being sweeter were made. The sour was a nice compliment to the allagash.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Sour</td>
+                    <td>2024-01-19</td>
+                    <td>5.2%</td>
+                    <td class="rating">8.9/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh25.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Grande - Flooke</div>
+                                <div class="item-details">Delicious Italian desert craft beer. Lots of body and very creamy, almost a mix between an amber lager and a stout. Milky and sweet.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Amber Lager</td>
+                    <td>2024-01-25</td>
+                    <td>6.5%</td>
+                    <td class="rating">8/10</td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="item-cell">
+                            <img src="links/bh/bh24.jpg" alt="Item" class="item-image">
+                            <div class="item-desc">
+                                <div class="item-name">Foolproof - Mexican Choc</div>
+                                <div class="item-details">Gave this an 8/10 (but I doubt it)for the world of chocolate stouts considering I just had one that was too chocolatey and not good, this one has notes of coffee and chocolate that isn’t too sweet and sits nicely half way through. A little too bitter.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>IPA</td>
+                    <td>2023-09-13</td>
+                    <td>6.2%</td>
+                    <td class="rating">8/10</td>
+</tr>
