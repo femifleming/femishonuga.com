@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+background-color: grey;
+}
+marquee {color: white; background-color: #5ac477; transition: background-color 0.5s, color 0.5s, font-size 0.5s;
+z-index: -5;
+border-radius: 10%;
+}
+.sidebar {
+max-width: 290px;
+position: fixed;
+color: white;
+height: 100%;
+background-image:url('abelle8_dithered.gif');
+}
+.heartbar {
+margin-left: 1200px;
+width:100%;
+position: fixed;
+height: 100%;
+background-image:url('heart.gif');
+}
+article {
+border-radius: 5px;
+background-image:url('villallobos.gif');
+border-style: outset;
+align-text: right;
+padding: 4px;
+margin: 4px;
+color: pink;
+}
+.main {
+margin-left: 300px;
+transition: border-radius 4s ease;
+border-width: 20px;
+padding: 20px;
+border-style: solid;
+border-color: beige;
+background-color:rgba(0,0,40, 0.9);
+max-width: 900px;
+}
+.main:hover {
+border-radius: 40%;
+}
+.cfloat {
+transition: border-radius 0.5s ease, margin-left 1s ease, border-width 0.5s ease;
+border-radius: 0px;
+border-width: 0px;
+}
+.bfloat {
+transition: border-radius 0.5s ease, margin-left 1s ease, border-width 0.5s ease;
+border-radius: 0px;
+border-width: 0px;
+}.afloat {
+transition: border-radius 0.5s ease, margin-left 1s ease, border-width 0.5s ease;
+border-radius: 0px;
+border-width: 0px;
+}
+.cfloat:hover {
+border-radius: 50%;
+border-width: 20px;
+border-color: white;
+margin-left: 100px;
+}
+.bfloat:hover {
+border-radius: 50%;
+border-width: 20px;
+border-color: white;
+margin-left: 120px;
+}
+.afloat:hover {
+border-radius: 50%;
+border-width: 20px;
+margin-left: 140px;
+border-color: white;
+}
+.cfloat:hover::after {
+content:"i love the aesthetic of the greenscreen, makes everything magical, like the music.";
+color: white;
+}
+.bfloat:hover::after {
+content:"isnt she pretty";
+color: white;
+}
+.afloat:hover::after {
+content:"wonder if shes still djing today...";
+color: white;
+}
+</style>
+<body>
+<div class="heartbar">:)</div>
+<div class="sidebar">
+<p>arma17</p>
+<article>
+<p>I don’t know much about the history of micro house and rominimal music. I love the way it sounds, it’s deep and textural. Long textures and ambiance, impossible architectures and hypnotic beats. Tribal drums micro sounds that excite performance spaces like impulses, filling the room with an eerie after tone in waiting for the next kick. This is not a review on microhouse, I love the way it sounds and sometimes it’s indescribable. It makes my booty bounce and thats all that matters, and abelle is an amazing selector. And Arma is a great label. I wish I could be at shows like this. It’s true underground. With concrete walls and nerds who like their brain itched by glitchy beats.</p>
+                <audio controls autoplay>
+        <source src="arma17abelle080711.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+                </audio><br>
+                <audio controls>
+        <source src="abelle251111.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</article>
+</div>
+<div class="main">
+<marquee id="marqueeText">abelle :heart eyes: &lt;3 &lt;3 &lt;3</marquee>
+<marquee scrollamount="5" style="background-color: black;">
+You are now listening to: Arma17: Abelle - RTS.FM.080711 July 25 2013
+</marquee>
+<p class="cfloat"><img src="abelle1.gif" width="400px" class="afloat" onmouseover="ranchange('abelle',8)"></p>
+<p class="bfloat"><img src="abelle2.gif" width="400px" class="bfloat" onmouseover="ranchange('abelle',8)"></p>
+<p class="afloat"><img src="abelle3.gif" width="400px" class="cfloat" onmouseover="ranchange('abelle',8)"></p>
+</div>
+<script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function getRandomFontSize() {
+      // Random font size between 20px and 50px
+      return Math.floor(Math.random() * 120) + 11 + 'px';
+    }
+
+    function changeStyles() {
+      const marquee = document.getElementById('marqueeText');
+      marquee.style.color = getRandomColor(); // Change text color
+      marquee.style.backgroundColor = getRandomColor(); // Change background color
+      marquee.style.fontSize = getRandomFontSize(); // Change font size
+    }
+
+    setInterval(changeStyles, 1000); // Change styles every second
+  </script>
+<script>
+function change(picture) {
+document.body.background=picture;
+}
+
+function ranchange(picture,num) {
+var randomnumber=Math.floor(Math.random()*num)+1;
+document.body.background=picture+randomnumber+".webp";
+}
+</script>
+</body>
+</html>
+
+
