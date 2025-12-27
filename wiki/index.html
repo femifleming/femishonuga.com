@@ -31,6 +31,45 @@ background: none;
 }
 </style>
 	<h3>Greetings traveler.</h3>
+<div id="time">Loading time...</div>
+    <div id="weather">Loading weather...</div>
+
+    <script>
+        // Function to update the time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('time').textContent = `Current Time: ${timeString}`;
+        }
+        setInterval(updateTime, 1000); // Update time every second
+        updateTime(); // Initial call
+
+        // Function to fetch weather using wttr.in
+        async function fetchWeather() {
+            const weatherElement = document.getElementById('weather');
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    const url = `https://wttr.in/${lat},${lon}?format=%C+%t`;
+                    try {
+                        const response = await fetch(url);
+                        const weatherData = await response.text();
+                        weatherElement.textContent = `Weather: ${weatherData}`;
+                    } catch (error) {
+                        weatherElement.textContent = `Unable to fetch weather data.`;
+                    }
+                }, () => {
+                    weatherElement.textContent = `Geolocation access denied.`;
+                });
+            } else {
+                weatherElement.textContent = `Geolocation is not supported by your browser.`;
+            }
+        }
+        fetchWeather();
+    </script>
 	<p>This is the in-depth wiki for femishonuga.com. navigate by clicking the tabs above ⬆ . This site is mainly meant to be viewed on desktop.</p>
 	<p>see the <a href="sitemap.html">sitemap</a> for a full list of the pages on this wiki</p>
 <p><a href="slog.html"><img src="links/blugh.gif" width="40%"></a></p>
