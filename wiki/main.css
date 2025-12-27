@@ -52,6 +52,10 @@ background-color: #e6e6e6;
 body img {
 z-index: 5;
 }
+#time {
+}
+#weather {
+}
 body p {
 z-index: 5;
 }
