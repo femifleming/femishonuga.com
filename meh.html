@@ -27,6 +27,12 @@ text-align: right;
 .smol {
 width: 40%;
 }
+textarea {
+width: 60%;
+background-color: #1f1f1f;
+color: white;
+height: 200px;
+}
 </style>
 <body>
 <h2>Multi Entry Horns</h2>
@@ -74,5 +80,100 @@ z = 0 is right at the compression driver exit.<br>
 θ is the coverage half-angle. If were using 50deg then it will equal 25deg.<br>
 tan(θ) = how fast the horn spreads. (if tan(25deg) = 0.466 then for every 1 mm you go forward, the horn wants to grow 0.466 mm outward)<br>
 rt = the radius of your 1" (12.7mm) compression driver</p>
+<p>Rhino Python Script (type EditPythonScript):</p>
+<textarea>
+import rhinoscriptsyntax as rs
+import math
+
+#parameters
+r_t = 12.7           # throat radius (mm)
+theta = math.radians(25)  # half coverage angle in radians
+tan_theta = math.tan(theta)
+z_max = 640          # horn length (mm)
+step = 20            # step between points (mm)
+
+#generatePoints
+points = []
+for z in range(0, z_max + 1, step):
+    r = math.sqrt(r_t**2 + (tan_theta * z)**2)
+    points.append((r, z, 0))  # X=radius, Y=axis, Z=0
+
+#addPointsToRhino
+rs.AddPoints(points)
+
+#createsCurvesThroughPoints
+rs.AddInterpCurve(points)
+
+#revolvesCurveIntoSurface
+curve = rs.AddInterpCurve(points)
+axis_start = (0,0,0)
+axis_end = (0,z_max,0)
+rs.AddRevSrf(curve, axis_start + axis_end)
+</textarea>
+<p>This is for a <a href="https://at-horns.eu/release/R-OSSE%20Waveguide%20rev7.pdf">R-OSSE Acoustic Waveguide</a> curve! The horn can reach the same mouth radius and directivity with a shorter axial length by curving faster near the mouth, rather than continuing the long OS exponential flare all the way:</p>
+<textarea>
+import rhinoscriptsyntax as rs
+import math
+
+#params
+R = 350.0        # mouth radius (mm)
+a_deg = 25.0     # half coverage angle
+r0 = 12.7        # throat radius (mm)
+a0_deg = 7.5     # throat opening angle
+k = 1.8
+
+# R-OSSE shape controls (dimensionless)
+r = 0.35
+m = 0.85
+b = 0.25
+q = 3.5
+
+steps = 40
+
+#preCompute
+a = math.radians(a_deg)
+a0 = math.radians(a0_deg)
+
+c1 = (k * r0) ** 2
+c2 = 2 * r0 * math.tan(a0)
+c3 = math.tan(a) ** 2
+
+L = (
+    math.sqrt(c2**2 - 4 * c3 * (c1 - (R + r0*(k - 1))**2))
+    - c2
+) / (2 * c3)
+
+#buildProfile
+pts = []
+
+for i in range(steps + 1):
+    t = i / float(steps)
+
+    # axial coordinate (corrected)
+    x = L * (
+        math.sqrt(r*r + m*m)
+        - math.sqrt(r*r + (t - m)**2)
+    ) - b * L * t*t
+
+    # OS-like throat term
+    y_os = math.sqrt(c1 + c2*L*t + c3*(L*t)**2) - r0*(k - 1)
+
+    # termination control
+    y_m = R + L * (1 - math.sqrt(1 + c3*(t - 1)**2))
+
+    # blend
+    y = (1 - t**q) * y_os + (t**q) * y_m
+
+    pts.append((y, x, 0))
+
+#createCurve
+profile = rs.AddInterpCurve(pts)
+
+#createRevolutionAxis
+axis = rs.AddLine((0, 0, 0), (0, L, 0))
+
+#revolve
+rs.AddRevSrf(profile, axis)
+</textarea>
 </body>
 </html>
