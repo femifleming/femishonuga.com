@@ -15,14 +15,17 @@ img {
 border-style: outset;
 margin-left: 20px;
 border-width: 10px;
-width: 600px;
+width: 75%;
 align-content: center;
 align: center;
 }
 .caption {
 font-size: 0.8em;
-margin-right: 200px;
+margin-right: 25%;
 text-align: right;
+}
+.smol {
+width: 40%;
 }
 </style>
 <body>
@@ -40,6 +43,11 @@ text-align: right;
 <p><a href="https://www.diyaudio.com/community/threads/yet-another-meh-synergy-project.409866/"><img src="meh/slots.jpg"></a></p>
 <p>The slots must be acoustically small.</p>
 <p>Slot dimension &lt; ~¼ wavelength at the highest frequency that driver plays. The total slot area = 25% of cone Sd. * Smaller → compression + distortion * Larger → slot becomes a radiator → breaks summation. If you have 4 mids, that area is split across 4 slots. The slots should be wide and short, instead of tall and skinny. The tall slots act as waveguides, but narrow slots will whistle and chuff. 3:1 or 6:1 ratios for the slot dimentions are good. The driver should be AS CLOSE to the slot as possible, and can be champhered on the inside to guide to the slot exit, and avoid chuffing. Long paths from the driver, or depths for the slots can lead to different acoustic/imedience loading as it acts as another horn path/tube/resonator. 1 or two slots per driver is best. 2 slots for the woofers and 1 slot for the midrange drivers each also works. The enclosure must be sealed for better low freq loading and imaging. Ported enclosures introduce phase issues and the MEH is already an efficient design.</p>
+<p>The slot position along the horn path is determined by the path length. Place the slots where the midrange acoustic center is time-aligned to the HF diaphragm at the listening axis.</p>
+<p><img class="smol" src="meh/distance.jpg"></p>
+<p class="caption">Lslot (distance from compression driver) = c(speed of sound : 343 meters per second) / 4 * fx (crossover freq between midrange array and compression driver)</p>
+<p>This 1/4th wavelength condition ensures in phase summation, minimal lobing and stable polar response. Its the same to calculate the slot distance between the Mid -&gt; Woofer</p>
+<p></p>
 <h2>Amping:</h2>
 <p>Midrange example: 4x 8ohm drivers. Wire 2 series pairs in parallel to get a total impedence of 8ohms. For 2 8ohm woofers, in parallel makes 4ohms. Best for each PA to be Tri-Amped, crossover stuff is complicated and should be done with DSP and not passive, but there are passive crossover calculators that can help if it must be.</p>
 <h2>Midrange Driver Selection:</h2>
@@ -52,5 +60,19 @@ Fhigh - High cutoff of the bandpass.</p>
 <p>2 * Fs/Qes : This is basically a way to estimate the “effective midrange frequency” of the driver when placed in a bandpass system. A driver with a higher Fs or lower Qes will push the bandpass center freq higher. Multiplying by 2 is part of the empirical adjustment to line it up with the geometric mean of the desired bandpass.</p>
 <p>The square root of Flow * Fhigh is the geometric mean of the desired bandpass. That’s the “target” frequency you want the driver’s resonance to roughly align with inside the bandpass system.</p>
 <p>For example, say you want a midrange array from 200hz to 1400hz -&gt; geometric mean is 529hz. Suppose you have a driver with Fs of 164hz and Qes of 0.6. 2 * 164/0.6 = 546hz, which is close enouph to your midrange geometric mean to work for your system. Higher Fs → raises the bandpass center. Lower Qes → broadens the peak, smoother response. Higher Xmax → allows more power handling without port compression</p>
+<p><a href="https://www.instagram.com/p/DBN4wg0opdx/?hl=en&img_index=8"><img src="meh/oshorn1.jpg"></a></p>
+<p><img src="meh/oshorn2.png"></p>
+<p caption>Oblate Spheroidal horn desing by addit audio</p>
+<h2>Drivers:</h2>
+<p>Standard setup: 1-2in compression driver (x1). 4 inch midrange drivers (x4). 15in midrange drivers (x2).</p>
+<h2>Curve Math:</h2>
+<p>This gives you a single curve to revolve for the horn geometry.</p>
+<p><img src="meh/OScurvemath.jpg" class="smol"></p>
+<p>z = Total distance from the throat.<br>
+r(z) = Radius of the horn wall at that point. Every point plotted for the curve is (z, r)<br>
+z = 0 is right at the compression driver exit.<br>
+θ is the coverage half-angle. If were using 50deg then it will equal 25deg.<br>
+tan(θ) = how fast the horn spreads. (if tan(25deg) = 0.466 then for every 1 mm you go forward, the horn wants to grow 0.466 mm outward)<br>
+rt = the radius of your 1" (12.7mm) compression driver</p>
 </body>
 </html>
