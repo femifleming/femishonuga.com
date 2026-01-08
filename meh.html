@@ -80,6 +80,12 @@ z = 0 is right at the compression driver exit.<br>
 θ is the coverage half-angle. If were using 50deg then it will equal 25deg.<br>
 tan(θ) = how fast the horn spreads. (if tan(25deg) = 0.466 then for every 1 mm you go forward, the horn wants to grow 0.466 mm outward)<br>
 rt = the radius of your 1" (12.7mm) compression driver</p>
+<h2>Determining Low Frq Cutoff of Horn:</h2>
+<p>The length of the horn determines the low freq cutoff. The horn acts as a 1/4 wavelength resonator. A longer horn allows smoother directivity at low frequencies.</p>
+<p>Lsection = c/4*Flow (The length of each section is equal to the speed of sound / 4 * the lowest freq you want the that section to reproduce).</p>
+<p>Determining the Radius of the Mouth can be done in two ways. Both the radius of the mouth and the length determine the low freq cutoff of the horn. In conical and tractrix horns the length is more important, for OS the radius is more important. For OS, the low-frequency limit is set by when the mouth stops controlling radiation.</p>
+<p>The equation of general length is L = c/4*LowFreqCutoff for 1/4 wave rule. For the radius the equation is:</p>
+<p><img class="smol" src="meh/radius.jpg"></p>
 <p>Rhino Python Script (type EditPythonScript):</p>
 <textarea>
 import rhinoscriptsyntax as rs
