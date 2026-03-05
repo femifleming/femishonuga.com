@@ -85,10 +85,65 @@ gtag('config', 'G-FCQXVD7YXZ');
         document.getElementById("last-modified").textContent = lastModified;
     });
 </script>
+<marquee direction="left" scrollamount="5" height="20em">
+  <div id="randomWord">Coming Up Next: BLK Noise @ Elastic Arts Chicago ~ April 4th 2026 !!! With Kwami Winfield, D, Jean-Baptiste, ilovecomputergirl and naturalblkinvention.</div>
+  <script>
+  (function() {
+    var el = document.getElementById('randomWord');
+    var message = el.textContent;
+    var tick = 0;
+    var colorTick = 0;
+    var colorInterval = 8;
 
+    el.innerHTML = '';
+    var offsets = [];
+    var freqs = [];
+    message.split('').forEach(function(char, i) {
+      var span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.display = 'inline-block';
+      el.appendChild(span);
+      offsets.push(i * 0.35 + (Math.random() - 0.5) * 0.3);  // mostly evenly spaced, slight random nudge
+      freqs.push(1 + (Math.random() - 0.5) * 0.15);           // all close to 1, tiny variation
+    });
+
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) color += letters[Math.floor(Math.random() * 16)];
+      return color;
+    }
+
+    function animate() {
+      colorTick++;
+      var breathe = Math.sin(tick * 0.007);
+      tick += 0.04 + breathe * 0.006;
+
+      var marquee = el.closest('marquee') || el.parentElement;
+      if (marquee && marquee.tagName === 'MARQUEE') {
+        marquee.scrollAmount = Math.round(6 + breathe * 2);
+      }
+
+      var spans = el.querySelectorAll('span');
+      spans.forEach(function(span, i) {
+        var wave = Math.sin(tick * freqs[i] + offsets[i]) * 4   // main wave
+                 + Math.sin(tick * 0.3 + offsets[i]) * 2;       // slow subtle wobble
+        span.style.transform = 'translateY(' + wave + 'px)';
+        if (colorTick % colorInterval === 0) {
+          span.style.color = getRandomColor();
+        }
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  })();
+  </script>
+</marquee>
+<!--
 <marquee direction="left" scrollamount="5">
-<!-- The word whose letters' colors will change -->
-<div id="randomWord">Next Show: Live at Lost Bag Feb 25th, 2025</div>
+<div id="randomWord">Coming Up Next: BLK Noise @ Elastic Arts Chicago ~ April 4th 2026 !!! With Kwami Winfield, D, Jean-Baptiste, ilovecomputergirl and naturalblkinvention. </div>
   <script>
         // Function to generate a random color in hexadecimal format
         function getRandomColor() {
@@ -115,6 +170,7 @@ word.innerHTML = coloredWord;
 setInterval(changeLetterColors, 50);
 </script>
 </marquee>
+--!>
 <script>
 document.getElementById('hoverImage').addEventListener('mouseenter', function() {
 document.body.style.padding = '50px';  // Increase padding when hovered
@@ -216,6 +272,10 @@ isAnimating = false; // Reset state to not animating
 <p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
 
 <h4>news:</h4>
+<div class="feed">
+<a class="link" href="wiki/places.html#sac">Sonic Acts Biennial</a>
+<span class="date"><time datetime="2026-01-07">Feburary 16th, 2026</time></span>
+</div>
 <div class="feed">
 <a class="link" href="meh.html">Multi Entry Horns/Synergy Horns Research</a>
 <span class="date"><time datetime="2026-01-07">January 7th, 2026</time></span>
@@ -425,6 +485,34 @@ isAnimating = false; // Reset state to not animating
             window.location.href = randomPage;
         }
     </script>
+<marquee direction="left" scrollamount="5" style="font-size: 0.2em">
+<div id="randomWord">I had a dream about a golden glittery square of moss in a pond at night with a magician trying to show me a magic trick and shushing me over and over into a trance as I tried to take a picture of the moss and everything became quieter and quieter and the moss separated slowly and bloomed into flowers and I left to grab a beer and everything around me was blooming into foliage and flowers. </div>
+  <script>
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        // Function to change the color of letters in a word
+        function changeLetterColors() {
+            var word = document.getElementById('randomWord');
+            var letters = word.textContent.split('');
+            var coloredWord = '';
+            // Change the color of each letter
+for (var i = 0; i < letters.length; i++) {
+coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
+}
+// Update the word with colored letters
+word.innerHTML = coloredWord;
+}
+// Change letter colors every 20ms
+setInterval(changeLetterColors, 50);
+</script>
+</marquee>
 <hr/>
 <div style="line-height:1em; height:1em;"
 <p>updated 2025-06-22– sadnoise@femishonuga.com - <div id="time"></div></p>
