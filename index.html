@@ -1,151 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<link href="index.css" type="text/css" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-FCQXVD7YXZ');
-</script>
+    <link href="index.css" type="text/css" rel="stylesheet">
     <title>Femi Shonuga-Fleming</title>
     <meta name="keywords" content="sad, noise">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body>
-	    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // List of images
-        var images = [
-            "indass2/stacie1.webp",
-            "indass2/stacie6.webp",
-            "indass2/stacie10.webp",
-            "indass2/SadNoise-7.webp",
-            "indass2/SadNoise-5.webp",
-            "indass2/hex1.webp",
-            "indass2/hex3.webp",
-            "indass2/hex5.webp",
-            "indass2/algtrefemi1.webp",
-            "indass2/algtrefemi2.webp",
-            "indass2/algtrefemi3.webp",
-            "indass2/algtrefemi4.webp",
-            "indass2/pp1.webp",
-            "indass2/pp2.webp",
-            "indass2/pp3.webp",
-            "indass2/pp4.webp",
-            "indass2/pp5.webp",
-            "indass2/pp6.webp",
-            "indass2/cara1.webp",
-            "indass2/cara2.webp",
-            "indass2/cara3.webp",
-            "indass2/cara4.webp",
-            "indass2/cara5.webp",
-            "indass2/cpr1.webp",
-            "indass2/cpr2.webp",
-            "indass2/cpr3.webp",
-            "indass2/cpr4.webp",
-            "indass2/cityhall4.jpg",
-            "indass2/cityhall7.jpg",
-            "indass2/cityhall8.jpg",
-            "indass2/cityhall9.jpg",
-            "indass2/cpr5.webp"
-        ];
 
-        // Function to get a random image from the list
-        function getRandomImage(isDarkMode) {
-            var index = Math.floor(Math.random() * images.length);
-            var originalImage = images[index];
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FCQXVD7YXZ');
+    </script>
+</head>
 
-            // Modify the file path based on the theme
-            if (!isDarkMode && /\.(webp|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
-                return originalImage.replace(/\.(webp|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
-            }
+<body>
 
-            return originalImage;
-        }
-
-        // Function to update the random image based on the theme
-        function updateRandomImage() {
-            var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            var randomImage = getRandomImage(isDarkMode);
-            document.getElementById("randomImage").src = randomImage;
-        }
-
-        // Initial image setup
-        updateRandomImage();
-
-        // Listen for theme changes
-        window
-            .matchMedia("(prefers-color-scheme: dark)")
-            .addEventListener("change", updateRandomImage);
-
-        // Update "last modified" text
-        const lastModified = document.lastModified;
-        document.getElementById("last-modified").textContent = lastModified;
-    });
-</script>
-<marquee direction="left" scrollamount="5" height="20em">
-  <div id="randomWord">Coming Up Next: BLK Noise @ Elastic Arts Chicago ~ April 4th 2026 !!! With Kwami Winfield, D, Jean-Baptiste, ilovecomputergirl and naturalblkinvention.</div>
-  <script>
-  (function() {
-    var el = document.getElementById('randomWord');
-    var message = el.textContent;
-    var tick = 0;
-    var colorTick = 0;
-    var colorInterval = 8;
-
-    el.innerHTML = '';
-    var offsets = [];
-    var freqs = [];
-    message.split('').forEach(function(char, i) {
-      var span = document.createElement('span');
-      span.textContent = char === ' ' ? '\u00A0' : char;
-      span.style.display = 'inline-block';
-      el.appendChild(span);
-      offsets.push(i * 0.35 + (Math.random() - 0.5) * 0.3);  // mostly evenly spaced, slight random nudge
-      freqs.push(1 + (Math.random() - 0.5) * 0.15);           // all close to 1, tiny variation
-    });
-
-    function getRandomColor() {
-      var letters = '0123456789ABCDEF';
-      var color = '#';
-      for (var i = 0; i < 6; i++) color += letters[Math.floor(Math.random() * 16)];
-      return color;
-    }
-
-    function animate() {
-      colorTick++;
-      var breathe = Math.sin(tick * 0.007);
-      tick += 0.04 + breathe * 0.006;
-
-      var marquee = el.closest('marquee') || el.parentElement;
-      if (marquee && marquee.tagName === 'MARQUEE') {
-        marquee.scrollAmount = Math.round(6 + breathe * 2);
-      }
-
-      var spans = el.querySelectorAll('span');
-      spans.forEach(function(span, i) {
-        var wave = Math.sin(tick * freqs[i] + offsets[i]) * 4   // main wave
-                 + Math.sin(tick * 0.3 + offsets[i]) * 2;       // slow subtle wobble
-        span.style.transform = 'translateY(' + wave + 'px)';
-        if (colorTick % colorInterval === 0) {
-          span.style.color = getRandomColor();
-        }
-      });
-
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-  })();
-  </script>
-</marquee>
-<!--
-<marquee direction="left" scrollamount="5">
-<div id="randomWord">Coming Up Next: BLK Noise @ Elastic Arts Chicago ~ April 4th 2026 !!! With Kwami Winfield, D, Jean-Baptiste, ilovecomputergirl and naturalblkinvention. </div>
-  <script>
-        // Function to generate a random color in hexadecimal format
+    <!-- Marquee with rainbow letter colors -->
+    <marquee>
+        <span id="randomWord">Coming Up Next: BLK Noise @ Elastic Arts Chicago ~ April 4th 2026 !!!</span>
+    </marquee>
+    <script>
         function getRandomColor() {
             var letters = '0123456789ABCDEF';
             var color = '#';
@@ -154,329 +32,445 @@ gtag('config', 'G-FCQXVD7YXZ');
             }
             return color;
         }
-        // Function to change the color of letters in a word
+
+        var word = document.getElementById('randomWord');
+        var chars = word.textContent.split('');
+        word.innerHTML = chars.map(function(ch) {
+            return '<span>' + (ch === ' ' ? '&nbsp;' : ch) + '</span>';
+        }).join('');
+
+        var spans = word.querySelectorAll('span');
+
         function changeLetterColors() {
-            var word = document.getElementById('randomWord');
-            var letters = word.textContent.split('');
-            var coloredWord = '';
-            // Change the color of each letter
-for (var i = 0; i < letters.length; i++) {
-coloredWord += '<span style="color: ' + getRandomColor() + ';">' + letters[i] + '</span>';
-}
-// Update the word with colored letters
-word.innerHTML = coloredWord;
-}
-// Change letter colors every 20ms
-setInterval(changeLetterColors, 50);
-</script>
-</marquee>
---!>
-<script>
-document.getElementById('hoverImage').addEventListener('mouseenter', function() {
-document.body.style.padding = '50px';  // Increase padding when hovered
-});
-document.getElementById('hoverImage').addEventListener('mouseleave', function() {
-document.body.style.padding = '20px';  // Revert padding when not hovered
-});
-</script>
-<br>
-<br>
-<a href="wiki/index.html"><img id="randomImage" width="98.5%" src="" alt="Random Image" style="border: 5px solid #111;"></a>
-<section>
-<div class="wrapper" align="right">
-<span class="trigger-word">Consolidate</span>
-<div class="scrolling-text" id="scrollText">
-<a href="wiki/arch.html">Architecture</a><br>
-<a href="wiki/textiles.html">Textiles Work</a><br>
-<a href="wiki/audio.html">Sound Work</a><br>
-<a href="/wiki/diy.html">DIY Electronics</a><br>
-<a href="code.html">Code</a><br>
-<a href="https://www.youtube.com/channel/UCDMKN93aTUykTHz7tOQKw3A">Youtube</a><br>
-<a href="log.html">Log</a><br>
-<a href="webring.html">Webring</a><br>
-<a href="/about">About</a><br>
-<a href="mentions.html">Mentions</a><br>
-<br>
-</div>
-</div>
-<div class="toggle-section" id="toggleSection">
-	<div style="font-size: 0.6em"><p>
-Sadnoise is embedded in the ritual practice of performance in existing and impossible spaces. It is a conversation between the source of sound and it’s environment, the performer and the audience. Sadnoise lives in live environments as nonlinear moments in time, for no one. It is an abstract representation of the esotericism of <a class="x" href="isurrenderisubmit.html">internet</a> and binary codes bed within dying grass and mossy floors. Sadnoise lives online as a flowing faucet, with homages to breath, air, birds and the ground. It lives within an abstract architecture that develops through the conversation between the technology, non-traditional musical instruments, synthesis and organic materials. Sadnoise gives thanks to and acknowledges indigenous land, traditions and philosophy, as well as the ground beneath our feet.
-</p></div>
-<p><a href="wiki/index.html">Femi</a> is a P<a class="x" href="plaintext/dreams.html">r</a>o<a href="plaintext/victoria.html" class="x">v</a>iden<a class="x" href="plaintext/yda4dww.html">c</a>e b<a href="abelle2.html" class="x">a</a>sed <a href="wiki/arch.html">architect</a> and <a href="wiki/audio.html">sound artist</a> who <a href="wiki/install.html">installs</a> work that gives thanks to the <a href="wiki/algotrek.html">ground</a> <a class="x" href="wiki/buniehopps.html">b</a>eneath our feet,<br>
-<a href="wiki/shows.html">performs</a> sonic <a href="wiki/ritual.html">rituals</a> as <a href="wiki/sadnoise.html">sadnoise</a> using digital/analog synthesis, live <a href="wiki/code.html">code</a>, and <a href="wiki/cldiy.html">DIY</a> hardware,<br>
-<a href="https://www.youtube.com/@FemiFleming">Uploads</a> tutorials, <a href="https://sadnoise.bandcamp.com">music</a>, video and live performances,<br>
-and updates <a href="wiki/index.html">wiki</a> and  <a id="hoverLink" href="log.html" target="_blank">log</a> frequently.</p>
-<br>
-<br>
-</div>
-<script>
-const trigger = document.querySelector('.trigger-word');
-const scrollText = document.getElementById('scrollText');
-const toggleSection = document.getElementById('toggleSection');
-let isAnimating = false; // Track animation state
-trigger.addEventListener('mouseenter', function() {
-if (!isAnimating) {
-scrollText.style.display = 'block'; // Show scrolling text
-scrollText.classList.add('animate');
-toggleSection.style.display = 'none'; // Hide toggle section
-isAnimating = true; // Set state to animating
-} else {
-scrollText.style.display = 'none'; // Hide scrolling text
-scrollText.style.transform = 'translateX(0)'; // Reset position
-scrollText.classList.remove('animate');
-toggleSection.style.display = 'block'; // Show toggle section
-isAnimating = false; // Reset state to not animating
-}
-});
-</script>
-<font size="2">
-</font>
-<a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
-<a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.black.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.svg" height="40px" class="nostyle"></a><br>
-<img class="display" height="40px" src="code1.png">
-<br>
-<p><h2>Recent Changes:</h2></p>
-<ul>
-	<li>Updated <a href="wiki/slog.html">Speaker Building Log</a></li>
-	<li>Walked <a href="#" class="phar">through</a> the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
-<li id="y">Is Mercury in retrograde? <input type="checkbox" id="yesCheck" disabled> <a href="#y" class="mur">Yes</a> <input type="checkbox" id="noCheck" disabled><a href="#y" class="dur">No</a></li>
-<li><i><a href="https://baccyflap.com/noai/?prv&s=fsf">←</a> <a href="https://baccyflap.com/noai">the no ai webring</a> <a href="https://baccyflap.com/noai/?nxt&s=fsf">→</a> <a href="https://baccyflap.com/noai/?rnd">δ</a> </i></li>
-<li><i><a href="https://webring.bucketfish.me/redirect.html?to=prev&name=femishonuga">←</a> <a href="https://webring.bucketfish.me">bucket webring</a> <a href="https://webring.bucketfish.me/redirect.html?to=next&name=femishonuga">→</a> <a href="https://webring.bucketfish.me/redirect.html?to=random&name=femishonuga">δ</a> </i></li>
-
-    <script>
-        const retrograde2025 = [
-            { start: new Date('2025-03-15'), end: new Date('2025-04-07') },
-            { start: new Date('2025-07-18'), end: new Date('2025-08-11') },
-            { start: new Date('2025-11-09'), end: new Date('2025-11-29') }
-        ];
-
-        const today = new Date();
-        let isRetrograde = false;
-
-        for (const period of retrograde2025) {
-            if (today >= period.start && today <= period.end) {
-                isRetrograde = true;
-                break;
-            }
+            spans.forEach(function(span) {
+                span.style.color = getRandomColor();
+            });
         }
 
-        if (isRetrograde) {
-            document.getElementById('yesCheck').checked = true;
-        } else {
-            document.getElementById('noCheck').checked = true;
-        }
+        setInterval(changeLetterColors, 50);
     </script>
-</ul>
-<br>
-<p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
 
-<h4>news:</h4>
-<div class="feed">
-<a class="link" href="wiki/places.html#sac">Sonic Acts Biennial</a>
-<span class="date"><time datetime="2026-01-07">Feburary 16th, 2026</time></span>
-</div>
-<div class="feed">
-<a class="link" href="meh.html">Multi Entry Horns/Synergy Horns Research</a>
-<span class="date"><time datetime="2026-01-07">January 7th, 2026</time></span>
-</div>
-<div class="feed">
-<a href="https://arts.brown.edu/programs/ignite/campus-projects/residual-noise" class="link">Residual Noise @ Lindemann Performing Arts Center</a>
-<span class="date"><time datetime="2025-04-05">April 5th, 2025</time></span>
-</div>
-<div class="feed">
-<a href="https://www.youtube.com/watch?v=ezmCV6x6S30" class="link">Ciat Lonbarde Workshop @ Roulette NYC</a>
-<span class="date"><time datetime="2025-03-05">March 5th, 2025</time></span>
-</div>
-<div class="feed">
-<a href="https://femishonuga.com/wiki/algotrek.html" class="link">Algotrek 2025</a>
-<span class="date"><time datetime="2025-03-29">March 29th, 2025</time></span>
-</div>
-<div class="feed">
-	<a href="wiki/cldiy.html" class="link">DIY Ciat Lonbarde Synthesizers</a>
-	<span class="date"><time datetime="2024-12-01">December 12st, 2024</time></span>
-</div>
-<div class="feed">
-<a href="wiki/arb.html" class="link">Arbrasson Workshop at Flux Factory</a>
-<span class="date"><time datetime="2024-11-04">November 4th, 2024</time></span>
-</div>
-</section>
+    <!-- Random image + last modified -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var images = [
+                "indass2/stacie1.webp",
+                "indass2/stacie6.webp",
+                "indass2/stacie10.webp",
+                "indass2/SadNoise-7.webp",
+                "indass2/SadNoise-5.webp",
+                "indass2/hex1.webp",
+                "indass2/hex3.webp",
+                "indass2/hex5.webp",
+                "indass2/algtrefemi1.webp",
+                "indass2/algtrefemi2.webp",
+                "indass2/algtrefemi3.webp",
+                "indass2/algtrefemi4.webp",
+                "indass2/pp1.webp",
+                "indass2/pp2.webp",
+                "indass2/pp3.webp",
+                "indass2/pp4.webp",
+                "indass2/pp5.webp",
+                "indass2/pp6.webp",
+                "indass2/cara2.webp",
+                "indass2/cara4.webp",
+                "indass2/cara5.webp",
+                "indass2/cpr1.webp",
+                "indass2/cpr2.webp",
+                "indass2/cpr3.webp",
+                "indass2/cpr4.webp",
+                "indass2/cityhall4.jpg",
+                "indass2/cityhall7.jpg",
+                "indass2/cityhall8.jpg",
+                "indass2/cityhall9.jpg",
+                "indass2/cpr5.webp",
+"indass2/heartRestsTwiceSonicActs1.webp",
+"indass2/heartRestsTwiceSonicActs3.webp",
+"indass2/heartRestsTwiceSonicActs4.webp",
+"indass2/heartRestsTwiceSonicActs5.webp",
+"indass2/heartRestsTwiceSonicActs8.webp",
+"indass2/heartRestsTwiceSonicActs9.webp",
+"indass2/heartRestsTwiceSonicActs10.webp",
+"indass2/heartRestsTwiceSonicActs12.webp",
+"indass2/heartRestsTwiceSonicActs13.webp",
+"indass2/heartRestsTwiceSonicActs14.webp",
+"indass2/heartRestsTwiceSonicActs16.webp",
+"indass2/heartRestsTwiceSonicActs17.webp",
+"indass2/heartRestsTwiceSonicActs18.webp",
+"indass2/heartRestsTwiceSonicActs19.webp",
+"indass2/heartRestsTwiceSonicActs22.webp",
+"indass2/heartRestsTwiceSonicActs23.webp",
+"indass2/heartRestsTwiceSonicActs24.webp",
+"indass2/heartRestsTwiceSonicActs25.webp"
+            ];
+
+            function getRandomImage(isDarkMode) {
+                var index = Math.floor(Math.random() * images.length);
+                var originalImage = images[index];
+
+                if (!isDarkMode && /\.(webp|jpeg|JPG|JPEG|PNG|png)$/.test(originalImage)) {
+                    return originalImage.replace(/\.(webp|jpeg|JPG|JPEG|PNG|png)$/, "_dithe.$1");
+                }
+
+                return originalImage;
+            }
+
+            function updateRandomImage() {
+                var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                var randomImage = getRandomImage(isDarkMode);
+                document.getElementById("randomImage").src = randomImage;
+            }
+
+            updateRandomImage();
+
+            window
+                .matchMedia("(prefers-color-scheme: dark)")
+                .addEventListener("change", updateRandomImage);
+
+            const lastModified = document.lastModified;
+            document.getElementById("last-modified").textContent = lastModified;
+        });
+    </script>
+
+    <!-- Hover padding effect -->
+    <script>
+        document.getElementById('hoverImage').addEventListener('mouseenter', function() {
+            document.body.style.padding = '50px';
+        });
+        document.getElementById('hoverImage').addEventListener('mouseleave', function() {
+            document.body.style.padding = '20px';
+        });
+    </script>
+
+    <br>
+    <br>
+
+    <a href="wiki/index.html"><img id="randomImage" width="98.5%" src="" alt="Random Image" style="border: 5px solid #111;"></a>
+
+    <section>
+        <div style="font-size: 0.6em">
+            <p>
+                Sadnoise is embedded in the ritual practice of performance in existing and impossible spaces. It is a conversation between the source of sound and it's environment, the performer and the audience. Sadnoise lives in live environments as nonlinear moments in time, for no one. It is an abstract representation of the esotericism of <a class="x" href="isurrenderisubmit.html">internet</a> and binary codes bed within dying grass and mossy floors. Sadnoise lives online as a flowing faucet, with homages to breath, air, birds and the ground. It lives within an abstract architecture that develops through the conversation between the technology, non-traditional musical instruments, synthesis and organic materials. Sadnoise gives thanks to and acknowledges indigenous land, traditions and philosophy, as well as the ground beneath our feet.
+            </p>
+        </div>
+
 <br>
-<div style="align: center; margin-left: 100px;">
-<button onclick="feelingLucky()" style="align: center;">I'm Feeling Lucky!</button>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div class="justified">
+            <a href="wiki/index.html">Femi</a> is a P<a class="x" href="plaintext/dreams.html">r</a>o<a href="plaintext/victoria.html" class="x">v</a>iden<a class="x" href="plaintext/yda4dww.html">c</a>e b<a href="abelle2.html" class="x">a</a>sed <a href="wiki/arch.html">architect</a> and <a href="wiki/audio.html">sound artist</a> who <a href="wiki/install.html">installs</a> work that gives thanks to the <a href="wiki/algotrek.html">ground</a> <a class="x" href="wiki/buniehopps.html">b</a>eneath our feet, <a href="wiki/shows.html">performs</a> sonic <a href="wiki/ritual.html">rituals</a> as <a href="wiki/sadnoise.html">sadnoise</a> using digital/analog synthesis, live <a href="wiki/code.html">code</a>, and <a href="wiki/cldiy.html">DIY</a> hardware, <a href="https://www.youtube.com/@FemiFleming">Uploads</a> tutorials, <a href="https://sadnoise.bandcamp.com">music</a>, video and live performances, and updates the in depth <a style="font-size: 1.5em;" href="wiki/index.html">~> wiki</a> and <a id="hoverLink" href="log.html" target="_blank">log</a> frequently.
+<style>
+.justified {
+  text-align: justify;
+}
+.poopified {
+  text-align: right;
+padding: 5px;
+background-color: grey;
+color: white;
+}
+</style>
+<br>
+
+<br>
+        <font size="2"></font>
+        <a href="webring.html"><p style="font-size: 0.9em;"><i>aelrsty webring</i></p></a><br>
+        <a href="https://webring.xxiivv.com/#your-id-here" target="_blank" rel="noopener"><img class="nostyle" src="https://webring.xxiivv.com/icon.black.svg" height="40px" alt="XXIIVV webring"></a><a href="https://lieu.cblgh.org"><img src="lieu.svg" height="40px" class="nostyle"></a><br>
+        <img class="display" height="40px" src="code1.png">
+
+        <br>
+
+        <p><h2>Recent Changes:</h2></p>
+        <ul>
+            <li>Updated <a href="wiki/slog.html">Speaker Building Log</a></li>
+            <li>Walked <a href="#" class="phar">through</a> the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
+            <li id="y">Is Mercury in retrograde? <input type="checkbox" id="yesCheck" disabled> <a href="#y" class="mur">Yes</a> <input type="checkbox" id="noCheck" disabled><a href="#y" class="dur">No</a></li>
+            <li><i><a href="https://baccyflap.com/noai/?prv&s=fsf">←</a> <a href="https://baccyflap.com/noai">the no ai webring</a> <a href="https://baccyflap.com/noai/?nxt&s=fsf">→</a> <a href="https://baccyflap.com/noai/?rnd">δ</a> </i></li>
+            <li><i><a href="https://webring.bucketfish.me/redirect.html?to=prev&name=femishonuga">←</a> <a href="https://webring.bucketfish.me">bucket webring</a> <a href="https://webring.bucketfish.me/redirect.html?to=next&name=femishonuga">→</a> <a href="https://webring.bucketfish.me/redirect.html?to=random&name=femishonuga">δ</a> </i></li>
+
+            <!-- Mercury retrograde checker -->
+            <script>
+                const retrograde2025 = [
+                    { start: new Date('2025-03-15'), end: new Date('2025-04-07') },
+                    { start: new Date('2025-07-18'), end: new Date('2025-08-11') },
+                    { start: new Date('2025-11-09'), end: new Date('2025-11-29') }
+                ];
+
+                const today = new Date();
+                let isRetrograde = false;
+
+                for (const period of retrograde2025) {
+                    if (today >= period.start && today <= period.end) {
+                        isRetrograde = true;
+                        break;
+                    }
+                }
+
+                if (isRetrograde) {
+                    document.getElementById('yesCheck').checked = true;
+                } else {
+                    document.getElementById('noCheck').checked = true;
+                }
+            </script>
+        </ul>
+
+        <br>
+
+        <p><a href="../webring.html"><img class="nostyle" src="trans.svg" width=200px></a></p>
+</div>
+<div class="poopified">
+<a href="https://www.experimentalintermedia.org/concerts/28/March28/3.shtml">
+--> Experimental Intermedia Salon*: R. Luke DuBois // Femi Fleming (Sadnoise) - at Various/Artists ~ Saturday, March 28
+</a>
+<br>
+<br>
+<a id="rotating-link" href="#">
+  <img id="rotating-img" src="" style="max-width:100%;">
+</a>
+<div id="rotating-text"></div>
 </div>
 <script>
-        const pages = [
-  "/404.html",
-  "/Sheet1.html",
-  "/a.html",
-  "/abelle2.html",
-  "/about/index.html",
-  "/above/index.html",
-  "/arch/ARCH12-ST-03.html",
-  "/arch/ARCH21-ST-07.html",
-  "/arch/index.html",
-  "/ass.html",
-  "/brazil.html",
-  "/clguide/clguide.html",
-  "/clguide/index.html",
-  "/clguide/r5b.html",
-  "/code.html",
-  "/coolgallery/gallery-/index.html",
-  "/coolgallery/index.html",
-  "/da.html",
-  "/da/index.html",
-  "/dd.html",
-  "/dh.html",
-  "/diy/MelonGallery/templates/gallery-page-template.html",
-  "/diy/MelonGallery/templates/index.html",
-  "/diy/cb.html",
-  "/diy/cl.html",
-  "/diy/diy.html",
-  "/diy/dogevox.html",
-  "/diy/index.html",
-  "/diy/other.html",
-  "/dogevox.html",
-  "/dt.html",
-  "/esofetish.html",
-  "/farmcolony.html",
-  "/fire.html",
-  "/fog.html",
-  "/huh.html",
-  "/index.html",
-  "/isurrenderisubmit.html",
-  "/log.html",
-  "/mentions.html",
-  "/onmail.html",
-  "/photo/MelonGallery/templates/gallery-page-template.html",
-  "/photo/MelonGallery/templates/index.html",
-  "/photo/index.html",
-  "/photo/pics-algotrek/index.html",
-  "/photo/pics-archcorners/index.html",
-  "/photo/pics-blackcat/index.html",
-  "/photo/pics-et/index.html",
-  "/photo/pics-farmcolony/index.html",
-  "/photo/pics-gracefarms/index.html",
-  "/photo/pics-provandi/index.html",
-  "/photo/pics-spmay/index.html",
-  "/photo/pics_algotrek/gallery.html",
-  "/photo/pics_archcorners/gallery.html",
-  "/photo/pics_blackcat/gallery.html",
-  "/photo/pics_farmcolony/gallery.html",
-  "/photo/pics_gracefarms/gallery.html",
-  "/photo/pics_nigeria_2017/gallery.html",
-  "/photo/pics_nigeria_2020/gallery.html",
-  "/photo/pics_provandi/gallery.html",
-  "/photo/pics_spmay/gallery.html",
-  "/plaintext/dreams.html",
-  "/plaintext/noise.html",
-  "/plaintext/victoria.html",
-  "/plaintext/yda4dww.html",
-  "/portal.html",
-  "/redeelinstallations/bc.html",
-  "/redeelinstallations/ihdi.html",
-  "/redeelinstallations/index.html",
-  "/redeelinstallations/mirror.html",
-  "/redeelinstallations/strobe.html",
-  "/ritual.html",
-  "/sitemap.html",
-  "/speakers.html",
-  "/test.html",
-  "/testindex.html",
-  "/textiles.html",
-  "/tree.html",
-  "/treetop.html",
-  "/wave.html",
-  "/webring.html",
-  "/wiki/Act1SoundMap.html",
-  "/wiki/about.html",
-  "/wiki/akira.html",
-  "/wiki/algotrek.html",
-  "/wiki/anne.html",
-  "/wiki/arb.html",
-  "/wiki/arbm.html",
-  "/wiki/arch.html",
-  "/wiki/atc.html",
-  "/wiki/audio.html",
-  "/wiki/bnc.html",
-  "/wiki/buniehopps.html",
-  "/wiki/buyme.html",
-  "/wiki/c.html",
-  "/wiki/cb.html",
-  "/wiki/chokedbaffle.html",
-  "/wiki/ck.html",
-  "/wiki/clarchive/Ciat Lonbarde Roolz Gewei _ The insides _ jooksi _ Flickr.html",
-  "/wiki/clarchive/fyrall papyrion.html",
-  "/wiki/clarchive/index.html",
-  "/wiki/cldiy.html",
-  "/wiki/clouds.html",
-  "/wiki/cock.html",
-  "/wiki/code.html",
-  "/wiki/dax.html",
-  "/wiki/daxpics.html",
-  "/wiki/df.html",
-  "/wiki/dh.html",
-  "/wiki/discog.html",
-  "/wiki/diy.html",
-  "/wiki/drains.html",
-  "/wiki/enid.html",
-  "/wiki/enidscv.html",
-  "/wiki/essays.html",
-  "/wiki/fc.html",
-  "/wiki/ft.html",
-  "/wiki/goblsr.html",
-  "/wiki/gt.html",
-  "/wiki/hardware.html",
-  "/wiki/hcy.html",
-  "/wiki/he.html",
-  "/wiki/index.html",
-  "/wiki/install.html",
-  "/wiki/inventory.html",
-  "/wiki/kb.html",
-  "/wiki/kevin.html",
-  "/wiki/log.html",
-  "/wiki/london.html",
-  "/wiki/maptest.html",
-  "/wiki/merch.html",
-  "/wiki/meta.html",
-  "/wiki/mgb.html",
-  "/wiki/misc.html",
-  "/wiki/mm.html",
-  "/wiki/nigeria.html",
-  "/wiki/onmail.html",
-  "/wiki/oya.html",
-  "/wiki/p.html",
-  "/wiki/places.html",
-  "/wiki/pp.html",
-  "/wiki/ps.html",
-  "/wiki/research.html",
-  "/wiki/ritual.html",
-  "/wiki/rustal.html",
-  "/wiki/sadnoise.html",
-  "/wiki/scores.html",
-  "/wiki/server.html",
-  "/wiki/sfm.html",
-  "/wiki/sgal.html",
-  "/wiki/sh.html",
-  "/wiki/shows.html",
-  "/wiki/showsplaceholder.html",
-  "/wiki/sitemap.html",
-  "/wiki/slog.html",
-  "/wiki/soe.html",
-  "/wiki/sonuga.html",
-  "/wiki/speakers.html",
-  "/wiki/stickyresearch.html",
-  "/wiki/textiles.html",
-  "/wiki/thesis.html",
-  "/wiki/totem.html",
-  "/wiki/ue.html",
-  "/wiki/um.html",
-  "/wiki/visual.html",
-  "/wiki/vitaphone.html",
-  "/wiki/volpe.html",
-  "/wiki/www.html",
-  "/yda4dww.html",
+const items = [
+  {
+    href: "https://sonicacts.com/biennial/biennial-2026/artists/femi-shonuga-fleming",
+    src: "indexass/251117_ArtistFlyer02-6.jpg",
+    text: "sonic acts biennial 2026"
+  },
+  {
+    href: "https://elasticarts.org/events/dark-matter-series-blk-noise",
+    src: "indexass/blknoise.webp",
+    text: "live @ elastic arts april 4th 2026"
+  }
+];
 
+let index = 0;
+
+function updateContent() {
+  const item = items[index];
+
+  document.getElementById("rotating-link").href = item.href;
+  document.getElementById("rotating-img").src = item.src;
+  document.getElementById("rotating-text").innerText = item.text;
+
+  index = (index + 1) % items.length;
+}
+
+// initial load
+updateContent();
+
+// change every 4 seconds
+setInterval(updateContent, 4000);
+</script>
+</div>
+        <h4>news:</h4>
+
+        <div class="feed">
+            <a class="link" href="wiki/places.html#sac">Sonic Acts Biennial</a>
+            <span class="date"><time datetime="2026-01-07">Feburary 16th, 2026</time></span>
+        </div>
+        <div class="feed">
+            <a class="link" href="meh.html">Multi Entry Horns/Synergy Horns Research</a>
+            <span class="date"><time datetime="2026-01-07">January 7th, 2026</time></span>
+        </div>
+        <div class="feed">
+            <a href="https://arts.brown.edu/programs/ignite/campus-projects/residual-noise" class="link">Residual Noise @ Lindemann Performing Arts Center</a>
+            <span class="date"><time datetime="2025-04-05">April 5th, 2025</time></span>
+        </div>
+        <div class="feed">
+            <a href="https://www.youtube.com/watch?v=ezmCV6x6S30" class="link">Ciat Lonbarde Workshop @ Roulette NYC</a>
+            <span class="date"><time datetime="2025-03-05">March 5th, 2025</time></span>
+        </div>
+        <div class="feed">
+            <a href="https://femishonuga.com/wiki/algotrek.html" class="link">Algotrek 2025</a>
+            <span class="date"><time datetime="2025-03-29">March 29th, 2025</time></span>
+        </div>
+        <div class="feed">
+            <a href="wiki/cldiy.html" class="link">DIY Ciat Lonbarde Synthesizers</a>
+            <span class="date"><time datetime="2024-12-01">December 12st, 2024</time></span>
+        </div>
+        <div class="feed">
+            <a href="wiki/arb.html" class="link">Arbrasson Workshop at Flux Factory</a>
+            <span class="date"><time datetime="2024-11-04">November 4th, 2024</time></span>
+        </div>
+    </section>
+
+    <br>
+
+    <div style="align: center; margin-left: 100px;">
+        <button onclick="feelingLucky()" style="align: center;">I'm Feeling Lucky!</button>
+    </div>
+
+    <!-- Feeling Lucky page list -->
+    <script>
+        const pages = [
+            "/404.html",
+            "/Sheet1.html",
+            "/a.html",
+            "/abelle2.html",
+            "/about/index.html",
+            "/above/index.html",
+            "/arch/ARCH12-ST-03.html",
+            "/arch/ARCH21-ST-07.html",
+            "/arch/index.html",
+            "/ass.html",
+            "/brazil.html",
+            "/clguide/clguide.html",
+            "/clguide/index.html",
+            "/clguide/r5b.html",
+            "/code.html",
+            "/coolgallery/gallery-/index.html",
+            "/coolgallery/index.html",
+            "/da.html",
+            "/da/index.html",
+            "/dd.html",
+            "/dh.html",
+            "/diy/MelonGallery/templates/gallery-page-template.html",
+            "/diy/MelonGallery/templates/index.html",
+            "/diy/cb.html",
+            "/diy/cl.html",
+            "/diy/diy.html",
+            "/diy/dogevox.html",
+            "/diy/index.html",
+            "/diy/other.html",
+            "/dogevox.html",
+            "/dt.html",
+            "/esofetish.html",
+            "/farmcolony.html",
+            "/fire.html",
+            "/fog.html",
+            "/huh.html",
+            "/index.html",
+            "/isurrenderisubmit.html",
+            "/log.html",
+            "/mentions.html",
+            "/onmail.html",
+            "/photo/MelonGallery/templates/gallery-page-template.html",
+            "/photo/MelonGallery/templates/index.html",
+            "/photo/index.html",
+            "/photo/pics-algotrek/index.html",
+            "/photo/pics-archcorners/index.html",
+            "/photo/pics-blackcat/index.html",
+            "/photo/pics-et/index.html",
+            "/photo/pics-farmcolony/index.html",
+            "/photo/pics-gracefarms/index.html",
+            "/photo/pics-provandi/index.html",
+            "/photo/pics-spmay/index.html",
+            "/photo/pics_algotrek/gallery.html",
+            "/photo/pics_archcorners/gallery.html",
+            "/photo/pics_blackcat/gallery.html",
+            "/photo/pics_farmcolony/gallery.html",
+            "/photo/pics_gracefarms/gallery.html",
+            "/photo/pics_nigeria_2017/gallery.html",
+            "/photo/pics_nigeria_2020/gallery.html",
+            "/photo/pics_provandi/gallery.html",
+            "/photo/pics_spmay/gallery.html",
+            "/plaintext/dreams.html",
+            "/plaintext/noise.html",
+            "/plaintext/victoria.html",
+            "/plaintext/yda4dww.html",
+            "/portal.html",
+            "/redeelinstallations/bc.html",
+            "/redeelinstallations/ihdi.html",
+            "/redeelinstallations/index.html",
+            "/redeelinstallations/mirror.html",
+            "/redeelinstallations/strobe.html",
+            "/ritual.html",
+            "/sitemap.html",
+            "/speakers.html",
+            "/test.html",
+            "/testindex.html",
+            "/textiles.html",
+            "/tree.html",
+            "/treetop.html",
+            "/wave.html",
+            "/webring.html",
+            "/wiki/Act1SoundMap.html",
+            "/wiki/about.html",
+            "/wiki/akira.html",
+            "/wiki/algotrek.html",
+            "/wiki/anne.html",
+            "/wiki/arb.html",
+            "/wiki/arbm.html",
+            "/wiki/arch.html",
+            "/wiki/atc.html",
+            "/wiki/audio.html",
+            "/wiki/bnc.html",
+            "/wiki/buniehopps.html",
+            "/wiki/buyme.html",
+            "/wiki/c.html",
+            "/wiki/cb.html",
+            "/wiki/chokedbaffle.html",
+            "/wiki/ck.html",
+            "/wiki/clarchive/Ciat Lonbarde Roolz Gewei _ The insides _ jooksi _ Flickr.html",
+            "/wiki/clarchive/fyrall papyrion.html",
+            "/wiki/clarchive/index.html",
+            "/wiki/cldiy.html",
+            "/wiki/clouds.html",
+            "/wiki/cock.html",
+            "/wiki/code.html",
+            "/wiki/dax.html",
+            "/wiki/daxpics.html",
+            "/wiki/df.html",
+            "/wiki/dh.html",
+            "/wiki/discog.html",
+            "/wiki/diy.html",
+            "/wiki/drains.html",
+            "/wiki/enid.html",
+            "/wiki/enidscv.html",
+            "/wiki/essays.html",
+            "/wiki/fc.html",
+            "/wiki/ft.html",
+            "/wiki/goblsr.html",
+            "/wiki/gt.html",
+            "/wiki/hardware.html",
+            "/wiki/hcy.html",
+            "/wiki/he.html",
+            "/wiki/index.html",
+            "/wiki/install.html",
+            "/wiki/inventory.html",
+            "/wiki/kb.html",
+            "/wiki/kevin.html",
+            "/wiki/log.html",
+            "/wiki/london.html",
+            "/wiki/maptest.html",
+            "/wiki/merch.html",
+            "/wiki/meta.html",
+            "/wiki/mgb.html",
+            "/wiki/misc.html",
+            "/wiki/mm.html",
+            "/wiki/nigeria.html",
+            "/wiki/onmail.html",
+            "/wiki/oya.html",
+            "/wiki/p.html",
+            "/wiki/places.html",
+            "/wiki/pp.html",
+            "/wiki/ps.html",
+            "/wiki/research.html",
+            "/wiki/ritual.html",
+            "/wiki/rustal.html",
+            "/wiki/sadnoise.html",
+            "/wiki/scores.html",
+            "/wiki/server.html",
+            "/wiki/sfm.html",
+            "/wiki/sgal.html",
+            "/wiki/sh.html",
+            "/wiki/shows.html",
+            "/wiki/showsplaceholder.html",
+            "/wiki/sitemap.html",
+            "/wiki/slog.html",
+            "/wiki/soe.html",
+            "/wiki/sonuga.html",
+            "/wiki/speakers.html",
+            "/wiki/stickyresearch.html",
+            "/wiki/textiles.html",
+            "/wiki/thesis.html",
+            "/wiki/totem.html",
+            "/wiki/ue.html",
+            "/wiki/um.html",
+            "/wiki/visual.html",
+            "/wiki/vitaphone.html",
+            "/wiki/volpe.html",
+            "/wiki/www.html",
+            "/yda4dww.html",
         ];
 
         function feelingLucky() {
@@ -485,80 +479,78 @@ isAnimating = false; // Reset state to not animating
             window.location.href = randomPage;
         }
     </script>
-<marquee direction="left" scrollamount="5" style="font-size: 0.2em">
-I had a dream about a golden glittery square of moss in a pond at night with a magician trying to show me a magic trick and shushing me over and over into a trance as I tried to take a picture of the moss and everything became quieter and quieter and the moss separated slowly and bloomed into flowers and I left to grab a beer and everything around me was blooming into foliage and flowers
-</marquee>
-<hr/>
-<div style="line-height:1em; height:1em;"
-<p>updated 2025-06-22– sadnoise@femishonuga.com - <div id="time"></div></p>
-</div>
-<script>
+
+    <hr/>
+
+    <div style="line-height:1em; height:1em;">
+updated 2026-03-25 <a href="mailto:sadnoise@femishonuga.com">sadnoise@femishonuga.com</a> <p id="time"></p>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+    <!-- Hover link: log → dream journal after 2s -->
+    <script>
         const link = document.getElementById("hoverLink");
         let hoverTimeout;
 
-        // Trigger on mouseover
         link.addEventListener("mouseenter", () => {
             hoverTimeout = setTimeout(() => {
                 link.textContent = "dream journal";
                 link.href = "dd.html";
-            }, 2000); // Change after 2 seconds
+            }, 2000);
         });
 
-        // Cancel on mouseout
         link.addEventListener("mouseleave", () => {
             clearTimeout(hoverTimeout);
         });
     </script>
-</body>
-<script>
-        // Define the secret key sequence (left, right, up, down)
+
+    <!-- Secret key combo redirect -->
+    <script>
         const secretCombo = ['ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowDown'];
         let enteredKeys = [];
 
-        // Listen for key presses
         document.addEventListener('keydown', (event) => {
             enteredKeys.push(event.key);
 
-            // Keep only the last N keys, where N is the length of the secretCombo
             if (enteredKeys.length > secretCombo.length) {
                 enteredKeys.shift();
             }
 
-            // Check if the entered keys match the secret combination
             if (enteredKeys.join('') === secretCombo.join('')) {
-                window.location.href = 'onmail.html'; // Redirect to the secret page
+                window.location.href = 'onmail.html';
             }
         });
     </script>
-    <script>
-        // Initialize a variable to track the entered word
-        let typedWord = '';
-        const targetWord = 'fog'; // The word to trigger the redirect
 
-        // Listen for key presses
+    <!-- Type "fog" to redirect -->
+    <script>
+        let typedWord = '';
+        const targetWord = 'fog';
+
         document.addEventListener('keydown', (event) => {
-            // Add the pressed key to the typedWord
             typedWord += event.key.toLowerCase();
 
-            // Keep only the last N characters, where N is the target word length
             if (typedWord.length > targetWord.length) {
                 typedWord = typedWord.slice(-targetWord.length);
             }
 
-            // Check if the typedWord matches the target word
             if (typedWord === targetWord) {
-                window.location.href = 'fog.html'; // Redirect to fog.html
+                window.location.href = 'fog.html';
             }
         });
     </script>
+
+    <!-- Clock -->
     <script>
-        function updateTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString(); // e.g., "2:34:56 PM"
-            document.getElementById('time').textContent = timeString;
-        }
-        setInterval(updateTime, 1000); // Update every second
-        updateTime(); // Initial call
-    </script>
+function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString(); // e.g. "3:45:22 PM"
+    document.getElementById("time").textContent = timeString;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+</body>
 </html>
-</!doctype HTML>
