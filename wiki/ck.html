@@ -42,6 +42,17 @@ width: 200%;
 </figure>
 <ul>
 <li>
+<p>Command for auto paragraph tags:</p>
+<textarea>
+set number
+10,40s/^.\+$/<p>&<\/p>/g
+set nonumber
+
+-set number to see where you want to add the tags
+-10,40 ads the tags between line 10 and line 40
+</textarea>
+</li>
+<li>
 <p>vim command to increment images or links:</p>
 <textarea>
 for i in range(0, 30)
