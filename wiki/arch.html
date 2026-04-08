@@ -34,6 +34,232 @@ gtag('config', 'G-FCQXVD7YXZ');
                 <li><a href="p.html">projection</a></li>
                 <li><a href="ue.html">urban ecologies</a></li>
         </ul>
+<style>
+  canvas { max-width: 600px; display: block; border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-tertiary); background: transparent; }
+  .ctrl { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 13px; color: var(--color-text-secondary); }
+  .ctrl input[type=range] { flex: 1; }
+  .ctrl span { min-width: 36px; font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+  .info { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+  .stat { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 12px; }
+  .stat-label { font-size: 11px; color: var(--color-text-secondary); margin-bottom: 2px; }
+  .stat-val { font-size: 18px; font-weight: 500; color: var(--color-text-primary); }
+  .legend { display: flex; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
+  .leg-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--color-text-secondary); }
+  .leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+div {
+max-width: 600px;
+}
+</style>
+
+<div style="padding: 0.5rem 0;">
+  <canvas id="c" width="680" height="480"></canvas>
+
+  <div style="margin-top:14px;">
+    <div class="ctrl"><label>Rotation</label><input type="range" id="rot" min="0" max="360" value="25" step="1"><span id="rot-v">25°</span></div>
+    <div class="ctrl"><label>Tilt</label><input type="range" id="tilt" min="-80" max="80" value="20" step="1"><span id="tilt-v">20°</span></div>
+    <div class="ctrl"><label>Size</label><input type="range" id="sz" min="80" max="200" value="140" step="1"><span id="sz-v">140</span></div>
+  </div>
+
+  <div class="legend">
+    <div class="leg-item"><div class="leg-dot" style="background:#1D9E75"></div>Top (ch 1)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#378ADD"></div>Ring −60° (ch 2–9)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#7F77DD"></div>Ring −30° (ch 10–17)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#D4537E"></div>Equator (ch 18–25)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#EF9F27"></div>Ring +30° (ch 26–33)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#97C459"></div>Ring +60° (ch 34–41)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#D85A30"></div>Bottom (ch 42)</div>
+  </div>
+
+  <div class="info">
+    <div class="stat"><div class="stat-label">Total speakers</div><div class="stat-val">42</div></div>
+    <div class="stat"><div class="stat-label">Rings</div><div class="stat-val">5 × 8</div></div>
+    <div class="stat"><div class="stat-label">Ambi order</div><div class="stat-val">3rd</div></div>
+    <div class="stat"><div class="stat-label">SH channels</div><div class="stat-val">16</div></div>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const W = 680, H = 480, CX = W/2, CY = H/2;
+
+const ringColors = ['#1D9E75','#378ADD','#7F77DD','#D4537E','#EF9F27','#97C459','#D85A30'];
+
+const speakers = [];
+const labels = [];
+
+function addSpk(az, el, ring, ch) {
+  const azR = az * Math.PI/180, elR = el * Math.PI/180;
+  const x = Math.cos(elR) * Math.sin(azR);
+  const y = Math.sin(elR);
+  const z = Math.cos(elR) * Math.cos(azR);
+  speakers.push({x,y,z,ring,ch,az,el});
+}
+
+addSpk(0, 90, 0, 1);
+const ringEls = [-60,-30,0,30,60];
+ringEls.forEach((el,ri) => {
+  for(let k=0;k<8;k++){
+    let az = 360*k/8;
+    addSpk(az, el, ri+1, 2 + ri*8 + k);
+  }
+});
+addSpk(0, -90, 6, 42);
+
+let rotY = 25, rotX = 20, radius = 140;
+let dragging = false, lastX, lastY;
+
+function project(x,y,z) {
+  const ry = rotY*Math.PI/180;
+  const rx = rotX*Math.PI/180;
+  let x1 = x*Math.cos(ry) + z*Math.sin(ry);
+  let z1 = -x*Math.sin(ry) + z*Math.cos(ry);
+  let y1 = y*Math.cos(rx) - z1*Math.sin(rx);
+  let z2 = y*Math.sin(rx) + z1*Math.cos(rx);
+  return {sx: CX + x1*radius, sy: CY - y1*radius, z: z2};
+}
+
+function draw() {
+  ctx.clearRect(0,0,W,H);
+
+  const isDark = getComputedStyle(document.documentElement).getPropertyValue('color-scheme').includes('dark')
+    || window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const gridColor = isDark ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.07)';
+  const wireColor = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.10)';
+  const labelColor = isDark ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.75)';
+
+  // Draw wireframe sphere
+  const steps = 36;
+  const circles = [
+    {el: -60}, {el: -30}, {el: 0}, {el: 30}, {el: 60},
+    {az: 0}, {az: 45}, {az: 90}, {az: 135}
+  ];
+
+  // Latitude lines
+  [-60,-30,0,30,60].forEach(el => {
+    const elR = el*Math.PI/180;
+    ctx.beginPath();
+    for(let i=0;i<=steps;i++){
+      const az = (i/steps)*2*Math.PI;
+      const x = Math.cos(elR)*Math.sin(az);
+      const y = Math.sin(elR);
+      const z = Math.cos(elR)*Math.cos(az);
+      const p = project(x,y,z);
+      if(i===0) ctx.moveTo(p.sx,p.sy); else ctx.lineTo(p.sx,p.sy);
+    }
+    ctx.strokeStyle = wireColor;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  });
+
+  // Longitude lines
+  for(let a=0;a<180;a+=45){
+    const azR = a*Math.PI/180;
+    ctx.beginPath();
+    for(let i=0;i<=steps;i++){
+      const el = (i/steps)*Math.PI - Math.PI/2;
+      const x = Math.cos(el)*Math.sin(azR);
+      const y = Math.sin(el);
+      const z = Math.cos(el)*Math.cos(azR);
+      const p = project(x,y,z);
+      if(i===0) ctx.moveTo(p.sx,p.sy); else ctx.lineTo(p.sx,p.sy);
+    }
+    ctx.strokeStyle = wireColor;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+
+    // Opposite side
+    const azR2 = (a+180)*Math.PI/180;
+    ctx.beginPath();
+    for(let i=0;i<=steps;i++){
+      const el = (i/steps)*Math.PI - Math.PI/2;
+      const x = Math.cos(el)*Math.sin(azR2);
+      const y = Math.sin(el);
+      const z = Math.cos(el)*Math.cos(azR2);
+      const p = project(x,y,z);
+      if(i===0) ctx.moveTo(p.sx,p.sy); else ctx.lineTo(p.sx,p.sy);
+    }
+    ctx.strokeStyle = wireColor;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  }
+
+  // Sort speakers by depth
+  const projected = speakers.map(s => {
+    const p = project(s.x,s.y,s.z);
+    return {...s, ...p};
+  }).sort((a,b) => a.z - b.z);
+
+  projected.forEach(s => {
+    const front = s.z >= 0;
+    const r = front ? 7 : 5;
+    const alpha = front ? 1 : 0.35;
+    const color = ringColors[s.ring];
+
+    ctx.globalAlpha = alpha;
+    ctx.beginPath();
+    ctx.arc(s.sx, s.sy, r, 0, Math.PI*2);
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.strokeStyle = front ? (isDark ? 'rgba(255,255,255,0.4)':'rgba(0,0,0,0.25)') : 'transparent';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    if(front) {
+      ctx.globalAlpha = 0.8;
+      ctx.fillStyle = labelColor;
+      ctx.font = '10px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(s.ch, s.sx, s.sy - 10);
+    }
+    ctx.globalAlpha = 1;
+  });
+}
+
+draw();
+
+document.getElementById('rot').addEventListener('input', e => {
+  rotY = +e.target.value;
+  document.getElementById('rot-v').textContent = rotY + '°';
+  draw();
+});
+document.getElementById('tilt').addEventListener('input', e => {
+  rotX = +e.target.value;
+  document.getElementById('tilt-v').textContent = rotX + '°';
+  draw();
+});
+document.getElementById('sz').addEventListener('input', e => {
+  radius = +e.target.value;
+  document.getElementById('sz-v').textContent = radius;
+  draw();
+});
+
+canvas.addEventListener('mousedown', e => { dragging = true; lastX = e.clientX; lastY = e.clientY; });
+window.addEventListener('mouseup', () => dragging = false);
+window.addEventListener('mousemove', e => {
+  if(!dragging) return;
+  rotY += (e.clientX - lastX) * 0.5;
+  rotX -= (e.clientY - lastY) * 0.5;
+  rotX = Math.max(-80, Math.min(80, rotX));
+  lastX = e.clientX; lastY = e.clientY;
+  document.getElementById('rot').value = ((rotY % 360) + 360) % 360;
+  document.getElementById('rot-v').textContent = Math.round(((rotY%360)+360)%360) + '°';
+  document.getElementById('tilt').value = Math.round(rotX);
+  document.getElementById('tilt-v').textContent = Math.round(rotX) + '°';
+  draw();
+});
+
+canvas.addEventListener('touchstart', e => { dragging=true; lastX=e.touches[0].clientX; lastY=e.touches[0].clientY; });
+canvas.addEventListener('touchend', () => dragging=false);
+canvas.addEventListener('touchmove', e => {
+  if(!dragging) return;
+  rotY += (e.touches[0].clientX - lastX)*0.5;
+  rotX -= (e.touches[0].clientY - lastY)*0.5;
+  rotX = Math.max(-80, Math.min(80, rotX));
+  lastX=e.touches[0].clientX; lastY=e.touches[0].clientY;
+  draw();
+});
+</script>
 <p>Thesis:</p>
 <ul>
 <li><a href="thesis.html">Thesis Research (Archive, Last Updated March 2026)</a></li>
