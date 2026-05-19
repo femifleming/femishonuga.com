@@ -42,7 +42,7 @@ filter: blur(100px) hue-rotate(180deg);
     text-decoration: none !important;}
     a:hover {color:#000;}
     a.x:hover{color:#ddd;}
-    img {margin-top: -0.5em; max-width:100%;}
+    img {margin-top: -0.5em; max-width:100%; z-index: 3;}
     input {font-family: inherit;}
     code {
       background: #555;
