@@ -42,7 +42,7 @@ filter: blur(100px) hue-rotate(180deg);
     text-decoration: none !important;}
     a:hover {color:#000;}
     a.x:hover{color:#ddd;}
-    img {margin-top: -0.5em; max-width:100%;}
+    img {margin-top: -0.5em; max-width:100%; z-index: 3;}
     input {font-family: inherit;}
     code {
       background: #555;
@@ -160,11 +160,13 @@ transition: color 2s ease;
 background-color: #000;
 color: #000;
 margin-left: 3px;
+	z-index: 4;
 }
 .phar:hover::after {
 content: "the arrows will guide you around the branches";
 position: absolute;
 color: #fff;
+	z-index: 4;
 } 
 .mur:hover::after {
 content: "During Mercury retrograde, you should avoid starting new ventures, making major purchases, signing contracts, or taking long-distance trips. It's also wise to postpone important decisions, as communication issues can lead to misunderstandings and delays, so focus instead on reviewing, revising, and getting things in order.";
