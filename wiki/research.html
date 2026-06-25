@@ -8,6 +8,12 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-FCQXVD7YXZ');
 </script>
+<style>
+button {
+background-color: black;
+color: white;
+}
+</style>
 <link href="main.css" type="text/css" rel="stylesheet">
 <title>codex &mdash; home</title></head><body>
 <header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
@@ -58,54 +64,88 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <li><a href="../meh.html">Multi Entry Horns</a></li>
 </ul>
 <p id="ml">Movie List (Favorites and Watchlist):</p>
-<ul>
-<li>Tekkonkinkreet 1999 (鉄コン筋クリート) ★★★★★</li>
-<li>A Midsummer Night's Dream (1935) ★★★★★</li>
-<li>Annihilation (2018) ★★★★★</li>
-<li>Birdman (2014) ★★★★★</li>
-<li>Brazil (1985) ★★★★★</li>
-<li>Captain Fantastic (2016) ★★★</li>
-<li>Christine (2016) ★★★★★</li>
-<li>Climax (2018) ★★★★</li>
-<li>DAU Natasha (2020) ★★★★★</li>
-<li>Enter the Void (2009) ★★★★★</li>
-<li>Fantastic Planet (1973) ★★★★★</li>
-<li>Fear and Loathing in Las Vegas (1998) ★★★★★</li>
-<li>Frequencies (2013) ★★★★★</li>
-<li>Funky Forest: The First Contact (2005) ★★★★</li>
-<li>Hard to be a God [Трудно быть богом] (2013) ★★★★★</li>
-<li>House (1977) ★★★★</li>
-<li>Hugo (2011) ★★★★</li>
-<li>Itchi the Killer (2001) ★★★★★</li>
-<li>Jesus Camp (2006) ★★★★★</li>
-<li>Kiki's Delivery Service (1989) (Best of all time)</li>
-<li>Koyaanisqatsi (1982) ★★★★★</li>
-<li>Lamb (2021) ★★★★★</li>
-<li>Let the Right One In [Låt den rätte komma in] (2008) ★★★★</li>
-<li>Metropolis (2001) ★★★★★</li>
-<li>Mind Game (2004) ★★★★★</li>
-<li>Moonrise Kingdom (2012) ★★★★★</li>
-<li>Mr. Nobody (2009) ★★★★★</li>
-<li>Mustang (2015) ★★★★★</li>
-<li>Pearl (2022) (this is the good one, X was bad) ★★★★★</li>
-<li>Rebirth (2016) ★★★★★</li>
-<li>Redline (2009) ★★★★</li>
-<li>Sky Ladder: The Art of Cai Guo-qiang (2016) ★★★★</li>
-<li>Snowpiercer (2013) ★★★★★</li>
-<li>Stalker (1979) ★★★★★</li>
-<li>Swiss Army Man (2016) ★★★★★</li>
-<li>The Death of Dick Long (2019) ★★★★★</li>
-<li>The Double (2013) ★★★★</li>
-<li>The Florida Project (2017) ★★★★★</li>
-<li>The Pirogue (2012) ★★★★★</li>
-<li>The Taste Of Tea [茶の味] (2004) ★★★★★</li>
-<li>The Witch (VVitch) (2015) ★★★★★</li>
-<li>Titane (2021) ★★★</li>
-<li>Train To Busan (2016) ★★★★</li>
-<li>Victoria (2015) ★★★★★</li>
-<li>Wetlands [Feuchtgebiete] (2013) ★★★★★</li>
-<li>World Of Tomorrow (2015) ★★★★★</li>
+<button onclick="sortList('alpha')" id="btn-alpha">A–Z</button>
+<button onclick="sortList('rating')" id="btn-rating">Rating</button>
+<button onclick="sortList('year')" id="btn-year">Year</button>
+
+<ul id="movie-list">
+<li data-year="1935" data-rating="5">A Midsummer Night's Dream (1935) ★★★★★</li>
+<li data-year="2018" data-rating="5">Annihilation (2018) ★★★★★</li>
+<li data-year="2014" data-rating="5">Birdman (2014) ★★★★★</li>
+<li data-year="1985" data-rating="5">Brazil (1985) ★★★★★</li>
+<li data-year="2016" data-rating="3">Captain Fantastic (2016) ★★★</li>
+<li data-year="2016" data-rating="5">Christine (2016) ★★★★★</li>
+<li data-year="2018" data-rating="4">Climax (2018) ★★★★</li>
+<li data-year="2020" data-rating="5">DAU Natasha (2020) ★★★★★</li>
+<li data-year="2009" data-rating="5">Enter the Void (2009) ★★★★★</li>
+<li data-year="1973" data-rating="5">Fantastic Planet (1973) ★★★★★</li>
+<li data-year="1998" data-rating="5">Fear and Loathing in Las Vegas (1998) ★★★★★</li>
+<li data-year="2013" data-rating="5">Frequencies (2013) ★★★★★</li>
+<li data-year="2005" data-rating="4">Funky Forest: The First Contact (2005) ★★★★</li>
+<li data-year="2013" data-rating="5">Hard to be a God [Трудно быть богом] (2013) ★★★★★</li>
+<li data-year="1977" data-rating="4">House (1977) ★★★★</li>
+<li data-year="2011" data-rating="4">Hugo (2011) ★★★★</li>
+<li data-year="2001" data-rating="5">Itchi the Killer (2001) ★★★★★</li>
+<li data-year="2006" data-rating="5">Jesus Camp (2006) ★★★★★</li>
+<li data-year="1989" data-rating="5">Kiki's Delivery Service (1989) (Best of all time)</li>
+<li data-year="1982" data-rating="5">Koyaanisqatsi (1982) ★★★★★</li>
+<li data-year="2021" data-rating="5">Lamb (2021) ★★★★★</li>
+<li data-year="2008" data-rating="4">Let the Right One In [Låt den rätte komma in] (2008) ★★★★</li>
+<li data-year="2019" data-rating="4">Lux Æterna (2019) ★★★★</li>
+<li data-year="2001" data-rating="5">Metropolis (2001) ★★★★★</li>
+<li data-year="2004" data-rating="5">Mind Game (2004) ★★★★★</li>
+<li data-year="2012" data-rating="5">Moonrise Kingdom (2012) ★★★★★</li>
+<li data-year="2009" data-rating="5">Mr. Nobody (2009) ★★★★★</li>
+<li data-year="2015" data-rating="5">Mustang (2015) ★★★★★</li>
+<li data-year="2022" data-rating="5">Pearl (2022) (this is the good one, X was bad) ★★★★★</li>
+<li data-year="2016" data-rating="5">Rebirth (2016) ★★★★★</li>
+<li data-year="2009" data-rating="4">Redline (2009) ★★★★</li>
+<li data-year="2016" data-rating="4">Sky Ladder: The Art of Cai Guo-qiang (2016) ★★★★</li>
+<li data-year="2013" data-rating="5">Snowpiercer (2013) ★★★★★</li>
+<li data-year="1979" data-rating="5">Stalker (1979) ★★★★★</li>
+<li data-year="2016" data-rating="5">Swiss Army Man (2016) ★★★★★</li>
+<li data-year="1999" data-rating="5">Tekkonkinkreet (1999) (鉄コン筋クリート) ★★★★★</li>
+<li data-year="2019" data-rating="5">The Death of Dick Long (2019) ★★★★★</li>
+<li data-year="2013" data-rating="4">The Double (2013) ★★★★</li>
+<li data-year="2017" data-rating="5">The Florida Project (2017) ★★★★★</li>
+<li data-year="2012" data-rating="5">The Pirogue (2012) ★★★★★</li>
+<li data-year="2004" data-rating="5">The Taste Of Tea [茶の味] (2004) ★★★★★</li>
+<li data-year="2015" data-rating="5">The Witch (VVitch) (2015) ★★★★★</li>
+<li data-year="2021" data-rating="3">Titane (2021) ★★★</li>
+<li data-year="2016" data-rating="4">Train To Busan (2016) ★★★★</li>
+<li data-year="2015" data-rating="5">Victoria (2015) ★★★★★</li>
+<li data-year="2013" data-rating="5">Wetlands [Feuchtgebiete] (2013) ★★★★★</li>
+<li data-year="2015" data-rating="5">World Of Tomorrow (2015) ★★★★★</li>
 </ul>
+
+<script>
+function getRating(li) {
+  if (li.dataset.rating) return parseInt(li.dataset.rating);
+  return (li.textContent.match(/★/g) || []).length;
+}
+
+function getYear(li) {
+  if (li.dataset.year) return parseInt(li.dataset.year);
+  const m = li.textContent.match(/\((\d{4})\)/);
+  return m ? parseInt(m[1]) : 0;
+}
+
+function sortList(type) {
+  ['alpha','rating','year'].forEach(t =>
+    document.getElementById('btn-'+t).classList.toggle('active', t === type)
+  );
+  const list = document.getElementById("movie-list");
+  const items = [...list.querySelectorAll("li")];
+  items.sort((a, b) => {
+    if (type === "alpha") return a.textContent.localeCompare(b.textContent);
+    if (type === "rating") return getRating(b) - getRating(a);
+    if (type === "year")   return getYear(b) - getYear(a);
+  });
+  list.innerHTML = "";
+  items.forEach(item => list.appendChild(item));
+}
+</script>
+<br>
 <p id="twl"><i>	to watch:</i></p>
 <ul>
 <li>A Field in England (2013)</li>
@@ -116,19 +156,16 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <li>DAU. Degeneration</li>
 <li>Danger, Diabolic (1968)</li>
 <li>Diva (1981)</li>
-<li>Earth Girls are Easy</li>
 <li>Flatliners (1990)</li>
 <li>Inland Empire (2006)</li>
 <li>Lat Journey of Paul W.R. (2020)</li>
 <li>Les Vampires (1915)</li>
-<li>Lux Æterna</li>
 <li>Magnolia</li>
 <li>Mediterranea (2015)</li>
 <li>Milford Graves Full Mantis (2018)</li>
 <li>No Ideas but Things (2012)</li>
 <li>Playtime (1967)</li>
 <li>Rhymes for Young Ghouls (2013)</li>
-<li>Skinamirink (2022)</li>
 <li>Tangerine (2015)</li>
 <li>The Irony of Fate (2013)</li>
 <li>The Last Mimzy (2007)</li>
