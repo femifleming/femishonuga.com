@@ -68,11 +68,22 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <button onclick="sortList('rating')" id="btn-rating">Rating</button>
 <button onclick="sortList('year')" id="btn-year">Year</button>
 
+<style>
+.note {
+font-size: 0.5em;
+font-style: italic;
+}
+li p {
+margin-bottom: 0px;
+margin-top: -5px;
+}
+</style>
 <ul id="movie-list">
 <li data-year="1935" data-rating="5">A Midsummer Night's Dream (1935) ★★★★★</li>
 <li data-year="2018" data-rating="5">Annihilation (2018) ★★★★★</li>
-<li data-year="2014" data-rating="5">Birdman (2014) ★★★★★</li>
-<li data-year="1985" data-rating="5">Brazil (1985) ★★★★★</li>
+<li data-year="2014" data-rating="5">Birdman (2014) ★★★★★<p style="font-size: 0.8em; font-style: italic;">amazing soundtrack</p></li>
+<li data-year="1985" data-rating="5">Brazil (1985) ★★★★★<p style="font-size: 0.8em; font-style: italic;">one of my fav movies of all time</p></li>
+<li data-year="1936" data-rating="5">Bluebeard (1936) ★★★★★</li>
 <li data-year="2016" data-rating="3">Captain Fantastic (2016) ★★★</li>
 <li data-year="2016" data-rating="5">Christine (2016) ★★★★★</li>
 <li data-year="2018" data-rating="4">Climax (2018) ★★★★</li>
@@ -93,6 +104,7 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <li data-year="2008" data-rating="4">Let the Right One In [Låt den rätte komma in] (2008) ★★★★</li>
 <li data-year="2019" data-rating="4">Lux Æterna (2019) ★★★★</li>
 <li data-year="2001" data-rating="5">Metropolis (2001) ★★★★★</li>
+<li data-year="1927" data-rating="5">Metropolis (1927) ★★★★★</li>
 <li data-year="2004" data-rating="5">Mind Game (2004) ★★★★★</li>
 <li data-year="2012" data-rating="5">Moonrise Kingdom (2012) ★★★★★</li>
 <li data-year="2009" data-rating="5">Mr. Nobody (2009) ★★★★★</li>
@@ -105,7 +117,8 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <li data-year="2013" data-rating="5">Snowpiercer (2013) ★★★★★</li>
 <li data-year="1979" data-rating="5">Stalker (1979) ★★★★★</li>
 <li data-year="2016" data-rating="5">Swiss Army Man (2016) ★★★★★</li>
-<li data-year="1999" data-rating="5">Tekkonkinkreet (1999) (鉄コン筋クリート) ★★★★★</li>
+<li data-year="2024" data-rating="3">Smashing Machine (2024) ★★★<p style="font-size: 0.8em; font-style: italic;">Nala Sinephro soundtrack</p></li>
+<li data-year="1999" data-rating="5">Tekkonkinkreet (1999) (鉄コン筋クリート) ★★★★★ <p style="font-size: 0.8em; font-style: italic;">Plaid Soundtrack, so amazing</p></li>
 <li data-year="2019" data-rating="5">The Death of Dick Long (2019) ★★★★★</li>
 <li data-year="2013" data-rating="4">The Double (2013) ★★★★</li>
 <li data-year="2017" data-rating="5">The Florida Project (2017) ★★★★★</li>
@@ -118,6 +131,10 @@ document.getElementById("myLink").addEventListener("click", function(e) {
 <li data-year="2013" data-rating="5">Wetlands [Feuchtgebiete] (2013) ★★★★★</li>
 <li data-year="2015" data-rating="5">World Of Tomorrow (2015) ★★★★★</li>
 <li data-year="1987" data-rating="5">Wolf's Hole (1987) ★★★★★</li>
+<li data-year="2024" data-rating="5">The Girl with the Needle (2024)★★★★★<p style="font-size: 0.8em; font-style: italic;">Puce Mary soundtrack</p></li>
+<li data-year="2018" data-rating="5">Eighth Grade (2018) ★★★★★</li>
+<li data-year="1976" data-rating="5">Taxi Driver (1976) ★★★★★</li>
+
 </ul>
 
 <script>
@@ -177,11 +194,9 @@ function sortList(type) {
 <li>Videodrome (1983)</li>
 <li>War Witch (2012)</li>
 <li>XXY</li>
-<li>Eighth Grade (2018)</li>
 <li>Welcome to the Dollhouse (1995)</li>
 <li>Bugonia (2025)</li>
 <li>The Worst Person in the World (2021)</li>
-<li>Cherry (2021)</li>
 </ul>
 <p id="htl">[updated Aug 2026]House Music Labels that I'm Looking at in no particular order:</p>
 <ul>
