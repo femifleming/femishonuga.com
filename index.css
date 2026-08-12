@@ -3,7 +3,7 @@
       src: local(''),
         url('../include/roboto-mono-v21-latin-regular.woff2') format('woff2'),
         url('../include/roboto-mono-v21-latin-regular.woff') format('woff'); }
-    body {background-color: #ffffed; max-width:800px; color: black;
+    body {background-color: #121212; max-width:800px; color: black;
       font-family: 'Tiems New Roman'; font-size: 1.0em;
       margin:40px auto; padding: 0 10px;}
     pre {font-size: 1.0em; color:#ddd;}
@@ -129,7 +129,7 @@ background-color: grey;
     }
     @media (prefers-color-scheme:dark) {
         * { color:#fff }
-        body {background-color: #141414;}
+        body {background-color: #121212;}
     a {text-decoration-style:dotted; transition: color 1s ease; color:#ddd;}
 	    a.x {color: black;
     text-decoration: none !important;}
