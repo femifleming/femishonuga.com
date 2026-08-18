@@ -31,52 +31,9 @@ background: none;
 }
 </style>
 	<h3>Greetings traveler.</h3>
-<div id="time">Loading time...</div>
-    <script>
-        // Function to update the time
-        function updateTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString();
-            document.getElementById('time').textContent = `Current Time: ${timeString}`;
-        }
-        setInterval(updateTime, 1000); // Update time every second
-        updateTime(); // Initial call
-
-        // Function to fetch weather using wttr.in
-        async function fetchWeather() {
-            const weatherElement = document.getElementById('weather');
-
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(async (position) => {
-                    const lat = position.coords.latitude;
-                    const lon = position.coords.longitude;
-
-                    const url = `https://wttr.in/${lat},${lon}?format=%C+%t`;
-                    try {
-                        const response = await fetch(url);
-                        const weatherData = await response.text();
-                        weatherElement.textContent = `Weather: ${weatherData}`;
-                    } catch (error) {
-                        weatherElement.textContent = `Unable to fetch weather data.`;
-                    }
-                }, () => {
-                    weatherElement.textContent = `Geolocation access denied.`;
-                });
-            } else {
-                weatherElement.textContent = `Geolocation is not supported by your browser.`;
-            }
-        }
-        fetchWeather();
-    </script>
-	<p>This is the in-depth wiki for femishonuga.com. navigate by clicking the tabs above ⬆ . This site is mainly meant to be viewed on desktop.</p>
-	<p>see the <a href="sitemap.html">sitemap</a> for a full list of the pages on this wiki. (Scrolling marquees may not work on chrome.)</p>
+	<p>This is the in-depth wiki for femishonuga.com. navigate by clicking the tabs above ⬆ . This site is mainly meant to be viewed on desktop, but if on mobile, dont forget to navigate above!</p>
+	<p>see the <a href="sitemap.html">sitemap</a> for a full list of the pages on this wiki.</p>
 <br>
-<figure>
-<img src="links/clworkshopamsterdam13.jpg">
-<figcaption><span class="right"><i>From Ciat Lonbarde Paper Circuit workshop at Sonic Acts Biennial 2026, Picture by Angelina Nikolayeva</i></span></figcaption>
-</figure>
-<br>
-<marquee>currently reading: Last Night a DJ Saved My Life: The History of the Disc Jockey (2024) and collecting <a href="speakerstuff.html">pictures of speakers</a></marquee>
 <p>Femi is a Providence, RI–based architect and sound artist from New York working with handmade electronic and acoustic instruments to examine the cybernetics of gender, race, and culture through site-specific ritual performance. His work explores the intersections of acousmatics and cultural anthropology through architectural design as a radical and experimental practice. He is particularly interested in generative systems, spatial audio, sonic acts as ritual, and the poetics of sound technology. Femi approaches architecture as a political intervention enacted through vibration, embodied experience, and spatial interaction. Since 2018, he has performed solo and collaboratively under the moniker “sadnoise.” Notable performances include the Sonic Acts Biennial (2026, NL), Waterworks Festival (2024, MA), and Ende Tymes (2022, NY), among others.</p>
 <p><img src="links/roompicsnsfw16.JPG" width="50%"></p>
 	<p class="incoming"><b>incoming <a href="meta.html">meta</a></b> <a href="../webring.html">webring</a> <a href="../log.html">log</a><br> 

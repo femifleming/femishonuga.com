@@ -1,28 +1,127 @@
-<!DOCTYPE html><html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-FCQXVD7YXZ');
-</script>
-<link href="main.css" type="text/css" rel="stylesheet">
-<title>codex &mdash; home</title></head><body>
-<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
-<nav>
-        <ul>
-                <li><a href="sadnoise.html">sadnoise</a></li>
-                <li><a href="install.html" class="self">sound work</a></li>
-                <li><a href="hardware.html">hardware</a></li>
-                <li><a href="scores.html">scores</a></li>
-		                <li><a href="sonuga.html">sonuga</a>
-        </ul>
-</nav>
-<main><h2>&nbsp;</h2>
-        <h1>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {background-color: black; 
+max-width:800px;
+ color: white;
+width: 100%;
+font-family: 'Tiems New Roman';
+}
+a {
+color: white;
+text-decoration-style: dotted;
+}
+p {
+width: 100%;
+}
+details {
+margin-left: 0px;
+transition: margin-left 0.5s ease;
+}
+details:hover {
+margin-left: 10px;
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary::before {
+  content: "ω";
+  display: inline-block;
+  margin-right: 8px;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+content: "μ";
+color: orange;
+}
+details::details-content {
+  opacity: 0;
+    opacity 600ms;
+    content-visibility 600ms allow-discrete;
+}
+
+details[open]::details-content {
+  opacity: 1;
+}
+li {
+list-style-type: kannada;
+}
+img {
+filter: saturate(0%);
+transition: filter 1s ease;
+}
+img:hover {
+filter: saturate(100%);
+}
+.image-reveal {
+    width: 100%;
+    height: 90px;
+display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.image-reveal:hover {
+    height: 375px;
+}
+</style>
+<body>
+     <h2>
         Sound Work
-	</h1>
+        </h2>
+<p>Femi Shonuga-Fleming<p>
+<div class="image-reveal">
+<p><img width="100%" src="links/ditheloon.webp"></p>
+</div>
+<details>
+<summary>2026</summary>
+<ul>
+<li>
+<p><a href="thesisinstall.html"><img src="links/thesinstall/thesisfin1.webp" width="40%"></a></p>
+<a href="thesisinstall.html">Thanks to the Ground Beneath My Feet</a>
+</li>
+<li>
+<p><a href="shrine.html"><img src="links/thesinstall/probe1.jpg" width="40%"></a></p>
+<a href="shrine.html">The Speaker Stack is the Shrine</a>
+</li>
+</ul>
+</details>
+<details>
+<summary>2025</summary>
+</details>
+<details>
+<summary>2024</summary>
+</details>
+<details>
+<summary>2023</summary>
+</details>
+<details>
+<summary>2022</summary>
+</details>
+<details>
+<summary>2021</summary>
+</details>
+<details>
+<summary>Workshops and Talks</summary>
+</details>
+<details>
+<summary>Writings</summary>
+</details>
+</body>
+</html>
+<!--
 <ul>
 <li><a href="thesisinstall.html">Thanks to the Ground Beneath My Feet, RISD BArch Thesis Installation @ Woods-Gerry, 2026</a></li>
 <li><a href="shrine.html">The Speaker Stack is the Shrine, 2026</a></li>
@@ -45,3 +144,4 @@ gtag('config', 'G-FCQXVD7YXZ');
 <ul></ul></main>
 <footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
 </body></html>
+--!>
