@@ -56,11 +56,11 @@ details[open]::details-content {
 li {
 list-style-type: kannada;
 }
-img {
+li img {
 filter: saturate(0%);
-transition: filter 1s ease;
+transition: filter 0.5s ease;
 }
-img:hover {
+li img:hover {
 filter: saturate(100%);
 }
 .image-reveal {
@@ -70,11 +70,24 @@ display: flex;
     justify-content: center; /* horizontal */
     align-items: center;     /* vertical */
     overflow: hidden;
-    transition: height 1s ease;
+    transition: height 0.2s ease;
 }
-
-.image-reveal:hover {
-    height: 375px;
+li img {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+margin-bottom: -15px;
+transition: height 0.2s ease;
+}
+li img:hover {
+height:200px;
+}
+.type::after {
+font-style: italic;
+color: grey;
+font-size: 0.9em;
+content: attr(data-type);
 }
 </style>
 <body>
@@ -89,12 +102,20 @@ display: flex;
 <summary>2026</summary>
 <ul>
 <li>
+<p><a href="iratca.html"><img src="links/zone.jpg" width="40%"></a></p>
+<a href="iratca.html" class="type" data-type="  multichannel work">Information Adjustment and the Cybernetics of Afrofuturism (Ongoing)</a>
+</li>
+<li>
 <p><a href="thesisinstall.html"><img src="links/thesinstall/thesisfin1.webp" width="40%"></a></p>
-<a href="thesisinstall.html">Thanks to the Ground Beneath My Feet</a>
+<a href="thesisinstall.html" class="type" data-type="  installation">Thanks to the Ground Beneath My Feet</a>
 </li>
 <li>
 <p><a href="shrine.html"><img src="links/thesinstall/probe1.jpg" width="40%"></a></p>
-<a href="shrine.html">The Speaker Stack is the Shrine</a>
+<a href="shrine.html" class="type" data-type="  sculpture">The Speaker Stack is the Shrine</a>
+</li>
+<li>
+<p><a href="dubtub.html"><img src="links/dubtub5.webp" width="40%"></a></p>
+<a href="dubtub.html" class="type" data-type="  sculpture">Dub Tub</a>
 </li>
 </ul>
 </details>
@@ -103,21 +124,80 @@ display: flex;
 </details>
 <details>
 <summary>2024</summary>
+<ul>
+<li>
+<p><a href="gewei.html"><img src="links/ihdi-12.webp" width="40%"></a></p>
+<a href="gewei.html" class="type" data-type="  instrument">Xiaohongshu Gewei</a>
+</li>
+</ul>
 </details>
 <details>
 <summary>2023</summary>
+<ul>
+<li>
+<p><a href="solarsounders1.html"><img src="links/ss.webp" width="40%"></a></p>
+<a href="solarsounders1.html" class="type" data-type="  instrument">
+Cigar Boats Moan Across Waterways</a>
+</li>
+</ul>
 </details>
 <details>
 <summary>2022</summary>
 </details>
 <details>
 <summary>2021</summary>
+<ul>
+<li>
+<p><a href="c.html"><img src="links/c1.webp" width="40%"></a></p>
+<a href="c.html" class="type" data-type="  performance">
+Characters</a>
+</li>
+</ul>
 </details>
 <details>
 <summary>Workshops and Talks</summary>
 </details>
 <details>
-<summary>Writings</summary>
+<summary>Releases</summary>
+<ul>
+<li>LBSE DSS Control Tracks [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>a stretch to pull time along smooth skipping rocks: another list of black perspectarchival textures dragged in the grey slow bile of ambiance and the cybernetic surround. dream state sonification volume 2 [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>cactus soap and the looming dreadnaught of existence: dream state sonification volume 1 [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>do angels fly through clouds during lunar thunderstorms? - 2026</li>
+<li>two four the howling brains, four what its worth, in constant change - 2026</li>
+<li>im gonna melt into my couch and leave thick dark brown stain. the sun is not prejudice in its giving of warmth. - 2026</li>
+<li>wading through morning flowers under orange heat, with feet stuck under thick brown honey - 2025</li>
+<li>Blinded Singularity - A Compilation - 2025</li>
+<li>Dreaming in the Mercury World - 2025</li>
+<li>love is wet grass under a naked tree, and soiled books from the rain - 2025</li>
+<li>i keep missing important emails - 2025</li>
+<li>Live Paintings in Sound - 2024</li>
+<li>Addressed to the King’s Mistress, Ms. Tallulah-Ocone Baggarlee - 2024</li>
+<li>aamalivisza - 2024</li>
+<li>I couldn't tell who it was, in the red light</li>
+<li>A Room of Dry Plants, A Compilation - 2024</li>
+<li>24tb of debian yaml uncensored - 2024</li>
+<li>VOYAGER - 2024</li>
+<li>SYSTEMS - 2024</li>
+<li>RITUAL - 2024</li>
+<li>Live Pictures in Music - 2023</li>
+<li>live pictures in music '23 - 2023</li>
+<li>Four Bit Modulo Phase Triplex for Violin, Piano and Cello - 2023</li>
+<li>New Musical Resources - 2023</li>
+<li>supreme magic center dot - 2023</li>
+<li>QGIS [by wetness] - 2022</li>
+<li>cyb sym int cav dov - 2022</li>
+<li>Databird - 2022</li>
+<li>Uppercase 2: Hubbell Twist Lock 30A 125V [by ^case] - 2021</li>
+<li>Uppercase 1: Binary 16 Inches Deep Web [by ^case] - 2021</li>
+<li>Hyperencoder - 2021</li>
+<li>Sound Synthesis for Synthetic Fibers - 2021</li>
+<li>Interlude - 2020</li>
+<li>Anteambiance - 2020</li>
+<li>Nuisolationalism - 2020</li>
+<li>Just a Gray Mass - 2020</li>
+<li>Mnemosyne - 2019</li>
+</ul>
 </details>
 </body>
 </html>
