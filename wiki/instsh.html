@@ -1,0 +1,550 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Femi Shonuga-Fleming</title>
+<style>
+body {
+  background-color: black;
+  max-width: 800px;
+  color: white;
+  width: 100%;
+  font-family: 'Tiems New Roman', serif;
+  padding: 20px;
+  margin: 0 auto;
+}
+a {
+  color: white;
+  text-decoration-style: dotted;
+}
+p {
+  width: 100%;
+}
+
+/* --- top nav --- */
+nav.main-nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted #555;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 10;
+}
+nav.main-nav a {
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+nav.main-nav a:hover {
+  color: orange;
+}
+
+/* --- Sound Work section (from install.html) --- */
+details {
+margin-left: 0px;
+transition: margin-left 0.5s ease;
+}
+details:hover {
+margin-left: 10px;
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::marker {
+  display: none;
+}
+summary::before {
+  content: "ω";
+  display: inline-block;
+  margin-right: 8px;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+details[open] summary::before {
+  transform: rotate(90deg);
+content: "μ";
+color: orange;
+}
+details::details-content {
+  opacity: 0;
+    opacity 600ms;
+    content-visibility 600ms allow-discrete;
+}
+details[open]::details-content {
+  opacity: 1;
+}
+li {
+list-style-type: kannada;
+}
+li img {
+filter: saturate(0%);
+transition: filter 0.5s ease;
+}
+li img:hover {
+filter: saturate(100%);
+}
+.image-reveal {
+    width: 100%;
+    height: 90px;
+display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    overflow: hidden;
+    transition: height 0.2s ease;
+}
+li img {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+margin-bottom: -15px;
+transition: height 0.2s ease;
+}
+li img:hover {
+height:200px;
+}
+.type::after {
+font-style: italic;
+color: grey;
+font-size: 0.9em;
+content: attr(data-type);
+}
+
+/* --- Shows section (from shows.html) --- */
+.flyer {
+display: none;
+}
+#flyers:target ~ .content .flyer {
+display:block;
+}
+.content {
+  padding: 11px;
+  transition: background-color 0.5s;
+}
+.content p {
+  color: #cccccc;
+  transition: color 0.5s;
+  line-height: 1.4;
+  margin: 0.35em 0;
+}
+#ex:target ~ .content {
+  background-color: #2b2b20;
+  transition: background-color 0.5s;
+}
+#ex:target ~ .content p {
+  color: #f5f5dc;
+  transition: color 0.5s;
+}
+#fest:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #191921;
+}
+#fest:target ~ .content p {
+  color: #a3a3d1;
+  transition: color 0.5s;
+}
+#p:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #0d2b30;
+}
+#p:target ~ .content p {
+  color: #66d9e8;
+  transition: color 0.5s;
+}
+#s:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #2b0a20;
+}
+#s:target ~ .content p {
+  color: #e0a0c0;
+  transition: color 0.5s;
+}
+#ws:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #1e1e1e;
+}
+#ws:target ~ .content p {
+  color: #dcdcdc;
+  transition: color 0.5s;
+}
+#tour:target ~ .content {
+  transition: background-color 0.5s;
+  background-color: #4a3d0d;
+}
+#tour:target ~ .content p {
+  color: #f0d9a0;
+  transition: color 0.5s;
+}
+.filters a {
+  color: white;
+  text-decoration: underline dotted;
+  margin-right: 10px;
+}
+#ex:target ~ .content p:not(.ex),
+#p:target ~ .content p:not(.p),
+#fest:target ~ .content p:not(.fest),
+#ws:target ~ .content p:not(.ws),
+#tour:target ~ .content p:not(.tour) {
+  display: none;
+}
+#ex, #p, #fest, #ws, #tour, #all {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme:dark) {
+    .dodark { display:block !important }
+    .nodark { display:none !important }
+}
+</style>
+</head>
+<body>
+<!--
+<nav class="main-nav">
+<a href="#soundwork">Sound Work</a>
+<a href="#shows-section">Shows</a>
+</nav>
+--!>
+
+<section id="soundwork">
+     <h2>
+        Sound Work
+        </h2>
+<p>Femi Shonuga-Fleming<p>
+<p><img src="ch4bna.jpg" width="100%"></p>
+<!-- <div class="image-reveal">
+<p><img width="100%" src="links/ditheloon.webp"></p>
+</div>
+--!>
+<br>
+<details>
+<summary>2026</summary>
+<ul>
+<li>
+<p><a href="iratca.html"><img src="links/zone.jpg" width="40%"></a></p>
+<a href="iratca.html" class="type" data-type="  composition/reseach">Information Adjustment and the Cybernetics of Afrofuturism</a>
+</li>
+<li>
+<p><a href="thesisinstall.html"><img src="links/thesinstall/thesisfin1.webp" width="40%"></a></p>
+<a href="thesisinstall.html" class="type" data-type="  installation">Thanks to the Ground Beneath My Feet</a>
+</li>
+<li>
+<p><a href="dubtub.html"><img src="links/dubtub5.webp" width="40%"></a></p>
+<a href="dubtub.html" class="type" data-type="  sculpture">Dub Tub</a>
+</li>
+</ul>
+</details>
+<details>
+<summary>2025</summary>
+<ul>
+<li>
+<p><a href="shrine.html"><img src="links/thesinstall/probe1.jpg" width="40%"></a></p>
+<a href="shrine.html" class="type" data-type="  sculpture">An Infrastructural investigation of the Speaker Shrine</a>
+</li>
+<li>
+<p><a href="steelhorn.html"><img src="links/hornwithtweetytwo-05.webp" width="40%"></a></p>
+<a href="steelhorn.html" class="type" data-type="  sculpture">quadrilateral exponential midrange horn</a>
+</li>
+<li>
+<p><a href="be.html"><img src="links/buriedelectric1.jpg" width="40%"></a></p>
+<a href="be.html" class="type" data-type="  sculpture">Buried Electric</a>
+</li>
+<li>
+<p><a href="cloudsport.html"><img src="links/cloud1.webp" width="40%"></a></p>
+<a href="cloudsport.html" class="type" data-type="  sculpture">Clouds Totem</a>
+</li>
+<li>
+<p><a href="ponysub.html"><img src="links/ponyvillesoundsystem-24.webp" width="40%"></a></p>
+<a href="ponysub.html" class="type" data-type="  sculpture">Ponyville Sound Systems</a>
+</li>
+</ul>
+<details>
+<summary><i>Why so many speakers in 2025?</i></summary>
+<p>I started the speaker design project in 2025 during the thesis year of my architecture undergrad program. I have always been interested in high quality sound, especially the full frequency spectrum as my music has super low and super high frequency extensions, the full broadband noise. I also started seriously on my vinyl collection towards the start of the semester and needed better speakers. The architecture of the speaker horn was a big inspiration in my urban metabolism class. The exponential speaker horn as an acoustic shape amplifies the volume of sounds at the mouth. I began to design these horns speculatively on an architectural scale and place them in contrasting programs and sites, such as along a riverbank, or in a spillway. This placement of the speaker horn embedded in nature offers a new orientation of the way we experience natural sound. Amplifying the sound of the river invites an individual space for listening deeply. Creating a pace along a river driven by a large speaker horn as the pavilion creates a new space for grounding experimental performance rituals and research. This was the beginning, realizing the horn itself is the architecture for amplifying voice along many concepts. </p>
+
+<p>There is the technical aspect of it all i was interested in as well, how to calculate for a frequency rolloff and the amount of amplification of a speaker driver, or a sound source at the throat of the horn. There are many calculators for this online, and I had been working with whatever I had lying around. All of the speaker drivers I used in these projects in 2025 were harvested from old guitar amps, pa systems, bluetooth speakers, office ceiling pa, whatever i could tear apart. My collection of speaker drivers grew very fast. My old thing was taking 9v batteries out of smoke detectors anytime I would go to a house party to use with my diy synths (horrible practice), but now it was asking venues if they had basements full of old guitar amps i could tear apart. </p>
+
+<p>The first horn loaded speaker I built in collaboration with my partner Enid out of sheet steel, this was the first fabricated speaker I had built, and I learned a lot from the practice of it all. I used an old pioneer car audio driver attached to a square hole in a piece of wood I jigsawed to attach to the throat of the horn. The process of cutting the sheet metal and riveting it all together was extremely tedious and a poor design choice, both in terms of difficulty and time consumption. I learned very quickly afterward that steel is a poor acoustic choice for a speaker horn, but an interesting integration as a module in the architectural size of speaker horn. Maybe for part of an installation the hollow midrange sound that steel transmits could be connected to hydrophones in the parallel river, or transducers playing a frequency range specific tone. This horn was an experiment, and I see it still having many iterations and installations, now that I have spent time with it and the way it sounds. The first iteration of the speaker driver part of the horn had an open baffle, meaning the back of the speaker driver would be firing backwards at all times when amplified. This worked fine but wasted energy from the back of the driver. The second build of that back baffle is designed to be roughly ported, but enclosed, and dampened with fiberglass insulation. I also changed the speaker driver to a higher power one. The bass response dramatically increased on the speaker driver, but I heard new resonance from the metal horn at certain notes. </p>
+
+<p>Through the horn project I learned a lot about directivity and the benefits of the exponential speaker horn as opposed to the monitoring and pain I had heard in the past. </p>
+
+<p>The speaker horn online world led me down many rabbit holes on the internet archive and the wayback machine. I had redesigned my website a few years ago to be relatively plaintext html and these old 90s and early 2000s websites archiving speaker design were extremely inspiring. I would get lost in these worlds, and bookmark everything I could for a later deeper research. I came across many images that inspired a gonzo fabrication flow in my studio at the time. There were so many DIYers creating experimental designs and going into depth on their thoughts and calculations. I even found examples of speaker horns on the architectural scale, cutout of the floor, compression driver horn paths wrapping into attics. I became completely encapsulated in this world, but with little fabrication skills and tool access my experimental designs were realized along the surreal. An experiment realized a traffic cone with a compression driver at the end and plastic bottle on the inside modeled the horn path of a reflex horn, (typically seen as public address horns, at the tops of poles at baseball games or campground). Now that I had made an experimental midrange speaker, the high frequency traffic cone tweeter was a representation of the industrial surround. My studio block was almost always under constant construction, I've subliminally interacted with so many traffic cones on the daily that they probably started showing up in my dreams. I was so deep in the horn lens that one day after seeing a cone lying on its side and yelling "HORN!" I knew what had to be done. There is something interesting about the readymade horn. It screams architecture and infrastructure and urban ecologies. A re-use and recognition towards this surreal future. These objects will create these environments, and they are tools for voice, after being brought into existence, they don't end at the object, because they can be amplified. Much like the site specific nature of my music practice, these designs will travel and have many voices and respond differently to space, but not as the hidden speaker, these speakers are central. Their materiality creates distinctive personalities to evolve through rituals and movement. They are stationary objects that can reorient programs and move sound in space.</p>
+
+<p>The cloud speaker totems and pony subwoofer are hifi for my bedroom. A piece of plywood in a weird shape near the trash screamed out at me for this. I came across weird ceiling speakers, in an abandoned part of an old office and took a screwdriver to the ceiling to harvest the drivers I used for the midrange. The bass drivers came from someone giving away a car audio speaker, and the tweeters from an old speaker someone had lying around in their basement. The clouds are fun, in that they are bright and you see them. I had been annoyed, after all of this ancient research, that the way I had interacted with speakers was always as this black box, a reference thing that you were not supposed to see. It's meant to be in the background, the sound quality coming out of them was the most important part. But the acousmonium is important. The speaker should have its own personality and speak its truth where it lies. No need to be full or flat. Just the way we all experience music differently there should be preference the speaker has in its own personality on how it wants to reproduce your amplified sound, and if you don't choose clouds, maybe you choose steel, or cone. It's the same as the huge stacks for the rave vs the bookshelf for the home library. </p>
+
+<p>My thesis probe, my midterm was a collection of all of these speaker designs within the archetype of the speaker stack and architectural design. It was important I began to root these designs back in the history and context of their origins. A lot of the research around the culture of sound systems starts in Jamaica, with the stacking of boxes, "out in the street"  as sonic warfare and a ritual gathering. It was important that each speaker did its part along the frequency spectrum, to generate a full sound, but equally as important that the speaker stack is the beacon and impulse in the space it was installed. The content played off of the speaker was always an afterthought, but I had begun to compose its playlist, consisting of dub techno, reggae, experimental electronics and field recordings. All very broad genres, but critics seemed to be expecting loud listening because of its monolithic size. I realized after that the monolith is hard to digest. It makes sense in Jamaican soundsystems because they are all aesthetically similar parts of a whole, but these speakers belong in a careful arrangement rather than stacked and hung. The monolith feels full but random. This probe was a representation of myself in all my excited research but all in one ball, an inspiring prompt for my final thesis work which realized a lot of these ideas, but mainly as related to architecture rather than the human speaker scale. </p>
+
+</details>
+</details>
+<details>
+<summary>2024</summary>
+<ul>
+<li>
+<p><a href="gewei.html"><img src="links/ihdi-12.webp" width="40%"></a></p>
+<a href="gewei.html" class="type" data-type="  instrument">Xiaohongshu Gewei</a>
+</li>
+</ul>
+</details>
+<details>
+<summary>2023</summary>
+<ul>
+<li>
+<p><a href="solarsounders1.html"><img src="links/ss.webp" width="40%"></a></p>
+<a href="solarsounders1.html" class="type" data-type="  instrument">
+Cigar Boats Moan Across Waterways</a>
+</li>
+<li>
+<p><a href="artifact.html"><img src="links/artifact.jpg" width="40%"></a></p>
+<a href="artifact.html" class="type" data-type="  sculpture">Material Artifact Sustain</a>
+</li>
+</ul>
+</details>
+<!--
+<details>
+<summary>2022</summary>
+</details>
+--!>
+<details>
+<summary>2021</summary>
+<ul>
+<li>
+<p><a href="c.html"><img src="links/c1.webp" width="40%"></a></p>
+<a href="c.html" class="type" data-type="  performance">
+Characters</a>
+</li>
+<li>
+<p><a href="he.html"><img src="links/osav3.webp" width="40%"></a></p>
+<a href="he.html" class="type" data-type="  performance">
+Of Sound and Vision</a>
+</li>
+</ul>
+</details>
+<details>
+<summary>Workshops and Talks</summary>
+<ul>
+<li>
+<p><a href="sonicactsworkshop.html"><img src="links/clworkshopamsterdam13.webp" width="40%"></a></p>
+<a href="sonicactsworkshop.html" class="type" data-type="  workshop">Ciat Lonbarde Workshop @ Sonic Acts Biennial 2026</a>
+</li>
+<li>
+<p><a href="roulette.html"><img src="links/roulette3.jpg" width="40%"></a></p>
+<a href="roulette.html" class="type" data-type="  workshop">Ciat Lonbarde Workshop @ Roulette NYC 2025</a>
+</li>
+</ul>
+</details>
+<details>
+<summary>Releases</summary>
+<ul>
+<li>LBSE DSS Control Tracks [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>a stretch to pull time along smooth skipping rocks: another list of black perspectarchival textures dragged in the grey slow bile of ambiance and the cybernetic surround. dream state sonification volume 2 [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>cactus soap and the looming dreadnaught of existence: dream state sonification volume 1 [by Louise Broadman Suzakanna Electronique] - 2026</li>
+<li>do angels fly through clouds during lunar thunderstorms? - 2026</li>
+<li>two four the howling brains, four what its worth, in constant change - 2026</li>
+<li>im gonna melt into my couch and leave thick dark brown stain. the sun is not prejudice in its giving of warmth. - 2026</li>
+<li>wading through morning flowers under orange heat, with feet stuck under thick brown honey - 2025</li>
+<li>Blinded Singularity - A Compilation - 2025</li>
+<li>Dreaming in the Mercury World - 2025</li>
+<li>love is wet grass under a naked tree, and soiled books from the rain - 2025</li>
+<li>i keep missing important emails - 2025</li>
+<li>Live Paintings in Sound - 2024</li>
+<li>Addressed to the King’s Mistress, Ms. Tallulah-Ocone Baggarlee - 2024</li>
+<li>aamalivisza - 2024</li>
+<li>I couldn't tell who it was, in the red light</li>
+<li>A Room of Dry Plants, A Compilation - 2024</li>
+<li>24tb of debian yaml uncensored - 2024</li>
+<li>VOYAGER - 2024</li>
+<li>SYSTEMS - 2024</li>
+<li>RITUAL - 2024</li>
+<li>Live Pictures in Music - 2023</li>
+<li>live pictures in music '23 - 2023</li>
+<li>Four Bit Modulo Phase Triplex for Violin, Piano and Cello - 2023</li>
+<li>New Musical Resources - 2023</li>
+<li>supreme magic center dot - 2023</li>
+<li>QGIS [by wetness] - 2022</li>
+<li>cyb sym int cav dov - 2022</li>
+<li>Databird - 2022</li>
+<li>Uppercase 2: Hubbell Twist Lock 30A 125V [by ^case] - 2021</li>
+<li>Uppercase 1: Binary 16 Inches Deep Web [by ^case] - 2021</li>
+<li>Hyperencoder - 2021</li>
+<li>Sound Synthesis for Synthetic Fibers - 2021</li>
+<li>Interlude - 2020</li>
+<li>Anteambiance - 2020</li>
+<li>Nuisolationalism - 2020</li>
+<li>Just a Gray Mass - 2020</li>
+<li>Mnemosyne - 2019</li>
+</ul>
+</details>
+<details>
+<summary>Writings</summary>
+<ul>
+<li><a href="thesis.pdf">RISD BArch Thesis - Thanks to the Ground Beneath My Feet</a></li>
+</ul>
+</details>
+</section>
+
+<hr style="border-color:#333; margin: 30px 0;">
+
+<section id="shows-section">
+
+<span id="flyers"></span>
+  <!-- Invisible anchors for :target -->
+  <span id="ex"></span>
+  <span id="p"></span>
+  <span id="fest"></span>
+  <span id="ws"></span>
+  <span id="tour"></span>
+  <span id="all"></span>
+
+  <!-- Filter sentence -->
+  <p class="filters">
+    See 
+    <a href="#ex">exhibitions</a>
+    <a href="#p">performances</a>
+    <a href="#fest">festivals</a>
+    <a href="#ws">workshops/talks</a>and
+    <a href="#tour">tours</a>.
+    <a href="#all" style="color: gray; margin-left: 15px;">[Show all]</a>
+  </p>
+    <p style="font-size: 0.8em"><a href="#flyers">Show flyers</a> | <a href="#">Hide flyers</a></p>
+
+  <!-- Your content -->
+  <section class="content">
+<p class="p">Live @ Cold Spring Hollow 10112026 ~ Belchertown, MA</p>
+<p class="ex">Fallow Frames Biennial 2026: Femi Shonuga &amp; Daniel Fishkin present Solar Sounders 09192026 ~ Ridgewood, NYC</p>
+<p class="p">Live with Teo @ Otion Front Studio 09042026 ~ NY, NY</p>
+<p class="fest">GAINS (Jake Sokolov Gonzales and Femi Shonuga) Live @ Tuxedofest 2 08152026 ~ Providence, RI</p>
+<p class="p">Oreo Cookie Therapy Live @ Coconut Crib 07132026 ~ NY, NY</p>
+<p class="p">Sadnoise Live @ Cold Spring Hollow 07122026 ~ Belchertown, MA</p>
+<p class="p">Sadnoise Live @ Life World 07052026 ~ NY, NY</p>
+<p class="p">Aelrsty Live @ River Dance 3 by System Failure 06272026 ~ Boston, MA</p>
+<p class="p">Pretty Blossom, Smart Stone, Rock Think Exhibition Opening @ What Mary Kept 06142026 ~ NY, NY</p>
+<p class="p">Point Source V (In Quad) @ SUPR OMEN 06202026 ~ NY, NY</p>
+<p class="p">Wolf Eyes with support from Sadnoise @ AS20 Black Box 05282026 ~ PVD, RI</p>
+<p class="fest">Rynthm in the Kitchen Festival @ Main Drag Music 04172026 ~ NY, NY</p>
+<p class="ex">Aquaponic Reverberations w/Enid Corcoran @ Tiffany Street Projects 04122026 ~ PVD, RI</p>
+<p class="p">Richard Tarantino, Mackenzie Kourie and Sadnoise Live @ Cambridge Community Center 04112026 ~ MA</p>
+<p class="p">BLK Noise @ Elastic Arts Chicago / CLEAT for Dark Matter Series 04042026 ~ Chicago, IL</p>
+<p class="p">Live @ Blacklace Lounge 04092026 ~ PVD, RI</p>
+<p class="p">R. Luke DeBois//Femi Shonuga (Sadnoise) @ Experimental Intermedia Salon @ XI Records 03282026 ~ NY, NY</p>
+<p class="fest">Sonic Acts Biennial 02162026-02212026 ~ Amsterdam, NL</p>
+<p class="p">Richard Tarantino, Femi Shonuga-Fleming and Mackenzie Kourie (Trio) Live @ Red Ink 02232026 ~ PVD, RI</p>
+<p class="p">Sadnoise Live at Heart Rests Twice Performance Series @ Murmur Amsterdam 02192026 ~ Amsterdam, NL</p>
+<p class="ex">Information Retrival and the Cybernetics of Afrofuturism : Listening Programme 9 @ Zone2Source 02222026 ~ Amsterdam, NL</p>
+<p class="ws">Ciat Lonbarde Lil Sidrassi Paper Circuit Workshop @ Salon De Ijzerstaven 02162026-02172026 ~ Amsterdam, NL</p>
+<p class="p">Scrounge ~ Kouruga @ Lost Bag 11182025 ~ PVD, RI</p>
+<p class="p">Non-Event @ Boston City Hall 11152025 ~ Boston, MA</p>
+<p class="p">Sonuga ~ After Hours @ Suburbia Circus 11142025 ~ PVD, RI</p>
+<p class="p">Food Not Bombs Food Drive ~ Sonuga @ Pyxis 11082025</p>
+<p class="p">Oreoreoreo @ Black Lace Lounge 10242025 ~ PVD, RI</p>
+<p class="p">Oreoreoreo @ Lost Bag 10182025 ~ PVD, RI</p>
+<p class="p">Sonuga @ Mimi's Lounge 10112025 ~ PVD, RI</p>
+<p class="p">Providence takeover night @ Dawnlands 09282025 ~ Westerly, RI (Moved to The Washing Machnie @ New Machine ~ PVD, RI)</p>
+<p class="p">Untitled @ Pyxis 09272025 ~ PVD, RI</p>
+<p class="p">Bunie Hopps Popup @ New Machine 09252025 ~ PVD, RI</p>
+<p class="ex">We Collapse and Dream Together @ 42 Grand St 08292025 ~ NY, NY</p>
+<p class="ex">Listening Session with Femi Shonuga @ Silence Please NYC 08292025 ~ NY, NY</p>
+<p class="ex">Algorave @ Toledo Museum of Art 09132025 ~ Ohio</p>
+<p class="p">Oreo Cookie Therapy @ Firehouse 07132025 ~ Worchester, MA</p>
+<p class="fest">Fuck the Fourth Fest @ Obreins Pub 07062025 ~ Allston, MA</p>
+<p class="p">Untitled @ Cold Spring Hollow 07112025 ~ Belchertown, MA</p>
+<p class="tour">BNC TOUR: Bittersweet, Barbienoise, Cryptwarbler, Tayla R. @ Machines with Magnets 06262025 ~ Pawtucket, RI</p>
+<p class="tour">BNC TOUR: Sadnoise, Cryptwarbler, Barbie.ai, Prognoz @ Red Room 06242025 ~ Baltimore, MD</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Surf Hair, dedBoi, Glowhazed, Programmed Cell Death @ Clearbrook Center of the Arts 06212025 ~ Lake Ridge, CT</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Tayla R. @ Never Ending Books 06192025 ~ New Haven, CT</p>
+<p class="tour">BNC Tour: Cryptwarbler, Sadnoise, Barbie.ai, Will Hicks, Ollie Becker @ Pity Parlor 06182025 ~ Cambridge MA</p>
+<p class="tour">BNC Tour: Cryptwarbler, Femi Shonuga-Fleming + Daniel Fishkin + Will Mullany, Barbie AI, Levi Lu @ Cutelab 06152025 ~ NY, NY</p>
+<p class="tour">BNC Tour: Cryptwarblr, Sadnoise, Kristina Warren, Hissquiet @ Firehouse 06132025 ~ MA</p>
+<p class="ex"><a href="https://www.cprnyc.org/events/open-studios-curated-by-johann-diedrick">OPEN STUDIOS</a> | If the stars align…: Rena Anakwe, Sonic Liberation Devices, and Femi Shonuga-Fleming, curated by Johann Diedrick @ Center for Preformance Research 06122025 ~ Brooklyn, NY</p>
+<p class="ws">2025 AMIS Meeting June 2025 @ Georgia Southern University ~Savannah, GA 0601-062025</p>
+<p class="p">DISCOTEQUE @ The New Machine 04222025 ~ PVD, RI</p>
+<p class="ex">War Goes Strait to Their Tummies @ Below Grand | On view April 19 - May 17th, 2025 ~ NY, NY <i>Exhibiting my <a href="cldiy.html">Ciat Lonbarde diy synthesizers</a></i></p>
+<p class="ex">Future Sketches: Live Letters @ MIT Museum 04182025 ~ MA</p>
+<p class="p">Sadwarbler @ AS220 03122025 ~ PVD, RI</p>
+<p class="ws">Mixology: Ciat Lonbarde Paper Circuit Workshop @ Roulette 03012025 ~ NY, NY</p>
+<p class="ws">HundredRabbits Orca Workshop 01172025 @ RISD CIT ~PVD, RI</p>
+<p class="p">Untitled @ Hart Bar 01122025 ~ NY</p>
+<p class="ws">HundredRabbits Orca Workshop 12142024 @ NYC Resistor ~NY, NY</p>
+<p class="p">Kouruga @ Red Ink 12072024 ~Providence, RI</p>
+<p class="p">Bass, Robots and Mad Science @ Hex House 10082024 ~ Queens, NY</p>
+<p class="p">Movement and Noise @ The Living Gallery 08262024 ~BK, NY</p>
+<p class="ws">HundredRabbits Orca Workshop 07272024 @ Red Eel Lab ~Atlantic Mills, PVD, RI</p>
+<p class="fest">Slabfest @ Jewel Music Venue 0518-192024 ~ Manchester, New Hampshire</p>
+<p class="p">After Hours @ Symposuim Books 03222024 ~Providence, RI</p>
+<p class="p">CFPT @ Trans Pecos 03032024 ~Brooklyn, NY</p>
+<p class="p">Untitled @ Machines With Magnets 02292024 ~Pawtucket, RI</p>
+<p class="p">Full Moon Sonic Dream Temple @ The Living Gallery 02242025 ~ Ny, NY</p>
+<img class="flyer" src="links/flyers/dithefly40.webp" width="40%">
+<br>
+<p class="p">Safe Sounds @ Sleepwalk 02182024 ~New York, NY</p>
+<p class="p">Fundraver for Palestinian Legal Defense @ AS220 01272024 ~ PVD, RI</p>
+<img class="flyer" src="links/flyers/dithefly39.webp" width="40%">
+<p class="p">Femi's 23rd Birthday Party!</p>
+<img class="flyer" src="links/flyers/cuties.gif" width="40%">
+<p class="p">Public Speaking @ Mayday 12082023 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly8.webp" width="40%">
+<p class="p">Retrograth Tour @ Mayday 11292023 ~Olneyville, RI</p>
+<p class="p">XProject: Public Operation Manual Issue Two @ Gymnopedie 11182023 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly36.webp" width="40%">
+<p class="p">Daedelus, Retribution Body, Sadnoise @ Columbus Theatre 10312023 ~Providence, RI</p>
+<img class="flyer" src="links/flyers/dithefly35.webp" width="40%">
+<p class="p">Alex C., XLR Sex, Noeisgirl, Thought Gore @ 1911 10262023 ~Olneyville, RI</p>
+<p class="ex">Ambiance As Noise @ RISD Museum 10152023 ~Providence, RI</p>
+<img class="flyer" src="links/flyers/dithefly34.webp" width="40%">
+<p class="p">Hidden Monthly  @ 1911 09302023 ~Olneyville, RI</p>
+<p class="p">Syanide, Sadnoise, Waves Over Heaven @ Blacklace 09252023 ~Olneyville, RI</p>
+<p class="p">Untitled @ Mayday 09242023 ~Olneyville, RI</p>
+<p class="p">Gayngel Night @ AS220 BlackBox 09172023 ~Providence, RI</p>
+<p class="p">Hidden Monthly @ 1911 00302023 ~Olneyville, RI</p>
+<p class="p">Rave By Design III @ Mayday 09152023 ~Olneyville, RI</p>
+<p class="p">Blacklace 5 Year Anniversary @ 1911 ~Olneycille, RI</p>
+<p class="p">Untitled @ Firehouse 09082023 ~Worcester, MA</p>
+<p class="p">Cooler Nights @ CARA 08072023 ~New York, NY</p>
+<p class="p">Frederiks Dead Tour @ Fucking Gallery 08132023 ~NJ</p>
+<p class="p">Sadnpoise, Sara Brodsky, Iris Ipsum @ Heaven Can Wait 07072023 ~Brooklyn, NY</p>
+<p class="p">Asher White Album Release Show: Sadnoise, Theadore, Asher White @ The Columbus Theatre 06242023 ~Providence, RI</p>
+<p class="p">Constellations: Sadnoise, MDN, Che Buford, Ritchse, Hell Hooks @ Trans Pecos 06232023 ~Brooklyn, NY</p>
+<p class="p">Sadnoise, Cryptwarblr, viliji and Hissquiet @ Red Ink Community Library 05062023 ~Providence RI</p>
+<p class="p"><a href="algotrek.html">Algotrek</a> 4 04222023 ~Cold Springs, NY <i>live code music hike</i></p>
+<p class="p">Hidden Monthly @ 1911 04152023 ~Olneyville, RI</p>
+<p class="p">Beautiful Machines @ ZUZU 04122023 ~Boston, MA</p>
+<p class="ex">Sonic Salad @ Risd Museum 04062023 ~Providence, RI <i>Processing live sounds from Anarchestra Instruments with modular synth</i></p>
+<p class="p">Focus Group @ AS220 02162023 ~Providence, RI</p>
+<p class="p">Rave By Design @ Mayday 02012023 ~Olneyville, RI</p>
+<p class="p">Macula Dog, Triplets (Femi Fleming &amp; Mark Cetilia), Cabo Boing @ 1911 12092022 ~Olneyville, RI</p>
+<p class="p">Abstract (Select All Vertical Rivers) @ 1911 11222022 ~Olneyville, RI</p>
+<p class="p">Noise/Function Livecode.nyc @ Littlefield 09092022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly31.webp" width="40%">
+<p class="p">CFPT Presents Sadnoise, Primitive Tounges, Saturn Lavender, Many Many Girls @ Trash Bridge 07292022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly24.webp" width="40%">
+<p class="fest">Electropixel and Ende Tymes Presents Electronoise 12 (Irrational Collective) @ Trans Pecos 06202022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly28.webp" width="40%">
+<p class="p">Craow, Kai b2b Manton, Aadnoise, Adaa, s4m23 @ Dirt Palace 06042022 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly21.webp" width="40%">
+<p class="p">Fasc Smash, Repairer of Reputations, Sadnoise, Bionic Girl @ News Cafe 06092022 ~Pawtucket, RI</p>
+<img class="flyer" src="links/flyers/dithefly10.webp" width="40%">
+<p class="fest">Ende Tymes 12 @ Trans Pecos 04162022 ~Brooklyn, NY</p>
+<img class="flyer" src="links/flyers/dithefly4.webp" width="40%">
+<p class="p">Lil Kevo, Sadnoise, FEARDOTCOM, Kerry Quirk @ O’briens Pub 04092022 ~Allston, MA</p>
+<img class="flyer" src="links/flyers/dithefly9.webp" width="40%">
+<p class="p">Oxalis, Bill T Miller, Daedelus, Sadnoise @ Mayday 04082022 ~Olneyville, RI</p>
+<img class="flyer" src="links/flyers/dithefly7">
+<p class="fest">Live Coding Electronic Music Festival @ The State House 04172022 ~New Haven, CT</p>
+<p class="fest">Lunar Noise Festival @ The Upspace (Brown Campus) 11182021-11202021 ~Providence, RI</p>
+<p class="p">Apologist, Human Guilt, Xenojothsz, Sadnoise, Yü//f @ Blacklace (1911) 11092021 ~Providence, RI</p>
+<p class="p"><a href="https://flashcrash.net">Flash</a> Crash (Stream) 09042021 ~flashcrash.net</p>
+<img class="flyer" src="links/flyers/dithefly2.webp" width="40%">
+<p class="p">Deep <a href="http://dwgartjzmsw4bdux.onion/">Web</a> Gallery @ The Living Gallery 04022021 ~Brooklyn, NY<i>Live Streamed tot he Dark Web</i></p>
+<p class="p">Thunderdome IRL @ H0L0 08252021 ~Brooklyn, NY</p>
+<p class="p">CFPT Sunkhaven, Syanide, Afterlife Online, Gyna Bootleg + Tamio Shiraishi @ Satellite Art Club 07152021 ~ Brooklyn, NY <i>first show!</i></p>
+<p class="fest">Creative Code Festival @ Lightbox NYC 11122020-11152020 ~ Brooklyn, NY <i>Orca live code visuals and sound from modular synths</i></p>
+  </section>
+
+
+</section>
+
+<footer>sadnoise@femishonuga.com - Updated June 21 2025 </footer>
+</body>
+</html>

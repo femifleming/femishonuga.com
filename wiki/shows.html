@@ -3,6 +3,22 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta charset="UTF-8">
   <style>
+body {
+  background-color: black;
+  max-width: 800px;
+  color: white;
+  width: 100%;
+  font-family: 'Tiems New Roman', serif;
+  padding: 20px;
+  margin: 0 auto;
+}
+a {
+  color: white;
+  text-decoration-style: dotted;
+}
+p {
+  width: 100%;
+}
 /* Default styles */
 .flyer {
 display: none;
@@ -11,77 +27,74 @@ display: none;
 display:block;
 }
 .content {
-transition: background-color 0.5s;
   padding: 11px;
   transition: background-color 0.5s;
 }
 .content p {
-  color: #006064;
+  color: #cccccc;
   transition: color 0.5s;
-line-height: 0.5em;
+  line-height: 1.4;
+  margin: 0.35em 0;
 }
 /* When exhibitions are targeted */
 #ex:target ~ .content {
-  background-color: #fefff2;
+  background-color: #2b2b20;
   transition: background-color 0.5s;
 }
 #ex:target ~ .content p {
-  color: #1c1c1a; 
+  color: #f5f5dc;
   transition: color 0.5s;
 }
-/* When exhibitions are targeted */
+/* When festivals are targeted */
 #fest:target ~ .content {
   transition: background-color 0.5s;
-  background-color: #191921; /* beige */
+  background-color: #191921;
 }
 #fest:target ~ .content p {
-  color: #a3a3d1; /* brown */
+  color: #a3a3d1;
   transition: color 0.5s;
 }
 /* When performances are targeted */
 #p:target ~ .content {
   transition: background-color 0.5s;
-  background-color: #e0f7fa; /* light cyan */
+  background-color: #0d2b30;
 }
 #p:target ~ .content p {
-  color: #006064; /* teal */
+  color: #66d9e8;
   transition: color 0.5s;
 }
 /* When shows are targeted */
 #s:target ~ .content {
   transition: background-color 0.5s;
-  background-color: #fff0f5; /* lavender blush */
+  background-color: #2b0a20;
 }
 #s:target ~ .content p {
-  color: #800080; /* purple */
+  color: #e0a0c0;
   transition: color 0.5s;
 }
 
-/* When museum is targeted */
+/* When workshops/talks are targeted */
 #ws:target ~ .content {
   transition: background-color 0.5s;
-  background-color: #f0f0f0; /* light gray */
+  background-color: #1e1e1e;
 }
 #ws:target ~ .content p {
-  color: #333333; /* dark gray */
+  color: #dcdcdc;
   transition: color 0.5s;
 }
-/* When museum is targeted */
+/* When tours are targeted */
 #tour:target ~ .content {
   transition: background-color 0.5s;
-  background-color: #96801d;
+  background-color: #4a3d0d;
 }
 #tour:target ~ .content p {
-  color: white;
+  color: #f0d9a0;
   transition: color 0.5s;
 }
-    body { 
-
-font-family: serif; padding: 20px; }
 
     .filters a {
-      color: blue;
-      text-decoration: underline;
+      color: white;
+      text-decoration: underline dotted;
       margin-right: 10px;
     }
     .content p {
