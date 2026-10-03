@@ -164,34 +164,90 @@ And updates the in depth <a style="font-size: 1.5em;" href="wiki/index.html">~> 
             <li>Updated !NEW!<a href="clguide/clguide.html">Ciat Lonbarde DIY Guide</a></a></li>
             <li>Updated <a href="wiki/slog.html">Speaker Building Log</a></li>
             <li>Walked <a href="#" class="phar">through</a> the <em>fog</em> under the <em><a class="x" href="tree.html">trees</a></em></li>
-            <li id="y">Is Mercury in retrograde? <input type="checkbox" id="yesCheck" disabled> <a href="#y" class="mur">Yes</a> <input type="checkbox" id="noCheck" disabled><a href="#y" class="dur">No</a></li>
+            <li id="retrograde-status" aria-live="polite">checking planetary positions...</li>
 </ul>
             <i><a href="https://baccyflap.com/noai/?prv&s=fsf">←</a><a href="https://baccyflap.com/noai">no ai</a><a href="https://baccyflap.com/noai/?nxt&s=fsf">→</a> <a href="https://baccyflap.com/noai/?rnd">δ</a> </i>
             <i><a href="https://webring.bucketfish.me/redirect.html?to=prev&name=femishonuga">←</a><a href="https://webring.bucketfish.me">bucket</a><a href="https://webring.bucketfish.me/redirect.html?to=next&name=femishonuga">→</a> <a href="https://webring.bucketfish.me/redirect.html?to=random&name=femishonuga">δ</a> </i>
 </div>
-            <!-- Mercury retrograde checker -->
+            <!-- Current apparent retrograde status, using JPL elements and NASA GSFC Pluto elements. -->
             <script>
-                const retrograde2025 = [
-                    { start: new Date('2025-03-15'), end: new Date('2025-04-07') },
-                    { start: new Date('2025-07-18'), end: new Date('2025-08-11') },
-                    { start: new Date('2025-11-09'), end: new Date('2025-11-29') }
+                const retrogradeBodies = [
+                    { name: 'Mercury', a: 0.38709927, ad: 0.00000037, e: 0.20563593, ed: 0.00001906, i: 7.00497902, id: -0.00594749, l: 252.25032350, ld: 149472.67411175, p: 77.45779628, pd: 0.16047689, n: 48.33076593, nd: -0.12534081 },
+                    { name: 'Venus', a: 0.72333566, ad: 0.00000390, e: 0.00677672, ed: -0.00004107, i: 3.39467605, id: -0.00078890, l: 181.97909950, ld: 58517.81538729, p: 131.60246718, pd: 0.00268329, n: 76.67984255, nd: -0.27769418 },
+                    { name: 'Earth', a: 1.00000261, ad: 0.00000562, e: 0.01671123, ed: -0.00004392, i: -0.00001531, id: -0.01294668, l: 100.46457166, ld: 35999.37244981, p: 102.93768193, pd: 0.32327364, n: 0, nd: 0 },
+                    { name: 'Mars', a: 1.52371034, ad: 0.00001847, e: 0.09339410, ed: 0.00007882, i: 1.84969142, id: -0.00813131, l: -4.55343205, ld: 19140.30268499, p: -23.94362959, pd: 0.44441088, n: 49.55953891, nd: -0.29257343 },
+                    { name: 'Jupiter', a: 5.20288700, ad: -0.00011607, e: 0.04838624, ed: -0.00013253, i: 1.30439695, id: -0.00183714, l: 34.39644051, ld: 3034.74612775, p: 14.72847983, pd: 0.21252668, n: 100.47390909, nd: 0.20469106 },
+                    { name: 'Saturn', a: 9.53667594, ad: -0.00125060, e: 0.05386179, ed: -0.00050991, i: 2.48599187, id: 0.00193609, l: 49.95424423, ld: 1222.49362201, p: 92.59887831, pd: -0.41897216, n: 113.66242448, nd: -0.28867794 },
+                    { name: 'Uranus', a: 19.18916464, ad: -0.00196176, e: 0.04725744, ed: -0.00004397, i: 0.77263783, id: -0.00242939, l: 313.23810451, ld: 428.48202785, p: 170.95427630, pd: 0.40805281, n: 74.01692503, nd: 0.04240589 },
+                    { name: 'Neptune', a: 30.06992276, ad: 0.00026291, e: 0.00859048, ed: 0.00005105, i: 1.77004347, id: 0.00035372, l: -55.12002969, ld: 218.45945325, p: 44.96476227, pd: -0.32241464, n: 131.78422574, nd: -0.00508664 },
+                    { name: 'Pluto', a: 39.48168677, ad: 0, e: 0.24880766, ed: 0, i: 17.14175, id: 0, l: 238.92881, ld: 360 / 90560 * 36525, p: 224.06676, pd: 0, n: 110.30347, nd: 0 }
                 ];
 
-                const today = new Date();
-                let isRetrograde = false;
+                function heliocentricPosition(body, milliseconds) {
+                    const julianDate = milliseconds / 86400000 + 2440587.5;
+                    const centuries = (julianDate - 2451545.0) / 36525;
+                    const a = body.a + body.ad * centuries;
+                    const e = body.e + body.ed * centuries;
+                    const inclination = (body.i + body.id * centuries) * Math.PI / 180;
+                    const meanLongitude = body.l + body.ld * centuries;
+                    const perihelion = body.p + body.pd * centuries;
+                    const node = body.n + body.nd * centuries;
+                    const omega = (perihelion - node) * Math.PI / 180;
+                    const nodeRadians = node * Math.PI / 180;
+                    let meanAnomaly = ((meanLongitude - perihelion + 540) % 360 - 180) * Math.PI / 180;
+                    let eccentricAnomaly = meanAnomaly;
 
-                for (const period of retrograde2025) {
-                    if (today >= period.start && today <= period.end) {
-                        isRetrograde = true;
-                        break;
+                    for (let iteration = 0; iteration < 12; iteration++) {
+                        eccentricAnomaly -= (eccentricAnomaly - e * Math.sin(eccentricAnomaly) - meanAnomaly) /
+                            (1 - e * Math.cos(eccentricAnomaly));
                     }
+
+                    const xOrbit = a * (Math.cos(eccentricAnomaly) - e);
+                    const yOrbit = a * Math.sqrt(1 - e * e) * Math.sin(eccentricAnomaly);
+                    const cosOmega = Math.cos(omega);
+                    const sinOmega = Math.sin(omega);
+                    const cosNode = Math.cos(nodeRadians);
+                    const sinNode = Math.sin(nodeRadians);
+                    const cosInclination = Math.cos(inclination);
+
+                    return {
+                        x: (cosOmega * cosNode - sinOmega * sinNode * cosInclination) * xOrbit +
+                            (-sinOmega * cosNode - cosOmega * sinNode * cosInclination) * yOrbit,
+                        y: (cosOmega * sinNode + sinOmega * cosNode * cosInclination) * xOrbit +
+                            (-sinOmega * sinNode + cosOmega * cosNode * cosInclination) * yOrbit
+                    };
                 }
 
-                if (isRetrograde) {
-                    document.getElementById('yesCheck').checked = true;
-                } else {
-                    document.getElementById('noCheck').checked = true;
+                function geocentricLongitude(body, milliseconds) {
+                    const earth = retrogradeBodies.find(planet => planet.name === 'Earth');
+                    const position = heliocentricPosition(body, milliseconds);
+                    const earthPosition = heliocentricPosition(earth, milliseconds);
+                    return Math.atan2(position.y - earthPosition.y, position.x - earthPosition.x);
                 }
+
+                function isCurrentlyRetrograde(body, milliseconds) {
+                    const halfDay = 12 * 60 * 60 * 1000;
+                    let change = geocentricLongitude(body, milliseconds + halfDay) -
+                        geocentricLongitude(body, milliseconds - halfDay);
+                    if (change > Math.PI) change -= 2 * Math.PI;
+                    if (change < -Math.PI) change += 2 * Math.PI;
+                    return change < 0;
+                }
+
+                function updateRetrogradeStatus() {
+                    const output = document.getElementById('retrograde-status');
+                    const now = Date.now();
+                    const names = retrogradeBodies
+                        .filter(planet => planet.name !== 'Earth' && isCurrentlyRetrograde(planet, now))
+                        .map(planet => planet.name);
+
+                    output.textContent = names.length
+                        ? `${names.join(', ')} ${names.length === 1 ? 'is' : 'are'} currently in retrograde`
+                        : 'no planets are currently in retrograde';
+                }
+
+                updateRetrogradeStatus();
+                window.setInterval(updateRetrogradeStatus, 6 * 60 * 60 * 1000);
             </script>
         <br>
 
