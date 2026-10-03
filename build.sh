@@ -220,37 +220,6 @@ sub shared_nav {
     return $text;
 }
 
-sub add_incoming {
-    my ($page, $text) = @_;
-    my @sources = sort { lc($labels{$a}) cmp lc($labels{$b}) } keys %{ $incoming{$page} || {} };
-    my $links = @sources
-        ? join(' ', map { link_html($page, $_, $labels{$_}) } @sources)
-        : '<span>none</span>';
-    my $block = "\n<p class=\"incoming\"><b>incoming links</b> $links</p>\n";
-    if ($text =~ m{</main\s*>}i) {
-        $text =~ s{(</main\s*>)}{$block$1}i;
-    }
-    return $text;
-}
-
-sub add_footer {
-    my ($page, $text) = @_;
-    my $wiki_home = File::Spec->catfile($wiki, 'index.html');
-    my $map = File::Spec->catfile($wiki, 'sitemap.html');
-    my $reports = File::Spec->catfile($out, 'reports', 'index.html');
-    my $extra = '<span class="wiki-build-links">' .
-        link_html($page, $wiki_home, 'wiki home') . ' · ' .
-        link_html($page, $map, 'sitemap') . ' · ' .
-        link_html($page, $reports, 'site reports') .
-        ' · <a href="mailto:femi.fleming@gmail.com">femi.fleming@gmail.com</a></span>';
-    if ($text =~ m{</footer\s*>}i) {
-        $text =~ s{(</footer\s*>)}{ · $extra$1}i;
-    } elsif ($text =~ m{</body\s*>}i) {
-        $text =~ s{(</body\s*>)}{<footer>$extra</footer>\n$1}i;
-    }
-    return $text;
-}
-
 sub report_listing {
     my ($title, $description, @items) = @_;
     my $text = "# $title\n\n$description\n\n";
@@ -339,8 +308,6 @@ for my $page (wiki_style_pages()) {
     my $output_page = File::Spec->catfile($out, $relative);
     my $text = read_file($output_page);
     $text = shared_nav($page, $text);
-    $text = add_incoming($page, $text);
-    $text = add_footer($page, $text);
     write_file($output_page, $text);
     push @styled, $page;
 }
@@ -367,7 +334,6 @@ if (-f $sitemap) {
         $text =~ s{<main\b[^>]*>.*?</main\s*>}{$main}is;
     }
     $text = shared_nav($sitemap, $text);
-    $text = add_footer($sitemap, $text);
     write_file(File::Spec->catfile($out, 'wiki', 'sitemap.html'), $text);
 }
 
