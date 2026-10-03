@@ -1,15 +1,9 @@
 <!DOCTYPE html><html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQXVD7YXZ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-FCQXVD7YXZ');
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="main.css" type="text/css" rel="stylesheet">
 <title>codex &mdash; home</title></head><body>
-<header><a href="index.html"><img src="links/clogo.png" width="120px"></a></header>
+<header><a href="index.html"><img src="links/clogo.png" width="120px" loading="lazy"></a></header>
 <nav>
         <ul>
                 <li><a href="audio.html">audio</a></li>
@@ -37,7 +31,7 @@ width: 200%;
 </style>
         <p>Code Kaizen</p>
 <figure>
-<img src="links/ck.webp">
+<img src="links/ck.webp" loading="lazy">
 <figcaption><span class-"right">Kaizen (Japanese: 改善, "improvement") is a concept referring to business activities that continuously improve all functions -</span></figcaption>
 </figure>
 <ul>
@@ -56,7 +50,7 @@ set nonumber
 <p>vim command to increment images or links:</p>
 <textarea>
 for i in range(0, 30)
-  let line = '<p><img src="links/sspecs/vitaphonereference' . i . '.webp"></p>'
+  let line = '<p><img src="links/sspecs/vitaphonereference' . i . '.webp" loading="lazy"></p>'
   put =line
 endfor
 </textarea>
@@ -81,7 +75,7 @@ endfor
 </li>
 <li>
 <p>vim command for creating a list of images named london + x (london1.jpg, london2.webp, etc.) to make it easier to make gallery html pages.</p>
-<textarea>for i in range(1, 10) | call append(line('$'), '<p><img src="london/london'.i.'.webp"></p>') | endfor</textarea>
+<textarea>for i in range(1, 10) | call append(line('$'), '<p><img src="london/london'.i.'.webp" loading="lazy"></p>') | endfor</textarea>
 </li>
 <li>
 <p>":call PasteHtml()" script for ~/.vimrc to help me with my discography html page. generates html.</p>
@@ -107,7 +101,7 @@ let id = input('Enter id: ')
     let html .= '    </tr>' . "\n"
     let html .= '</table>' . "\n"
 let html .= '<ul>' . "\n"
-let html .= '<li><a href="' . link . '"><img src="links/ac/' . coverfile . '"></a></li>' . "\n"
+let html .= '<li><a href="' . link . '"><img src="links/ac/' . coverfile . '" loading="lazy"></a></li>' . "\n"
 let html .= '</ul>'  . "\n"
 let html .= '<p>' . what . '</p>'
 
@@ -133,5 +127,5 @@ x@a
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - updated Dec 25 2024 - <a href="sitemap.html">sitemap</a><div class="right"><a href="https://wiki.xxiivv.com/site/about.html#license"><img src="cc.svg" height="0.8em"></a></div></footer>
+<footer>sadnoise@femishonuga.com - updated Dec 25 2024 - <a href="sitemap.html">sitemap</a><div class="right"><a href="https://wiki.xxiivv.com/site/about.html#license"><img src="cc.svg" height="0.8em" loading="lazy"></a></div></footer>
 </body></html>
