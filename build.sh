@@ -33,6 +33,7 @@ use File::Find;
 use File::Spec;
 use Cwd qw(abs_path);
 use POSIX qw(strftime);
+use JSON::PP ();
 
 my ($root, $out) = @ARGV;
 my $wiki = File::Spec->catdir($root, 'wiki');
@@ -317,6 +318,24 @@ find({ no_chdir => 1, wanted => sub {
     return if index($File::Find::name, $out . '/') == 0;
     push @all_html, File::Spec->rel2abs($File::Find::name);
 }}, $root);
+my @random_pages = sort map {
+    my $relative = File::Spec->abs2rel($_, $root);
+    $relative =~ s{\\}{/}g;
+    '/' . $relative;
+} grep { $_ ne File::Spec->catfile($root, '404.html') } @all_html;
+my $random_json = JSON::PP->new->ascii->encode(\@random_pages);
+$random_json =~ s/</\\u003c/g;
+my $not_found = File::Spec->catfile($out, '404.html');
+if (-f $not_found) {
+    my $text = read_file($not_found);
+    my $random_script = "\n<script>\n(() => {\n  const pages = $random_json;\n  const button = document.getElementById('random-page');\n  if (button && pages.length) button.href = pages[Math.floor(Math.random() * pages.length)];\n})();\n</script>\n";
+    if ($text =~ m{</body\s*>}i) {
+        $text =~ s{(</body\s*>)}{$random_script$1}i;
+    } else {
+        $text .= $random_script;
+    }
+    write_file($not_found, $text);
+}
 my @broken;
 for my $source (@all_html) {
     next if $source eq $sitemap;
