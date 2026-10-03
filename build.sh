@@ -32,6 +32,7 @@ use warnings;
 use File::Find;
 use File::Spec;
 use Cwd qw(abs_path);
+use POSIX qw(strftime);
 
 my ($root, $out) = @ARGV;
 my $wiki = File::Spec->catdir($root, 'wiki');
@@ -157,6 +158,48 @@ sub rel_url {
 sub link_html {
     my ($from, $to, $label) = @_;
     return '<a href="' . esc(rel_url($from, $to)) . '">' . esc($label) . '</a>';
+}
+
+sub page_modified_date {
+    my ($page) = @_;
+    my $relative = File::Spec->abs2rel($page, $root);
+    $relative =~ s{\\}{/}g;
+
+    # Local edits are newer than the last commit; use their filesystem date.
+    # For clean files, use the latest commit that changed that page.
+    my $diff_status = system('git', '-C', $root, 'diff', '--quiet', 'HEAD', '--', $relative);
+    if ($diff_status != 0) {
+        my @stat = stat($page);
+        return strftime('%Y-%m-%d', localtime($stat[9])) if @stat;
+    }
+
+    if (open my $git, '-|', 'git', '-C', $root, 'log', '-1', '--format=%cs', 'HEAD', '--', $relative) {
+        my $date = <$git>;
+        close $git;
+        chomp $date if defined $date;
+        return $date if defined $date && $date =~ /^\d{4}-\d{2}-\d{2}$/;
+    }
+
+    my @stat = stat($page);
+    return strftime('%Y-%m-%d', localtime($stat[9])) if @stat;
+    return strftime('%Y-%m-%d', localtime());
+}
+
+sub update_footer_date {
+    my ($page, $text) = @_;
+    my $date = page_modified_date($page);
+    $text =~ s{(<footer\b[^>]*>)(.*?)(</footer\s*>)}{
+        my ($open, $inside, $close) = ($1, $2, $3);
+        if ($inside =~ /\bupdated\b/i) {
+            if ($inside =~ s{(\bupdated\b\s*:?\s*)(.*?)(\s*-\s*)(?=<)}{$1 . $date . $3}ise) {
+                # Preserve the separator before existing footer links.
+            } else {
+                $inside =~ s{(\bupdated\b\s*:?\s*)(.*?)(?=\s*</footer\s*>)}{$1 . $date}ise;
+            }
+        }
+        $open . $inside . $close;
+    }gise;
+    return $text;
 }
 
 my %page_set = map { (abs_path($_) || $_) => 1 } @wiki_pages;
@@ -302,14 +345,15 @@ for my $entry (@report_entries) {
 $index .= '</ul><p><a href="../wiki/index.html">Wiki home</a></p></main></body></html>';
 write_file(File::Spec->catfile($reports_dir, 'index.html'), $index);
 
-my @styled;
-for my $page (wiki_style_pages()) {
+my @styled = wiki_style_pages();
+my %styled_page = map { $_ => 1 } @styled;
+for my $page (@wiki_pages) {
     my $relative = File::Spec->abs2rel($page, $root);
     my $output_page = File::Spec->catfile($out, $relative);
     my $text = read_file($output_page);
-    $text = shared_nav($page, $text);
+    $text = shared_nav($page, $text) if $styled_page{$page};
+    $text = update_footer_date($page, $text);
     write_file($output_page, $text);
-    push @styled, $page;
 }
 
 if (-f $sitemap) {
@@ -334,6 +378,7 @@ if (-f $sitemap) {
         $text =~ s{<main\b[^>]*>.*?</main\s*>}{$main}is;
     }
     $text = shared_nav($sitemap, $text);
+    $text = update_footer_date($sitemap, $text);
     write_file(File::Spec->catfile($out, 'wiki', 'sitemap.html'), $text);
 }
 
