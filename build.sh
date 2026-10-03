@@ -191,7 +191,7 @@ sub update_footer_date {
     my $date = page_modified_date($page);
     $text =~ s{(<footer\b[^>]*>)(.*?)(</footer\s*>)}{
         my ($open, $inside, $close) = ($1, $2, $3);
-        if ($inside =~ /\bupdated\b/i) {
+        if ($inside =~ /\bupdated\b/i && $inside !~ /\{LAST_UPDATE\}/i) {
             if ($inside =~ s{(\bupdated\b\s*:?\s*)(.*?)(\s*-\s*)(?=<)}{$1 . $date . $3}ise) {
                 # Preserve the separator before existing footer links.
             } else {
@@ -370,35 +370,20 @@ for my $page (@wiki_pages) {
     my $relative = File::Spec->abs2rel($page, $root);
     my $output_page = File::Spec->catfile($out, $relative);
     my $text = read_file($output_page);
+    if ($page eq $sitemap) {
+        next; # preserve the hand-authored sitemap and its nested bullets
+    }
     $text = shared_nav($page, $text) if $styled_page{$page};
-    $text = update_footer_date($page, $text);
     write_file($output_page, $text);
 }
 
-if (-f $sitemap) {
-    my $text = read_file($sitemap);
-    my %groups;
-    for my $page (@wiki_pages) {
-        my $relative = File::Spec->abs2rel($page, $wiki); $relative =~ s{\\}{/}g;
-        my ($group) = split m{/}, $relative;
-        $group = 'Wiki pages' if $group eq $relative;
-        push @{ $groups{$group} }, $page;
-    }
-    my $main = '<main><h2>&nbsp;</h2><h1>Wiki sitemap</h1><p>' . scalar(@wiki_pages) . ' hand-authored wiki pages, grouped by folder.</p>';
-    for my $group (sort { ($a eq 'Wiki pages' ? 0 : 1) <=> ($b eq 'Wiki pages' ? 0 : 1) || lc($a) cmp lc($b) } keys %groups) {
-        $main .= '<h2>' . esc($group) . '</h2><ul>';
-        for my $page (@{ $groups{$group} }) {
-            $main .= '<li>' . link_html($sitemap, $page, $labels{$page}) . '</li>';
-        }
-        $main .= '</ul>';
-    }
-    $main .= '<p><a href="../reports/index.html">site build reports</a></p></main>';
-    if ($text =~ m{<main\b[^>]*>.*?</main\s*>}is) {
-        $text =~ s{<main\b[^>]*>.*?</main\s*>}{$main}is;
-    }
-    $text = shared_nav($sitemap, $text);
-    $text = update_footer_date($sitemap, $text);
-    write_file(File::Spec->catfile($out, 'wiki', 'sitemap.html'), $text);
+for my $page (@all_html) {
+    my $relative = File::Spec->abs2rel($page, $root);
+    my $output_page = File::Spec->catfile($out, $relative);
+    next unless -f $output_page;
+    my $text = read_file($output_page);
+    my $updated_text = update_footer_date($page, $text);
+    write_file($output_page, $updated_text) if $updated_text ne $text;
 }
 
 my $size = 0;
@@ -410,7 +395,7 @@ sub human_size {
         $n /= 1000;
     }
 }
-print 'Generated ', scalar(@styled), ' wiki-style pages, sitemap, and reports in dist/.', "\n";
+print 'Generated ', scalar(@styled), ' wiki-style pages and reports in dist/. The hand-authored sitemap was preserved.', "\n";
 print 'Wiki pages: ', scalar(@wiki_pages), '. Reports: ', scalar(@broken), ' broken links, ', scalar(@orphans), ' orphans, ', scalar(@dead_ends), ' dead ends, ', scalar(@not_home), ' not linked from the wiki home.', "\n";
 print 'Output size: ', human_size($size), ".\n";
 PERL

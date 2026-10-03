@@ -1,6 +1,6 @@
 # Building and publishing the site
 
-The site remains hand-authored HTML, CSS, JavaScript, and media. `build.sh` copies those files into `dist/` and generates the wiki sitemap and link reports there. It does not rewrite source stylesheets or JavaScript, and it leaves incoming-link sections and existing footers alone except to refresh an existing “updated” date in the built copy. Clean pages use the date of their latest Git change; locally edited pages use their file modification date. The shell script uses the Perl included with macOS for HTML and link processing; Python and third-party packages are not needed.
+The site remains hand-authored HTML, CSS, JavaScript, and media. `build.sh` copies those files into `dist/` and generates link reports there. It preserves the hand-edited nested sitemap. For every built HTML page, it refreshes existing “updated” dates in footers from that file’s last change date; gallery-template `{LAST_UPDATE}` placeholders are preserved. Clean pages use the date of their latest Git change, while locally edited or untracked pages use their file modification date. Source stylesheets, JavaScript, incoming-link sections, and other footer content are left alone. The shell script uses the Perl included with macOS; Python and third-party packages are not needed.
 
 ## Build and preview on a Mac
 
