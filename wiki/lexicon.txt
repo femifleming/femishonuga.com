@@ -6,6 +6,7 @@
 #   - Lines starting with ":" are sitemap-only headings (e.g. ": Thesis").
 #   - A page listed in two places: start the extra listing with "= ".
 #     Its sidebar follows the listing without "=".
+#   - "~ " at the start of a line: show it on the sitemap but not in sidebars.
 #   - Lines starting with "#" are notes and are ignored.
 # Paths are relative to the wiki/ folder ("../" = the main site).
 # After editing, run:   python3 wiki/build.py
@@ -18,8 +19,7 @@
         shows.html  shows
         ritual.html  ritual | ritual wiki
         discog.html  discography
-        bnc.html  BNC Tour
-        showsplaceholder.html  Live Shows
+        instsh.html#shows-section  Live Shows
       instsh.html  sound work
         thesisinstall.html  thesis installation | Thanks to the Ground Beneath My Feet
         dubtub.html  Dub Tub, March 2026
@@ -44,13 +44,13 @@
         he.html  of sound and vision | Of Sound and Vision, Dec 2021
         c.html  characters | Characters, May 2021
       hardware.html  hardware
-        speakerstuff.html  Speaker DIY inspiration
+        ~ speakerstuff.html  Speaker DIY inspiration
         slog.html  Speaker Building Log
           ojas.html  My rant about OJAS
           ../speakers.html  speakers
+        cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY < 2026
         ../clguide/clguide.html  ciat lonbarde guide | Ciat Lonbarde DIY Guide
-        diy.html  diy
-          cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY < 2026
+        diy.html  misc diy
           clarchive/index.html  ciat lonbarde archive
           cldiyold/cldiy.html  Ciat Lonbarde DIY
             clguide.html  ciat lonbarde diy guide
@@ -106,11 +106,11 @@
         daxpics.html  Daxophone Pictures
       code.html  computation
       ps.html  places and spaces
-      lbse.html  reading and listening | Reading and Listening List
+      lbse.html  dream state sonification
         dd.html  dream journal
         ../dd.html  dream journal (old) | The Dream Journal
       ../meh.html  multi entry horns | Multi Entry Horns
-      mm.html  drink menu | Marriott Marquis NYC 1986 Drink Menu
+      ~ mm.html  drink menu | Marriott Marquis NYC 1986 Drink Menu
     meta.html  internal
       sitemap.html  sitemap
       inventory.html  inventory

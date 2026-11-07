@@ -28,8 +28,9 @@ SITEMAP_END = '<!-- /sitemap -->'
 # ---------------------------------------------------------------- lexicon
 
 class Entry:
-    def __init__(self, href, label, long_label, parent, line, alias=False):
+    def __init__(self, href, label, long_label, parent, line, alias=False, hidden=False):
         self.alias = alias            # "= file.html" line: extra link, not the page's home
+        self.hidden = hidden          # "~ file.html" line: on the sitemap, not in sidebars
         self.href = href              # path relative to wiki/, may include #anchor
         self.label = label            # short label, used in sidebars
         self.long_label = long_label  # label used on the sitemap
@@ -70,8 +71,10 @@ def read_lexicon():
                 fail(f'lexicon.txt line {num}: a ": heading" line needs to be indented under a page.')
             parent.children.append(Heading(text[1:].strip()))
             continue
-        alias = text.startswith('=')
-        if alias:
+        alias = hidden = False
+        while text[:1] in ('=', '~'):
+            alias = alias or text[0] == '='
+            hidden = hidden or text[0] == '~'
             text = text[1:].strip()
         m = entry_re.match(text)
         if not m:
@@ -83,7 +86,7 @@ def read_lexicon():
             short = long_ = label
         if not short:
             short = long_ = posixpath.splitext(posixpath.basename(href.split('#')[0]))[0]
-        e = Entry(href, short, long_ or short, parent, num, alias)
+        e = Entry(href, short, long_ or short, parent, num, alias, hidden)
         (parent.children if parent else roots).append(e)
         stack.append((indent, e))
     return roots
@@ -106,7 +109,7 @@ def rel(href, from_page):
 
 
 def entries_of(e):
-    return [c for c in e.children if isinstance(c, Entry)]
+    return [c for c in e.children if isinstance(c, Entry) and not c.hidden]
 
 
 def nav_html(page, home):
