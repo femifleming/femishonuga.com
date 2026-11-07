@@ -92,6 +92,14 @@ under the `visual` category.
     = thesis.html  thesis research
   ```
 
+- **On the sitemap but not in the sidebar.** Start the line with `~ `. The page
+  stays on the sitemap, and any links to it you typed into pages stay as they are:
+
+  ```
+  hardware.html  hardware
+    ~ speakerstuff.html  Speaker DIY inspiration
+  ```
+
 - **Paths** are relative to the `wiki/` folder. Use `../` for pages on the main site
   (`../speakers.html`) and `folder/page.html` for pages in a subfolder. Anchors
   (`places.html#sac`) and other files (`oya.pdf`) are fine too. They show up as
