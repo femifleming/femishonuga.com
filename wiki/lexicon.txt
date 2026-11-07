@@ -1,0 +1,121 @@
+# lexicon.txt — the list of wiki pages and how they nest.
+#
+# One page per line:   file.html  sidebar label | sitemap label
+#   - Indent a line (2 spaces) under another page to make it a sub-page.
+#   - The part after | is optional: it's a longer label used only on the sitemap.
+#   - Lines starting with ":" are sitemap-only headings (e.g. ": Thesis").
+#   - A page listed in two places: start the extra listing with "= ".
+#     Its sidebar follows the listing without "=".
+#   - Lines starting with "#" are notes and are ignored.
+# Paths are relative to the wiki/ folder ("../" = the main site).
+# After editing, run:   python3 wiki/build.py
+# See wiki/README.md for more.
+
+../index.html  home
+  index.html  wiki homepage
+    audio.html  audio
+      sadnoise.html  sadnoise
+        shows.html  shows
+        ritual.html  ritual | ritual wiki
+        discog.html  discography
+        bnc.html  BNC Tour
+        showsplaceholder.html  Live Shows
+      instsh.html  sound work
+        thesisinstall.html  thesis installation | Thanks to the Ground Beneath My Feet
+        dubtub.html  Dub Tub, March 2026
+        shrine.html  speaker shrine | An Infrastructural investigation of the Speaker Shrine
+        steelhorn.html  steel horn | Quadrilateral Exponential Midrange Horn
+        be.html  Buried Electric
+        cloudsport.html  Clouds Totem
+          clouds.html  Building HiFi Speakers
+        ponysub.html  Ponyville Sound Systems
+        gewei.html  Xiaohongshu Gewei, June 2024
+        solarsounders1.html  solar sounders | Cigar Boats Moan Across Waterways, July 2023
+        artifact.html  Material Artifact Sustain
+        sonicactsworkshop.html  sonic acts workshop | Ciat-Lonbarde Paper Circuit Workshop, Sonic Acts 2026
+        roulette.html  roulette workshop | Mixology: Ciat-Lonbarde Paper Circuit Workshop, Roulette NYC 2025
+        : Ambisonic Work
+        iratca.html  information adjustment | Information Adjustment and the Cybernetics of Afrofuturism, 2025- Current
+        hyper.html  hyperencoder | Hyperencoder, 2021
+        : Sound Work at RISD < 2026
+        sfm.html  spaces for mediation | Spaces for Mediation, April 2023
+        atc.html  according to chance | According to Chance, Feb 2023
+        goblsr.html  grid ops | Grid Ops Binary Left Shift Rotating, Jan 2023
+        he.html  of sound and vision | Of Sound and Vision, Dec 2021
+        c.html  characters | Characters, May 2021
+      hardware.html  hardware
+        speakerstuff.html  Speaker DIY inspiration
+        slog.html  Speaker Building Log
+          ojas.html  My rant about OJAS
+          ../speakers.html  speakers
+        ../clguide/clguide.html  ciat lonbarde guide | Ciat Lonbarde DIY Guide
+        diy.html  diy
+          cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY < 2026
+          clarchive/index.html  ciat lonbarde archive
+          cldiyold/cldiy.html  Ciat Lonbarde DIY
+            clguide.html  ciat lonbarde diy guide
+          cb.html  circuit bent
+          misc.html  misc
+        ../da/index.html  digital/analog
+      scores.html  scores
+        ba.html  block acoustica | Block Acoustica, 2026
+        modulo.html  four bit modulo | Four Bit Modulo Phase Triplex for Violin, Piano and Cello, 2023
+      sonuga.html  sonuga
+    textiles.html  textiles
+      merch.html  merch archive
+    arch.html  architecture
+      um.html  urban metabolism
+      soe.html  states of exception
+      = sfm.html  spaces for mediation
+      p.html  projection
+      ue.html  urban ecologies
+      : Thesis
+      = thesis.html  thesis research | Thesis Research (Archive, Last Updated March 2026)
+      stickyresearch.html  sticky research | Sticky Research [Desktop Only] (Archive, Last Updated Jan 2026)
+    visual.html  visual
+      algotrek.html  algotrek | algotrek wiki
+      pp.html  others portfolios
+        mgb.html  Martin Baggarly
+          anne.html  Anne Helm
+        www.html  Black Cat Recordings
+          volpe.html  Volpe (ARG) | Volpe
+          rustal.html  Rustal
+          kevin.html  Kevin Reynolds
+        hcy.html  HuiChun Yang
+      places.html  spaces and places | photography
+        places.html#sac  Amsterdam 2026 - Sonic Acts
+        places.html#rutland  Rutland Vermont 2025
+        sh.html  slaughterhouse 2025 | Slaughterhouse 2025
+        gt.html  georgia trip 2025 | Georgia 2025 - AMIS
+        fc.html  farm colony 2024 | Farm Colony 2024 - NY
+        ft.html  fort tilden 2020 | Fort Tilden 2020 - NY
+        nigeria.html  nigeria 2020 | Nigeria 2020
+        london.html  london 2019 | London 2019
+      ../redeelinstallations/index.html  Red Eel Installations (archive)
+    research.html  research
+      essays.html  papers and resources
+      thesis.html  undergrad thesis
+        oya.pdf  interview with oya damla
+        drains.html  drains
+        cock.html  cockrete
+        thes2s.html  thesis research archive | Thesis Research Archive
+          vitaphone.html  Vitaphone Reference Manual
+      df.html  daniel fishkin
+        arb.html  arbrasson workshop | Arbrasson Workshop
+        dax.html  daxophone drawings | Daxophone Drawings
+        daxpics.html  Daxophone Pictures
+      code.html  computation
+      ps.html  places and spaces
+      lbse.html  reading and listening | Reading and Listening List
+        dd.html  dream journal
+        ../dd.html  dream journal (old) | The Dream Journal
+      ../meh.html  multi entry horns | Multi Entry Horns
+      mm.html  drink menu | Marriott Marquis NYC 1986 Drink Menu
+    meta.html  internal
+      sitemap.html  sitemap
+      inventory.html  inventory
+      ck.html  code kaizen
+      server.html  server
+      dh.html  digital hygiene
+  ../webring.html  webring
+  ../log.html  log
