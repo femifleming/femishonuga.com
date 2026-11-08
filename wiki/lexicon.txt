@@ -19,19 +19,19 @@
         shows.html  shows
         ritual.html  ritual | ritual wiki
         discog.html  discography
-        instsh.html#shows-section  Live Shows
+        instsh.html#shows-section  live shows | Live Shows
       instsh.html  sound work
         thesisinstall.html  thesis installation | Thanks to the Ground Beneath My Feet
-        dubtub.html  Dub Tub, March 2026
+        dubtub.html  dub tub, march 2026 | Dub Tub, March 2026
         shrine.html  speaker shrine | An Infrastructural investigation of the Speaker Shrine
         steelhorn.html  steel horn | Quadrilateral Exponential Midrange Horn
-        be.html  Buried Electric
-        cloudsport.html  Clouds Totem
-          clouds.html  Building HiFi Speakers
-        ponysub.html  Ponyville Sound Systems
-        gewei.html  Xiaohongshu Gewei, June 2024
+        be.html  buried electric | Buried Electric
+        cloudsport.html  clouds totem | Clouds Totem
+          clouds.html  building hifi speakers | Building HiFi Speakers
+        ponysub.html  ponyville sound systems | Ponyville Sound Systems
+        gewei.html  xiaohongshu gewei, june 2024 | Xiaohongshu Gewei, June 2024
         solarsounders1.html  solar sounders | Cigar Boats Moan Across Waterways, July 2023
-        artifact.html  Material Artifact Sustain
+        artifact.html  material artifact sustain | Material Artifact Sustain
         sonicactsworkshop.html  sonic acts workshop | Ciat-Lonbarde Paper Circuit Workshop, Sonic Acts 2026
         roulette.html  roulette workshop | Mixology: Ciat-Lonbarde Paper Circuit Workshop, Roulette NYC 2025
         : Ambisonic Work
@@ -44,15 +44,15 @@
         he.html  of sound and vision | Of Sound and Vision, Dec 2021
         c.html  characters | Characters, May 2021
       hardware.html  hardware
-        ~ speakerstuff.html  Speaker DIY inspiration
-        slog.html  Speaker Building Log
-          ojas.html  My rant about OJAS
+        ~ speakerstuff.html  speaker diy inspiration | Speaker DIY inspiration
+        slog.html  speaker building log | Speaker Building Log
+          ojas.html  my rant about ojas | My rant about OJAS
           ../speakers.html  speakers
         cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY < 2026
         ../clguide/clguide.html  ciat lonbarde guide | Ciat Lonbarde DIY Guide
         diy.html  misc diy
           clarchive/index.html  ciat lonbarde archive
-          cldiyold/cldiy.html  Ciat Lonbarde DIY
+          cldiyold/cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY
             clguide.html  ciat lonbarde diy guide
           cb.html  circuit bent
           misc.html  misc
@@ -75,23 +75,23 @@
     visual.html  visual
       algotrek.html  algotrek | algotrek wiki
       pp.html  others portfolios
-        mgb.html  Martin Baggarly
-          anne.html  Anne Helm
-        www.html  Black Cat Recordings
-          volpe.html  Volpe (ARG) | Volpe
-          rustal.html  Rustal
-          kevin.html  Kevin Reynolds
-        hcy.html  HuiChun Yang
+        mgb.html  martin baggarly | Martin Baggarly
+          anne.html  anne helm | Anne Helm
+        www.html  black cat recordings | Black Cat Recordings
+          volpe.html  volpe (arg) | Volpe
+          rustal.html  rustal | Rustal
+          kevin.html  kevin reynolds | Kevin Reynolds
+        hcy.html  huichun yang | HuiChun Yang
       places.html  spaces and places | photography
-        places.html#sac  Amsterdam 2026 - Sonic Acts
-        places.html#rutland  Rutland Vermont 2025
+        places.html#sac  amsterdam 2026 - sonic acts | Amsterdam 2026 - Sonic Acts
+        places.html#rutland  rutland vermont 2025 | Rutland Vermont 2025
         sh.html  slaughterhouse 2025 | Slaughterhouse 2025
         gt.html  georgia trip 2025 | Georgia 2025 - AMIS
         fc.html  farm colony 2024 | Farm Colony 2024 - NY
         ft.html  fort tilden 2020 | Fort Tilden 2020 - NY
         nigeria.html  nigeria 2020 | Nigeria 2020
         london.html  london 2019 | London 2019
-      ../redeelinstallations/index.html  Red Eel Installations (archive)
+      ../redeelinstallations/index.html  red eel installations (archive) | Red Eel Installations (archive)
     research.html  research
       essays.html  papers and resources
       thesis.html  undergrad thesis
@@ -99,11 +99,11 @@
         drains.html  drains
         cock.html  cockrete
         thes2s.html  thesis research archive | Thesis Research Archive
-          vitaphone.html  Vitaphone Reference Manual
+          vitaphone.html  vitaphone reference manual | Vitaphone Reference Manual
       df.html  daniel fishkin
         arb.html  arbrasson workshop | Arbrasson Workshop
         dax.html  daxophone drawings | Daxophone Drawings
-        daxpics.html  Daxophone Pictures
+        daxpics.html  daxophone pictures | Daxophone Pictures
       code.html  computation
       ps.html  places and spaces
       lbse.html  dream state sonification
