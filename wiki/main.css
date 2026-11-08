@@ -67,7 +67,7 @@ width:100%;
 }
 @font-face {
 font-family: 'code';
-src: url('../Hack-Regular.ttf') format('truetype');
+src: url('../fonts/Hack-Regular.ttf') format('truetype');
 }
 code {
 background-color: grey;
