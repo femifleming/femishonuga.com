@@ -47,7 +47,6 @@
         ~ speakerstuff.html  speaker diy inspiration | Speaker DIY inspiration
         slog.html  speaker building log | Speaker Building Log
           ojas.html  my rant about ojas | My rant about OJAS
-          ../speakers.html  speakers
         cldiy.html  ciat lonbarde diy | Ciat Lonbarde DIY < 2026
         ../clguide/clguide.html  ciat lonbarde guide | Ciat Lonbarde DIY Guide
         diy.html  misc diy
