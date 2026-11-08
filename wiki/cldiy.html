@@ -3,60 +3,8 @@
 
 <link href="main.css" type="text/css" rel="stylesheet">
 <title>codex &mdash; home</title>
-<style>
-  html.preload-active, html.preload-active body {
-    overflow: hidden !important;
-    height: 100%;
-  }
-  #preloadScreen {
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-    background: #0b0e0c;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: serif;
-    transition: opacity 0.4s ease;
-  }
-  #preloadScreen.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  #preloadScreen .bar-track {
-    width: 100%;
-    max-width: 100%;
-    height: 4px;
-    background: #2a2f2c;
-    overflow: hidden;
-    margin-top: 18px;
-  }
-  #preloadScreen .bar-fill {
-    height: 100%;
-    width: 0%;
-    background: #ffffff;
-    transition: width 0.15s ease;
-  }
-  #preloadScreen .preload-label {
-    letter-spacing: 0.05em;
-    font-size: 14px;
-    opacity: 0.85;
-  }
-  #preloadScreen .preload-count {
-    margin-top: 10px;
-    font-size: 12px;
-    opacity: 0.5;
-  }
-</style>
 </head><body>
-<div id="preloadScreen">
-  <div class="preload-label">loading&hellip;</div>
-  <div class="bar-track"><div class="bar-fill" id="preloadBarFill"></div></div>
-  <div class="preload-count" id="preloadCount">0 / 0</div>
-</div>
-<header><a href="index.html"><img style="filter:invert(1);" src="links/clogo.png" width="120px" loading="lazy"></a></header>
+<header><a href="index.html"><img width="120" height="123" style="filter:invert(1);" src="links/clogo.png"></a></header>
 <style>
         /* Hide the audio player */
         audio {
@@ -81,6 +29,9 @@ color: white;
 html {
   scroll-behavior: smooth;
 }
+main img { height:auto }
+/* leave room above a section when jumping to it */
+[id] { scroll-margin-top: 20px; }
     </style>
 <nav>
 <ul>
@@ -107,11 +58,11 @@ html {
 </ul>
 </nav>
 <main><h2>&nbsp;</h2>
-	<img src="links/clheader.webp" width="140px" loading="lazy"><br>
+	<img width="140" height="105" src="links/clheader.webp"><br>
         <h1>
         Ciat Lonbarde DIY
 	</h1>
-	<img style="position: relative; z-index: 1;" src="links/gmw.webp" width="120px" loading="lazy"><br>
+	<img width="120" height="380" style="position: relative; z-index: 1;" src="links/gmw.webp"><br>
 <ul style="margin-top: -360px; margin-left: 160px;">
 <li style="color: white;"><a href="#rsg">Rolzer Stargate</a></li>
 <li style="color: white;"><a href="#nob">Nobsrine</a></li>
@@ -132,99 +83,97 @@ html {
 <br>
 <br>
 <figure>
-<img src="links/rexDDD-2.webp" loading="lazy">
+<img width="2000" height="2000" src="links/rexDDD-2.webp" loading="lazy" decoding="async">
 <br>
-<img src="links/rexDDD-1.webp" loading="lazy">
+<img width="2000" height="2000" src="links/rexDDD-1.webp" loading="lazy" decoding="async">
 <figcaption><span class="right"><em>Din Datin Dudero mk2 for Rex</em></span></figcaption>
 </figure>
 	<figure>
-		<img id="rsg" src="links/r2lzer2.webp" loading="lazy">
+		<img width="1500" height="1500" id="rsg" src="links/r2lzer2.webp" loading="lazy" decoding="async">
 		<figcaption><span class="right"><em>rolzer with 4pin pipe and audio output. Walnut and vintage bananna jacks.</em></span></figcaption>
-		<img src="links/r3lzer.webp" loading="lazy">
-		<img src="links/r4lzer.webp" loading="lazy">
+		<img width="1500" height="1500" src="links/r3lzer.webp" loading="lazy" decoding="async">
+		<img width="1500" height="1500" src="links/r4lzer.webp" loading="lazy" decoding="async">
 	</figure>
 	<figure>
-		<img id="nob" src="links/nob1.webp" loading="lazy">
+		<img width="1200" height="1200" id="nob" src="links/nob1.webp" loading="lazy" decoding="async">
 		<figcaption>
 			<span class="right">
 Nobsrine
 			</span>
 		</figcaption>
-		<p><img src="links/nob2.webp" loading="lazy"></p>
+		<p><img width="1200" height="1200" src="links/nob2.webp" loading="lazy" decoding="async"></p>
 		<p><i>"the nobsrine is an electronic musical instrument designed for babies.  It uses just two knobs, and an "on" switch to accomplish a wide range of simple, classic electronic sounds.  It does this by "sampling" the knob at each turn, and also using the energy of the turn to control the amplitude of two plus two triangle oscillators.  It is for babies of DJs and noise musicians, who want to introduce their children to strange sounds, chaos magic, the idea of infinite degrees of relationship between tones, without the more complicated techniques involved in uper crust CIAT INSTRUMENTS." - peter b</i></p>
-		<p><img src="links/nob3.webp" loading="lazy"></p>
-		<p><img src="links/nob4.webp" loading="lazy"></p>
+		<p><img width="1200" height="1200" src="links/nob3.webp" loading="lazy" decoding="async"></p>
+		<p><img width="1200" height="1200" src="links/nob4.webp" loading="lazy" decoding="async"></p>
 	</figure>
 	<figure>
-		<img id="rolzer" src="links/roolz10.webp" loading="lazy">
+		<img width="1400" height="1400" id="rolzer" src="links/roolz10.webp" loading="lazy" decoding="async">
 		<figcaption>
 			<span class="right">
 Roolzer for Matthew. Walnut.
 			</span>
 			<p><i>"The top two panels contain the pulse-brain circuitry- the geometrical forms that I call rolls. They are three, four, five, and six-noded versions of the same simple transistor circuit. They cycle impulses, inverting polarity at each node; imagine a pulse oscillator flipping at a set frequency. From this humble base whole montages can be built by connecting nodes to nodes on other rolls." - peter b</i></p>
 		</figcaption>
-		<p><img src="links/roolz3.webp"</p loading="lazy">
+		<p><img width="1400" height="1400" src="links/roolz3.webp" loading="lazy" decoding="async"></p>
 	</figure>
-	<img src="links/mat1.webp" width="60%" loading="lazy">
-	</div>
+	<img width="1029" height="1029" style="width:60%;" src="links/mat1.webp" loading="lazy" decoding="async">
 	<figure>
-		<img id="xhs" src ="links/ihdi-18.webp" loading="lazy">
-<figcaption><span class="right"><p>xiaohongshu rollz-5. Rollz-5 with modifications. Walnut, Cherry, Mink and Epoxy Resin.</p><?span></figcaption>
+		<img width="1500" height="1200" id="xhs" src="links/ihdi-18.webp" loading="lazy" decoding="async">
+<figcaption><span class="right"><p>xiaohongshu rollz-5. Rollz-5 with modifications. Walnut, Cherry, Mink and Epoxy Resin.</p></span></figcaption>
 <p><i>"The focus is a collection of modules called “Rollz-5”, which creates organic rhythms out of geometrical forms. A future direction is to create electronic sound devices based on the platonic solids and other 3-D topographies." - peter b</i></p>
-<p><img src="links/ihdi-13.webp" loading="lazy"></p>
-<p><img src="links/ihdi-16.webp" loading="lazy"></p>
-<p><img src="links/gwman.webp" loading="lazy"></p>
+<p><img width="1500" height="1200" src="links/ihdi-13.webp" loading="lazy" decoding="async"></p>
+<p><img width="1500" height="1200" src="links/ihdi-16.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="1334" src="links/gwman.webp" loading="lazy" decoding="async"></p>
 	</figure>
 <p id="rfive">Rollz-5</p>
-<p><img src="links/rolz5-1.webp" loading="lazy"></p>
-<p><img src="links/rolz5-4.webp" loading="lazy"></p>
-<p><img src="links/r5m.webp" loading="lazy"></p>
-</figure>
+<p><img width="2000" height="2000" src="links/rolz5-1.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/rolz5-4.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="1125" src="links/r5m-2000.webp" loading="lazy" decoding="async"></p>
 	<figure>
-		<img id="dv2" src="links/diy12.webp" loading="lazy">
+		<img width="1200" height="1200" id="dv2" src="links/diy12.webp" loading="lazy" decoding="async">
 		<figcaption><span class="right"><p>Dogevox V2. Cigar Box and Walnut.</p></span></figcaption>
-		<img src="links/diy13.webp" loading="lazy">
+		<img width="1200" height="1200" src="links/diy13.webp" loading="lazy" decoding="async">
 	</figure>
 	<figure>
-		<p><img id="dv1" src="links/dv1.webp" loading="lazy"></p>
+		<p><img width="1200" height="1200" id="dv1" src="links/dv1.webp" loading="lazy" decoding="async"></p>
 		<p><figcaption><span class="right"><p>Dogevox V1</p></span></figcaption></p>
-		<p><img src="links/dv2.webp" loading="lazy"></p>
-		<p><img src="links/dv3.webp" loading="lazy"></p>
-		<p><img src="links/dv4.webp" loading="lazy"></p>
+		<p><img width="1200" height="1200" src="links/dv2.webp" loading="lazy" decoding="async"></p>
+		<p><img width="1200" height="1200" src="links/dv3.webp" loading="lazy" decoding="async"></p>
+		<p><img width="1200" height="1200" src="links/dv4.webp" loading="lazy" decoding="async"></p>
 	</figure>
-	<img id="ls" src="links/lil7.webp" loading="lazy">
+	<img width="2000" height="2000" id="ls" src="links/lil7-2000.webp" loading="lazy" decoding="async">
 	<figure>
 	<figcaption><span class="right"><p>Lil Sidrassi</p></span></figcaption>
 	<p><i>"The Lil Sidrassi: a pentagram of primitive oscillators and a speaker". It is a very touchable bee motorcycle sound maker box. Each one is different because you put custom capacitor values in it." - peter b</i></p>
 	</figure>
-		<p id="lsfs" style="background-color: #272e29;"><b>$333</b></p><p style="background-color: #847263">email sadnoise@femishonuga.com</p>
-	<img src="links/lilsids2.webp" loading="lazy">
+		<p id="lsfs" style="background-color: #272e29;"><b>$333</b></p><p style="background-color: #847263">email femi.fleming@gmail.com</p>
+	<img width="1431" height="3560" src="links/lilsids2.webp" loading="lazy" decoding="async">
 <p>Roulette Workshop Sidrassi</p>
-<p><img src="links/roulette.webp" width="60%" loading="lazy"></p>
-	<p><img src="links/workshopsidrassi-1.webp" loading="lazy"></p>
-	<p><img src="links/workshopsidrassi-2.webp" loading="lazy"></p>
-	<p><img src="links/workshopsidrassi-3.webp" loading="lazy"></p>
+<p><img width="769" height="1024" style="width:60%;" src="links/roulette.webp" loading="lazy" decoding="async"></p>
+	<p><img width="2000" height="2009" src="links/workshopsidrassi-1.webp" loading="lazy" decoding="async"></p>
+	<p><img width="2000" height="2000" src="links/workshopsidrassi-2.webp" loading="lazy" decoding="async"></p>
+	<p><img width="2000" height="2000" src="links/workshopsidrassi-3.webp" loading="lazy" decoding="async"></p>
 	<br>
 <p id="bc" >barre controllers, passive and conrad papers active. Walnut and Ash, Walnut, Pine and Cherry.</p>
-		<p style="background-color: #123827;"><b>$200</b></p><p style="background-color: #847263">email sadnoise@femishonuga.com</p>
-		<p><img src="links/barre1.webp" loading="lazy"></p>
-		<p><img src="links/ihdi-24.webp" loading="lazy"></p>
-		<p><img src="links/ihdi-25.webp" loading="lazy"></p>
-<p><img src="links/passivebarre-1.webp" loading="lazy"></p>
-<p><img src="links/passivebarre-2.webp" loading="lazy"></p>
-<p><img src="links/passivebarre-3.webp" loading="lazy"></p>
-<p><img src="links/activebarre-6.webp" loading="lazy"></p>
-<p><img src="links/activebarre-5.webp" loading="lazy"></p>
-<p><img src="links/activebarre-8.webp" loading="lazy"></p>
+		<p style="background-color: #123827;"><b>$200</b></p><p style="background-color: #847263">email femi.fleming@gmail.com</p>
+		<p><img width="1500" height="1500" src="links/barre1.webp" loading="lazy" decoding="async"></p>
+		<p><img width="1500" height="1500" src="links/ihdi-24.webp" loading="lazy" decoding="async"></p>
+		<p><img width="1500" height="1500" src="links/ihdi-25.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/passivebarre-1.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/passivebarre-2.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/passivebarre-3.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/activebarre-6.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/activebarre-5.webp" loading="lazy" decoding="async"></p>
+<p><img width="2000" height="2000" src="links/activebarre-8.webp" loading="lazy" decoding="async"></p>
 	<figure>
-		        <img id="ss" src="links/solar.webp" width="222px" loading="lazy"><br>
+		        <img width="222" height="166" id="ss" src="links/solar.webp" loading="lazy" decoding="async"><br>
 		<p>Solar Sounders</p>
-		<img src="links/diy3.webp" loading="lazy">
-		<img src="links/ss.webp" loading="lazy">
+		<img width="1200" height="1200" src="links/diy3.webp" loading="lazy" decoding="async">
+		<img width="1024" height="768" src="links/ss.webp" loading="lazy" decoding="async">
 	</figure>
 	<p class="incoming"><b>incoming </b><a href="../clguide/clguide.html">ciat lonbarde diy guide</a></p>
-	<audio autoplay loop>
-        <source src="links/srine.wav" type="audio/wav">
+	<audio autoplay loop preload="none">
+        <source src="links/srine.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -235,75 +184,5 @@ Roolzer for Matthew. Walnut.
 }
 </style>
 <ul></ul></main>
-<footer>sadnoise@femishonuga.com - Updated Sun Jan 5th 03:03:00 EST 2025 </footer>
-<script>
-(function () {
-  document.documentElement.classList.add('preload-active');
-
-  var screenEl = document.getElementById('preloadScreen');
-  var barFill = document.getElementById('preloadBarFill');
-  var countLabel = document.getElementById('preloadCount');
-  var savedHash = window.location.hash;
-
-  var images = Array.prototype.slice.call(document.images);
-  var total = images.length;
-  var loaded = 0;
-
-  function updateProgress() {
-    var pct = total ? Math.round((loaded / total) * 100) : 100;
-    barFill.style.width = pct + '%';
-    countLabel.textContent = loaded + ' / ' + total;
-  }
-
-  function onOneDone() {
-    loaded++;
-    updateProgress();
-    if (loaded >= total) finish();
-  }
-
-  function finish() {
-    document.documentElement.classList.remove('preload-active');
-    screenEl.classList.add('hidden');
-    setTimeout(function () {
-      screenEl.style.display = 'none';
-      // Now that every image has its real size, jump to the requested anchor.
-      if (savedHash) {
-        var target = document.getElementById(savedHash.slice(1));
-        if (target) target.scrollIntoView();
-      }
-    }, 400);
-  }
-
-  updateProgress();
-
-  // While loading, clicking an in-page anchor link just remembers where
-  // the user wanted to go instead of jumping there (positions aren't final yet).
-  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      if (document.documentElement.classList.contains('preload-active')) {
-        e.preventDefault();
-        savedHash = link.getAttribute('href');
-      }
-    });
-  });
-
-  if (total === 0) {
-    finish();
-  } else {
-    images.forEach(function (img) {
-      if (img.complete) {
-        onOneDone();
-      } else {
-        img.addEventListener('load', onOneDone);
-        img.addEventListener('error', onOneDone);
-      }
-    });
-  }
-
-  // Safety net: never trap someone on the loading screen for more than 12s.
-  setTimeout(function () {
-    if (!screenEl.classList.contains('hidden')) finish();
-  }, 12000);
-})();
-</script>
+<footer>femi.fleming@gmail.com - updated 2026-07-15 </footer>
 </body></html>
