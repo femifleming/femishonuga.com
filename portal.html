@@ -66,6 +66,18 @@ const NOTES = {
   "hankhurst.com": "Hank is my good friend from RISD, we DJ house and techno together as Select All Vertical Rivers.",
 };
 
+// Sites that work but refuse to load inside the portal (they block iframes,
+// or are http-only, which browsers block inside an https page).
+// They stay listed on webring.html; the portal just skips them.
+const NOT_IN_PORTAL = new Set([
+  "craow.net",
+  "clubclubpvd.com",
+  "flickr.com/photos/ciat-lonbarde/albums/72157623401253688",
+  "loliel.narod.ru/diy.pdf",
+  "solarbotics.net/library/circuits/se.html",
+  "sdiy.org",
+]);
+
 const $ = id => document.getElementById(id);
 const key = url => url.replace(/^https?:\/\/(www\.)?/i, "").replace(/\/+$/, "").toLowerCase();
 let sites = [], i = 0;
@@ -91,7 +103,7 @@ async function load() {
     const section = (label ? label.textContent : "").replace(/:\s*$/, "").trim().toLowerCase();
     for (const li of ol.querySelectorAll(":scope > li")) {
       const a = li.querySelector("a[href]");
-      if (!a || seen.has(key(a.href))) continue;
+      if (!a || seen.has(key(a.href)) || NOT_IN_PORTAL.has(key(a.href))) continue;
       seen.add(key(a.href));
       const tag = li.querySelector(".append");
       sites.push({ url: a.href, name: a.textContent.trim(), section,
