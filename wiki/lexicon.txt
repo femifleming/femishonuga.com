@@ -95,7 +95,7 @@
     research.html  research
       essays.html  papers and resources
       thesis.html  undergrad thesis
-        oya.pdf  interview with oya damla
+        files/oya.pdf  interview with oya damla
         drains.html  drains
         cock.html  cockrete
         thes2s.html  thesis research archive | Thesis Research Archive
