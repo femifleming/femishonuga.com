@@ -72,6 +72,8 @@
       = thesis.html  thesis research | Thesis Research (Archive, Last Updated March 2026)
       stickyresearch.html  sticky research | Sticky Research [Desktop Only] (Archive, Last Updated Jan 2026)
     visual.html  visual
+      paintings.html  paintings | paintings
+      drawing.html  drawings | drawings
       algotrek.html  algotrek | algotrek wiki
       pp.html  others portfolios
         mgb.html  martin baggarly | Martin Baggarly
