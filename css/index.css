@@ -31,11 +31,11 @@
             opacity: 1;
                     }
                     img {
-                            transition: filter 8s ease;
+                            transition: filter 1s ease-in;
                             filter: blur(0px);
                     }
                     img:hover {
-filter: blur(100px) hue-rotate(180deg);
+filter: blur(100px) hue-rotate(180deg); transition: 8s ease-out;
                     }
     a {text-decoration-style:dotted; transition: color 1s ease; color:#0d0a0a;}
     a.x {color: black;
