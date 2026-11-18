@@ -75,7 +75,7 @@
       paintings.html  paintings | paintings
       drawing.html  drawings | drawings
       algotrek.html  algotrek | algotrek wiki
-      pp.html  others portfolios
+      pp.html  misc photo
         mgb.html  martin baggarly | Martin Baggarly
           anne.html  anne helm | Anne Helm
         www.html  black cat recordings | Black Cat Recordings
